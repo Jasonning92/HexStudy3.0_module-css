@@ -1,0 +1,727 @@
+/* -----------------------------   出版社   ----------------------------- */
+@charset "utf-8";
+
+/* ------ List ------
+ * 出版社首页
+ * 课程详情
+ * MOOC公开课
+ */
+
+/* ============================= 出版社首页 ============================= */
+body {
+    background: #f9fafb;
+}
+
+.hex-publisher-index {
+}
+
+.hex-publisher-index .info {
+    height: auto;
+    width: 100%;
+    border-bottom: 4px solid #525C66;
+    display: inline-block;
+}
+
+.hex-publisher-index .info > div:nth-child(1) {
+    height: auto;
+    width: 570px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    float: left;
+}
+
+.hex-publisher-index .info > div:nth-child(1) img,
+.hex-publisher-index .info > div:nth-child(1) a {
+    height: 402px;
+    width: 570px;
+}
+
+.hex-publisher-index .info > .list {
+    height: 340px;
+    width: 590px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    float: right;
+}
+
+.hex-publisher-index .info > .list > ul {
+    list-style: none;
+    width: 630px;
+}
+
+.hex-publisher-index .info > .list > ul > li {
+    display: inline-block;
+    padding-bottom: 23px;
+    width: 590px;
+}
+
+.hex-publisher-index .info > .list > ul > li:nth-child(n+2) {
+    height: auto;
+    padding-top: 23px;
+    border-top: 2px solid #d7dbde;
+}
+
+.hex-publisher-index .info > .list > ul > li > a {
+    height: auto;
+    width: 144px;
+    display: inline-block;
+    float: left;
+}
+
+.hex-publisher-index .info > .list > ul > li > a > img {
+    height: 102px;
+    width: 144px;
+}
+
+.hex-publisher-index .info > .list > ul > li > div {
+    margin-left: 164px;
+}
+
+.hex-publisher-index .info > .list > ul > li > div h2 {
+    color: #333333;
+}
+
+.hex-publisher-index .info > .list > ul > li > div a:hover h2,
+.hex-publisher-index .info > .list > ul > li > div a:active h2 {
+    font-weight: 600;
+}
+
+.hex-publisher-index .info > .list > ul > li > div p {
+    width: 100%;
+    color: #999999;
+    margin-top: 10px;
+}
+
+.hex-publisher-index .info > .list > ul > li > div a:hover p,
+.hex-publisher-index .info > .list > ul > li > div a:active p {
+    color: #333333;
+}
+
+.hex-publisher-index .block {
+    width: 1200px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.hex-publisher-index .block .class {
+    width: 280px;
+    height: 288px;
+    border: 1px solid #ebeff3;
+    float: left;
+    display: inline-block;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.hex-publisher-index .block .class {
+    margin-right: 20px;
+}
+
+.hex-publisher-index .block .class img {
+    height: 196px;
+    width: 278px;
+}
+
+.hex-publisher-index .block .class div:not(.hex-class-status) {
+    padding: 10px;
+}
+
+.hex-publisher-index .block .class div:not(.hex-class-status) h2 {
+    color: #333333;
+    display: inline-block;
+    width: 258px;
+}
+
+.hex-publisher-index .block .class a:hover div h2,
+.hex-publisher-index .block .class a:active div h2 {
+    font-weight: 600;
+}
+
+.hex-publisher-index .block .class div:not(.hex-class-status) span {
+    margin-top: 10px;
+    color: #999999;
+    display: inline-block;
+    width: 258px;
+}
+
+.hex-publisher-index .block .class a:hover div span,
+.hex-publisher-index .block .class a:active div span {
+    color: #333333;
+}
+
+.hex-publisher-index .block .class .hex-class-status {
+    height: 21px;
+    width: 43px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.hex-publisher-index .block .class .hex-class-status.applying {
+    background: #34b27c;
+}
+
+.hex-publisher-index .block .class .hex-class-status.done {
+    background: #454f59;
+}
+
+.hex-publisher-index .block .class .hex-class-status.willbegin {
+    background: #fc7039;
+}
+
+.hex-publisher-index .block .class .hex-class-status.opening {
+    background: #60a0d1;
+}
+
+.hex-publisher-index .block .class .hex-class-status span {
+    line-height: 21px;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.hex-publisher-index .block .class .hex-class-mooc {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 166px;
+    right: 3px;
+    background-image: url("../../images/spoc.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hex-publisher-index .ad {
+    width: 100%;
+    height: 145px;
+    margin-bottom: 10px;
+}
+
+.hex-publisher-index .ad img {
+    width: 1180px;
+    height: 145px;
+}
+
+.hex-publisher-index .publisher-empty {
+    width: 100%;
+    height: 500px;
+    background-image: url("../../images/publisher-empty.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+
+.hex-publisher-index .publisher-empty img {
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+/* ============================= 课程详情 ============================= */
+.hex-course-detail {
+}
+
+.hex-course-detail .hex-course-detail-bread {
+    margin-top: 10px;
+    width: 1180px;
+}
+
+.hex-course-detail .hex-course-detail-bread a,
+.hex-course-detail .hex-course-detail-bread span {
+    font-size: 12px;
+    color: #8a94a0;
+}
+
+.hex-course-detail .hex-course-detail-bread .active {
+    color: #525c66;
+}
+
+.hex-course-detail .hex-course-detail-bread a:hover {
+    color: #525c66;
+}
+
+.hex-course-detail .hex-course-detail-bread a:focus,
+.hex-course-detail .hex-course-detail-bread a:active {
+    color: #393f46;
+}
+
+.hex-course-detail .hex-course-detail-body {
+    margin-top: 20px;
+}
+
+.hex-course-detail .hex-course-detail-body .info {
+    display: inline-block;
+    border-bottom: 4px solid #dde1e5;
+    height: 215px;
+}
+
+.hex-course-detail .hex-course-detail-body .info > div:nth-child(1) {
+    position: relative;
+    float: left;
+}
+
+.hex-course-detail .hex-course-detail-body .info > div:nth-child(1) div {
+    width: 320px;
+    height: 175px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background: url("../../images/course-mask.png") repeat 0 0;
+}
+
+.hex-course-detail .hex-course-detail-body .info:not(.book) > div:nth-child(1),
+.hex-course-detail .hex-course-detail-body .info:not(.book) > div:nth-child(1) img {
+    width: 320px;
+    height: 205px;
+}
+
+/*------ 显示 ------*/
+.hex-course-detail .hex-course-detail-body .info.book > div:nth-child(1){
+    width: 205px;
+    height: 205px;
+    text-align: center;
+}
+
+.hex-course-detail .hex-course-detail-body .info.book > div:nth-child(1) img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.hex-course-detail .hex-course-detail-body .info > div:nth-child(1) span {
+    position: absolute;
+    bottom: 2px;
+    right: 3px;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.hex-course-detail .hex-course-detail-body .info > div:nth-child(2) {
+    width: 840px;
+    margin-left: 20px;
+    float: left;
+}
+
+.hex-course-detail .hex-course-detail-body .info > div:nth-child(2) h1,
+.hex-course-detail .hex-course-detail-body .info > div:nth-child(2) > span {
+    float: left;
+}
+
+.hex-course-detail .hex-course-detail-body .info > div:nth-child(2) h1 {
+    color: #525c66;
+}
+
+.hex-course-detail .hex-course-detail-body .info > div:nth-child(2) > span {
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 1px;
+    color: #fc7039;
+    line-height: 20px;
+}
+
+.hex-course-detail .hex-course-detail-body .info > div:nth-child(2) > ul {
+    width: 840px;
+    margin-top: 10px;
+    list-style: none;
+    float: left;
+}
+
+.hex-course-detail .hex-course-detail-body .info > div:nth-child(2) > ul > li {
+    width: 840px;
+    display: inline-block;
+}
+
+.hex-course-detail .hex-course-detail-body .info > div:nth-child(2) > ul > li h2 {
+    color: #525c66;
+    float: left;
+    line-height: 20px;
+}
+
+.hex-course-detail .hex-course-detail-body .info > div:nth-child(2) > ul > li span {
+    color: #9aa5b0;
+    float: left;
+    line-height: 20px;
+    margin-right: 10px;
+}
+
+.hex-course-detail .hex-course-detail-body .info > div:nth-child(2) button,
+.hex-course-detail .hex-course-detail-body .info > div:nth-child(2) a {
+    float: left;
+    width: 125px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.hex-course-detail .hex-course-detail-body .info > div:nth-child(2) a {
+    text-align: center;
+    line-height: 40px;
+}
+
+.hex-course-detail .hex-course-detail-body .info > div:nth-child(2) a:hover,
+.hex-course-detail .hex-course-detail-body .info > div:nth-child(2) a:visited {
+    color: #ffffff;
+}
+
+.hex-course-detail .hex-course-detail-body .other {
+}
+
+.hex-course-detail .hex-course-detail-body .other .book {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.hex-course-detail .hex-course-detail-body .other .book h2 {
+    font-weight: bold;
+}
+
+.hex-course-detail .hex-course-detail-body .other .book .img {
+    margin: 10px 0 0 0;
+    display: inline-block;
+    border: 1px solid #eef1f4;
+}
+
+.hex-course-detail .hex-course-detail-body .other .book .img .hex-image,
+.hex-course-detail .hex-course-detail-body .other .book .img .hex-image img {
+    height: 70px;
+}
+
+.hex-course-detail .hex-course-detail-body .other .book .img .hex-image {
+    background: #000000;
+    text-align: center;
+    float: left;
+}
+
+.hex-course-detail .hex-course-detail-body .other .book .img .hex-span {
+    margin-left: 10px;
+    float: left;
+    height: 70px;
+    padding-top: 5px;
+}
+
+.hex-course-detail .hex-course-detail-body .other .book .img .hex-span span:nth-child(1) {
+    color: #454f59;
+}
+
+.hex-course-detail .hex-course-detail-body .other .book .img .hex-span span:nth-child(n+2) {
+    font-size: 12px;
+    color: #9aa5b0;
+}
+
+.hex-course-detail .hex-course-detail-body .other .book .price {
+    height: 70px;
+    width: 100px;
+    float: left;
+    background: #eef1f4;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.hex-course-detail .hex-course-detail-body .other .book .price div {
+    display: inline-block;
+}
+
+.hex-course-detail .hex-course-detail-body .other .book .price h2 {
+    font-size: 18px;
+    margin-top: 24px;
+    color: #fc7039;
+    float: left;
+}
+
+.hex-course-detail .hex-course-detail-body .other .book .price span {
+    color: #525c66;
+    float: left;
+    margin-top: 25px;
+}
+
+.hex-course-detail .hex-course-detail-body .other .book a:hover .img .hex-span span:nth-child(1) {
+    font-weight: 600;
+}
+
+.hex-course-detail .hex-course-detail-body .other .book a:hover .img .hex-span span:nth-child(n+2) {
+    color: #5d6b79;
+}
+
+.hex-course-detail .hex-course-detail-body .other .introduce,
+.hex-course-detail .hex-course-detail-body .other .teacher,
+.hex-course-detail .hex-course-detail-body .other .schedule,
+.hex-course-detail .hex-course-detail-body .other .information {
+    margin-top: 20px;
+    display: inline-block;
+    width: 1180px;
+}
+
+.hex-course-detail .hex-course-detail-body .other .introduce p,
+.hex-course-detail .hex-course-detail-body .other .teacher p,
+.hex-course-detail .hex-course-detail-body .other .information p {
+    color: #858e97;
+    margin: 20px 0 20px 20px;
+    width: 1140px;
+
+}
+
+.hex-course-detail .hex-course-detail-body .other .teacher img {
+    height: 135px;
+    width: 118px;
+    float: left;
+    margin: 20px 0;
+}
+
+.hex-course-detail .hex-course-detail-body .other .teacher p,
+.hex-course-detail .hex-course-detail-body .other .teacher > div:nth-of-type(2) > div {
+    float: left;
+    margin-left: 20px;
+    width: 1022px;
+}
+
+/* ============================= MOOC公开课 ============================= */
+.hex-mooc {
+    display: inline-block;
+}
+
+/* 导航 */
+.hex-mooc .hex-mooc-ul {
+    float: left;
+    width: 240px;
+}
+
+.hex-mooc .hex-mooc-ul ul li > .active,
+.hex-mooc .hex-mooc-ul ul li .first .active,
+.hex-mooc .hex-mooc-ul ul li .first .second .active {
+    height: 40px;
+    width: 200px;
+    background: #27ad74;
+    display: inline-block;
+    line-height: 40px;
+    float: left;
+    margin-bottom: 2px;
+}
+
+.hex-mooc .hex-mooc-ul ul li > .active a:hover,
+.hex-mooc .hex-mooc-ul ul li .first .active a:hover,
+.hex-mooc .hex-mooc-ul ul li .first .second .active a:hover {
+    height: 40px;
+    width: 200px;
+    background: #47BE89;
+    display: inline-block;
+    line-height: 40px;
+    float: left;
+    margin-bottom: 2px;
+}
+
+.hex-mooc .hex-mooc-ul ul li > .active span,
+.hex-mooc .hex-mooc-ul ul li .first .active span,
+.hex-mooc .hex-mooc-ul ul li .first .second .active span {
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+
+.hex-mooc .hex-mooc-ul ul {
+    list-style: none;
+}
+
+.hex-mooc .hex-mooc-ul ul li {
+    width: 240px;
+    display: inline-block;
+}
+
+.hex-mooc .hex-mooc-ul ul .nature > .button {
+    background: #dee2e7 url("../../images/mooc_sort01.png") no-repeat 10px 9px;
+}
+
+.hex-mooc .hex-mooc-ul ul .engineering > .button {
+    background: #dee2e7 url("../../images/mooc_sort02.png") no-repeat 12px 9px;
+}
+
+.hex-mooc .hex-mooc-ul ul .sociology > .button {
+    background: #dee2e7 url("../../images/mooc_sort03.png") no-repeat 12px 13px;
+}
+
+.hex-mooc .hex-mooc-ul ul li > .button {
+    height: 40px;
+    width: 40px;
+    float: left;
+}
+
+.hex-mooc .hex-mooc-ul ul li > .title {
+    width: 240px;
+}
+
+.hex-mooc .hex-mooc-ul ul li > .title:not(.active) {
+    height: 40px;
+    background: #ebeff2;
+    display: inline-block;
+    line-height: 40px;
+    float: left;
+    margin-bottom: 2px;
+}
+
+.hex-mooc .hex-mooc-ul ul li > .title > a {
+    width: 170px;
+    height: 40px;
+    display: inline-block;
+}
+
+.hex-mooc .hex-mooc-ul ul li > .title:not(.active) > a > span {
+    color: #525c66;
+    margin-left: 10px;
+}
+
+.hex-mooc .hex-mooc-ul ul li > .title:not(.active) > a:hover > span {
+    color: #364049;
+    font-weight: 600;
+}
+
+.hex-mooc .hex-mooc-ul ul li .first .first-title:not(.active) > a:hover > span,
+.hex-mooc .hex-mooc-ul ul li .first .second .second-title:not(.active) > a:hover > span {
+    color: #364049;
+}
+
+.hex-mooc .hex-mooc-ul ul li > .title > .jianhao,
+.hex-mooc .hex-mooc-ul ul li > .title > .jiahao,
+.hex-mooc .hex-mooc-ul ul li .first .first-title > .jianhao,
+.hex-mooc .hex-mooc-ul ul li .first .first-title > .jiahao {
+    background: #c4cad1 url("../../images/jianhao_white.png") no-repeat 7px 9px;
+    width: 20px;
+    height: 20px;
+    float: right;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.hex-mooc .hex-mooc-ul ul li > .title > .jianhao:hover,
+.hex-mooc .hex-mooc-ul ul li .first .first-title > .jianhao:hover {
+    background: #d2d8e0 url("../../images/jianhao_white.png") no-repeat 7px 9px;
+}
+
+.hex-mooc .hex-mooc-ul ul li > .title > .jiahao,
+.hex-mooc .hex-mooc-ul ul li .first .first-title > .jiahao {
+    background: #c4cad1 url("../../images/jiahao_white.png") no-repeat 6px 6px;
+    width: 20px;
+    height: 20px;
+    float: right;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.hex-mooc .hex-mooc-ul ul li > .title > .jiahao:hover,
+.hex-mooc .hex-mooc-ul ul li .first .first-title > .jiahao:hover {
+    background: #d2d8e0 url("../../images/jiahao_white.png") no-repeat 6px 6px;
+}
+
+.hex-mooc .hex-mooc-ul ul li .first {
+    width: 200px;
+    display: inline-block;
+    float: right;
+}
+
+.hex-mooc .hex-mooc-ul ul li .first .first-title:not(.active) {
+    height: 40px;
+    width: 200px;
+    display: inline-block;
+    background: #ebeff2;
+    line-height: 40px;
+    margin-bottom: 2px;
+}
+
+.hex-mooc .hex-mooc-ul ul li .first .first-title:not(.active) span {
+    color: #525c66;
+    margin-left: 10px;
+}
+
+.hex-mooc .hex-mooc-ul ul li .first .second {
+    width: 200px;
+    display: inline-block;
+    float: right;
+}
+
+.hex-mooc .hex-mooc-ul ul li .first .second .second-title:not(.active) {
+    height: 40px;
+    width: 200px;
+    display: inline-block;
+    background: #ebeff2;
+    line-height: 40px;
+    margin-bottom: 2px;
+}
+
+.hex-mooc .hex-mooc-ul ul li .first .second .second-title > a {
+    height: 40px;
+    width: 200px;
+    display: inline-block;
+}
+
+.hex-mooc .hex-mooc-ul ul li .first .second .second-title:not(.active) > a > span {
+    color: #858e97;
+    margin-left: 10px;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 180px;
+}
+
+/* 列表 */
+.hex-mooc .hex-mooc-body {
+    float: left;
+    margin-left: 10px;
+    width: 930px;
+}
+
+.hex-mooc .hex-mooc-body .hex-mooc-select {
+    width: 930px;
+}
+
+.hex-mooc .hex-mooc-body .hex-mooc-select a {
+    text-align: center;
+    width: 60px;
+    height: 25px;
+    display: inline-block;
+}
+
+.hex-mooc .hex-mooc-body .hex-mooc-select span {
+    color: #525c66;
+    line-height: 25px;
+}
+
+.hex-mooc .hex-mooc-body .hex-mooc-select a.active {
+    background: #8A94A0;
+}
+
+.hex-mooc .hex-mooc-body .hex-mooc-select a.active span {
+    color: #ffffff;
+}
+
+.hex-mooc .hex-mooc-body .hex-mooc-select a:hover,
+.hex-mooc .hex-mooc-body .hex-mooc-select a:active {
+    background: #34b27c;
+}
+
+.hex-mooc .hex-mooc-body .hex-mooc-select a:hover span,
+.hex-mooc .hex-mooc-body .hex-mooc-select a:active span {
+    color: #FFFFFF;
+}
+
+.hex-mooc .hex-mooc-body .hex-mooc-list {
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.hex-mooc .hex-mooc-body .hex-mooc-list .hex-classes {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.hex-search-page {
+    width: 1180px;
+    margin: 138px auto 0 auto;
+}
+
+
+
+
+
+
+

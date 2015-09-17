@@ -1,0 +1,938 @@
+/* -----------------------------   基本公用样式   ----------------------------- */
+@charset "utf-8";
+
+/* ------ List ------
+ * 按钮类型
+ * 表单行
+ */
+
+/* 鼠标等待样式 */
+.loading:hover {
+    cursor: wait;
+}
+
+button {
+    border: 0;
+    border-radius: 2px;
+}
+
+.glyphicon-star {
+    color: #fc7039;
+}
+
+.hex-input-group-addon {
+    height: 28px;
+    width: 28px;
+    padding: 0;
+}
+
+.hex-glyphicon-remove,
+.hex-glyphicon-th {
+    height: 28px;
+    line-height: 26px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 18px;
+    margin: 0;
+    color: #323b43;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 14px;
+    margin: 0;
+    color: #323b43;
+}
+
+p {
+    margin: 0;
+}
+
+label {
+    margin-bottom: 0;
+}
+
+hr {
+    margin: 0;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+.hex-underline {
+    text-decoration: underline;
+}
+
+.hex-datetimepicker {
+    width: 200px;
+    background-color: #ffffff;
+    cursor: pointer;
+    display: table-cell;
+    position: relative;
+    z-index: 2;
+    float: left;
+    margin-bottom: 0;
+    opacity: 1;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #555;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+/* 富文本编辑器上边木有线，看着难受…………
+.hex-rich-editor {
+    border-top: 1px solid #CCCCCC;
+}*/
+
+/* ============================= 按钮 ============================= */
+.hex-button {
+    padding: 0 20px;
+    height: 28px;
+    min-width: 70px;
+    font-size: 12px;
+    display: inline-block;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+/* 绿色 */
+.hex-green-btn {
+    background: #30AB75;
+    color: #FFFFFF;
+}
+
+.hex-green-btn:hover {
+    background: #47BE89;
+    color: #FFFFFF;
+    -moz-box-shadow: 2px 0 1px #E2E0E3, -2px 0 1px #E2E0E3, 0 2px 1px #E2E0E3, 0 -2px 1px #E2E0E3; /* For Firefox3.6+ */
+    -webkit-box-shadow: 2px 0 1px #E2E0E3, -2px 0 1px #E2E0E3, 0 2px 1px #E2E0E3, 0 -2px 1px #E2E0E3; /* For Chrome5+, Safari5+ */
+    box-shadow: 2px 0 1px #E2E0E3, -2px 0 1px #E2E0E3, 0 2px 1px #E2E0E3, 0 -2px 1px #E2E0E3;
+}
+
+.hex-green-btn:active {
+    -moz-box-shadow: 1px 1px 1px #359F73 inset, -1px -1px 1px #359F73 inset; /* For Firefox3.6+ */
+    -webkit-box-shadow: 1px 1px 1px #359F73 inset, -1px -1px 1px #359F73 inset; /* For Chrome5+, Safari5+ */
+    box-shadow: 1px 1px 1px #359F73 inset, -1px -1px 1px #359F73 inset;
+}
+
+/* 黑色 */
+.hex-black-btn {
+    background: #000000;
+    color: #FFFFFF;
+}
+
+.hex-black-btn:hover {
+    -moz-box-shadow: 2px 0 2px #EEEEEE, -2px 0 2px #EEEEEE, 0 2px 2px #EEEEEE, 0 -2px 2px #EEEEEE; /* For Firefox3.6+ */
+    -webkit-box-shadow: 2px 0 2px #EEEEEE, -2px 0 2px #EEEEEE, 0 2px 2px #EEEEEE, 0 -2px 2px #EEEEEE; /* For Chrome5+, Safari5+ */
+    box-shadow: 2px 0 2px #EEEEEE, -2px 0 2px #EEEEEE, 0 2px 2px #EEEEEE, 0 -2px 2px #EEEEEE;
+}
+
+.hex-black-btn:visited,
+.hex-black-btn:active {
+    -moz-box-shadow: 1px 1px 1px #C0C3C8 inset, -1px -1px 1px #C0C3C8 inset; /* For Firefox3.6+ */
+    -webkit-box-shadow: 1px 1px 1px #C0C3C8 inset, -1px -1px 1px #C0C3C8 inset; /* For Chrome5+, Safari5+ */
+    box-shadow: 1px 1px 1px #C0C3C8 inset, -1px -1px 1px #C0C3C8 inset;
+}
+
+/* 灰色 */
+.hex-gray-btn {
+    background: #D7DCE2;
+    color: #848E97;
+}
+
+.hex-gray-btn:hover {
+    background-color: #30AB75;
+    color: #ffffff;
+    -moz-box-shadow: 2px 0 2px #EEEEEE, -2px 0 2px #EEEEEE, 0 2px 2px #EEEEEE, 0 -2px 2px #EEEEEE; /* For Firefox3.6+ */
+    -webkit-box-shadow: 2px 0 2px #EEEEEE, -2px 0 2px #EEEEEE, 0 2px 2px #EEEEEE, 0 -2px 2px #EEEEEE; /* For Chrome5+, Safari5+ */
+    box-shadow: 2px 0 2px #EEEEEE, -2px 0 2px #EEEEEE, 0 2px 2px #EEEEEE, 0 -2px 2px #EEEEEE;
+}
+
+.hex-gray-btn:visited,
+.hex-gray-btn:active {
+    -moz-box-shadow: 1px 1px 1px #C0C3C8 inset, -1px -1px 1px #C0C3C8 inset; /* For Firefox3.6+ */
+    -webkit-box-shadow: 1px 1px 1px #C0C3C8 inset, -1px -1px 1px #C0C3C8 inset; /* For Chrome5+, Safari5+ */
+    box-shadow: 1px 1px 1px #C0C3C8 inset, -1px -1px 1px #C0C3C8 inset;
+}
+
+.hex-lightgrey-btn {
+    color: #858E97;
+    background: #ECF0F3;
+}
+
+.hex-lightgrey-btn:hover {
+    background: #30AB75;
+    color: #ffffff;
+    -moz-box-shadow: 2px 0 1px rgba(175, 183, 191, 0.1), -2px 0 1px rgba(175, 183, 191, 0.1), 0 2px 1px rgba(175, 183, 191, 0.1), 0 -2px 1px rgba(175, 183, 191, 0.1); /* For Firefox3.6+ */
+    -webkit-box-shadow: 2px 0 1px rgba(175, 183, 191, 0.1), -2px 0 1px rgba(175, 183, 191, 0.1), 0 2px 1px rgba(175, 183, 191, 0.1), 0 -2px 1px rgba(175, 183, 191, 0.1); /* For Chrome5+, Safari5+ */
+    box-shadow: 2px 0 1px rgba(175, 183, 191, 0.1), -2px 0 1px rgba(175, 183, 191, 0.1), 0 2px 1px rgba(175, 183, 191, 0.1), 0 -2px 1px rgba(175, 183, 191, 0.1);
+}
+
+.hex-lightgrey-btn:active,
+.hex-lightgrey-btn:visited {
+    color: #ffffff;
+    /*-moz-box-shadow: 1px 1px 1px #D8D7DC inset, -1px -1px 1px #D8D7DC inset;
+    -webkit-box-shadow: 1px 1px 1px #D8D7DC inset, -1px -1px 1px #D8D7DC inset;
+    box-shadow: 1px 1px 1px #D8D7DC inset, -1px -1px 1px #D8D7DC inset;*/
+    -moz-box-shadow: 1px 1px 1px #359F73 inset, -1px -1px 1px #359F73 inset; /* For Firefox3.6+ */
+    -webkit-box-shadow: 1px 1px 1px #359F73 inset, -1px -1px 1px #359F73 inset; /* For Chrome5+, Safari5+ */
+    box-shadow: 1px 1px 1px #359F73 inset, -1px -1px 1px #359F73 inset;
+}
+
+/* 橙色 */
+.hex-orange-btn {
+    background: #fd703a;
+    color: #ffffff;
+}
+
+.hex-orange-btn:hover {
+    background: #f88457;
+    color: #FFFFFF;
+    -moz-box-shadow: 2px 0 1px #E2E0E3, -2px 0 1px #E2E0E3, 0 2px 1px #E2E0E3, 0 -2px 1px #E2E0E3; /* For Firefox3.6+ */
+    -webkit-box-shadow: 2px 0 1px #E2E0E3, -2px 0 1px #E2E0E3, 0 2px 1px #E2E0E3, 0 -2px 1px #E2E0E3; /* For Chrome5+, Safari5+ */
+    box-shadow: 2px 0 1px #E2E0E3, -2px 0 1px #E2E0E3, 0 2px 1px #E2E0E3, 0 -2px 1px #E2E0E3;
+}
+
+.hex-orange-btn:visited,
+.hex-orange-btn:active {
+    -moz-box-shadow: 1px 1px 1px #f75a1c inset, -1px -1px 1px #f75a1c inset; /* For Firefox3.6+ */
+    -webkit-box-shadow: 1px 1px 1px #f75a1c inset, -1px -1px 1px #f75a1c inset; /* For Chrome5+, Safari5+ */
+    box-shadow: 1px 1px 1px #f75a1c inset, -1px -1px 1px #f75a1c inset;
+}
+
+/*/!* 红色 *!/
+.hex-red-btn {
+    background: #E12027;
+    color: #ffffff;
+}
+
+.hex-red-btn:hover {
+    background: #eb4046;
+    color: #FFFFFF;
+    -moz-box-shadow: 2px 0 1px #E2E0E3, -2px 0 1px #E2E0E3, 0 2px 1px #E2E0E3, 0 -2px 1px #E2E0E3; /!* For Firefox3.6+ *!/
+    -webkit-box-shadow: 2px 0 1px #E2E0E3, -2px 0 1px #E2E0E3, 0 2px 1px #E2E0E3, 0 -2px 1px #E2E0E3; /!* For Chrome5+, Safari5+ *!/
+    box-shadow: 2px 0 1px #E2E0E3, -2px 0 1px #E2E0E3, 0 2px 1px #E2E0E3, 0 -2px 1px #E2E0E3;
+}
+
+.hex-red-btn:visited,
+.hex-red-btn:active {
+    -moz-box-shadow: 1px 1px 1px #f75a1c inset, -1px -1px 1px #f75a1c inset; /!* For Firefox3.6+ *!/
+    -webkit-box-shadow: 1px 1px 1px #f75a1c inset, -1px -1px 1px #f75a1c inset; /!* For Chrome5+, Safari5+ *!/
+    box-shadow: 1px 1px 1px #f75a1c inset, -1px -1px 1px #f75a1c inset;
+}*/
+
+/* 不能点按钮 */
+.hex-disable-btn {
+    background-color: #D7DCE2;
+    color: #848E97;
+    line-height: 28px;
+    height: 28px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+/* 小图标 */
+.hex-little-btn {
+    background-color: #858E97;
+}
+
+.hex-little-btn:hover:not(.not_active) {
+    background-color: #30AB75;
+    color: #ffffff;
+    -moz-box-shadow: 2px 0 1px rgba(226, 224, 227, 0.5), -2px 0 1px rgba(226, 224, 227, 0.5), 0 2px 1px rgba(226, 224, 227, 0.5), 0 -2px 1px rgba(226, 224, 227, 0.5); /* For Firefox3.6+ */
+    -webkit-box-shadow: 2px 0 1px rgba(226, 224, 227, 0.5), -2px 0 1px rgba(226, 224, 227, 0.5), 0 2px 1px rgba(226, 224, 227, 0.5), 0 -2px 1px rgba(226, 224, 227, 0.5); /* For Chrome5+, Safari5+ */
+    box-shadow: 2px 0 1px rgba(226, 224, 227, 0.5), -2px 0 1px rgba(226, 224, 227, 0.5), 0 2px 1px rgba(226, 224, 227, 0.5), 0 -2px 1px rgba(226, 224, 227, 0.5);
+}
+
+.hex-little-btn:active {
+    background-color: #30AB75;
+    color: #ffffff;
+    -moz-box-shadow: 1px 1px 1px #359F73 inset, -1px -1px 1px #359F73 inset; /* For Firefox3.6+ */
+    -webkit-box-shadow: 1px 1px 1px #359F73 inset, -1px -1px 1px #359F73 inset; /* For Chrome5+, Safari5+ */
+    box-shadow: 1px 1px 1px #359F73 inset, -1px -1px 1px #359F73 inset;
+}
+
+/* 带图按钮*/
+.hex-img-btn {
+    height: 30px;
+    font-size: 12px;
+    position: relative;
+}
+
+.hex-img-btn div {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+
+.hex-img-btn span {
+    line-height: 28px;
+    padding-left: 30px;
+    padding-right: 5px;
+}
+
+.hex-lightgrey-btn div {
+    background-color: #E5E9EC;
+}
+
+.hex-lightgrey-btn:hover div {
+    background-color: #2C9F6C;
+}
+
+.hex-lightgrey-btn:hover span {
+    color: #ffffff;
+}
+
+.hex-green-btn div {
+    background-color: #2C9F6C;
+}
+
+.hex-orange-btn div {
+    background-color: #fa5a1c;
+}
+
+/* ============================= 字体颜色 ============================= */
+.hex-font-orange {
+    color: #fc7039;
+}
+
+.hex-font-lightgray {
+    color: #858e97;
+}
+
+.hex-font-green {
+    color: #34b27c;
+}
+
+.hex-font-gray {
+    color: #454f59;
+}
+
+.hex-font-red {
+    color: #D86D6D;
+}
+
+.hex-font-yellow {
+    color: #fea827;
+}
+
+/* ============================= 字体加粗 ============================= */
+.hex-font-bold {
+    font-weight: 600;
+}
+
+.hex-font-underline {
+    text-decoration: underline;
+}
+
+.hex-font-orange.hex-font-dashed {
+    border-bottom: 1px dotted #fc7039;
+}
+.hex-font-lightgray.hex-font-dashed {
+    border-bottom: 1px dotted #858e97;
+}
+.hex-font-green.hex-font-dashed {
+    border-bottom: 1px dotted #34b27c;
+}
+.hex-font-gray.hex-font-dashed {
+    border-bottom: 1px dotted #454f59;
+}
+.hex-font-red.hex-font-dashed {
+    border-bottom: 1px dotted #D86D6D;
+}
+.hex-font-yellow.hex-font-dashed {
+    border-bottom: 1px dotted #fea827;
+}
+
+/* ============================= 段落 ============================= */
+.hex-indent {
+    text-indent: 2em;
+}
+
+.hex-space {
+    white-space: pre-wrap;
+    margin-top: -20px;
+}
+
+/* ============================= 表单行 ============================= */
+.hex-button-row {
+    margin-top: 20px;
+    min-height: 28px;
+    width: auto;
+    display: inline-block;
+}
+
+.hex-button-row > * {
+    float: left;
+}
+
+.hex-button-row > *:not(.hex-type):not(.hex-type-list) {
+    margin-top: 10px;
+}
+
+.hex-button-row > .hex-type {
+    margin-top: 5px;
+}
+
+.hex-line_1 {
+    float: left;
+    padding: 0 20px 0;
+    margin: 20px 0;
+    height: 30px;
+    width: 1px;
+    border-left: 1px solid #e6e9ed;
+}
+
+/* ============================= 按钮:hover以及小图代表类 ============================= */
+.hex-little-btn-28 {
+    height: 28px;
+    width: 28px;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+}
+.hex-little-btn-28:hover{
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hex-little-btn-25 {
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+}
+
+.hex-little-btn-20 {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+}
+.hex-little-btn-20:hover{
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hex-img-magnify {
+    background-image: url("../../icon/search.png");
+}
+
+.hex-img-edit_l {
+    background-image: url("../../icon/edit.png");
+}
+
+.hex-img-edit_l:hover:not(.not_active),
+button:hover .hex-img-edit_l {
+    background-image: url("../../icon/edit_w.png");
+}
+
+.hex-img-edit {
+    background-image: url("../../icon/edit_w.png");
+}
+
+.hex-img-edit:hover:not(.not_active),
+button:hover .hex-img-edit {
+    background-image: url("../../icon/edit_w.png");
+}
+
+.hex-img-back {
+    background-image: url("../../icon/back.png");
+}
+
+.hex-img-back:hover:not(.not_active),
+button:hover .hex-img-back {
+    background-image: url("../../icon/back_w.png");
+}
+
+.hex-img-back_w {
+    background-image: url("../../icon/back_w.png");
+}
+
+.hex-img-back_w:hover:not(.not_active),
+button:hover .hex-img-back_w {
+    background-image: url("../../icon/back_w.png");
+}
+
+.hex-img-release {
+    background-image: url("../../icon/accomplish&release_w.png");
+}
+
+.hex-img-release:hover:not(.not_active),
+button:hover .hex-img-release {
+    background-image: url("../../icon/accomplish&release_w.png");
+}
+
+.hex-img-release_l {
+    background-image: url("../../icon/accomplish&release.png");
+}
+
+.hex-img-release_l:hover:not(.not_active),
+button:hover .hex-img-release_l {
+    background-image: url("../../icon/accomplish&release_w.png");
+}
+
+.hex-img-mark {
+    background-image: url("../../icon/mark.png");
+}
+
+.hex-img-mark:hover:not(.not_active),
+button:hover .hex-img-mark {
+    background-image: url("../../icon/mark_w.png");
+}
+
+.hex-img-delete {
+    background-image: url("../../icon/delete_w.png");
+}
+
+.hex-img-delete:hover:not(.not_active),
+button:hover .hex-img-delete {
+    background-image: url("../../icon/delete_w.png");
+}
+
+.hex-img-search {
+    background-image: url("../../icon/search_little.png");
+}
+
+.hex-img-search:hover:not(.not_active),
+button:hover .hex-img-search {
+    background-image: url("../../icon/search_little_w.png");
+}
+
+.hex-img-down {
+    background-image: url("../../icon/down.png");
+}
+
+.hex-img-down:hover:not(.not_active),
+button:hover .hex-img-down {
+    background-image: url("../../icon/down_w.png");
+}
+
+.hex-img-star {
+    background-image: url("../../icon/star.png");
+}
+
+.hex-img-star:hover:not(.not_active),
+button:hover .hex-img-star {
+    background-image: url("../../icon/star_w.png");
+}
+
+.hex-img-star_w {
+    background-image: url("../../icon/star_w.png");
+}
+
+.hex-img-star_w:hover:not(.not_active),
+button:hover .hex-img-star_w {
+    background-image: url("../../icon/star_w.png");
+}
+
+.hex-img-throw {
+    background-image: url("../../icon/throw.png");
+}
+
+.hex-img-throw:hover:not(.not_active),
+button:hover .hex-img-throw {
+    background-image: url("../../icon/throw_w.png");
+}
+
+.hex-img-throw_w {
+    background-size: 60%;
+    background-image: url("../../icon/throw_w.png");
+}
+
+.hex-img-throw_w:hover:not(.not_active),
+button:hover .hex-img-throw_w {
+    background-size: 60%;
+    background-image: url("../../icon/throw_w.png");
+}
+
+.hex-img-down_l {
+    background-image: url("../../icon/down_little.png");
+}
+
+.hex-img-down_l:hover:not(.not_active),
+button:hover .hex-img-down_l {
+    background-image: url("../../icon/down_little_w.png");
+}
+
+.hex-img-up_l {
+    background-image: url("../../icon/up_little.png");
+}
+
+.hex-img-up_l:hover:not(.not_active),
+button:hover .hex-img-up_l {
+    background-image: url("../../icon/up_little_w.png");
+}
+
+.hex-img-down-little {
+    background-image: url("../../icon/down_little_w.png");
+}
+
+.hex-img-down-little:hover:not(.not_active),
+button:hover .hex-img-down-little {
+    background-image: url("../../icon/down_little_w.png");
+}
+
+.hex-img-up-little {
+    background-image: url("../../icon/up_little_w.png");
+}
+
+.hex-img-up-little:hover:not(.not_active),
+button:hover .hex-img-up-little {
+    background-image: url("../../icon/up_little_w.png");
+}
+
+.hex-img-left-little {
+    background-image: url("../../icon/left_little_w.png");
+}
+
+.hex-img-left-little:hover:not(.not_active),
+button:hover .hex-img-left-little {
+    background-image: url("../../icon/left_little_w.png");
+}
+
+.hex-img-right-little {
+    background-image: url("../../icon/right_little_w.png");
+}
+
+.hex-img-right-little:hover:not(.not_active),
+button:hover .hex-img-right-little {
+    background-image: url("../../icon/right_little_w.png");
+}
+
+.hex-img-up {
+    background-image: url("../../icon/up.png");
+}
+
+.hex-img-up:hover:not(.not_active),
+button:hover .hex-img-up {
+    background-image: url("../../icon/up_w.png");
+}
+
+.hex-img-next {
+    background-image: url("../../icon/next.png");
+}
+
+.hex-img-next:hover:not(.not_active),
+button:hover .hex-img-next {
+    background-image: url("../../icon/next_w.png");
+}
+
+.hex-img-next_w {
+    background-image: url("../../icon/next_w.png");
+}
+
+.hex-img-next_w:hover:not(.not_active),
+button:hover .hex-img-next_w {
+    background-image: url("../../icon/next_w.png");
+}
+
+.hex-img-examine {
+    background-image: url("../../icon/examine.png");
+}
+
+.hex-img-examine:hover:not(.not_active),
+button:hover .hex-img-examine {
+    background-image: url("../../icon/examine_w.png");
+}
+
+.hex-img-examine_w {
+    background-size: 60%;
+    background-image: url("../../icon/examine_w.png");
+}
+
+.hex-img-examine_w:hover:not(.not_active),
+button:hover .hex-img-examine_w {
+    background-size: 60%;
+    background-image: url("../../icon/examine_w.png");
+}
+
+.hex-img-print {
+    background-image: url("../../icon/print.png");
+}
+
+.hex-img-print:hover:not(.not_active),
+button:hover .hex-img-print {
+    background-image: url("../../icon/print_w.png");
+}
+
+.hex-img-print_w {
+    background-image: url("../../icon/print_w.png");
+}
+
+.hex-img-print_w:hover:not(.not_active),
+button:hover .hex-img-print_w {
+    background-image: url("../../icon/print_w.png");
+}
+
+.hex-img-setting {
+    background-image: url("../../icon/setting_w.png");
+}
+
+.hex-img-setting:hover:not(.not_active),
+button:hover .hex-img-setting {
+    background-image: url("../../icon/setting_w.png");
+}
+
+.hex-img-results {
+    background-image: url("../../icon/results_w.png");
+}
+
+.hex-img-results:hover:not(.not_active),
+button:hover .hex-img-results {
+    background-image: url("../../icon/results_w.png");
+}
+
+.hex-img-document {
+    background-image: url("../../icon/document.png");
+}
+
+.hex-img-document:hover:not(.not_active),
+button:hover .hex-img-document {
+    background-image: url("../../icon/document_w.png");
+}
+
+.hex-img-document_w {
+    background-image: url("../../icon/document_w.png");
+}
+
+.hex-img-documen_w:hover:not(.not_active),
+button:hover .hex-img-document {
+    background-image: url("../../icon/document_w.png");
+}
+
+.hex-img-document_l {
+    background-image: url("../../icon/document.png");
+}
+
+.hex-img-document_l:hover:not(.not_active),
+button:hover .hex-img-document_l {
+    background-image: url("../../icon/document_w.png");
+}
+
+.hex-img-plus_l {
+    background-image: url("../../icon/plus.png");
+}
+
+.hex-img-plus_l:hover:not(.not_active),
+button:hover .hex-img-plus_l {
+    background-image: url("../../icon/plus_w.png");
+}
+
+.hex-img-plus {
+    background-image: url("../../icon/plus_w.png");
+}
+
+.hex-img-plus:hover:not(.not_active),
+button:hover .hex-img-plus {
+    background-image: url("../../icon/plus_w.png");
+}
+
+.hex-img-minus {
+    background-image: url("../../icon/minus_w.png");
+}
+
+.hex-img-minus:hover:not(.not_active),
+button:hover .hex-img-minus {
+    background-image: url("../../icon/minus_w.png");
+}
+
+.hex-img-list {
+    background-image: url("../../icon/list_w.png");
+}
+
+.hex-img-list:hover:not(.not_active),
+button:hover .hex-img-list {
+    background-image: url("../../icon/list_w.png");
+}
+
+.hex-img-add {
+    background-image: url("../../icon/add.png");
+}
+
+.hex-img-add:hover:not(.not_active),
+button:hover .hex-img-add {
+    background-image: url("../../icon/add_w.png");
+}
+
+.hex-img-upload {
+    background-size: 51%;
+    background-image: url("../../icon/upload.png");
+}
+
+.hex-img-upload:hover:not(.not_active),
+button:hover .hex-img-upload {
+    background-size: 51%;
+    background-image: url("../../icon/upload_w.png");
+}
+
+.hex-img-upload_w {
+    background-size: 51%;
+    background-image: url("../../icon/upload_w.png");
+}
+
+.hex-img-upload_w:hover:not(.not_active),
+button:hover .hex-img-upload_w {
+    background-size: 51%;
+    background-image: url("../../icon/upload_w.png");
+}
+
+.hex-img-newques {
+    background-image: url("../../icon/newquestions.png");
+}
+
+.hex-img-newques:hover:not(.not_active),
+button:hover .hex-img-newques {
+    background-image: url("../../icon/newquestions_w.png");
+}
+
+.hex-img-newques_w {
+    background-image: url("../../icon/newquestions_w.png");
+}
+
+.hex-img-newques_w:hover:not(.not_active),
+button:hover .hex-img-newques_w {
+    background-image: url("../../icon/newquestions_w.png");
+}
+
+.hex-img-dustbin {
+    background-image: url("../../icon/dustbin.png");
+}
+
+.hex-img-dustbin:hover:not(.not_active),
+button:hover .hex-img-dustbin {
+    background-image: url("../../icon/dustbin_w.png");
+}
+
+.hex-img-success {
+    background-image: url("../../icon/success.png");
+}
+
+.hex-img-success:hover:not(.not_active),
+button:hover .hex-img-success {
+    background-image: url("../../icon/success_w.png");
+}
+
+.hex-img-success_w {
+    background-image: url("../../icon/success_w.png");
+}
+
+.hex-img-success_w:hover:not(.not_active),
+button:hover .hex-img-success_w {
+    background-image: url("../../icon/success_w.png");
+}
+
+.hex-img-produce {
+    background-image: url("../../icon/produce.png");
+}
+
+.hex-img-produce:hover:not(.not_active),
+button:hover .hex-img-produce {
+    background-image: url("../../icon/produce_w.png");
+}
+
+.hex-img-change {
+    background-image: url("../../icon/change.png");
+}
+
+.hex-img-change:hover:not(.not_active),
+button:hover .hex-img-change {
+    background-image: url("../../icon/change_w.png");
+}
+
+.hex-img-change_w {
+    background-size: 60%;
+    background-image: url("../../icon/change_w.png");
+}
+
+.hex-img-change:hover:not(.not_active),
+button:hover .hex-img-change {
+    background-size: 60%;
+    background-image: url("../../icon/change_w.png");
+}
+
+.hex-img-exercises {
+    background-image: url("../../icon/exercises.png");
+}
+
+.hex-img-exercises:hover:not(.not_active),
+button:hover .hex-img-exercises {
+    background-image: url("../../icon/exercises_w.png");
+}
+
+.hex-img-stop {
+    background-image: url("../../icon/stop.png");
+}
+
+.hex-img-stop:hover:not(.not_active),
+button:hover .hex-img-stop {
+    background-image: url("../../icon/stop_w.png");
+}
+
+.hex-img-sort {
+    background-image: url("../../icon/sort.png");
+}
+
+.hex-img-sort:hover {
+    background-image: url("../../icon/sort_hover.png");
+}
+
+.hex-img-sort_up {
+    background-image: url("../../icon/sort_up.png");
+}
+
+.hex-img-sort_up:hover {
+    background-image: url("../../icon/sort_up_hover.png");
+}
+
+.hex-img-sort_down {
+    background-image: url("../../icon/sort_down.png");
+}
+
+.hex-img-sort_down:hover {
+    background-image: url("../../icon/sort_down_hover.png");
+}
+
+.hex-img-goto_page {
+    background-image: url("../../icon/ebook_page.png");
+}
+
+.hex-img-goto_page:hover:not(.not_active),
+button:hover .hex-img-goto_page {
+    background-image: url("../../icon/ebook_page_w.png");
+}
+
+/* ====== 查看习题悬浮 ====== */
+#datatoggle {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    background: #EDF1F4 none repeat scroll 0 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    padding: 20px 40px;
+}
+
+
+

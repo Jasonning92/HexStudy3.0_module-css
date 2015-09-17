@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <!--优先使用 IE 最新版本和 Chrome-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!--360 使用Google Chrome Frame-->
+    <meta name="renderer" content="webkit">
+    <!--移动端适配-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>组件使用</title>
+
+    <link href="Content/css/bootstrap.css" rel="stylesheet"/>
+    <link href="Content/css/Layout/layout.css" rel="stylesheet"/>
+    <link href="Content/css/Layout/module.css" rel="stylesheet"/>
+    <link href="Content/css/Layout/base.css" rel="stylesheet"/>
+    <link href="Content/css/Layout/forms.css" rel="stylesheet"/>
+
+    <link href="css_page.css" rel="stylesheet"/>
+
+    <script type="application/javascript" src="Scripts/jquery-1.10.2.js"></script>
+
+    <script type="application/javascript" src="css_page.js"></script>
+
+    <style>
+        .hex-examples-list ul li {
+            height: 25px;
+        }
+
+        .hex-examples-list ul li a {
+            line-height: 15px;
+            font-size: 14px;
+        }
+
+        .hex-examples-list ul li.second a{
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="./index.html">基本样式</a>
+    <a class="active" href="./module.html">组件使用</a>
+    <a href="./verification.html">验证使用</a>
+    <a href="./icon_list.html">图标索引</a>
+    <a href="./tree.html">样式结构</a>
+    <a href="./sass.html">SASS变量以及混合器</a>
+</nav>
+<div class="main_content">
+    <div>
+        <div><h1 class="hex-font-gray">组件使用说明</h1></div>
+        <div><p class="hex-font-lightgray hex-indent">该页包含了3.0用到的组件的使用方法。</p></div>
+    </div>
+    <!-- 图片展示 -->
+    <div id="1">
+        <div><h1 class="hex-font-orange">图片展示</h1></div>
+        <div><p class="hex-font-lightgray hex-indent">用于展示<span class="hex-font-green">课程</span>或者<span
+                class="hex-font-green">课件</span>的图片，名称，教师等信息，允许其上显示button</p></div>
+        <div><span class="hex-font-yellow">需要JS文件：</span></div>
+        <div><p class="hex-font-lightgray hex-indent">/style/style_booklist.js</p></div>
+    </div>
+    <div id="2">
+        <!--课程示例-->
+        <div><span class="hex-font-yellow">课程示例：</span></div>
+        <div><p class="hex-font-lightgray hex-indent">对于课程，左上角允许四种状态；允许添加悬浮显示1-2个button；下方课程类别分为MOOC和SPOC两种。</p></div>
+        <div>
+            <div class="hex-classes hex-classes-hover">
+                <!-- 图 -->
+                <div>
+                    <a>
+                        <img class="my-img lazy" src="Content/images/No-picture.jpg"></a>
+
+                    <div class="hex-class-status applying"><span>报名中</span></div>
+                    <div class="hex-class-btn_1 hex-hide">
+                        <a class="hex-button hex-green-btn">一个按钮</a>
+                    </div>
+                </div>
+                <!-- 文字 -->
+                <div>
+                    <a>
+                        <h2 title="韩梅梅和李雷">
+                            <i class="mooc"></i>
+                            韩梅梅和李雷
+                        </h2>
+                        <span>JSS-AAA-0018-0001</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hex-classes hex-classes-hover">
+                <!-- 图 -->
+                <div>
+                    <a>
+                        <img class="my-img lazy" src="Content/images/No-picture.jpg"></a>
+
+                    <div class="hex-class-status done"><span>已结束</span></div>
+                    <div class="hex-class-btn_2 hex-hide">
+                        <a class="hex-button hex-green-btn">两个按钮</a>
+                        <a class="hex-button hex-green-btn">两个按钮</a>
+                    </div>
+                </div>
+                <!-- 文字 -->
+                <div>
+                    <a>
+                        <h2 title="韩梅梅和李雷">
+                            <i class="mooc"></i>
+                            韩梅梅和李雷
+                        </h2>
+                        <span>JSS-AAA-0018-0001</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hex-classes hex-classes-hover">
+                <!-- 图 -->
+                <div>
+                    <a>
+                        <img class="my-img lazy" src="Content/images/No-picture.jpg"></a>
+
+                    <div class="hex-class-status willbegin"><span>待开课</span></div>
+                </div>
+                <!-- 文字 -->
+                <div>
+                    <a>
+                        <h2 title="韩梅梅和李雷">
+                            <i class="spoc"></i>
+                            韩梅梅和李雷
+                        </h2>
+                        <span>JSS-AAA-0018-0001</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hex-classes hex-classes-hover">
+                <!-- 图 -->
+                <div>
+                    <a>
+                        <img class="my-img lazy" src="Content/images/No-picture.jpg"></a>
+
+                    <div class="hex-class-status opening"><span>开课中</span></div>
+                </div>
+                <!-- 文字 -->
+                <div>
+                    <a>
+                        <h2 title="韩梅梅和李雷">
+                            <i class="spoc"></i>
+                            韩梅梅和李雷
+                        </h2>
+                        <span>JSS-AAA-0018-0001</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div><span class="hex-font-red">结构：</span></div>
+        <!--代码-->
+        <div>
+            <pre>
+            &lt;div class="hex-classes <span>hex-classes-hover</span>"&gt;<i>和样式hex-hide一起使用</i>
+                &lt;!-- 图 --&gt;
+                &lt;div&gt;
+                    &lt;a&gt;
+                        &lt;img class="my-img lazy" src="Content/images/No-picture.jpg"&gt;&lt;/a&gt;
+                    &lt;div class="hex-class-status applying"&gt;&lt;span&gt;报名中&lt;/span&gt;&lt;/div&gt;
+                    &lt;div class="<span>hex-class-btn_1</span> <span>hex-hide</span>"&gt;<i>hex-hide包含的内容将隐藏，只在鼠标移入才显示；
+                                                        hex-class-btn_1或2决定放入几个button（或a）</i>
+                        &lt;a class="hex-button hex-green-btn"&gt;一个按钮&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- 文字 --&gt;
+                &lt;div&gt;
+                    &lt;a&gt;
+                        &lt;h2 title="韩梅梅和李雷"&gt;
+                            &lt;i class="<span>mooc</span>"&gt;&lt;/i&gt;<i>可以使用mooc和spoc选择课程类型</i>
+                            韩梅梅和李雷
+                        &lt;/h2&gt;
+                        &lt;span&gt;JSS-AAA-0018-0001&lt;/span&gt;
+                    &lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            </pre>
+        </div>
+    </div>
+    <div id="3">
+        <!--课件示例-->
+        <div><span class="hex-font-yellow">课件示例：</span></div>
+        <div><p class="hex-font-lightgray hex-indent">对于课件，左下角显示课件类型；允许添加悬浮显示1-2个button。</p></div>
+        <div>
+            <div class="hex-classes">
+                <!-- 图 -->
+                <div>
+                    <a>
+                        <img class="my-img lazy" src="Content/images/No-picture.jpg">
+                    </a>
+
+                    <div class="hex-class-btn_play"></div>
+                    <div class="hex-class-people">
+                        <img src="Content/icon/courseware_type/office.png">
+                    </div>
+                </div>
+                <!-- 文字 -->
+                <div>
+                    <a>
+                        <h2>1.1 确定质点位置的方法</h2>
+                        <span>十六进制大学</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hex-classes">
+                <!-- 图 -->
+                <div>
+                    <a>
+                        <img class="my-img lazy" src="Content/images/No-picture.jpg">
+                    </a>
+
+                    <div class="hex-class-btn_play"></div>
+                    <div class="hex-class-people">
+                        <img src="Content/icon/courseware_type/audio.png">
+                    </div>
+                </div>
+                <!-- 文字 -->
+                <div>
+                    <a>
+                        <h2>1.1 确定质点位置的方法</h2>
+                        <span>十六进制大学</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hex-classes">
+                <!-- 图 -->
+                <div>
+                    <a>
+                        <img class="my-img lazy" src="Content/images/No-picture.jpg">
+                    </a>
+
+                    <div class="hex-class-btn_play"></div>
+                    <div class="hex-class-people">
+                        <img src="Content/icon/courseware_type/flash.png">
+                    </div>
+                </div>
+                <!-- 文字 -->
+                <div>
+                    <a>
+                        <h2>1.1 确定质点位置的方法</h2>
+                        <span>十六进制大学</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hex-classes">
+                <!-- 图 -->
+                <div>
+                    <a>
+                        <img class="my-img lazy" src="Content/images/No-picture.jpg">
+                    </a>
+
+                    <div class="hex-class-btn_play"></div>
+                    <div class="hex-class-people">
+                        <img src="Content/icon/courseware_type/custom.png">
+                    </div>
+                </div>
+                <!-- 文字 -->
+                <div>
+                    <a>
+                        <h2>1.1 确定质点位置的方法</h2>
+                        <span>十六进制大学</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hex-classes">
+                <!-- 图 -->
+                <div>
+                    <a>
+                        <img class="my-img lazy" src="Content/images/No-picture.jpg">
+                    </a>
+
+                    <div class="hex-class-btn_play"></div>
+                    <div class="hex-class-people">
+                        <img src="Content/icon/courseware_type/video.png">
+                    </div>
+                </div>
+                <!-- 文字 -->
+                <div>
+                    <a>
+                        <h2>1.1 确定质点位置的方法</h2>
+                        <span>十六进制大学</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hex-classes">
+                <!-- 图 -->
+                <div>
+                    <a>
+                        <img class="my-img lazy" src="Content/images/No-picture.jpg">
+                    </a>
+
+                    <div class="hex-class-btn_play"></div>
+                    <div class="hex-class-people">
+                        <img src="Content/icon/courseware_type/picture_single.png">
+                    </div>
+                </div>
+                <!-- 文字 -->
+                <div>
+                    <a>
+                        <h2>1.1 确定质点位置的方法</h2>
+                        <span>十六进制大学</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hex-classes">
+                <!-- 图 -->
+                <div>
+                    <a>
+                        <img class="my-img lazy" src="Content/images/No-picture.jpg">
+                    </a>
+
+                    <div class="hex-class-btn_play"></div>
+                    <div class="hex-class-people">
+                        <img src="Content/icon/courseware_type/pictures_more.png">
+                    </div>
+                </div>
+                <!-- 文字 -->
+                <div>
+                    <a>
+                        <h2>1.1 确定质点位置的方法</h2>
+                        <span>十六进制大学</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hex-classes">
+                <!-- 图 -->
+                <div>
+                    <a>
+                        <img class="my-img lazy" src="Content/images/No-picture.jpg">
+                    </a>
+
+                    <div class="hex-class-btn_play"></div>
+                    <div class="hex-class-people">
+                        <img src="Content/icon/courseware_type/thinkingt.png">
+                    </div>
+                </div>
+                <!-- 文字 -->
+                <div>
+                    <a>
+                        <h2>1.1 确定质点位置的方法</h2>
+                        <span>十六进制大学</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hex-classes">
+                <!-- 图 -->
+                <div>
+                    <a>
+                        <img class="my-img lazy" src="Content/images/No-picture.jpg">
+                    </a>
+
+                    <div class="hex-class-btn_play"></div>
+                    <div class="hex-class-people">
+                        <img src="Content/icon/courseware_type/other.png">
+                    </div>
+                </div>
+                <!-- 文字 -->
+                <div>
+                    <a>
+                        <h2>1.1 确定质点位置的方法</h2>
+                        <span>十六进制大学</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hex-classes">
+                <!-- 图 -->
+                <div>
+                    <a>
+                        <img class="my-img lazy" src="Content/images/No-picture.jpg">
+                    </a>
+
+                    <div class="hex-class-btn_play"></div>
+                    <div class="hex-class-people">
+                        <img src="Content/icon/courseware_type/plug-in.png">
+                    </div>
+                </div>
+                <!-- 文字 -->
+                <div>
+                    <a>
+                        <h2>1.1 确定质点位置的方法</h2>
+                        <span>十六进制大学</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div><span class="hex-font-red">结构：</span></div>
+        <!--代码-->
+        <div>
+            <pre>
+                &lt;div class="hex-classes">
+                    &lt;!-- 图 -->
+                    &lt;div>
+                        &lt;a>
+                            &lt;img class="my-img lazy" src="Content/images/No-picture.jpg">
+                        &lt;/a>
+
+                        &lt;div class="hex-class-btn_play">&lt;/div>
+                        &lt;div class="<span>hex-class-people</span>"><i>定位到左下角，显示课件类型</i>
+                            &lt;img src="Content/icon/courseware_type/<span>plug-in.png</span>"><i>放课件类型的表示图标</i>
+                        &lt;/div>
+                    &lt;/div>
+                    &lt;!-- 文字 -->
+                    &lt;div>
+                        &lt;a>
+                            &lt;h2>1.1 确定质点位置的方法&lt;/h2>
+                            &lt;span>十六进制大学&lt;/span>
+                        &lt;/a>
+                    &lt;/div>
+                &lt;/div>
+            </pre>
+        </div>
+            </div>
+    <div id="4">
+        <!--电子书示例-->
+        <div><span class="hex-font-yellow">电子书示例：</span></div>
+        <div><p class="hex-font-lightgray hex-indent">对于电子书，好吧，没什么效果。</p></div>
+        <div>
+            <div class="hex-classes hex-classes-hover hex-books">
+                <!-- 图 -->
+                <div>
+                    <img style="display: inline;" class="my-img lazy" src="Content/images/ebookdefault.jpg">
+                </div>
+                <!-- 文字 -->
+                <div>
+                    <a href="/Read/Ebook/4295828915" target="Read">
+                        <h2>新模式成教英语1</h2>
+                        <span>使用期至：2015-09-24</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div><span class="hex-font-red">结构：</span></div>
+        <!--代码-->
+        <div>
+            <pre>
+                &lt;div class="hex-classes hex-classes-hover hex-books">
+                    &lt;!-- 图 -->
+                    &lt;div>
+                        &lt;img class="my-img lazy" src="Content/images/ebookdefault.jpg">
+                    &lt;/div>
+                    &lt;!-- 文字 -->
+                    &lt;div>
+                        &lt;a href="/Read/Ebook/4295828915" target="Read">
+                            &lt;h2>新模式成教英语1&lt;/h2>
+                            &lt;span>使用期至：2015-09-24&lt;/span>
+                        &lt;/a>
+                    &lt;/div>
+                &lt;/div>
+            </pre>
+        </div>
+    </div>
+    <!--进度条-->
+    <div id="5">
+        <script type="application/javascript" src="Scripts/style/style_progressbar.js"></script>
+        <div><h1 class="hex-font-orange">进度条</h1></div>
+        <div><p class="hex-font-lightgray hex-indent">按照属性值显示百分比。</p></div>
+        <div><span class="hex-font-yellow">需要JS文件：</span></div>
+        <div><p class="hex-font-lightgray hex-indent">/style/style_progressbar.js</p></div>
+    </div>
+    <div id="6">
+        <!--普通进度条示例-->
+        <div><span class="hex-font-yellow">普通进度条示例：</span></div>
+        <div><p class="hex-font-lightgray hex-indent">传入百分比和要显示的文字</p></div>
+        <div>
+            <div class="hex-progress">
+                <div class="hex-progress-bar" hex-percent="15">
+                    <span></span>
+                    <span><span class="hex-font-orange">2</span>/13</span>
+                </div>
+            </div>
+        </div>
+        <div><span class="hex-font-red">结构：</span></div>
+        <div>
+            <pre>
+                &lt;div class="hex-progress">
+                    &lt;div class="hex-progress-bar" <span>hex-percent="15"</span>><i>这个属性需要传入百分比</i>
+                        &lt;span>&lt;/span>
+                        <span>&lt;span>&lt;span class="hex-font-orange">2&lt;/span>/13&lt;/span></span><i>在这个span中已插入任意文字</i>
+                    &lt;/div>
+                &lt;/div>
+            </pre>
+        </div>
+    </div>
+    <div id="7">
+        <!--多彩进度条示例-->
+        <div><span class="hex-font-yellow">多彩进度条示例：</span></div>
+        <div><p class="hex-font-lightgray hex-indent">按照百分比显示不同的颜色</p></div>
+        <div>
+            <div class="hex-progress-bar" hex-percent="5" hex-color="true" style="margin-bottom: 5px">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="hex-progress-bar" hex-percent="15" hex-color="true" style="margin-bottom: 5px">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="hex-progress-bar" hex-percent="25" hex-color="true" style="margin-bottom: 5px">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="hex-progress-bar" hex-percent="35" hex-color="true" style="margin-bottom: 5px">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="hex-progress-bar" hex-percent="45" hex-color="true" style="margin-bottom: 5px">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="hex-progress-bar" hex-percent="55" hex-color="true" style="margin-bottom: 5px">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="hex-progress-bar" hex-percent="65" hex-color="true" style="margin-bottom: 5px">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="hex-progress-bar" hex-percent="75" hex-color="true" style="margin-bottom: 5px">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="hex-progress-bar" hex-percent="85" hex-color="true" style="margin-bottom: 5px">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="hex-progress-bar" hex-percent="95" hex-color="true" style="margin-bottom: 5px">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="hex-progress-bar" hex-percent="100" hex-color="true" style="margin-bottom: 5px">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div><span class="hex-font-red">结构：</span></div>
+        <div>
+            <pre>
+                &lt;div class="hex-progress-bar" <span>hex-percent="5" hex-color="true"</span>>
+                                                    <i>hex-percent传入百分比；hex-color="true"表示使用多彩</i>
+                    &lt;span>&lt;/span>
+                    <span>&lt;span>&lt;/span></span><i>这个span中的文字都将被覆盖掉，所以不要写任何东西</i>
+                &lt;/div>
+            </pre>
+        </div>
+    </div>
+    <!--下拉菜单-->
+    <div id="8">
+        <script type="application/javascript" src="Scripts/style/style_dropdown.js"></script>
+        <div><h1 class="hex-font-orange">select表单控件</h1></div>
+        <div><p class="hex-font-lightgray hex-indent">按照属性值显示百分比。</p></div>
+        <div><span class="hex-font-yellow">需要JS文件：</span></div>
+        <div><p class="hex-font-lightgray hex-indent">style/style_dropdown.js</p></div>
+        <div>
+            <table class="hex-examples-table">
+                <thead>
+                <tr>
+                    <td class="example">函数名</td>
+                    <td class="property">用途</td>
+                    <td class="instruction">传参</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <p class="hex-font-lightgray">getdowninfo(thisObj,callback)</p>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray">获取下拉菜单中点击的值，将li中hex-key属性的值填入p标签的hex-value中</p>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray">
+                            thisObj：选择器<br>
+                            callback：回调函数，即点击li后进行的操作
+                        </p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div><span class="hex-font-yellow">多彩进度条示例：</span></div>
+        <div>
+            <div class="hex-drop-down">
+                <p hex-value="">知识点分类</p>
+                <div class="down"></div>
+                <ul>
+                    <li hex-key="fullCategory"><a href="javascript:void(0)">全部分类</a></li>
+                    <li hex-key="4295831239" id="4295831239" courseid="4296062235"><a href="javascript:void(0)">知识点分类1</a></li>
+                </ul>
+            </div>
+        </div>
+        <div><span class="hex-font-red">结构：</span></div>
+        <div>
+            <pre>
+                &lt;div class="hex-drop-down">
+                    &lt;p <span>hex-value=""</span>>知识点分类&lt;/p><i>点击之后，hex-value中的值将变成点击的li中的hex-key的值</i>
+                    &lt;div class="down">&lt;/div>
+                    &lt;ul>
+                        &lt;li <span>hex-key="fullCategory"</span>>&lt;a href="javascript:void(0)">全部分类&lt;/a>&lt;/li>
+                        &lt;li <span>hex-key="4295831239"</span>>&lt;a href="javascript:void(0)">知识点分类1&lt;/a>&lt;/li>
+                                                                        <i>hex-key中填入这个select的key值</i>
+                    &lt;/ul>
+                &lt;/div>
+            </pre>
+        </div>
+    </div>
+</div>
+<div class="hex-examples-list">
+    <ul>
+        <li><a class="active" data-goto="1">图片展示</a></li>
+        <li class="second"><a data-goto="2">课程</a></li>
+        <li class="second"><a data-goto="3">课件</a></li>
+        <li class="second"><a data-goto="4">电子书</a></li>
+        <li><a data-goto="5">进度条</a></li>
+        <li class="second"><a data-goto="6">普通进度条</a></li>
+        <li class="second"><a data-goto="7">多彩进度条</a></li>
+        <li><a data-goto="8">select菜单</a></li>
+        <li><a data-goto="8">select菜单</a></li>
+    </ul>
+</div>
+<footer class="hex-footer">
+    <div class="hex-footer-word">
+        2015年版 内部使用资料
+    </div>
+</footer>
+</body>
+</html>

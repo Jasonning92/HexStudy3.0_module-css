@@ -1,0 +1,1743 @@
+/* -----------------------------   版面布局   ----------------------------- */
+@charset "utf-8";
+
+/* ------ List ------
+ * layout_1 模板页1 ()
+ * layout_2 模板页2 ()
+ * layout_3 模板页3 ()
+ */
+
+/* ============================= 公用 ============================= */
+html, body {
+    margin: 0;
+    /*font-family: 微软雅黑;*/
+    font-family: microsoft yahei;
+}
+
+#main_div {
+    padding-bottom: 50px;
+    min-width: 1180px;
+}
+
+.hex-dropdown {
+    position: absolute;
+    top: -12px;
+    left: -42px;
+    width: 120px;
+    z-index: 999;
+    display: none;
+    float: left;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: outside none none;
+    background-color: #FFF;
+    background-clip: padding-box;
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+}
+
+.hex-dropdown > li {
+    width: 100%;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+}
+
+.hex-dropdown > li:nth-of-type(1) {
+    margin-top: -5px;
+    height: 35px;
+}
+
+.hex-dropdown > li:nth-of-type(1) a {
+    margin-left: 6px;
+}
+
+.hex-dropdown > li:nth-of-type(1) a:hover {
+    color: #fc7039;
+}
+
+.hex-dropdown > li:nth-of-type(1) img {
+    height: 29px;
+    width: 29px;
+    border-radius: 14.5px;
+    margin-left: 3px;
+}
+
+.hex-dropdown > li:nth-of-type(1) .caret {
+    color: #2EA86F;
+}
+
+.hex-dropdown > li:nth-child(2) {
+    margin-top: 10px;
+}
+
+.hex-dropdown > li:nth-child(n+3) {
+    margin-top: 20px;
+}
+
+.hex-dropdown > li:nth-last-child(1) {
+    margin-bottom: 10px;
+}
+
+.hex-dropdown > li > a {
+    width: 100%;
+    font-size: 12px;
+    color: #525c66;
+}
+
+.hex-dropdown > li > a > div {
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+.hex-dropdown > li > a :hover {
+    background: #E9EEF2;
+    text-decoration: none;
+}
+
+.hex-dropdown > li > a :hover > div > span {
+    text-decoration: none;
+}
+
+/* ====== 头部下拉菜单 ====== */
+.triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 8px solid rgba(0, 0, 0, 0.15);
+    position: absolute;
+    top: -9px;
+    left: 50px;
+}
+
+.hex-info-dropdown {
+    position: absolute;
+    top: 24px;
+    left: -24px;
+    width: 120px;
+    z-index: 9;
+    float: left;
+    padding: 10px;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: outside none none;
+    background-color: #FFF;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    display: none;
+}
+
+.hex-info-dropdown-m {
+    left: -75px;
+    width: 230px;
+}
+
+.hex-info-dropdown-m .triangle-up {
+    left: 101px;
+}
+
+.hex-info-dropdown-m img {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.hex-info-dropdown-m span {
+    padding-left: 10px;
+    font-size: 12px;
+    position: absolute;
+    left: 100px;
+}
+
+.hex-info-dropdown-m span:nth-of-type(1){
+    top: 10px;
+}
+.hex-info-dropdown-m span:nth-of-type(2){
+    top: 30px;
+}
+
+.hex-info-dropdown-m div:nth-of-type(n+2) {
+    width: 100%;
+    padding: 5px 0;
+    display: inline-block;
+    position: relative;
+}
+
+.hex-info-dropdown-a {
+    left: -10px;
+}
+
+.hex-info-dropdown-a img {
+    width: 100px;
+    height: 100px;
+}
+
+.hex-info-dropdown-s {
+    width: 200px;
+    left: -65px;
+}
+
+.hex-info-dropdown-s .triangle-up {
+    left: 90px;
+}
+
+.hex-info-dropdown-s span {
+    width: 100%;
+    display: inline-block;
+    font-size: 12px;
+}
+
+/* ============================= layout_1 模板页1 ============================= */
+/* ====== 页面头 ====== */
+.hex-header {
+    width: 100%;
+    height: 40px;
+    background: #ffffff;
+    -moz-box-shadow: 0 0 4px #E2E0E1; /* For Firefox3.6+ */
+    -webkit-box-shadow: 0 0 4px #E2E0E1; /* For Chrome5+, Safari5+ */
+    box-shadow: 0 0 4px #E0E0E1;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+}
+
+.hex-header > div:not(.hex-exe-types) {
+    margin-top: 5px;
+}
+
+/* logo */
+.hex-logo {
+    float: left;
+    margin-left: 20px;
+    position: relative;
+}
+
+.hex-logo img {
+    position: absolute;
+    top: -5px;
+}
+
+/* 右侧登录等文字 */
+.hex-user-info {
+    float: right;
+    /*margin-right: 10px;*/
+    font-size: 12px;
+    color: #535b66;
+}
+
+.hex-user-info > ul {
+    list-style: none;
+    width: auto;
+    padding-top: 6px;
+}
+
+.hex-user-info > ul > li {
+    float: left;
+    padding: 0 10px 0 10px;
+    position: relative;
+}
+
+@media (max-width: 700px) {
+    .hex-user-info > ul > li:nth-of-type(n+4) {
+        display: none;
+    }
+}
+
+/* 分割线 */
+.hex-user-info > ul > li.hex-info,
+.hex-user-info > ul > li:nth-of-type(3){
+    border-left: 1px solid #eef0f1;
+    line-height: 17px;
+}
+
+.hex-user-info > ul > li:nth-of-type(1){
+    border-left: none;
+}
+
+.hex-user-info > ul > li > a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.hex-user-info > ul > li > a:hover {
+    color: #fc7039;
+    text-decoration: none;
+}
+
+/* 图片向上移+切圆 */
+.hex-user-info > ul > li.avatar {
+    margin-top: -5px;
+    margin-right: -10px;
+}
+
+.hex-user-info > ul > li > img {
+    height: 29px;
+    width: 29px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+/* 小数字 */
+.hex-little-number {
+    height: 16px;
+    width: 16px;
+    color: #ffffff;
+    background: url("../../images/prompt.png") no-repeat 0 0;
+    font-size: 10px;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    text-align: center;
+}
+
+.hex-little-number > span {
+    display: block;
+    line-height: 14px;
+    -moz-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+}
+
+/* 消息 */
+.hex-user-info > ul > li:nth-child(2) > a:nth-child(3) {
+    margin-right: 10px;
+    margin-left: 15px;
+}
+
+/* 手型图标 */
+#user {
+    cursor: pointer;
+}
+
+/* 小三角 */
+#user > .caret {
+    color: #2EA86F;
+}
+
+.hex-user-info > ul > li > a:nth-child(1) > {
+    color: #c0c0c0;
+    text-decoration: none;
+}
+
+.hex-user-info {
+    margin-top: 0;
+}
+
+.hex-index .hex-user-info {
+    margin-top: -5px;
+}
+
+.hex-user-info > div,
+.hex-user-info > ul {
+    float: left;
+}
+
+.hex-user-info ul {
+    padding-top: 10px;
+}
+
+.hex-user-info > div,
+.hex-user-info .logo a,
+.hex-user-info .my-course a {
+    height: 40px;
+}
+
+.hex-user-info .logo a,
+.hex-user-info .my-course a {
+    line-height: 40px;
+    color: #ffffff;
+    padding: 0 20px;
+    display: inline-block;
+}
+
+.hex-user-info .logo a {
+    background: #34b27c;
+}
+
+.hex-user-info .logo a:hover {
+    background: #47BE89;
+}
+
+.hex-user-info .logo a:active {
+    background: #239e6a;
+}
+
+.hex-user-info .my-course a {
+    background: #525c66;
+}
+
+.hex-user-info .my-course a:hover {
+    background: #34b27c;
+}
+
+.hex-user-info .my-course a:active {
+    -moz-box-shadow: 1px 1px 1px #359F73 inset, -1px -1px 1px #359F73 inset; /* For Firefox3.6+ */
+    -webkit-box-shadow: 1px 1px 1px #359F73 inset, -1px -1px 1px #359F73 inset; /* For Chrome5+, Safari5+ */
+    box-shadow: 1px 1px 1px #359F73 inset, -1px -1px 1px #359F73 inset;
+}
+
+/* ====== 左侧栏 ====== */
+.hex-left-list {
+    background: #454F59;
+    height: 100%;
+    width: 80px;
+    top: 40px;
+    position: fixed;
+    z-index: 9;
+    overflow: auto;
+}
+
+.hex-left-list > ul {
+    list-style: none;
+    width: auto;
+    height: 300px;
+    overflow: auto;
+}
+
+.hex-left-list > ul > li {
+    height: 80px;
+    text-align: center;
+    position: relative;
+}
+
+.hex-left-list > ul > .activity > a {
+    background: #ccd2d8;
+}
+
+.hex-left-list > ul > li > a {
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    background: #454F59;
+}
+
+.hex-left-list > ul > li > a:hover {
+    background: #30AB75;
+}
+
+.hex-left-list > ul > li > a:hover span {
+    color: #FFFFFF;
+}
+
+.hex-left-list > ul > li > a div {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+}
+
+.hex-left-list > ul > li > a .mycourse {
+    background-image: url("../../icon/course.png");
+}
+
+.hex-left-list > ul > li > a .mybook {
+    background-image: url("../../icon/extbooks.png");
+}
+
+.hex-left-list > ul > li > a .myupdate {
+    background-image: url("../../icon/upload.png");
+}
+
+.hex-left-list > ul > li > a:hover .mycourse {
+    background-image: url("../../icon/course_w.png");
+}
+
+.hex-left-list > ul > li > a:hover .mybook {
+    background-image: url("../../icon/extbooks_w.png");
+}
+
+.hex-left-list > ul > li > a:hover .myupdate {
+    background-image: url("../../icon/upload_w.png");
+}
+
+.hex-left-list > ul > li > a:active {
+    -moz-box-shadow: 1px 1px 1px #359F73 inset, -1px -1px 1px #359F73 inset; /* For Firefox3.6+ */
+    -webkit-box-shadow: 1px 1px 1px #359F73 inset, -1px -1px 1px #359F73 inset; /* For Chrome5+, Safari5+ */
+    box-shadow: 1px 1px 1px #359F73 inset, -1px -1px 1px #359F73 inset;
+}
+
+.hex-left-list > ul > li > a > img {
+    position: absolute;
+    top: 17px;
+    left: 26px;
+}
+
+.hex-left-list > ul > li > a > span {
+    color: #838D96;
+    font-size: 14px;
+    position: absolute;
+    bottom: 14px;
+    left: 12px;
+}
+
+/* ====== 右侧按钮 ====== */
+.hex-right-button {
+    position: fixed;
+    top: 112px;
+    right: 10px;
+}
+
+.hex-right-button > ul {
+    list-style: none;
+}
+
+.hex-right-button > ul > li {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 2px;
+    border-radius: 2px;
+}
+
+.hex-right-button > ul > li > a {
+    height: 50px;
+    width: 50px;
+    background: #27ac75;
+    display: inline-block;
+    padding-top: 4px;
+}
+
+.hex-right-button > ul > li > a:hover {
+    text-decoration: none;
+    background: #47BE89;
+}
+
+.hex-right-button > ul > li > a > span {
+    font-size: 12px;
+    color: #FFFFFF;
+    line-height: 7px;
+}
+
+.hex-vertical-mid {
+    margin-left: 12px;
+}
+
+.hex-vertical-mid2 {
+    margin-left: 8px;
+}
+
+/* ====== 报名上课 ====== */
+
+/* ====== 内容 ====== */
+.hex-content {
+    margin-top: 20px;
+    height: 110%;
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 80px;
+    padding-top: 20px;
+}
+
+#main_div.hex-main_1180{
+    float: none;
+    margin:40px auto 0;
+    padding:0 0 50px 0;
+}
+#main_div.hex-main_exercises{
+    float: none;
+    margin:40px auto 0;
+    padding:0;
+}
+#main_div.hex-main_search{
+    float: none;
+    margin:138px auto 0;
+    padding:0 0 50px 0;
+}
+
+/* ====== 尾巴 ====== */
+.hex-footer {
+    position: fixed;
+    z-index: 111;
+    bottom: 0;
+    left: 0px;
+    height: 20px;
+    width: 100%;
+    background: #D8DDE1;
+}
+
+.hex-footer-word {
+    font-size: 10px;
+    line-height: 20px;
+    color: #9EA5AD;
+    float: right;
+    font-family: Arial Regular;
+    padding-right: 4px;
+}
+
+.hex-course-new-alert a {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+
+.hex-course-new-alert div {
+    background: #edf1f4;
+    border-radius: 2px;
+}
+
+.hex-course-new-alert a span {
+    font-size: 14px;
+    color: #313a42;
+    line-height: 60px;
+    padding-left: 19px;
+}
+
+.hex-course-new-alert a:hover span {
+    color: #313a42;
+}
+
+.hex-course-new-alert a .new {
+    background: url("../../images/moban.png") no-repeat 0 0;
+    margin-left: 60px;
+}
+
+.hex-course-new-alert a .copy {
+    background: url("../../images/fuzhi.png") no-repeat 0 0;
+    margin-left: 60px;
+}
+
+/* ============================= layout_2 模板页2 ============================= */
+/* ====== 左侧’课程-教材-上传‘按钮 ======*/
+.hex-left-button {
+    position: fixed;
+    z-index: 999;
+    top: 40px;
+    left: 0;
+}
+
+.hex-left-button > ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.hex-left-button > ul > li {
+    height: 60px;
+    width: 60px;
+    background: #454F59;
+    position: relative;
+}
+
+.hex-left-button > ul > .active-button > a {
+    background: #CDD2D8;
+}
+
+.hex-left-button > ul > li > a {
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    background: #454F59;
+}
+
+.hex-left-button > ul > li > a > img {
+    height: 28px;
+    width: 28px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.hex-left-button > ul > li:nth-child(3) > a > img {
+    top: 13px;
+    left: 13px;
+}
+
+.hex-left-button > ul > li:nth-child(n+2) {
+    border-top: 2px solid transparent;
+    -moz-border-top-colors: #3C4650 #525C66;
+    -webkit-border-top-colors: #3C4650 #525C66;
+    -ms-border-top-colors: #3C4650 #525C66;
+    -o-border-top-colors: #3C4650 #525C66;
+    border-top-colors: #3C4650 #525C66;
+}
+
+.hex-left-button span {
+    position: absolute;
+    top: 54px;
+    left: 12px;
+    color: #838D96;
+    opacity: 0;
+}
+
+.hex-left-button > ul > li:not(.active-button) > a:hover {
+    background: #596876;
+}
+
+.hex-left-button > ul > li:not(.active-button) > a:focus,
+.hex-left-button > ul > li:not(.active-button) > a:active {
+    background: #2b3238;
+}
+
+/* ====== 左侧课程信息 ====== */
+.hex-left-info {
+    position: fixed;
+    z-index: 900;
+    top: 40px;
+    left: 0;
+    height: 100%;
+    width: 249px;
+    background: #EDF1F4;
+    overflow: auto;
+}
+
+.hex-left-info > ul {
+    list-style: none;
+    /*height: 250%; 高度变可调的（js控制）*/
+    height: auto;
+    padding: 0 10px;
+}
+
+.hex-left-info > ul > li {
+    width: 100%;
+}
+
+.hex-left-info > ul > li:nth-child(n+2) {
+}
+
+/* --- 图片标题 --- */
+.hex-left-info > ul > li:nth-child(1) {
+    height: auto;
+    width: 100%;
+}
+
+/* 图片 */
+.hex-left-info > ul > li:nth-child(1) > div:nth-child(1) {
+    height: 148px;
+    width: 210px;
+    margin-left: 10px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 146px;
+    background: #000000;
+}
+
+.hex-left-info > ul > li:nth-child(1) > div:nth-child(1) > img {
+    height: 100%;
+    width: 100%;
+}
+
+/* 标题 */
+.hex-left-info > ul > li:nth-child(1) > div:nth-child(2) {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.hex-left-info > ul > li:nth-child(1) > div:nth-child(2) > span:nth-child(1) {
+    font-size: 18px;
+    color: #46505A;
+}
+
+/* 编号 */
+.hex-left-info > ul > li:nth-child(1) > div:nth-child(2) > span:nth-child(n+2) {
+    font-size: 12px;
+    color: #9BA5AF;
+}
+
+/* 开课时间&学生人数 */
+.hex-left-info > ul > li:nth-child(1) > div:nth-child(3) {
+    margin-left: 20px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.hex-left-info > ul > li:nth-child(1) > div:nth-child(3) > span:nth-child(even) {
+    color: #727C86;
+}
+
+.hex-left-info > ul > li:nth-child(1) > div:nth-child(3) > span:nth-child(n+3) {
+    margin-top: 10px;
+}
+
+/* 发布按钮 */
+.hex-left-info > ul > li:nth-child(1) > div:nth-child(4) {
+    margin: 10px 0;
+    border: 0;
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.hex-left-info > ul > li:nth-child(1) > div:nth-child(4) > button {
+    border-radius: 2px;
+    border: 0;
+    height: 40px;
+    padding: 0 35px;
+}
+
+/* --- 待批准&待评判&待回答 --- */
+.hex-left-info > ul > li:nth-child(2) {
+    border-top: 1px solid #E2E3E8;
+}
+
+.hex-left-info > ul > li:nth-child(2):not(.student) > ul {
+    list-style: none;
+    height: 70px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.hex-left-info > ul > li:nth-child(2):not(.student) > ul > li {
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+
+.hex-left-info > ul > li:nth-child(2):not(.student) > .mooc > li {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.hex-left-info > ul > li:nth-child(2):not(.student) > ul > li:nth-child(n+2) {
+    border-left: 1px solid #E1E4E9;
+}
+
+.hex-left-info > ul > li:nth-child(2):not(.student) > ul > li > a > strong {
+    display: block;
+    font-weight: bold;
+    line-height: 30px;
+    font-size: 30px;
+    width: 100%;
+    overflow: hidden;
+    color: #525C66;
+}
+
+.hex-left-info > ul > li:nth-child(2):not(.student) > ul > li > .disable {
+    cursor: default;
+}
+
+.hex-left-info > ul > li:nth-child(2):not(.student) > ul > li > .disable strong,
+.hex-left-info > ul > li:nth-child(2):not(.student) > ul > li > .disable span {
+    color: #afb7c0;
+}
+
+.hex-left-info > ul > li:nth-child(2):not(.student) > ul > li > a:hover {
+    text-decoration: none;
+}
+
+.hex-left-info > ul > li:nth-child(2):not(.student) > ul > li > a > span {
+    display: block;
+    font-size: 14px;
+    color: #525C66;
+}
+
+.hex-left-info > ul > li:nth-child(2):not(.student) > ul > li > a:hover:not(.disable) > span,
+.hex-left-info > ul > li:nth-child(2):not(.student) > ul > li > a:hover:not(.disable) > strong {
+    color: #FA7141;
+}
+
+/* --- 学生端展示信息 --- */
+.hex-left-info > ul > .student {
+    height: 115px;
+    width: 100%;
+    border-top: 1px solid #E2E3E8;
+}
+
+.hex-left-info > ul > .student > div {
+    float: left;
+    margin-top: 25px;
+}
+
+.hex-left-info > ul > .student > div:nth-of-type(1) {
+    width: 33%;
+    text-align: center;
+}
+
+.hex-left-info > ul > .student > div:nth-of-type(1) img {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+}
+
+.hex-left-info > ul > .student > div:nth-of-type(2) {
+    width: 66%;
+}
+
+.hex-left-info > ul > .student > div:nth-of-type(2) ul {
+    list-style: none;
+}
+
+.hex-left-info > ul > .student > div:nth-of-type(2) ul,
+.hex-left-info > ul > .student > div:nth-of-type(2) li {
+    width: 100%;
+    display: inline-block;
+}
+
+.hex-left-info > ul > .student > div:nth-of-type(2) li > * {
+    float: left;
+    max-width: 95px;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* --- 底部闪烁 --- */
+.hex-left-info .left-bttom {
+    height: 50px;
+    width: 249px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: -webkit-linear-gradient(top, rgba(185, 188, 193, 0) 0%, rgba(185, 188, 193, 0.65) 100%),
+    url("../../images/teacher_eacher.png") no-repeat 105px 25px;
+    background: -moz-linear-gradient(top, rgba(185, 188, 193, 0) 0%, rgba(185, 188, 193, 0.65) 100%),
+    url("../../images/teacher_eacher.png") no-repeat 105px 25px;
+    -webkit-animation: twinkling 2s infinite ease-in-out;
+    -moz-animation: twinkling 2s infinite ease-in-out;
+}
+
+@-webkit-keyframes twinkling {
+    /*透明度由0到1*/
+    0% {
+        opacity: 0; /*透明度为0*/
+    }
+    50% {
+        opacity: 1; /*透明度为1*/
+    }
+    100% {
+        opacity: 0; /*透明度为1*/
+
+    }
+}
+
+@-moz-keyframes twinkling {
+    /*透明度由0到1*/
+    0% {
+        opacity: 0; /*透明度为0*/
+    }
+    50% {
+        opacity: 1; /*透明度为1*/
+    }
+    100% {
+        opacity: 0; /*透明度为0*/
+
+    }
+}
+
+/* --- 提示 ---  */
+.hex-prompt {
+    height: auto;
+}
+
+/* 提示按钮 */
+.hex-shrink-button {
+    margin-top: 5px;
+    height: 30px;
+    width: 100%;
+}
+
+.hex-shrink-button span {
+    float: left;
+    margin-left: 10px;
+    color: #46505A;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.hex-shrink-button > hr {
+    width: 109px;
+    float: right;
+}
+
+.hex-shrink-button > a {
+    height: 18px;
+    width: 18px;
+    float: right;
+    margin-right: 10px;
+    border: 0;
+    border-radius: 2px;
+    font-weight: bold;
+    -webkit-padding-start: 6px;
+    position: relative;
+}
+
+.hex-shrink-button > a:hover {
+    -moz-box-shadow: 1px 0 1px #97a0a7, -1px 0 1px #97a0a7, 0 1px 1px #97a0a7, 0 -1px 1px #97a0a7; /* For Firefox3.6+ */
+    -webkit-box-shadow: 1px 0 1px #97a0a7, -1px 0 1px #97a0a7, 0 1px 1px #97a0a7, 0 -1px 1px #97a0a7; /* For Chrome5+, Safari5+ */
+    box-shadow: 1px 0 1px #97a0a7, -1px 0 1px #97a0a7, 0 1px 1px #97a0a7, 0 -1px 1px #97a0a7;
+}
+
+.hex-shrink-button > a:active,
+.hex-shrink-button > a:visited {
+    -moz-box-shadow: 1px 1px 1px #858e97 inset, -1px -1px 1px #858e97 inset; /* For Firefox3.6+ */
+    -webkit-box-shadow: 1px 1px 1px #858e97 inset, -1px -1px 1px #858e97 inset; /* For Chrome5+, Safari5+ */
+    box-shadow: 1px 1px 1px #858e97 inset, -1px -1px 1px #858e97 inset;
+}
+
+/* --- 活动 --- */
+.hex-prompt > div:nth-child(2) {
+    height: auto;
+    padding-bottom: 30px;
+}
+
+.hex-prompt > div:nth-child(2) > ul {
+    list-style: none;
+    height: auto;
+    width: 100%;
+}
+
+/* 分隔间距 */
+.hex-prompt > div:nth-child(2) > ul > li:nth-child(n+2) {
+    margin-top: 20px;
+}
+
+.hex-activity {
+    padding: 0 10px;
+}
+
+.hex-activity > div:nth-child(1) {
+    width: auto;
+}
+
+/* 活动标志 */
+.hex-prompt .hex-tag {
+    width: 31px;
+    height: 19px;
+    font-size: 12px;
+    border: 1px solid #c7cbd4;
+    border-radius: 2px;
+    text-align: center;
+    color: #A8B2BC;
+    float: left;
+    background: #ecf1f3;
+}
+
+.hex-activity-time {
+    width: 100%;
+    margin-top: 5px;
+    color: #F77140;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+}
+
+/* 通知标题 */
+.hex-activity > div:nth-child(1) > a {
+    cursor: pointer;
+}
+
+.hex-activity > div:nth-child(1) > a > span {
+    margin-left: 7px;
+    word-break: normal;
+    font-size: 14px;
+    color: #454f5b;
+    word-wrap: break-word;
+}
+
+.hex-activity > div:nth-child(1) > a:hover > span {
+    border-bottom: 1px solid #BBC5CE;
+}
+
+.hex-activity > div:nth-child(1) > a:active > span,
+.hex-activity > div:nth-child(1) > a:visited > span {
+    font-weight: 600;
+}
+
+/* --- 线上作业 --- */
+.hex-homework-online {
+    padding: 0 10px;
+    height: auto;
+    width: 100%;
+}
+
+/* 作业标题 */
+.hex-homework-title {
+    width: 100%;
+    font-size: 14px;
+    color: #464e59;
+    cursor: pointer;
+}
+
+.hex-homework-title:hover {
+    border-bottom: 1px solid #BBC5CE;
+    color: #464e59;
+}
+
+.hex-homework-title:visited,
+.hex-homework-title:active {
+    font-weight: 600;
+}
+
+/* 作业时间 */
+.hex-homework-time {
+    width: 100%;
+    font-size: 10px;
+    color: #878E98;
+    margin-top: 12px;
+}
+
+/* 进度条 */
+.hex-homework-online > div {
+    width: 209px;
+    margin-top: 7px;
+}
+
+/* --- 线下作业 --- */
+.hex-homework-offline {
+    margin-top: 20px;
+    padding: 0 10px;
+    height: auto;
+    width: auto;
+}
+
+.hex-homework-offline > div:nth-child(1) > div {
+    width: 31px;
+    height: 19px;
+    font-size: 12px;
+    border: 1px solid #c7cbd4;
+    border-radius: 2px;
+    text-align: center;
+    color: #A8B2BC;
+    float: left;
+    background: #ecf1f3;
+}
+
+/* 标题 */
+.hex-homework-offline > div:nth-child(1) > a > span {
+    margin-left: 5px;
+}
+
+/* --- 课程表 --- */
+.hex-syllabus {
+    height: auto;
+    margin-bottom: 70px;
+}
+
+.hex-syllabus #week {
+}
+
+.hex-syllabus #week > ul {
+    list-style: none;
+    height: auto;
+    width: 100%;
+}
+
+/* 课程表 */
+.hex-syllabus .hex-weeklist {
+    height: 50px;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.hex-syllabus .hex-weeklist > div:nth-child(1) > span {
+    height: 20px;
+    width: 20px;
+    font-size: 13px;
+    color: #454F59;
+}
+
+/* 左右移按钮 */
+.hex-weeklist .hex-move-button:nth-child(1) {
+    float: left;
+}
+
+.hex-weeklist .hex-move-button:nth-last-child(1) {
+    float: right;
+    margin-left: 5px;
+    margin-bottom: 1px;
+}
+
+.hex-weeklist .hex-move-button > a {
+    cursor: pointer;
+}
+
+.hex-weeklist .hex-move-button > a:hover > img {
+    -moz-box-shadow: 1px 0 1px #d6dbe1, -1px 0 1px #d6dbe1, 0 1px 1px #d6dbe1, 0 -1px 1px #d6dbe1; /* For Firefox3.6+ */
+    -webkit-box-shadow: 1px 0 1px #d6dbe1, -1px 0 1px #d6dbe1, 0 1px 1px #d6dbe1, 0 -1px 1px #d6dbe1; /* For Chrome5+, Safari5+ */
+    box-shadow: 1px 0 1px #d6dbe1, -1px 0 1px #d6dbe1, 0 1px 1px #d6dbe1, 0 -1px 1px #d6dbe1;
+}
+
+.hex-weeklist .hex-move-button > a:visited > img,
+.hex-weeklist .hex-move-button > a:active > img {
+    -moz-box-shadow: 1px 1px 1px #d7dce2 inset, -1px -1px 1px #d7dce2 inset; /* For Firefox3.6+ */
+    -webkit-box-shadow: 1px 1px 1px #d7dce2 inset, -1px -1px 1px #d7dce2 inset; /* For Chrome5+, Safari5+ */
+    box-shadow: 1px 1px 1px #d7dce2 inset, -1px -1px 1px #d7dce2 inset;
+}
+
+/* 周数 */
+.hex-syllabus .hex-weeklist > span:nth-child(2) {
+    margin-left: 13px;
+    color: #454F59;
+}
+
+.hex-syllabus .hex-weeklist > span:nth-child(3) {
+    color: #717D88;
+}
+
+/* 章节数 */
+.hex-syllabus .hex-chapter {
+    margin-top: -25px;
+    padding: 0 10px;
+}
+
+.hex-syllabus .hex-chapter > span {
+    color: #484F59;
+}
+
+.hex-syllabus .hex-chapter > span:nth-child(n+2) {
+    margin-top: 12px;
+}
+
+/* 备注 */
+.hex-syllabus .hex-note {
+    margin-top: 10px;
+    padding: 0 10px;
+    width: 100%;
+}
+
+.hex-syllabus .hex-note > span {
+    font-size: 12px;
+    color: #868D97;
+}
+
+/* 编辑课程表 */
+.hex-syllabus .hex-edit-syllabus-btn {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.hex-syllabus .hex-edit-syllabus-btn > button {
+    width: 80px;
+    height: 28px;
+    border: 0;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+#style-syllabus > ul:nth-child(n+2) > li {
+    display: none;
+}
+
+/* ====== 内容 ====== */
+.hex-content_2 {
+    float: left;
+    margin-top: 40px;
+    height: 110%;
+    width: 100%;
+    padding-left: 290px;
+    padding-right: 80px;
+    /*min-width: 1280px;*/
+}
+
+/* ============================= layout_3 模板页3 ============================= */
+/* ====== 上方第一层 ====== */
+.hex-publisher-nav-1 {
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    background: #e3e6eb;
+    z-index: 999;
+    top: 0;
+}
+
+.hex-publisher-nav-1 > div {
+    margin: 0 auto;
+    width: 1180px;
+    background: #e3e6eb;
+}
+
+.hex-publisher-nav-1 img {
+    float: left;
+    margin-top: 5px;
+}
+
+.hex-publisher-nav-1 .hex-user-info {
+    margin: 0;
+}
+
+.hex-publisher-nav-1 .hex-user-info > ul {
+    display: inline-block;
+    height: 26px;
+    margin: 7px 0;
+    padding: 0;
+}
+
+.hex-publisher-nav-1 .hex-user-info > ul > li:nth-child(1) {
+    margin-top: -6px;
+}
+
+.hex-publisher-nav-1 .hex-user-info > ul > li {
+    line-height: 26px;
+}
+
+.hex-publisher-nav-1 .hex-user-info > ul > .dropdown > a:nth-of-type(2) {
+    position: relative;
+    display: inline-block;
+}
+
+.hex-publisher-nav-1 .hex-user-info > ul > .dropdown > a:nth-of-type(2) .hex-little-number {
+    top: -5px;
+    left: 26px;
+    padding: 0;
+}
+
+.hex-publisher-nav-1 .hex-user-info > ul > .dropdown > a:nth-of-type(2) .hex-little-number span {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    font-size: 10px;
+    color: #FFFFFF;
+    top: -8px;
+    left: 2px;
+}
+
+/* ====== 上方第二层 ====== */
+.hex-publisher-nav-2 {
+    position: fixed;
+    top: 40px;
+    height: 88px;
+    width: 100%;
+    background: #ffffff;
+    -moz-box-shadow: 0 0 4px #E2E0E1; /* For Firefox3.6+ */
+    -webkit-box-shadow: 0 0 4px #E2E0E1; /* For Chrome5+, Safari5+ */
+    box-shadow: 0 0 4px #E0E0E1;
+    z-index: 998;
+}
+
+.hex-publisher-nav-2 > div {
+    margin: 0 auto;
+    width: 1180px;
+}
+
+.hex-publisher-nav-2 > div > a {
+    height: 48px;
+    min-width: 225px;
+    display: inline-block;
+    text-align: center;
+    line-height: 48px;
+    margin-top: 20px;
+}
+
+.hex-publisher-nav-2 > div > a img {
+    max-width: 100%;
+    max-height: 100%;
+    /*float: left;*/
+    line-height: 48px;
+}
+
+.hex-publisher-nav-2 > div > a img:nth-of-type(2){
+    border-left: 2px solid #FF7E60;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.hex-publisher-nav-2 > div form {
+    float: right;
+}
+
+.hex-publisher-nav-2 .hex-publisher-search {
+    height: 46px;
+    width: 46px;
+    margin-top: 21px;
+    float: right;
+    cursor: pointer;
+    background: #DDE0E5 url("../../images/sosuo_icon.png") no-repeat 11px 11px;
+    border: 1px solid #B4BDC6;
+}
+
+.hex-publisher-nav-2 a.hex-publisher-search:hover {
+    background: #f3f7fb url("../../images/sosuo_icon.png") no-repeat 11px 11px;
+}
+
+.hex-publisher-nav-2 a.hex-publisher-search:focus,
+.hex-publisher-nav-2 a.hex-publisher-search:active {
+    background: #c6c9cc url("../../images/sosuo_icon.png") no-repeat 11px 11px;
+}
+
+.hex-publisher-nav-2 .hex-publisher-search-div {
+    height: 107px;
+    width: 0;
+    margin-top: 21px;
+    overflow: hidden;
+    float: right;
+    position: relative;
+}
+
+.hex-publisher-nav-2 .hex-publisher-search-div input {
+    height: 46px;
+    width: 300px;
+    border-left: 1px solid #B4BDC6;
+    border-top: 1px solid #B4BDC6;
+    border-bottom: 1px solid #B4BDC6;
+    border-radius: 2px;
+    padding: 0 20px 0 120px;
+}
+
+.hex-publisher-nav-2 .hex-publisher-search-div input.nolist {
+    padding: 0 20px 0 20px;
+}
+
+.hex-publisher-nav-2 .hex-publisher-search-div a {
+    position: absolute;
+    left: 280px;
+    top: 1px;
+    height: 44px;
+    width: 20px;
+    display: block;
+    background-image: url("../../icon/right_little.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hex-publisher-nav-2 .hex-publisher-search-div a:hover {
+    background-color: #DDE0E5;
+}
+
+.hex-publisher-nav-2 .hex-publisher-search-div p {
+    position: absolute;
+    left: 0;
+    top: 1px;
+    height: 30px;
+    width: 115px;
+    display: block;
+    line-height: 30px;
+    padding: 0 20px 0 10px;
+    border-right: 1px solid #DDE0E5;
+    margin-top: 8px;
+    cursor: pointer;
+    background: url("../../icon/down_little.png") no-repeat 99px 13px;
+}
+
+.hex-publisher-nav-2 .hex-publisher-search-div ul {
+    display: none;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 45px;
+    background-color: #FFFFFF;
+    width: 115px;
+    border-right: 1px solid #B4BDC6;
+    border-left: 1px solid #B4BDC6;
+    border-bottom: 1px solid #B4BDC6;
+}
+
+.hex-publisher-nav-2 .hex-publisher-search-div ul li {
+    height: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.hex-publisher-nav-2 .hex-publisher-search-div ul li span {
+    height: 100%;
+    display: block;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.hex-publisher-nav-2 .hex-publisher-search-div ul li:nth-of-type(1) span {
+    border-bottom: 1px solid #B4BDC6;
+}
+
+.hex-publisher-nav-2 .hex-publisher-search-div ul li span:hover {
+    font-weight: 600;
+}
+/* 中国医药科技出版社定制 */
+.hex-publisher-nav-2_zgyykj{
+    background-image: url("../../images/zgyykj_bg.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 65% 100%;
+}
+
+/* ====== 上方第三层 ====== */
+.hex-publisher-nav-3 {
+    height: 40px;
+    width: 100%;
+    background: #F9FAFC;
+}
+
+.hex-publisher-nav-3 > div {
+    height: 40px;
+    width: 1180px;
+    background: #8A94a0;
+    margin: 128px auto 0 auto;
+}
+
+.hex-publisher-nav-3 a {
+    float: left;
+    height: 40px;
+    width: 120px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hex-publisher-nav-3 a:nth-child(1) {
+    border-right: 1px solid #ffffff;
+}
+
+.hex-publisher-nav-3 a:hover {
+    background: #525C66;
+}
+
+.hex-publisher-nav-3 .active {
+    background: #525C66;
+}
+
+.hex-publisher-nav-3 a > span {
+    height: 40px;
+    width: 120px;
+    line-height: 40px;
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+}
+
+/* ====== 内容 ====== */
+.hex-publisher-content {
+    width: 100%;
+    background: #F9FAFC;
+    margin-top: 10px;
+}
+
+.hex-publisher-content > div:not(.hex-search-page):not(.modal) {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+/* ====== 下方第零层 ====== */
+.hex-publisher-foot-0 {
+    height: 440px;
+    width: 100%;
+    background: #98a2ac;
+}
+
+.hex-publisher-foot-0 div:nth-child(1) {
+    height: 120px;
+    width: 281px;
+    margin: 0 auto;
+}
+
+.hex-publisher-foot-0 div:nth-child(1) span {
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 120px;
+}
+
+.hex-publisher-foot-0 div:nth-child(2) {
+    width: 531px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.hex-publisher-foot-0 div:nth-child(2) > img:nth-of-type(2) {
+    position: absolute;
+    top: 90px;
+    left: 157px;
+    width: 220px;
+    height: 220px;
+}
+
+/* ====== 下方第一层 ====== */
+.hex-publisher-foot-1 {
+    height: 250px;
+    width: 100%;
+    margin-top: 30px;
+    background: #525C66;
+}
+
+.hex-publisher-foot-1 > div {
+    height: 250px;
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.hex-publisher-foot-1 > div > div {
+    float: left;
+    margin-top: 40px;
+}
+
+.hex-publisher-foot-1 .logo {
+    margin-left: 180px;
+}
+
+.hex-publisher-foot-1 .link {
+    margin-left: 60px;
+}
+
+.hex-publisher-foot-1 .link > ul {
+    list-style: none;
+}
+
+.hex-publisher-foot-1 .link > ul > li:nth-child(1) {
+    margin-bottom: 25px;
+}
+.hex-publisher-foot-1 .link > ul > li:nth-child(1) a{
+    color: #ced4da;
+}
+.hex-publisher-foot-1 .link > ul > li:nth-child(1) a:hover{
+    color: #ced4da;
+}
+
+.hex-publisher-foot-1 .link > ul > li:nth-child(n+2) {
+    margin-bottom: 15px;
+}
+
+.hex-publisher-foot-1 .link > ul > li:nth-child(n+2) > a {
+    color: #99a3ad;
+    cursor: pointer;
+}
+
+.hex-publisher-foot-1 .link > ul > li:nth-child(n+2) > a:hover {
+    color: #ced4da;
+}
+
+/* ====== 下方第二层 ====== */
+.hex-publisher-foot-2 {
+    height: 105px;
+    width: 100%;
+    background: #424C56;
+    margin-bottom: -20px;
+}
+
+.hex-publisher-foot-2 > div {
+    height: 105px;
+    width: 653px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hex-publisher-foot-2 span {
+    font-size: 12px;
+    color: #838d97;
+    display: inline-block;
+}
+
+.hex-publisher-foot-2 span:nth-child(1) {
+    margin-top: 20px;
+}
+
+/* ====== 右侧按钮 ====== */
+.hex-publisher-right-button {
+    top: 184px;
+}
+
+/* ============================= 头在1180内 ============================= */
+.hex-header-in {
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    background: #ffffff;
+    -moz-box-shadow: 0 0 4px #E2E0E1; /* For Firefox3.6+ */
+    -webkit-box-shadow: 0 0 4px #E2E0E1; /* For Chrome5+, Safari5+ */
+    box-shadow: 0 0 4px #E0E0E1;
+}
+
+.hex-header-in.hex-publisher-nav {
+    background: #e3e6eb;
+    -moz-box-shadow: none; /* For Firefox3.6+ */
+    -webkit-box-shadow: none; /* For Chrome5+, Safari5+ */
+    box-shadow: none;
+}
+
+.hex-publisher-nav .hex-user-info > ul > li:nth-child(n+3) {
+    border-left: 1px solid #aaafb8;
+    line-height: 17px;
+}
+
+.hex-header-in .hex-index {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.hex-header-in .hex-index .hex-logo,
+.hex-header-in .hex-index .hex-user-info {
+    margin: 0;
+}
+
+.hex-header-in .hex-index .hex-logo img {
+    top: 0;
+}
+
+.hex-header-in .hex-index .hex-about_us-nav{
+    float: left;
+    padding-left: 120px;
+    line-height: 40px;
+}
+
+.hex-header-in .hex-index .hex-about_us-nav a{
+    padding: 0 20px;
+    color: #000000;
+}
+
+.hex-header-in .hex-index .hex-about_us-nav a:hover{
+    color: #FC7039;
+    text-decoration: none;
+}
+
+
+/* ============================= 浏览器错误信息 ============================= */
+.error-IE{
+    width: 100%;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    background-color: #E08A8A;
+    z-index: 20;
+    overflow: hidden;
+    height: 30px;
+}
+.error-IE span{
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    display: inline-block;
+    color: #FFFFFF;
+    line-height: 30px;
+}
+
+.error-IE span a{
+    color: #FFFFFF;
+    padding: 0 5px;
+}
+
+.error-IE span a:hover{
+    font-size: 14px;
+}
+
+.error-IE .hex-close{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    z-index: 11;
+}
+.error-IE .hex-close a{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+    display: block;
+    background-image: url("../../images/book-close-icon.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.error-IE .hex-close a:hover {
+    background-color: #eaa4a4;
+}
+
+
+
+
+
+
+

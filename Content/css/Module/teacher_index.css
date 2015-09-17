@@ -1,0 +1,324 @@
+/* -----------------------------   我的Hexstudy首页布局   ----------------------------- */
+@charset "utf-8";
+
+/* ------ List ------
+ * 我的Hexstudy首页
+ * 教师端首页
+ * 微课程
+ * 电子教材过渡页
+ * 班级管理
+ * 课件资源
+ */
+
+/* ============================= 我的Hexstudy首页 ============================= */
+.hex-myHexstudy-index {
+    padding-top: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+.hex-myHexstudy-index .hex-title-line {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.hex-myHexstudy-index > div:not(.hex-title-line) {
+    display: inline-block;
+}
+
+/* ============================= 教师端首页 ============================= */
+/* ====== 表单行内容 ====== */
+/* 按钮 */
+.hex-button-row > button {
+    margin-right: 20px;
+}
+
+/* ====== 作业列表 ====== */
+.hex-homework-list {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* ====== 作业统计 ====== */
+.hex-homework-statistic {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.hex-homework-statistic > div {
+    float: left;
+    margin-top: 4px;
+}
+
+.hex-homework-statistic > div > span {
+    color: #858E97;
+    font-size: 12px;
+}
+
+.hex-homework-statistic > ul {
+    float: left;
+    list-style: none;
+    margin: 4px 0;
+}
+
+.hex-homework-statistic > ul > li {
+    float: left;
+    font-size: 12px;
+    color: #858E97;
+    line-height: 20px;
+    padding: 0 10px;
+}
+
+.hex-homework-statistic > ul > li:nth-of-type(1) {
+    padding-left: 0;
+}
+
+.hex-homework-statistic > ul > li:nth-last-of-type(n+2) {
+    border-right: 1px dotted #EDF0F3;
+}
+
+.hex-homework-statistic > ul > li span {
+    float: left;
+}
+
+.hex-homework-statistic > ul > li input {
+    width: 50px;
+    height: 20px;
+}
+
+.hex-homework-statistic > button {
+    float: left;
+    border-radius: 2px;
+    border: 0;
+    height: 28px;
+    width: 80px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+/* ============================= 学生端首页 ============================= */
+.hex-student-test {
+}
+
+.hex-student-test .hex-row-list .row-list > .hex-list-btn > div {
+    width: 40px;
+}
+
+.hex-student-test .hex-row-list .row-list > .hex-list-btn > div > a:nth-child(1) {
+    top: 6px;
+    left: 10px;
+}
+
+.hex-button-row h2:nth-of-type(n+2) {
+    margin-left: 20px;
+}
+
+.hex-button-row {
+}
+
+.hex-button-row h2 {
+    margin-right: 10px;
+}
+
+.hex-button-row > h2,
+.hex-button-row > span {
+    line-height: 30px;
+}
+
+/* ============================= 微课程 ============================= */
+/* ====== 上方搜索条 ====== */
+
+.hex-mooc .hex-button-row > div.hex-drop-down {
+    margin-right: 20px;
+}
+
+.hex-mooc .hex-button-row > div:nth-child(1) {
+    width: 227px;
+    height: 25px;
+    float: left;
+    position: relative;
+}
+
+.hex-mooc .hex-button-row > div:nth-child(2) {
+    width: 227px;
+    height: 25px;
+    margin-left: 20px;
+    position: relative;
+    float: left;
+}
+
+/* 搜索框 */
+.hex-mooc .hex-button-row > div:nth-child(3) {
+    margin-left: 60px;
+    width: 200px;
+    float: left;
+}
+
+/* 文件总数 */
+.hex-mooc .hex-button-row > div:nth-child(4) {
+    margin-left: 30px;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+
+.hex-mooc .hex-button-row > div:nth-child(4) > span {
+    font-size: 12px;
+    color: #a7aeb4;
+    font-family: "宋体";
+}
+
+.hex-mooc .hex-mooc-list {
+    margin-top: 10px;
+}
+
+/* ============================= 微课程 ============================= */
+.hex-book-class-list {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.hex-support-book {
+    margin-top: 40px;
+    width: 100%;
+    float: left;
+}
+
+/* ============================= 班级管理 ============================= */
+.hex-classmanage .all-classes {
+    margin-right: 30px;
+    float: left;
+}
+
+.hex-classmanage .all-classes > span {
+    font-size: 14px;
+    color: #858e97;
+}
+
+.hex-classmanage .class-list {
+    float: left;
+}
+
+.hex-classmanage .button_class {
+    float: left;
+    margin-left: 30px;
+}
+
+.hex-classmanage .button_class > button {
+    height: 25px;
+    width: 80px;
+    font-size: 12px;
+}
+
+.hex-classmanage .search {
+    float: left;
+    margin-left: 40px;
+    width: 225px;
+}
+
+.hex-classmanage .class-line {
+    margin-top: 10px;
+}
+
+/* ============================= 课件资源 ============================= */
+
+/* ============================= 教学大纲 ============================*/
+/*.hex-syllabus #ReferencesWindow p,
+.hex-syllabus #TeachersWindow p,
+.hex-syllabus #CourseWindow p {
+    width: 100%;
+    height: 100px;
+}*/
+
+.hex-syllabus textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    border-radius: 2px;
+    border: 1px solid #cbd1d7;
+}
+
+.hex-syllabus textarea:focus,
+.hex-syllabus input[type="text"]:focus {
+    -moz-box-shadow: 2px 0 1px #EEEEEE, -2px 0 1px #EEEEEE, 0 2px 1px #EEEEEE, 0 -2px 1px #EEEEEE; /* For Firefox3.6+ */
+    -webkit-box-shadow: 2px 0 1px #EEEEEE, -2px 0 1px #EEEEEE, 0 2px 1px #EEEEEE, 0 -2px 1px #EEEEEE; /* For Chrome5+, Safari5+ */
+    box-shadow: 2px 0 1px #EEEEEE, -2px 0 1px #EEEEEE, 0 2px 1px #EEEEEE, 0 -2px 1px #EEEEEE;
+}
+
+.hex-syllabus .hex-title-line {
+    margin: 20px 0 10px 0;
+}
+
+.hex-syllabus input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.hex-syllabus .panel-body {
+    padding: 0;
+}
+
+.hex-syllabus .addweek {
+    height: 28px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.hex-syllabus #ProportionWindow .hex-font-gray,
+.hex-syllabus #ProportionWindow .hex-font-lightgray,
+.hex-syllabus #ProportionEditWindow .hex-font-gray {
+    line-height: 28px;
+}
+
+.hex-syllabus #ProportionWindow .hex-font-lightgray {
+    margin-right: 10px;
+    width: 40px;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.hex-syllabus #ProportionEditWindow input[type="text"] {
+    height: 28px;
+    width: 40px;
+    border-radius: 2px;
+    border: 1px solid #cbd1d7;
+    padding-left: 5px;
+    margin-right: 10px;
+}
+
+#ProportionEditWindow > div:nth-of-type(2) {
+    display: inline-block;
+}
+
+#ProportionEditWindow > div:nth-of-type(2) > * {
+    float: left;
+    line-height: 28px;
+}
+
+#ProportionEditWindow > div:nth-of-type(2) > .hex-font-lightgray{
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

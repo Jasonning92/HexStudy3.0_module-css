@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <!--优先使用 IE 最新版本和 Chrome-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!--360 使用Google Chrome Frame-->
+    <meta name="renderer" content="webkit">
+    <!--移动端适配-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>验证使用</title>
+
+    <link href="Content/css/bootstrap.css" rel="stylesheet"/>
+    <link href="Content/css/Layout/layout.css" rel="stylesheet"/>
+    <link href="Content/css/Layout/module.css" rel="stylesheet"/>
+    <link href="Content/css/Layout/base.css" rel="stylesheet"/>
+    <link href="Content/css/Layout/forms.css" rel="stylesheet"/>
+
+    <link href="css_page.css" rel="stylesheet"/>
+
+    <script type="application/javascript" src="Scripts/jquery-1.10.2.js"></script>
+    <script type="application/javascript" src="Scripts/hex_verification.js"></script>
+
+    <script type="application/javascript" src="css_page.js"></script>
+</head>
+<body>
+<nav>
+    <a href="./index.html">基本样式</a>
+    <a href="./module.html">组件使用</a>
+    <a class="active" href="./verification.html">验证使用</a>
+    <a href="./icon_list.html">图标索引</a>
+    <a href="./tree.html">样式结构</a>
+    <a href="./sass.html">SASS变量以及混合器</a>
+</nav>
+<div class="main_content">
+    <div>
+        <div><h1 class="hex-font-gray">验证使用说明</h1></div>
+        <div><p class="hex-font-lightgray hex-indent">对脚本hex_verification.js的使用方法进行说明，该脚本根据3.0需求以及样式设计。</p></div>
+    </div>
+    <!-- 基本结构说明 -->
+    <div id="1">
+        <div><h1 class="hex-font-orange">基本结构说明</h1></div>
+        <div>
+            <p class="hex-font-lightgray">
+                <span style="float: left">基本样式：</span>
+
+            <div class="hex-input-div" style="width: 140px;height:28px;">
+                <input data-val="true" style="float: inherit" type="text">
+                <span class="hex-input-massage" data-vale-rank="99" style="display: block;width: 140px;height:28px;line-height: 26px;text-align: center">错误信息显示</span>
+            </div>
+            </p>
+        </div>
+        <div><p class="hex-font-lightgray hex-indent">
+            由于样式的需要，js会在需要验证的input的基础上添加特殊的结构，以便显示错误信息。因此在使用时，如果<span class="hex-font-red">需要验证的input是动态加载的</span>,就需要<span class="hex-font-red">调用add_div()方法</span>来添加验证结构
+        </p></div>
+    </div>
+    <!-- 支持的验证类型 -->
+    <div id="2">
+        <div><h1 class="hex-font-orange">支持的验证类型</h1></div>
+        <div><p class="hex-font-lightgray hex-indent">目前支持的验证分为<span class="hex-font-green">12</span>级，级别高的（数字越小）将会优先验证。要想使用该验证，必须在input上添加<span class="hex-font-red">data-val="true"</span>属性。</p></div>
+        <div>
+            <table class="hex-examples-table">
+                <thead>
+                <tr>
+                    <td class="example">实例</td>
+                    <td class="property">属性</td>
+                    <td class="instruction">说明</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        1.非空<input type="text" data-val="true" data-val-required="输入不能为空">
+                    </td>
+                    <td>
+                        <div><p class="hex-font-lightgray">data-val-required="输入不能为空"</p></div>
+                    </td>
+                    <td>
+                        <div><p class="hex-font-lightgray">非空验证提示的错误信息。</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        2.值长度<input type="text" data-val="true" data-val-length="请输入3到10位" data-val-length-max="10" data-val-length-min="3">
+                    </td>
+                    <td>
+                        <div><p class="hex-font-lightgray">data-val-length="请输入3到10位"</p></div>
+                        <div><p class="hex-font-lightgray">data-val-length-max="10"<span class="hex-font-green">可选</span></p></div>
+                        <div><p class="hex-font-lightgray">data-val-length-min="3"<span class="hex-font-green">可选</span></p></div>
+                    </td>
+                    <td>
+                        <div><p class="hex-font-lightgray">长度验证提示的错误信息。</p></div>
+                        <div><p class="hex-font-lightgray">允许的最大长度（输入长度必须小于等于该数值）。</p></div>
+                        <div><p class="hex-font-lightgray">允许的最小长度（输入长度必须大于等于该数值）。</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        3.值大小<input type="text" data-val="true" data-val-range="请输入值在到1之间10" data-val-range-max="10" data-val-range-min="1">
+                    </td>
+                    <td>
+                        <div><p class="hex-font-lightgray">data-val-range="请输入值在到1之间10"</p></div>
+                        <div><p class="hex-font-lightgray">data-val-range-max="10"<span class="hex-font-green">可选</span></p></div>
+                        <div><p class="hex-font-lightgray">data-val-range-min="3"<span class="hex-font-green">可选</span></p></div>
+                    </td>
+                    <td>
+                        <div><p class="hex-font-lightgray">值大小验证提示的错误信息。</p></div>
+                        <div><p class="hex-font-lightgray">允许的最大值（输入值必须小于等于该数值）。</p></div>
+                        <div><p class="hex-font-lightgray">允许的最小值（输入值必须大于等于该数值）。</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        4.邮箱<input type="text" data-val="true" data-val-email="输入的邮箱格式有误">
+                    </td>
+                    <td>
+                        <div><p class="hex-font-lightgray">data-val-email="输入的邮箱格式有误"</p></div>
+                    </td>
+                    <td>
+                        <div><p class="hex-font-lightgray">邮箱验证提示的错误信息。</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        5.手机<input type="text" data-val="true" data-val-phone="输入的手机格式有误">
+                    </td>
+                    <td>
+                        <div><p class="hex-font-lightgray">data-val-phone="输入的手机格式有误"</p></div>
+                    </td>
+                    <td>
+                        <div><p class="hex-font-lightgray">手机验证提示的错误信息。</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        6.数字<input type="text" data-val="true" data-val-number="请输入纯数字">
+                    </td>
+                    <td>
+                        <div><p class="hex-font-lightgray">data-val-number="请输入纯数字"</p></div>
+                    </td>
+                    <td>
+                        <div><p class="hex-font-lightgray">纯数字验证提示的错误信息。</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        7.身份证号<input type="text" data-val="true" data-val-identity="输入的身份证号有误">
+                    </td>
+                    <td>
+                        <div><p class="hex-font-lightgray">data-val-identity="输入的身份证号有误"</p></div>
+                    </td>
+                    <td>
+                        <div><p class="hex-font-lightgray">身份证号验证提示的错误信息。</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        8.自定义正则表达式<input type="text" data-val="true" data-val-regular="自定义正则" data-val-regular-exp="/a-z/">
+                    </td>
+                    <td>
+                        <div><p class="hex-font-lightgray">data-val-regular="自定义正则"</p></div>
+                        <div><p class="hex-font-lightgray">data-val-regular-exp="/a-z/"</p></div>
+                    </td>
+                    <td>
+                        <div><p class="hex-font-lightgray">自定义正则验证提示的错误信息。</p></div>
+                        <div><p class="hex-font-lightgray">传入的正则表达式，前后需要加“/”</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        9.验证相同<input type="text" data-val="true" placeholder="输入第一遍" name="first">
+                        <input type="text" placeholder="必须和上一个输入一样" data-val="true" data-val-equalto="两次输入不一致" data-val-equalto-other="*.first">
+                    </td>
+                    <td>
+                        <div><p class="hex-font-lightgray">data-val-equalto="两次输入不一致"</p></div>
+                        <div><p class="hex-font-lightgray">data-val-equalto-other="*.first"</p></div>
+                    </td>
+                    <td>
+                        <div><p class="hex-font-lightgray">输入相同验证提示的错误信息。</p></div>
+                        <div><p class="hex-font-lightgray">对比的另一个input的name，开头需要加“*.”</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        10.和其他input比较值<input type="text" data-val="true" placeholder="和我比较" name="first">
+                        <input type="text" placeholder="和上一个input比较" data-val="true" data-val-compare="输入错误" data-val-compare-other="*.first" data-val-compare-type="1">
+                    </td>
+                    <td>
+                        <div><p class="hex-font-lightgray">data-val-compare="输入错误"</p></div>
+                        <div><p class="hex-font-lightgray">data-val-compare-other="*.first"</p></div>
+                        <div><p class="hex-font-lightgray">data-val-compare-type="1"</p></div>
+                    </td>
+                    <td>
+                        <div><p class="hex-font-lightgray">验证提示的错误信息。</p></div>
+                        <div><p class="hex-font-lightgray">对比的另一个input的name，目标在符号<span class="hex-font-red">右</span></p></div>
+                        <div><p class="hex-font-lightgray">传入值表示类型，1:＞　２:>=　3:<　4:<=</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        11.日期和今日比较<input type="text" data-val="true" data-val-today="输入日期有误" data-val-today-type="1">
+                    </td>
+                    <td>
+                        <div><p class="hex-font-lightgray">data-val-today="输入日期有误"</p></div>
+                        <div><p class="hex-font-lightgray">data-val-today-type="1"</p></div>
+                    </td>
+                    <td>
+                        <div><p class="hex-font-lightgray">和今天相比验证提示的错误信息。需使用datepocker</p></div>
+                        <div><p class="hex-font-lightgray">传入值表示类型，1:＞　２:>=　3:<　4:<=</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        11.后台请求
+                        <input type="text" data-val="true" data-val-remote="后台返回结果" data-val-remote-additionalfields="*.P"
+                               data-val-remote-data="{key:123}" data-val-remote-url="../path/path2">
+                    </td>
+                    <td>
+                        <div><p class="hex-font-lightgray">data-val-remote="后台返回结果"</p></div>
+                        <div><p class="hex-font-lightgray">data-val-remote-additionalfields="*.P"</p></div>
+                        <div><p class="hex-font-lightgray">data-val-remote-data="{key:123}"<span class="hex-font-green">可选</span></p></div>
+                        <div><p class="hex-font-lightgray">data-val-remote-url="../path/path2"</p></div>
+                        <div><p class="hex-font-lightgray">data-val-remote-blur="false"<span class="hex-font-green">可选</span></p></div>
+                        <div><p class="hex-font-lightgray"><br><br></p></div>
+                    </td>
+                    <td>
+                        <div><p class="hex-font-lightgray">通过post到后台，返回true或一个方法</p></div>
+                        <div><p class="hex-font-lightgray">传到后台的Json中的key值</p></div>
+                        <div><p class="hex-font-lightgray">另外同时传到后台的其他参数，需要写成Json形式</p></div>
+                        <div><p class="hex-font-lightgray">post的url</p></div>
+                        <div><p class="hex-font-lightgray">当这个属性为false时，input失去焦点将不进行校验</p></div>
+                        <div><p class="hex-font-lightgray">后台返回的结果可以使true或者false;<br>也可以是一个js的方法名，即失败后运行的js方法名</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        另.密码强度<input type="text" data-val="true" data-strength="true">
+                        <div class="hex-form-strength"> <div> <div class="weak">弱</div> <div class="middle">中</div> <div class="strong">强</div> </div> </div>
+                    </td>
+                    <td>
+                        <div><p class="hex-font-lightgray">data-strength="true"</p></div>
+                    </td>
+                    <td>
+                        <div><p class="hex-font-lightgray">拥有这个属性的将判断密码强度，<br>样式见<a href="./index.html#4">基本样式-表单</a></p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- 对外方法 -->
+    <div id="3">
+        <div><h1 class="hex-font-orange">对外方法</h1></div>
+        <div>
+            <table class="hex-examples-table">
+                <thead>
+                <tr>
+                    <td class="example">方法名</td>
+                    <td class="code">用途</td>
+                    <td class="remark">参数</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <p class="hex-font-gray">put_error_message(input, string)</p>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray">显示错误信息，包括出现动画。</p>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray">
+                            input：$对象<br>
+                            string：错误信息
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="hex-font-gray">add_div()</p>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray">添加验证结构，在动态加载input到页面时需要调用此方法。</p>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray">
+                            无
+                        </p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+<div class="hex-examples-list">
+    <ul>
+        <li><a class="active" data-goto="1">基本结构说明</a></li>
+        <li><a class="" data-goto="2">支持的验证类型</a></li>
+        <li><a class="" data-goto="3">对外方法</a></li>
+    </ul>
+</div>
+<footer class="hex-footer">
+    <div class="hex-footer-word">
+        2015年版 内部使用资料
+    </div>
+</footer>
+</body>
+</html>

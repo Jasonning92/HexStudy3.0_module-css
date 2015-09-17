@@ -1,0 +1,337 @@
+/* -----------------------------   习题   ----------------------------- */
+@charset "utf-8";
+
+/* ------ List ------
+ * 成绩册-录入成绩&作业详情
+ * 成绩册
+ * 知识点-班级平均
+ */
+
+/* ============================= 公用 ============================= */
+.hex-score-title {
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.hex-score-title h1 {
+    float: left;
+    line-height: 30px;
+}
+
+.hex-score-title span {
+    float: left;
+    margin-left: 10px;
+    line-height: 30px;
+}
+
+.hex-score-title button {
+    margin-left: 20px;
+}
+
+/* 排序 */
+.hex-score-sort {
+    margin-top: 10px;
+    width: 100%;
+    height: 35px;
+    background: #EDF1F4;
+    border-radius: 2px;
+}
+
+.hex-score-sort > span:nth-child(1) {
+    line-height: 35px;
+    width: 80px;
+    display: inline-block;
+    text-align: center;
+    color: #848D96;
+    float: left;
+    font-size: 12px;
+    border-right: 1px solid #E1E5E8;
+}
+
+.hex-score-sort a:nth-child(2) {
+    border-left: 1px solid #F2F6F9;
+}
+
+.hex-score-sort > a {
+    line-height: 35px;
+    width: 60px;
+    display: inline-block;
+    text-align: center;
+    color: #848D96;
+    float: left;
+    font-size: 12px;
+}
+
+.hex-score-sort > a:hover {
+    font-weight: 600;
+}
+
+.hex-score-sort > a:active {
+    color: black;
+    font-weight: 600;
+}
+
+.hex-score-sort > span:nth-last-child(1) {
+    float: left;
+    line-height: 35px;
+    color: #848D96;
+    font-size: 12px;
+    padding-left: 20px;
+
+    border-left: 2px solid transparent;
+    -moz-border-left-colors: #E1E5E8 #F2F6F9;
+    -webkit-border-left-colors: #F2F6F9 #E1E5E8;
+    -ms-border-left-colors: #F2F6F9 #E1E5E8;
+    -o-border-left-colors: #F2F6F9 #E1E5E8;
+    border-left-colors: #F2F6F9 #E1E5E8;
+}
+
+.hex-score-body .hex-button-row{
+    margin-top: 0;
+}
+
+.hex-button-row {
+    display: inline-block;
+}
+
+.hex-button-row h2{
+    line-height: 30px;
+    margin-right: 10px;
+}
+
+.hex-button-row > .hex-progress {
+    margin-right: 20px;
+}
+
+.hex-button-row > div {
+    float: left;
+}
+
+.hex-button-row > div .hex-font-orange {
+    margin: 0 5px;
+}
+
+.hex-button-row > .hex-key-point-sort span{
+    line-height: 30px;
+}
+
+.hex-button-row > .hex-key-point-sort span:not(.hex-font-orange){
+    margin-right: 10px;
+}
+
+.hex-button-row .all-classes {
+    margin-right: 30px;
+    float: left;
+}
+
+.hex-button-row .all-classes > span {
+    font-size: 14px;
+    color: #858e97;
+}
+
+.hex-button-row .class-list {
+    float: left;
+}
+
+.hex-button-row .button_class {
+    float: left;
+    margin-left: 30px;
+}
+
+.hex-button-row .button_class > button {
+    height: 25px;
+    width: 80px;
+    font-size: 12px;
+}
+
+.hex-button-row .search {
+    float: left;
+    margin-left: 40px;
+    width: 225px;
+}
+
+.hex-button-row .class-line {
+    margin-top: 10px;
+}
+
+.hex-row-list .table-head{
+    height: 40px;
+}
+
+.hex-row-list .table-head td{
+    line-height: 40px;
+}
+
+
+/* ============================= 成绩册-录入成绩&作业详情 ============================= */
+.hex-score-input .hex-score-select {
+    margin-top: 20px;
+}
+
+.hex-score-input .hex-score-select .hex-drop-down {
+    width: 155px;
+    float: left;
+}
+
+.hex-score-input .hex-score-select .hex-drop-down p {
+    font-size: 14px;
+    color: #454f59;
+    background: #FFFFFF;
+    width: auto;
+    padding: 0;
+}
+
+.hex-score-input .hex-score-select .hex-drop-down div {
+    left: 120px;
+    background: url("../../images/more.png") no-repeat 0 2px;
+}
+
+.hex-score-input .hex-score-select .hex-drop-down .down {
+    background: url("../../images/more_02.png") no-repeat 0 2px;
+}
+
+.hex-score-input .hex-score-select .hex-title-line .hex-drop-down ul {
+    width: 142px;
+}
+
+.hex-score-input .hex-score-select .hex-title-line .hex-drop-down li,
+.hex-score-input .hex-score-select .hex-title-line .hex-drop-down ul li a {
+    width: 140px;
+}
+
+.hex-score-input .hex-score-select .hex-title-line .hex-img-btn div {
+    height: 23px;
+    width: 23px;
+}
+
+.hex-score-input .hex-score-select .hex-title-line .hex-img-btn div img {
+    margin-top: 3px;
+}
+
+.hex-score-input .hex-score-select .hex-title-line .hex-img-btn span {
+    line-height: 25px;
+}
+
+.hex-score-input .hex-score-select .hex-title-line > span,
+.hex-score-input .hex-score-select .hex-title-line h2 {
+    line-height: 23px;
+}
+
+.hex-score-input .hex-score-select .hex-title-line > span {
+    font-weight: 100;
+    color: #858e97;
+}
+
+.hex-score-input .hex-score-body {
+    margin-top: 20px;
+}
+
+.hex-score-input .hex-score-body .hex-row-list {
+    /*width: 100%;*/
+}
+
+.hex-score-input .hex-score-body .table-head td {
+    /*min-width: 13.2%;*/
+}
+
+.hex-score-input .hex-score-body .table-head .no {
+    min-width: 50px;
+}
+
+.hex-score-input .hex-score-body .table-head .name {
+    min-width: 164px;
+}
+
+.hex-score-input .hex-score-body .table-head .time {
+    min-width: 178px;
+}
+
+.hex-score-input .hex-score-body .table-head .submit {
+    min-width: 96px;
+}
+
+.hex-score-input .hex-score-body .row-list span:not(.hex-list-bar span) {
+    padding: 0 10px;
+}
+
+.hex-score-input .hex-score-body .row-list input {
+    width: 32px;
+    border-radius: 2px;
+    border: 1px solid #cbd1d7;
+    text-align: center;
+}
+
+.hex-score-input .hex-score-body .row-list .hex-list-bar > div,
+.hex-score-input .hex-score-body .row-list .grade > div {
+    padding: 0 10px;
+}
+
+.hex-score-input .hex-score-body .row-list .grade div > input {
+    margin-left: 10px;
+}
+
+.hex-score-input .hex-score-body .row-list .grade span {
+    padding: 0;
+}
+
+.hex-score-input .hex-score-body .row-list > td:nth-child(n+3) > div {
+    border: 0;
+}
+
+.hex-score-input .hex-score-body .row-list > td:not(.hex-list-head) span:not(.hex-font-gray) {
+    color: #858e97;
+}
+
+.hex-score-input .hex-score-body .row-list > td > div {
+    border-right: 0;
+}
+
+/* ============================= 成绩册 ============================= */
+.hex-score-book {
+}
+
+.hex-score-book .hex-title-line {
+    margin-top: 10px;
+}
+
+.hex-score-book .hex-table {
+    margin-top: 10px;
+}
+
+.hex-score-book .hex-row-list{
+    /*width: 100%;*/
+}
+
+/* ============================= 知识点-班级平均 ============================= */
+.hex-key-point {
+}
+
+.hex-key-point .hex-body {
+    width: 100%;
+    background: #f5f7f9;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* ============================= 知识点-单一知识点 ============================= */
+.hex-key-point-single {
+}
+
+.hex-key-point-single .hex-body .hex-row-list {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

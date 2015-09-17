@@ -1,0 +1,1541 @@
+/* -----------------------------   模态窗   ----------------------------- */
+@charset "utf-8";
+
+/* ------ List ------
+ * 报名上课（补充个人资料）
+ * 报名上课（等待批准）
+ * 报名上课（课程信息）
+ * 报名上课（补充个人资料）
+ * 输入课程编号
+ * 操作成功
+ * 操作失败
+ */
+
+.modal-content {
+    padding: 20px 40px;
+}
+
+.hex-apply_course .hex-margin {
+    margin-left: -15px;
+}
+
+.hex-modal-content {
+    background-color: #ffffff;
+}
+
+/* ============================= 报名上课（补充个人资料） ============================= */
+.hex-apply_course .hex-person-info {
+}
+
+.hex-apply_course .hex-person-info > div:nth-child(1) {
+}
+
+.hex-apply_course .hex-person-info > div:nth-child(1) > h1 {
+    font-size: 18px;
+}
+
+.hex-person-info > .hex-form {
+    margin-top: 20px;
+}
+
+.hex-apply_course .hex-person-info > .hex-form div {
+    height: 30px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.hex-apply_course .hex-person-info > .hex-form div label {
+    color: #434F5A;
+    font-size: 14px;
+    font-weight: 100;
+    float: left;
+    line-height: 30px;
+}
+
+.hex-apply_course .hex-person-info > .hex-form div:nth-child(1) {
+    margin-left: -10px;
+}
+
+.hex-apply_course .hex-person-info > .hex-form .hex-important {
+    width: 10px;
+    color: #D86D6D;
+    display: inline-block;
+    float: left;
+    line-height: 30px;
+}
+
+.hex-apply_course .hex-person-info > .hex-form div:nth-child(1) input {
+    border-radius: 2px;
+    border: 1px solid #CAD1D7;
+    height: 30px;
+}
+
+.hex-apply_course .hex-person-info > .hex-form div:nth-child(2) {
+    margin-left: -10px;
+}
+
+.hex-apply_course .hex-person-info > .hex-form div:nth-child(2) span:not(.input-group-addon):not(.glyphicon) {
+    width: 20px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    display: inline-block;
+}
+
+.hex-apply_course .hex-person-info button {
+    font-size: 12px;
+    height: 28px;
+    width: 80px;
+}
+
+.hex-form-datatime > label,
+.hex-form-datatime > span,
+.hex-form-datatime > input {
+    float: left;
+}
+
+.hex-form-datatime > span > span {
+    line-height: 25px;
+}
+
+/* ============================= 报名上课（等待批准） ============================= */
+.hex-apply_course .hex-wait {
+}
+
+.hex-apply_course .hex-wait > div:nth-child(1) {
+    width: 100%;
+    height: 30px;
+    display: inline-block;
+}
+
+.hex-apply_course .hex-wait > div:nth-child(1) > img {
+    float: left;
+    height: 30px;
+}
+
+.hex-apply_course .hex-wait > div:nth-child(1) > h1 {
+    float: left;
+    font-size: 18px;
+    margin-left: 10px;
+    color: #343B43;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.hex-apply_course .hex-wait > div:nth-child(2) {
+    margin-top: 20px;
+    width: 100%;
+    display: inline-block;
+}
+
+.hex-apply_course .hex-wait > div:nth-child(2) > ul {
+    list-style: none;
+}
+
+.hex-apply_course .hex-wait > div:nth-child(2) > ul li {
+    margin-bottom: 10px;
+}
+
+.hex-apply_course .hex-wait > div:nth-child(2) > ul strong {
+    color: #454F58;
+    font-weight: 100;
+}
+
+.hex-apply_course .hex-wait > div:nth-child(2) > ul span {
+    color: #858E97;
+}
+
+/* ============================= 报名上课（课程信息） ============================= */
+.hex-apply_course .hex-course-info {
+}
+
+.hex-apply_course .hex-course-info > div:nth-child(1),
+.hex-apply_course .hex-course-info > div:nth-child(3) {
+    width: 100%;
+    height: 30px;
+    display: inline-block;
+}
+
+.hex-apply_course .hex-course-info > div:nth-child(1) > h1,
+.hex-apply_course .hex-course-info > div:nth-child(3) > h1 {
+    float: left;
+}
+
+.hex-apply_course .hex-course-info > div:nth-child(2) {
+    width: 100%;
+    display: inline-block;
+}
+
+.hex-apply_course .hex-course-info > div:nth-child(2) > ul {
+    list-style: none;
+}
+
+.hex-apply_course .hex-course-info > div:nth-child(2) > ul li {
+    margin-bottom: 5px;
+}
+
+.hex-apply_course .hex-course-info > div:nth-child(2) > ul strong {
+    color: #454F58;
+    font-weight: 100;
+}
+
+.hex-apply_course .hex-course-info > div:nth-child(2) > ul span {
+    color: #858E97;
+}
+
+.hex-apply_course .hex-course-info > div:nth-child(4) em {
+    width: 10px;
+    color: #D86D6D;
+    display: inline-block;
+    line-height: 30px;
+}
+
+.hex-apply_course .hex-course-info > div:nth-child(4) > div {
+    width: 100%;
+}
+
+.hex-apply_course .hex-course-info > div:nth-child(4) label {
+    color: #434F5A;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 30px;
+}
+
+.hex-apply_course .hex-course-info > div:nth-child(4) input {
+    border-radius: 2px;
+    border: 1px solid #CAD1D7;
+    height: 30px;
+}
+
+/* ============================= 报名上课（补充个人资料） ============================= */
+.hex-course-info .hex-margin {
+}
+
+.hex-course-info .hex-margin > div:nth-child(1) {
+    display: inline-block;
+}
+
+.hex-course-info .hex-margin > div:nth-child(1) > .hex-drop-down {
+    margin-left: 36px;
+    float: left;
+}
+
+.hex-course-info .hex-margin > div:nth-child(1) > em {
+    float: left;
+}
+
+.hex-course-info .hex-margin > div:nth-child(1) > label {
+    float: left;
+}
+
+.hex-course-info .hex-margin > div:nth-child(1) > .hex-drop-down > p {
+    background: #FFFFFF;
+    border: 1px solid #CAD1D7;
+    height: 30px;
+}
+
+.hex-course-info .hex-margin > div:nth-child(1) > .hex-drop-down > div {
+    height: 30px;
+    width: 30px;
+    background: #D6DCE2 url("../../images/right_apply_course.png") no-repeat 5px 5px;
+}
+
+.hex-course-info .hex-margin > div:nth-child(1) > .hex-drop-down > .down {
+    background: #D6DCE2 url("../../images/down_apply_course.png") no-repeat 5px 5px;
+}
+
+.hex-course-info .hex-margin > div:nth-child(1) > .hex-drop-down > ul {
+    background: #FFFFFF;
+    top: 34px;
+    border: 1px solid #CAD1D7;
+}
+
+.hex-course-info .hex-margin > div:nth-child(2) {
+    margin-bottom: 4px;
+}
+
+.hex-course-info .hex-margin > div:nth-child(2) > input {
+    margin-left: 42px;
+}
+
+.hex-course-info .hex-green-btn {
+    margin-left: 270px;
+    margin-top: 10px;
+    width: 80px;
+    height: 28px;
+    font-size: 12px;
+}
+
+/* ============================= 输入课程编号 ============================= */
+.hex-course-no {
+}
+
+.hex-course-no .hex-form > div:nth-child(1) {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: -27px;
+}
+
+.hex-course-no .hex-form > div:nth-child(1) > * {
+    float: left;
+    height: 28px;
+}
+
+.hex-course-no .hex-form > div:nth-child(1) em {
+    color: red;
+    line-height: 28px;
+    padding: 0 10px;
+}
+
+.hex-course-no .hex-form > div:nth-child(1) h2 {
+    line-height: 28px;
+}
+
+.hex-course-no .hex-form .hex-search input {
+    height: 28px;
+    color: #454f59;
+    border-radius: 2px;
+    border: 1px solid #cbd1d7;
+}
+
+.hex-course-no .hex-form .hex-search input:focus {
+    -moz-box-shadow: 2px 0 1px #EEEEEE, -2px 0 1px #EEEEEE, 0 2px 1px #EEEEEE, 0 -2px 1px #EEEEEE; /* For Firefox3.6+ */
+    -webkit-box-shadow: 2px 0 1px #EEEEEE, -2px 0 1px #EEEEEE, 0 2px 1px #EEEEEE, 0 -2px 1px #EEEEEE; /* For Chrome5+, Safari5+ */
+    box-shadow: 2px 0 1px #EEEEEE, -2px 0 1px #EEEEEE, 0 2px 1px #EEEEEE, 0 -2px 1px #EEEEEE;
+}
+
+.hex-course-no .hex-form .hex-search a {
+    background: #e5e8eb;
+    height: 28px;
+    width: 28px;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.hex-course-no .hex-form .hex-search a img {
+    margin: 4px 0 0 7px;
+}
+
+.hex-course-no .hex-form #EINBody {
+    height: 325px;
+    width: 550px;
+    overflow: auto;
+    float: left;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.hex-course-no .hex-form #EINBody .hex-little-book-list {
+    border: 1px solid #cbd1d7;
+    width: 252px;
+    height: 74px;
+}
+
+.hex-course-no .hex-form #EINBody .hex-little-book-list > .hex-span > span:nth-child(2) {
+    top: 50px;
+}
+
+.hex-course-no .hex-form #EINBody .hex-little-book-list > .hex-span > span {
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 140px;
+}
+
+/* ============================= 操作成功 ============================= */
+/* ============================= 操作失败 ============================= */
+.hex-modal-success,
+.hex-modal-fail {
+    width: 100%;
+}
+
+.hex-modal-success > div,
+.hex-modal-fail > div {
+    width: 100%;
+    display: inline-block;
+}
+
+.hex-modal-success > div:nth-of-type(n+2),
+.hex-modal-fail > div:nth-of-type(n+2) {
+    margin-top: 10px;
+}
+
+.hex-modal-success > div > *,
+.hex-modal-fail > div > * {
+    float: left;
+}
+
+.hex-modal-success > div:nth-of-type(1) .success,
+.hex-modal-fail > div:nth-of-type(1) .error,
+.hex-modal-fail > div:nth-of-type(1) .waring {
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+}
+
+.hex-modal-success > div:nth-of-type(1) .success {
+    background: url("../../images/success.png") no-repeat scroll 0 0;
+    background-size: cover;
+}
+
+.hex-modal-fail > div:nth-of-type(1) .error {
+    background: url("../../images/closed.png") no-repeat scroll 0 0;
+    background-size: cover;
+}
+
+.hex-modal-fail > div:nth-of-type(1) .waring {
+    background: url("../../images/warning.png") no-repeat scroll 0 0;
+}
+
+.hex-modal-success > div:nth-of-type(1) h1,
+.hex-modal-fail > div:nth-of-type(1) h1 {
+    line-height: 30px;
+}
+
+.hex-modal-success > .button button,
+.hex-modal-fail > .button button {
+    float: right;
+    height: 28px;
+    padding: 0 10px;
+    font-size: 12px;
+}
+
+/* ============================= 修改学号、调班 ============================= */
+.hex-modal-input {
+    width: 100%;
+}
+
+.hex-modal-input > div {
+    width: 100%;
+    display: inline-block;
+}
+
+.hex-modal-input > div:nth-of-type(1) {
+    margin-bottom: 5px;
+}
+
+.hex-modal-input > div:nth-of-type(n+2) {
+    margin-top: 10px;
+}
+
+.hex-modal-input > div > * {
+    float: left;
+}
+
+.hex-modal-input > .button button {
+    float: right;
+    height: 28px;
+    padding: 0 10px;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.hex-modal-input .input label {
+    line-height: 30px;
+    font-weight: 100;
+    margin-right: 10px;
+}
+
+.hex-modal-input .input input {
+    height: 30px;
+    border-radius: 2px;
+    padding: 0 5px;
+}
+
+.hex-modal-input .input .hex-drop-down {
+    margin-left: 10px;
+}
+
+.hex-modal-input .input .hex-drop-down > p {
+    background: #FFFFFF;
+    border: 1px solid #CAD1D7;
+    height: 30px;
+    line-height: 30px;
+}
+
+.hex-modal-input .input .hex-drop-down > div {
+    height: 30px;
+    width: 30px;
+    background: #D6DCE2 url("../../images/right_apply_course.png") no-repeat 5px 5px;
+}
+
+.hex-modal-input .input .hex-drop-down > .down {
+    background: #D6DCE2 url("../../images/down_apply_course.png") no-repeat 5px 5px;
+}
+
+.hex-modal-input .input .hex-drop-down > ul {
+    background: #FFFFFF;
+    top: 34px;
+    border: 1px solid #CAD1D7;
+}
+
+/* ============================= 选择范围 ============================= */
+.hex-modal-range {
+}
+
+.hex-modal-range > div {
+    width: 100%;
+}
+
+.hex-modal-range > .button {
+    display: inline-block;
+}
+
+.hex-modal-range > .button input,
+.hex-modal-range > .button span {
+    float: left;
+    line-height: 28px;
+}
+
+.hex-modal-range > .button input {
+    margin: 8px 10px 0 0;
+}
+
+.hex-modal-range > .button button {
+    float: right;
+    height: 28px;
+    padding: 0 10px;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.hex-modal-range .hex-title-line {
+    margin-top: 20px;
+}
+
+.hex-modal-range .hex-title-line input {
+    float: left;
+    margin-right: 10px;
+    line-height: 20px;
+}
+
+.hex-modal-range .hex-title-line h2 {
+    line-height: 20px;
+}
+
+.hex-modal-range .point-list {
+}
+
+.hex-modal-range .point-list > div {
+    display: inline-block;
+    min-width: 32.99%;
+}
+
+.hex-modal-range .point-list > div > input[type="checkbox"] {
+    position: static;
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+/* ============================= 更换题库 ============================= */
+.hex-modal-library {
+}
+
+.hex-modal-library > div {
+    width: 100%;
+}
+
+.hex-modal-library > div:nth-of-type(2) {
+    margin-top: 20px;
+}
+
+.hex-modal-library > .button {
+    display: inline-block;
+}
+
+.hex-modal-library > .button button {
+    float: right;
+    height: 28px;
+    padding: 0 10px;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.hex-modal-library .library-list {
+    margin-top: 20px;
+    border-top: 2px solid #C9D1DA;
+    border-bottom: 2px solid #C9D1DA;
+    display: inline-block;
+}
+
+.hex-modal-library .library-list input[type="radio"] {
+    float: left;
+    position: absolute;
+    top: 5px;
+}
+
+.hex-modal-library .library-list .library {
+    width: 100%;
+    float: left;
+    display: inline-block;
+    position: relative;
+}
+
+.hex-modal-library .library-list .library:nth-of-type(n+2) {
+    border-top: 1px dotted #C9D1DA;
+}
+
+.hex-modal-library .library-list .library > div {
+    display: inline-block;
+    margin: 5px 0 5px 30px;
+    width: 100%;
+}
+
+.hex-modal-library .library-list .library > div > div {
+    float: left;
+    min-width: 25.001%;
+}
+
+.hex-modal-library .library-list .library .hex-font-orange,
+.hex-modal-library .library-list .library .hex-font-green {
+    margin-left: 10px;
+}
+
+/* ============================= 选择学校 ============================= */
+.hex-modal-school {
+}
+
+.hex-modal-school > div {
+    width: 100%;
+}
+
+.hex-modal-school > .location {
+    border-bottom: 1px solid #C9D1DA;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+.hex-modal-school > .location a {
+    color: #454f59;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+.hex-modal-school > .location a:hover {
+    color: #6c7e8f;
+}
+
+.hex-modal-school > .school {
+    display: inline-block;
+    overflow-y: auto;
+    height: 300px;
+}
+
+.hex-modal-school > .school > div {
+    margin-left: 10px;
+    float: left;
+    min-width: 30.9%;
+    margin-top: 5px;
+}
+
+.hex-modal-school > .school a {
+    color: #858e97;
+    height: 30px;
+    line-height: 30px;
+}
+
+.hex-modal-school > .school a:hover {
+    color: #a3afba;
+}
+
+.hex-modal-school > .button {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.hex-modal-school > .button button {
+    float: right;
+    height: 28px;
+    padding: 0 10px;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+/* ============================= 添加周 ============================= */
+.hex-lg-addweek {
+    width: 800px;
+}
+
+.hex-modal-addweek {
+    width: 100%;
+}
+
+.hex-modal-addweek > div {
+    width: 100%;
+    display: inline-block;
+}
+
+.hex-modal-addweek .week {
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.hex-modal-addweek .week > * {
+    float: left;
+}
+
+.hex-modal-addweek .hex-drop-down {
+    margin-left: 10px;
+    width: 180px;
+}
+
+.hex-modal-addweek .hex-drop-down > p {
+    background: #FFFFFF;
+    border: 1px solid #CAD1D7;
+    height: 28px;
+    line-height: 28px;
+    width: 200px;
+}
+
+.hex-modal-addweek .hex-drop-down > div {
+    height: 28px;
+    width: 28px;
+    right: 0;
+    background: #D6DCE2 url("../../images/right_apply_course.png") no-repeat 4px 4px;
+}
+
+.hex-modal-addweek .hex-drop-down > .down {
+    background: #D6DCE2 url("../../images/down_apply_course.png") no-repeat 4px 4px;
+}
+
+.hex-modal-addweek .hex-drop-down > ul {
+    background: #FFFFFF;
+    top: 34px;
+    border: 1px solid #CAD1D7;
+    width: 200px;
+}
+
+.hex-modal-addweek .hex-drop-down > ul li {
+    width: 100%;
+}
+
+.hex-modal-addweek > .button {
+    margin-top: 20px;
+}
+
+.hex-modal-addweek > .button button {
+    float: right;
+    height: 28px;
+    padding: 0 10px;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.hex-modal-addweek .chapter {
+    position: relative;
+    margin-top: 20px;
+}
+
+.hex-modal-addweek .chapter > div:nth-of-type(1) {
+    position: absolute;
+}
+
+.hex-modal-addweek .chapter > div:nth-of-type(2) {
+    float: right;
+}
+
+.hex-modal-addweek .chapter > div:nth-of-type(3) > div {
+    width: 100%;
+}
+
+.hex-modal-addweek .chapter > div:nth-of-type(3) > div .hex-drop-down {
+    float: left;
+}
+
+.hex-modal-addweek .chapter > div:nth-of-type(3) {
+    float: left;
+    margin-left: 97px;
+    width: 550px;
+}
+
+.hex-modal-addweek .chapter > div:nth-of-type(3) > div {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.hex-modal-addweek .chapter > div:nth-of-type(3) > div > .hex-drop-down:nth-of-type(2) {
+    margin-left: 85px;
+}
+
+.hex-modal-addweek .chapter > div:nth-of-type(3) > div > a {
+    float: right;
+    margin-top: 4px;
+}
+
+.hex-modal-addweek .chapter button {
+    height: 28px;
+    padding: 0 10px;
+    font-size: 12px;
+}
+
+.hex-modal-addweek .remark {
+    display: inline-block;
+}
+
+.hex-modal-addweek .remark > * {
+    float: left;
+}
+
+.hex-modal-addweek .remark span {
+
+}
+
+.hex-modal-addweek .remark textarea {
+    resize: none;
+    border-radius: 2px;
+    border: 1px solid #cbd1d7;
+    margin-left: 65px;
+    height: 60px;
+    width: 320px;
+    padding: 10px;
+}
+
+/* ============================= 两个按钮 ============================= */
+.hex-modal-button {
+}
+
+.hex-modal-button button {
+    width: 100%;
+    height: 28px;
+    margin-top: 10px;
+}
+
+/* ============================= 电子书信息 ============================= */
+.hex-modal-ebook {
+}
+
+.hex-modal-ebook > div {
+    width: 100%;
+    display: inline-block;
+}
+
+.hex-modal-ebook .hex-title {
+    display: inline-block;
+}
+
+.hex-modal-ebook .hex-title > a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.hex-modal-ebook .hex-title > a:hover {
+    background: #e4e8ec;
+}
+
+.hex-modal-ebook .hex-title .img {
+    width: 100px;
+    height: 100px;
+    background: #000000;
+    line-height: 100px;
+}
+
+.hex-modal-ebook .hex-title .img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.hex-modal-ebook .hex-title .img {
+    float: left;
+}
+
+.hex-modal-ebook .hex-title .info {
+    float: left;
+    margin-left: 20px;
+}
+
+.hex-modal-ebook .hex-title .info > h1 {
+    margin-bottom: 20px;
+    float: none;
+    line-height: 30px;
+}
+
+.hex-modal-ebook .hex-title .info div {
+    margin-bottom: 5px;
+}
+
+.hex-modal-ebook .hex-title .info div h2 {
+    float: left;
+}
+
+.hex-modal-ebook .hex-title .info div span {
+    color: #9aa5b0;
+}
+
+.hex-modal-ebook > .button button {
+    float: right;
+    height: 28px;
+    padding: 0 10px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.hex-modal-ebook.hex-overflow {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+/* ============================= 课程内上传 ============================= */
+.hex-modal-upload {
+}
+
+.hex-modal-upload > div {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.hex-modal-upload > .button button {
+    float: right;
+    height: 28px;
+    padding: 0 10px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.hex-modal-upload .type > span {
+    line-height: 30px;
+    height: 30px;
+    display: inline-block;
+    float: left;
+}
+
+.hex-modal-upload .type > a {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    background-color: #b8bec5;
+    margin-right: 5px;
+    border-radius: 2px;
+    float: left;
+}
+
+.hex-modal-upload .type > a:hover {
+    -moz-box-shadow: 2px 0 1px #DAD9DE, -2px 0 1px #DAD9DE, 0 2px 1px #DAD9DE, 0 -2px 1px #DAD9DE; /* For Firefox3.6+ */
+    -webkit-box-shadow: 2px 0 1px #DAD9DE, -2px 0 1px #DAD9DE, 0 2px 1px #DAD9DE, 0 -2px 1px #DAD9DE; /* For Chrome5+, Safari5+ */
+    box-shadow: 2px 0 1px #DAD9DE, -2px 0 1px #DAD9DE, 0 2px 1px #DAD9DE, 0 -2px 1px #DAD9DE;
+}
+
+.hex-modal-upload .type > a:active {
+    -moz-box-shadow: 2px 2px 2px #8a8f95 inset, -2px -2px 2px #8a8f95 inset; /* For Firefox3.6+ */
+    -webkit-box-shadow: 2px 2px 2px #8a8f95 inset, -2px -2px 2px #8a8f95 inset; /* For Chrome5+, Safari5+ */
+    box-shadow: 2px 2px 2px #8a8f95 inset, -2px -2px 2px #8a8f95 inset;
+}
+
+.hex-modal-upload .type > .active {
+    background-color: #34b27c;
+}
+
+.hex-modal-upload .type > .office {
+    background-image: url("../../icon/courseware_type/office.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hex-modal-upload .type > .audio {
+    background-image: url("../../icon/courseware_type/audio.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hex-modal-upload .type > .picture_single {
+    background-image: url("../../icon/courseware_type/picture_single.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hex-modal-upload .type > .pictures_more {
+    background-image: url("../../icon/courseware_type/pictures_more.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hex-modal-upload .type > .flash {
+    background-image: url("../../icon/courseware_type/flash.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hex-modal-upload .type > .video {
+    background-image: url("../../icon/courseware_type/video.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hex-modal-upload .type > .plug-in {
+    background-image: url("../../icon/courseware_type/plug-in.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hex-modal-upload .type > .thinkingt {
+    background-image: url("../../icon/courseware_type/thinkingt.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hex-modal-upload .type > .custom {
+    background-image: url("../../icon/courseware_type/custom.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hex-modal-upload .type > .other {
+    background-image: url("../../icon/courseware_type/other.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hex-modal-upload .list {
+    display: inline-block;
+    margin-top: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.hex-modal-upload .list > label {
+    width: 45%;
+    height: auto;
+    display: inline-block;
+    line-height: normal;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.hex-modal-upload .list > label > span {
+    max-width: 160px;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.hex-modal-upload .list > label > input[type='radio'] {
+    margin-right: 10px;
+    float: left;
+}
+
+/* ============================= 问答与讨论 ============================= */
+.hex-modal-question {
+}
+
+.hex-modal-question > div {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.hex-modal-question > .button button {
+    float: right;
+    height: 28px;
+    padding: 0 10px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.hex-modal-question > div:nth-of-type(2) {
+    margin-top: 10px;
+}
+
+.hex-modal-question > .editor {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #C9D1DA;
+}
+
+.hex-modal-question > .accessory {
+    border-top: 1px solid #C9D1DA;
+    padding: 5px 0;
+}
+
+.hex-modal-question > .accessory > div {
+    margin: 5px 0;
+    width: 100%;
+    display: inline-block;
+}
+
+.hex-modal-question > .accessory span {
+    float: left;
+    background: url("../../images/button-annex.png") no-repeat 2px 2px;
+    padding-left: 22px;
+    height: 14px;
+    line-height: 14px;
+}
+
+.hex-modal-question > .accessory a {
+    float: left;
+    height: 15px;
+    width: 15px;
+    background-image: url("../../icon/delete_w.png");
+    background-color: #858E97;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 2px 0 0 10px;
+    border-radius: 2px;
+}
+
+.hex-modal-question > .accessory a:hover {
+    background-color: #34b27c;
+}
+
+/* ============================= 问答与讨论 ============================= */
+.hex-modal-send_message {
+}
+
+.hex-modal-send_message > div {
+    width: 100%;
+    display: inline-block;
+}
+
+.hex-modal-send_message .body {
+    margin-top: 30px;
+}
+
+.hex-modal-send_message .body form > div {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.hex-modal-send_message .body form > div:not(.button) > * {
+    float: left;
+}
+
+.hex-modal-send_message .body form > div > label:nth-of-type(1) {
+    width: 18%;
+}
+
+.hex-modal-send_message .body form > div:nth-of-type(2) span {
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+.hex-modal-send_message .body form > div:nth-of-type(3) input {
+    width: 410px;
+}
+
+.hex-modal-send_message .body form .name > div > * {
+    float: left;
+    line-height: 28px;
+}
+
+.hex-modal-send_message .body form .name > div > a {
+    margin-top: 4px;
+}
+
+.hex-modal-send_message .body form .name > div {
+    width: 400px;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.hex-modal-send_message .body form .hex-rich-editor {
+    width: 410px;
+    height: 195px;
+}
+
+.hex-modal-send_message .button button {
+    float: right;
+    margin-left: 20px;
+}
+
+.hex-modal-send_message .list {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.hex-modal-send_message .list > form > * {
+    width: 100%;
+    display: inline-block;
+}
+
+.hex-modal-send_message .list > label input[type='checkbox'] {
+    margin-right: 10px;
+    margin-left: 14px;
+}
+
+.hex-modal-send_message .list .people-list {
+    width: 100%;
+    height: 250px;
+    overflow: auto;
+    display: inline-block;
+}
+
+.hex-modal-send_message .list .people-list > div.first,
+.hex-modal-send_message .list .people-list > div.second > div {
+    width: 100%;
+    height: 40px;;
+    border-bottom: 1px solid #edf0f3;
+    background-color: #ffffff;
+}
+
+.hex-modal-send_message .list .people-list > div.first > *:not(a),
+.hex-modal-send_message .list .people-list > div.second > div > *:not(a) {
+    float: left;
+    height: 100%;
+}
+
+.hex-modal-send_message .list .people-list > div.first > label,
+.hex-modal-send_message .list .people-list > div.second > div > label {
+    line-height: 40px;
+}
+
+.hex-modal-send_message .list .people-list > div.first > label > span,
+.hex-modal-send_message .list .people-list > div.second > div > label > span {
+    width: 260px;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.hex-modal-send_message .list .people-list > div.first > label > div,
+.hex-modal-send_message .list .people-list > div.second > div > label > div {
+    height: 100%;
+    width: 40px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.hex-modal-send_message .list .people-list > div.first .hex-checkbox {
+    background-color: #dee2e7;
+}
+
+.hex-modal-send_message .list .people-list > div.first > label > *,
+.hex-modal-send_message .list .people-list > div.second > div > label > * {
+    float: left;
+}
+
+.hex-modal-send_message .list .people-list > div.first > a {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.hex-modal-send_message .list .people-list > div.second {
+    height: 0;
+    overflow: hidden;
+}
+
+/* ============================= 课程模板详情 ============================= */
+.hex-modal-course_template {
+}
+
+.hex-modal-course_template .hex-title {
+}
+
+.hex-modal-course_template .hex-info h2 {
+    margin-top: 20px;
+}
+
+.hex-modal-course_template .hex-info > div {
+    display: inline-block;
+    width: 100%;
+}
+
+.hex-modal-course_template .hex-little-book-list {
+    width: inherit;
+    height: 90px;
+    border: 0;
+}
+
+.hex-modal-course_template .hex-little-book-list > .hex-image,
+.hex-modal-course_template .hex-little-book-list > .hex-image img {
+    height: 90px;
+    width: 100px;
+}
+
+.hex-modal-course_template .hex-little-book-list .hex-span > div {
+    width: 800px;
+    margin-left: 110px;
+}
+
+.hex-modal-course_template .hex-little-book-list .hex-span > div:nth-child(n+2) {
+    margin-left: 115px;
+}
+
+.hex-modal-course_template .hex-little-book-list .hex-span > div:nth-child(n+2) span {
+    color: #98a4b0;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.hex-modal-course_template h2 {
+    margin: 20px 0;
+}
+
+/* ============================= 新建题库 ============================= */
+.hex-modal-new_bank {
+}
+
+.hex-modal-new_bank > div {
+    width: 100%;
+}
+
+.hex-modal-new_bank > div:nth-of-type(2) {
+    margin-top: 20px;
+}
+
+.hex-modal-new_bank > .button {
+    display: inline-block;
+}
+
+.hex-modal-new_bank > .button button {
+    float: right;
+    height: 28px;
+    padding: 0 10px;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.hex-modal-new_bank .library-list {
+    margin-top: 10px;
+    border-top: 2px solid #C9D1DA;
+    border-bottom: 2px solid #C9D1DA;
+    display: inline-block;
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.hex-modal-new_bank .library-list input[type="radio"] {
+    float: left;
+    position: absolute;
+    top: 5px;
+}
+
+.hex-modal-new_bank .library-list .library {
+    width: 100%;
+    float: left;
+    display: inline-block;
+    position: relative;
+    min-width: 100%;
+    line-height: normal;
+    height: auto;
+    font-weight: normal;
+}
+
+.hex-modal-new_bank .library-list .library:nth-of-type(n+2) {
+    border-top: 1px dotted #C9D1DA;
+}
+
+.hex-modal-new_bank .library-list .library > div {
+    display: inline-block;
+    margin: 5px 0 5px 30px;
+    width: 100%;
+}
+
+.hex-modal-new_bank .library-list .library > div > div {
+    float: left;
+    width: 50%;
+}
+
+.hex-modal-new_bank .library-list .library .hex-font-lightgray {
+    max-width: 85px;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    float: left;
+}
+
+.hex-modal-new_bank .library-list .library .hex-font-orange,
+.hex-modal-new_bank .library-list .library .hex-font-green {
+    margin-left: 10px;
+}
+
+.hex-modal-new_bank .input {
+    padding-bottom: 10px;
+}
+
+.hex-modal-new_bank .input h2 {
+    float: left;
+    margin-right: 10px;
+    line-height: 30px;
+}
+
+/* ============================= 新建习题 ============================= */
+.hex-modal-new_question {
+}
+
+.hex-modal-new_question > div {
+    width: 100%;
+}
+
+.hex-modal-new_question > div:nth-of-type(2) {
+    margin-top: 20px;
+}
+
+.hex-modal-new_question > .button {
+    display: inline-block;
+}
+
+.hex-modal-new_question > .button button {
+    float: right;
+    height: 28px;
+    padding: 0 10px;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.hex-modal-new_question .library-list {
+    margin: 10px 0;
+    border-top: 2px solid #C9D1DA;
+    border-bottom: 2px solid #C9D1DA;
+    display: inline-block;
+    max-height: 300px;
+    min-height: 46px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.hex-modal-new_question .library-list label {
+    width: 32.5%;
+    margin: 5px 0;
+    line-height: 28px;
+}
+
+.hex-modal-new_question .library-list label input[type='radio'] {
+    float: left;
+    margin-top: 9px;
+    margin-right: 10px;
+}
+
+.hex-modal-new_question .library-list label span {
+    max-width: 240px;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    float: left;
+}
+
+.hex-modal-new_question .library-list label input[type='text']{
+    height: 28px;
+    width: 150px;
+    float: left;
+}
+
+/* ============================= 注册成功 ============================= */
+.hex-modal-success-logo {
+    position: relative;
+    height: 150px;
+    font-size: 1em;
+}
+
+.hex-modal-success-logo a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #000000;
+    transition: all 2s cubic-bezier(0.21, 1, 0.84, 1.01) 0s;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hex-modal-success-logo .hex-font-yellow {
+    font-size: 3em;
+}
+
+.hex-modal-success-logo .hex-font-green {
+    font-size: 1.5em;
+}
+
+.hex-modal-success-logo a:hover {
+    transform: scale(1.2);
+}
+
+.hex-modal-success-logo span:nth-of-type(1) {
+    position: absolute;
+    top: 15px;
+    left: 100px;
+}
+
+.hex-modal-success-logo .hex-font-yellow {
+    position: absolute;
+    top: 42px;
+    left: 160px;
+}
+
+.hex-modal-success-logo span:nth-of-type(3) {
+    position: absolute;
+    top: 104px;
+    right: 50px;
+}
+
+.hex-modal-success-logo-2 {
+    width: 100%;
+}
+
+.hex-modal-success-logo-2 > div {
+    width: 100%;
+    display: inline-block;
+}
+
+.hex-modal-success-logo-2 > div:nth-of-type(n+2) {
+    margin-top: 10px;
+}
+
+.hex-modal-success-logo-2 > div > * {
+    float: left;
+}
+
+.hex-modal-success-logo-2 > div:nth-of-type(1) .success {
+    margin-left: 90px;
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+}
+
+.hex-modal-success-logo-2 > div:nth-of-type(1) .success {
+    background: url("../../images/success.png") no-repeat scroll 0 0;
+    background-size: cover;
+}
+
+.hex-modal-success-logo-2 > div:nth-of-type(1) h1 {
+    line-height: 30px;
+}
+
+.hex-modal-success-logo-2 > .button a {
+    font-size: 12px;
+    margin-left: 123px;
+}
+
+.hex-modal-success-logo-2 .hex-font-lightgray {
+    max-width: 330px;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* ============================= hex-type-list ============================= */
+.hex-modal-identity {
+}
+
+.hex-modal-identity > div {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,209 @@
+/* -----------------------------   消息   ----------------------------- */
+@charset "utf-8";
+
+/* ------ List ------
+ * 消息
+ */
+
+.hex-message-index {
+    width: 1180px;
+    margin: 0 auto;
+    padding-top: 1px;
+}
+
+/* ============================= 消息 ============================= */
+.hex-message-index > div {
+    width: 100%;
+}
+
+.hex-message-index .hex-message-index-title {
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+}
+.hex-message-index .hex-message-index-title h1{
+    float: left;
+}
+
+.hex-message-index .hex-message-index-title button{
+    float: right;
+}
+
+.hex-message-index .hex-message-index-body {
+    padding: 10px 0;
+}
+
+.hex-message-index .hex-message-index-body .type {
+    height: 45px;
+    width: 100%;
+    border-bottom: 2px solid #bcc5cc;
+}
+
+.hex-message-index .hex-message-index-body .type div {
+    height: 45px;
+    float: left;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+
+.hex-message-index .hex-message-index-body .type div:nth-of-type(1),
+.hex-message-index .hex-message-index-body .type div:nth-of-type(2) {
+    width: 70px;
+}
+
+.hex-message-index .hex-message-index-body .type div a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+    color: #858e97;
+}
+
+.hex-message-index .hex-message-index-body .type div:nth-of-type(1) a {
+    border-right: 1px solid #bcc5cc;
+}
+
+.hex-message-index .hex-message-index-body .type div.active {
+    border-bottom: 2px solid #fc7039;
+}
+
+.hex-message-index .hex-message-index-body .type div.active a {
+    color: #323b43;
+}
+
+.hex-message-index .hex-message-index-body .type div:hover {
+    border-bottom: 2px solid #fc7039;
+}
+
+.hex-message-index .hex-message-index-body .type div .hex-little-number {
+    top: 0;
+    right: 7px;
+}
+
+.hex-message-index .hex-message-index-body .body {
+    width: 100%;
+    padding-top: 10px;
+}
+
+.hex-message-index .hex-message-index-body .body .one {
+    width: 100%;
+    background-color: #f6f8fa;
+    padding: 10px 25px 0 25px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.hex-message-index .hex-message-index-body .body .one:hover{
+    -moz-box-shadow: 2px 0 1px rgba(226, 224, 227, 0.5), -2px 0 1px rgba(226, 224, 227, 0.5), 0 2px 1px rgba(226, 224, 227, 0.5), 0 -2px 1px rgba(226, 224, 227, 0.5); /* For Firefox3.6+ */
+    -webkit-box-shadow: 2px 0 1px rgba(226, 224, 227, 0.5), -2px 0 1px rgba(226, 224, 227, 0.5), 0 2px 1px rgba(226, 224, 227, 0.5), 0 -2px 1px rgba(226, 224, 227, 0.5); /* For Chrome5+, Safari5+ */
+    box-shadow: 2px 0 1px rgba(226, 224, 227, 0.5), -2px 0 1px rgba(226, 224, 227, 0.5), 0 2px 1px rgba(226, 224, 227, 0.5), 0 -2px 1px rgba(226, 224, 227, 0.5);
+}
+
+.hex-message-index .hex-message-index-body .body .one > div {
+    width: 100%;
+    display: inline-block;
+}
+
+.hex-message-index .hex-message-index-body .body .one .title > div {
+    display: inline-block;
+    width: 100%;
+}
+
+.hex-message-index .hex-message-index-body .body .one .title > div:nth-of-type(1) {
+    position: relative;
+}
+
+.hex-message-index .hex-message-index-body .body .one .title > div:nth-of-type(1) > * {
+    float: left;
+}
+
+.hex-message-index .hex-message-index-body .body .one .title > div:nth-of-type(1) i {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: #fc713a;
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: -14px;
+}
+
+.hex-message-index .hex-message-index-body .body .one .title > div:nth-of-type(1) strong {
+    color: #34b27c;
+    border: 1px solid #34b27c;
+    font-size: 12px;
+    padding: 0 3px;
+    font-weight: 100;
+    margin-right: 10px;
+}
+
+.hex-message-index .hex-message-index-body .body .one .title > div:nth-of-type(1) span {
+    max-width: 1060px;
+    /*display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;*/
+}
+
+.hex-message-index .hex-message-index-body .body .one .title > div:nth-of-type(1) a {
+    float: right;
+}
+
+.hex-message-index .hex-message-index-body .body .one .title > div:nth-of-type(2) span{
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.hex-message-index .hex-message-index-body .body .one .info{
+    padding-top: 15px;
+    overflow: hidden;
+}
+
+.hex-message-index .hex-message-index-body .body .one .info p{
+    line-height: 150%;
+}
+
+.hex-message-index .hex-message-index-body .body .one .info .one-pic,
+.hex-message-index .hex-message-index-body .body .one .info .more-pic{
+    height: 160px;
+    width: 160px;
+    margin-bottom: 20px;
+}
+.hex-message-index .hex-message-index-body .body .one .info .one-pic img {
+    max-height: 150px;
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+.hex-message-index .hex-message-index-body .body .one .info .more-pic img{
+    max-height: 46px;
+    max-width: 46px;
+    margin: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <!--优先使用 IE 最新版本和 Chrome-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!--360 使用Google Chrome Frame-->
+    <meta name="renderer" content="webkit">
+    <!--移动端适配-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>文档模板</title>
+
+    <link href="Content/css/bootstrap.css" rel="stylesheet"/>
+    <link href="Content/css/Layout/layout.css" rel="stylesheet"/>
+    <link href="Content/css/Layout/module.css" rel="stylesheet"/>
+    <link href="Content/css/Layout/base.css" rel="stylesheet"/>
+    <link href="Content/css/Layout/forms.css" rel="stylesheet"/>
+
+    <link href="css_page.css" rel="stylesheet"/>
+
+    <script type="application/javascript" src="Scripts/jquery-1.10.2.js"></script>
+
+    <script type="application/javascript" src="css_page.js"></script>
+</head>
+<body>
+<nav>
+    <a class="active" href="./index.html">基本样式</a>
+    <a href="./module.html">组件使用</a>
+    <a href="./verification.html">验证使用</a>
+    <a href="./icon_list.html">图标索引</a>
+    <a href="./tree.html">样式结构</a>
+    <a href="./sass.html">SASS变量以及混合器</a>
+</nav>
+<div class="main_content">
+    <div>
+        <div><h1 class="hex-font-gray">基本样式说明</h1></div>
+        <div><p class="hex-font-lightgray hex-indent">该页包含了按钮、字体、段落、表单等样式的使用方法。</p></div>
+    </div>
+    <!-- 按钮样式 -->
+    <div id="1">
+        <div><h1 class="hex-font-orange">按钮样式</h1></div>
+        <div><p class="hex-font-lightgray hex-indent">按照<span class="hex-font-green">颜色</span>分类包含绿色、橙色、灰色</p></div>
+        <div>
+            <table class="hex-examples-table">
+                <thead>
+                <tr>
+                    <td class="example">实例</td>
+                    <td class="code">代码</td>
+                    <td class="remark">备注</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <button class="hex-green-btn hex-button">实例绿色按钮</button>
+                    </td>
+                    <td>
+                        <xmp class="hex-font-lightgray"><button class="hex-green-btn hex-button">实例绿色按钮</button>
+                        </xmp>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray"></p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="hex-examples-list">
+    <ul>
+        <li><a class="active" data-goto="1">按钮</a></li>
+        <li><a class="" data-goto="2">文字</a></li>
+        <li><a class="" data-goto="3">段落</a></li>
+        <li><a class="" data-goto="4">表单</a></li>
+    </ul>
+</div>
+<footer class="hex-footer">
+    <div class="hex-footer-word">
+        2015年版 内部使用资料
+    </div>
+</footer>
+</body>
+</html>

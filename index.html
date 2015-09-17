@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <!--优先使用 IE 最新版本和 Chrome-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!--360 使用Google Chrome Frame-->
+    <meta name="renderer" content="webkit">
+    <!--移动端适配-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>样式索引</title>
+
+    <link href="Content/css/bootstrap.css" rel="stylesheet"/>
+    <link href="Content/css/Layout/layout.css" rel="stylesheet"/>
+    <link href="Content/css/Layout/module.css" rel="stylesheet"/>
+    <link href="Content/css/Layout/base.css" rel="stylesheet"/>
+    <link href="Content/css/Layout/forms.css" rel="stylesheet"/>
+
+    <link href="css_page.css" rel="stylesheet"/>
+
+    <script type="application/javascript" src="Scripts/jquery-1.10.2.js"></script>
+
+    <script type="application/javascript" src="css_page.js"></script>
+</head>
+<body>
+<nav>
+    <a class="active" href="./index.html">基本样式</a>
+    <a href="./module.html">组件使用</a>
+    <a href="./verification.html">验证使用</a>
+    <a href="./icon_list.html">图标索引</a>
+    <a href="./tree.html">样式结构</a>
+    <a href="./sass.html">SASS变量以及混合器</a>
+</nav>
+<div class="main_content">
+    <div>
+        <div><h1 class="hex-font-gray">基本样式说明</h1></div>
+        <div><p class="hex-font-lightgray hex-indent">该页包含了按钮、字体、段落、表单等样式的使用方法。</p></div>
+    </div>
+    <!-- 按钮样式 -->
+    <div id="1">
+        <div><h1 class="hex-font-orange">按钮样式</h1></div>
+        <div><p class="hex-font-lightgray hex-indent">按照<span class="hex-font-green">颜色</span>分类包含绿色、橙色、灰色</p></div>
+        <div>
+            <table class="hex-examples-table">
+                <thead>
+                <tr>
+                    <td class="example">实例</td>
+                    <td class="code">代码</td>
+                    <td class="remark">备注</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <button class="hex-green-btn hex-button">实例绿色按钮</button>
+                    </td>
+                    <td>
+                        <xmp class="hex-font-lightgray"><button class="hex-green-btn hex-button">实例绿色按钮</button>
+                        </xmp>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="hex-orange-btn hex-button">实例橙色按钮</button>
+                    </td>
+                    <td>
+                        <xmp class="hex-font-lightgray"><button class="hex-orange-btn hex-button">实例绿色按钮</button>
+                        </xmp>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="hex-lightgrey-btn hex-button">实例灰色按钮</button>
+                    </td>
+                    <td>
+                        <xmp class="hex-font-lightgray"><button class="hex-lightgrey-btn hex-button">实例绿色按钮</button>
+                        </xmp>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray">浅灰的单词拼错了…… %>_<%</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="hex-red-btn hex-button">实例灰色按钮</button>
+                    </td>
+                    <td>
+                        <xmp class="hex-font-lightgray"><button class="hex-red-btn hex-button">实例绿色按钮</button>
+                        </xmp>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray"></p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div><p class="hex-font-lightgray hex-indent">按照<span class="hex-font-green">样式</span>分类可以分为小图标、带图按钮、正常按钮</p>
+        </div>
+        <div>
+            <table class="hex-examples-table">
+                <thead>
+                <tr>
+                    <td class="example">实例</td>
+                    <td class="code">代码</td>
+                    <td class="remark">备注</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <button class="hex-little-btn-20 hex-little-btn hex-img-plus"></button>
+                    </td>
+                    <td>
+                        <xmp class="hex-font-lightgray"><button class="hex-little-btn-20 hex-little-btn hex-img-plus"></button>
+                        </xmp>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray">其中的图标需要查看文档的<a>图表索引</a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="hex-img-btn hex-green-btn" style="margin-bottom: 10px">
+                            <div class="hex-little-btn-28 hex-img-back_w"></div>
+                            <span>带图按钮</span>
+                        </button>
+                        <button class="hex-img-btn hex-lightgrey-btn" style="margin-bottom: 10px">
+                            <div class="hex-little-btn-28 hex-img-back_w"></div>
+                            <span>带图按钮</span>
+                        </button>
+                        <button class="hex-img-btn hex-orange-btn">
+                            <div class="hex-little-btn-28 hex-img-back_w"></div>
+                            <span>带图按钮</span>
+                        </button>
+                    </td>
+                    <td>
+                        <xmp class="hex-font-lightgray"><button class="hex-img-btn hex-green-btn">
+    <div class="hex-little-btn-28 hex-img-back_w"></div>
+    <span>带图按钮</span>
+</button>
+<button class="hex-img-btn hex-lightgrey-btn">
+    <div class="hex-little-btn-28 hex-img-back_w"></div>
+    <span>带图按钮</span>
+</button>
+<button class="hex-img-btn hex-lightgrey-btn">
+    <div class="hex-little-btn-28 hex-img-back_w"></div>
+    <span>带图按钮</span>
+</button>
+                        </xmp>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray">其中的图标需要查看文档的<a>图表索引</a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="hex-green-btn hex-button">正常按钮</button>
+                    </td>
+                    <td>
+                        <xmp class="hex-font-lightgray"><button class="hex-green-btn hex-button">正常按钮</button>
+                        </xmp>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="hex-disable-btn hex-button">不可点按钮</button>
+                    </td>
+                    <td>
+                        <xmp class="hex-font-lightgray"><button class="hex-disable-btn hex-button">不可点按钮</button>
+                        </xmp>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray"></p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- 文字样式 -->
+    <div id="2">
+        <div><h1 class="hex-font-orange">文字样式</h1></div>
+        <div><p class="hex-font-lightgray hex-indent">按照<span class="hex-font-green">颜色</span>分类包含橙色、浅灰、绿色、深灰、红色、黄色</p>
+        </div>
+        <div>
+            <table class="hex-examples-table">
+                <thead>
+                <tr>
+                    <td class="example">实例</td>
+                    <td class="code">代码</td>
+                    <td class="remark">备注</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <span class="hex-font-orange">橙色文字</span>
+                    </td>
+                    <td>
+                        <xmp class="hex-font-lightgray"><span class="hex-font-orange">橙色文字</span></xmp>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="hex-font-lightgray">浅灰文字</span>
+                    </td>
+                    <td>
+                        <xmp class="hex-font-lightgray"><span class="hex-font-lightgray">浅灰文字</span></xmp>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="hex-font-green">绿色文字</span>
+                    </td>
+                    <td>
+                        <xmp class="hex-font-lightgray"><span class="hex-font-green">绿色文字</span></xmp>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="hex-font-gray">深灰文字</span>
+                    </td>
+                    <td>
+                        <xmp class="hex-font-lightgray"><span class="hex-font-gray">深灰文字</span></xmp>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="hex-font-red">红色文字</span>
+                    </td>
+                    <td>
+                        <xmp class="hex-font-lightgray"><span class="hex-font-red">红色文字</span></xmp>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="hex-font-yellow">黄色文字</span>
+                    </td>
+                    <td>
+                        <xmp class="hex-font-lightgray"><span class="hex-font-yellow">黄色文字</span></xmp>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray"></p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div><p class="hex-font-lightgray hex-indent">按照<span class="hex-font-green">类型</span>分类包含加粗、下划线、下滑虚线</p></div>
+        <div>
+            <table class="hex-examples-table">
+                <thead>
+                <tr>
+                    <td class="example">实例</td>
+                    <td class="code">代码</td>
+                    <td class="remark">备注</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <span class="hex-font-lightgray hex-font-bold">加粗文字</span>
+                    </td>
+                    <td>
+                        <xmp class="hex-font-lightgray"><span class="hex-font-lightgray hex-font-bold">加粗文字</span></xmp>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="hex-font-lightgray hex-font-underline">下划线文字</span>
+                    </td>
+                    <td>
+                        <xmp class="hex-font-lightgray"><span class="hex-font-lightgray hex-font-underline">下划线文字</span>
+                        </xmp>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="hex-font-lightgray hex-font-dashed">下滑虚线文字</span>
+                    </td>
+                    <td>
+                        <xmp class="hex-font-lightgray"><span class="hex-font-lightgray hex-font-dashed">下滑虚线文字</span>
+                        </xmp>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray">必须和颜色样式（eg.hex-font-lightgray）一同使用才有效果</p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- 段落样式 -->
+    <div id="3">
+        <div><h1 class="hex-font-orange">段落样式</h1></div>
+        <div><p class="hex-font-lightgray hex-indent">按照<span class="hex-font-green">功能</span>分类包含首行缩进、标签内识别空格</p>
+        </div>
+        <div>
+        <table class="hex-examples-table">
+            <thead>
+            <tr>
+                <td class="example">实例</td>
+                <td class="code">代码</td>
+                <td class="remark">备注</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <p class="hex-font-lightgray hex-indent" style="text-align: left">这段文字首行缩进了，嘿嘿</p>
+                </td>
+                <td>
+                    <xmp class="hex-font-lightgray"><p class="hex-font-lightgray hex-indent">这段文字首行缩进了，哇咔咔咔咔咔咔咔咔</p></xmp>
+                </td>
+                <td>
+                    <p class="hex-font-lightgray"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="hex-font-lightgray hex-space" style="text-align: left">
+这段  文字     的空格 是    识别的
+                    </p>
+                </td>
+                <td>
+                    <xmp class="hex-font-lightgray"><p class="hex-font-lightgray hex-space" style="text-align: left">
+这段  文字     的空格 是    识别的
+</p></xmp>
+                </td>
+                <td>
+                    <p class="hex-font-lightgray">
+                        &lt;p&gt;和内容不能在一行，样式已经将回车的高算进去了
+                    </p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+    <!-- 表单样式 -->
+    <div id="4">
+        <div><h1 class="hex-font-orange">表单样式</h1></div>
+        <div><p class="hex-font-lightgray hex-indent">按照<span class="hex-font-green">用途</span>分类包含密码强度</p>
+        </div>
+        <div>
+            <table class="hex-examples-table">
+                <thead>
+                <tr>
+                    <td class="example">实例</td>
+                    <td class="code">代码</td>
+                    <td class="remark">备注</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="hex-form-strength">
+                            <div>
+                                <div class="weak">弱</div>
+                                <div class="middle">中</div>
+                                <div class="strong">强</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <xmp class="hex-font-lightgray"><div class="hex-form-strength">
+    <div>
+        <div class="weak">弱</div>
+        <div class="middle">中</div>
+        <div class="strong">强</div>
+    </div>
+</div></xmp>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray">
+                            只包含样式，具体使用方法见<a href="./verification.html#3">验证使用</a>
+                        </p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="hex-examples-list">
+    <ul>
+        <li><a class="active" data-goto="1">按钮</a></li>
+        <li><a class="" data-goto="2">文字</a></li>
+        <li><a class="" data-goto="3">段落</a></li>
+        <li><a class="" data-goto="4">表单</a></li>
+    </ul>
+</div>
+<footer class="hex-footer">
+    <div class="hex-footer-word">
+        2015年版 内部使用资料
+    </div>
+</footer>
+</body>
+</html>

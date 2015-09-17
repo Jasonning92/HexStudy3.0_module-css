@@ -1,0 +1,168 @@
+/* -----------------------------   打印样式   ----------------------------- */
+@charset "utf-8";
+
+/*================================试卷打印预览页面================================*/
+#main_div > div {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.hex-title {
+    width: 100%;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.hex-title h1 {
+    float: left;
+    line-height: 30px;
+}
+
+.hex-title .hex-rightbtn {
+    float: right;
+}
+
+/* 试卷底色 */
+.hex-exe-bodys {
+    background-color: #F6F7F9;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+/*//修改样式*/
+.hex-content-student {
+    margin-top: 5px;
+    padding: 0 20px;
+}
+
+.hex-margin {
+    margin: 0;
+}
+
+.hex-lf-padding {
+    padding-left: 40px;
+}
+
+.hex-answer-frame {
+    width: 100%;
+    min-height: 300px;
+    margin-top: 10px;
+}
+
+.hex-answer-control {
+    width: 100% !important;
+    min-height: 300px;
+    border: 1px solid #34b27c !important;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 10px;
+}
+
+/*二维码*/
+.hex-code {
+    margin-top: 5px;
+    margin-bottom: -49px;
+    margin-left: 620px;
+}
+
+/*填空题框*/
+.blankAnswer {
+    border: 1px solid;
+    width: 100px;
+    display: -moz-inline-box;
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+/*修改样式*/
+#printPage {
+    width: 670px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hex-exe-option {
+    width: 50% !important;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.hex-exe-option > div {
+    width: 70%;
+}
+
+.hex-exe-option > span {
+    float: left;
+}
+
+/*打印强制分页*/
+.PageNext {
+    page-break-after: always;
+}
+
+/*选择题框*/
+.choiceAnswer {
+    border: 1px solid #34b27c;
+    width: 20px;
+    display: -moz-inline-box;
+    display: inline-block;
+    margin-right: 5px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+/*填空题框*/
+.blankAnswer {
+    border: 1px solid #34b27c;
+    width: 100px;
+    display: -moz-inline-box;
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+/*四个角*/
+.corner {
+    position: relative;
+}
+
+.corner > div {
+    width: 49px;
+    height: 49px;
+    top: 0;
+}
+
+/*上左角*/
+.top-left {
+    left: 0;
+    border-top: 1px solid #34b27c;
+    border-left: 1px solid #34b27c;
+    position: absolute;
+}
+
+/*上右角*/
+.top-right {
+    right: 0;
+    border-top: 1px solid #34b27c;
+    border-right: 1px solid #34b27c;
+    position: absolute;
+}
+
+/*下左角*/
+.buttom-left {
+    left: 0;
+    border-left: 1px solid #34b27c;
+    border-bottom: 1px solid #34b27c;
+}
+
+/*下右角*/
+.buttom-right {
+    left: 0;
+    border-right: 1px solid #34b27c;
+    border-bottom: 1px solid #34b27c;
+}

@@ -1,0 +1,1 @@
+$(function(){$(document.body).on("click",".more a",function(){$(this).parent().next("ul").slideDown(500)})});function pay(){}

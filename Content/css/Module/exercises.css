@@ -1,0 +1,2002 @@
+/* -----------------------------   习题   ----------------------------- */
+@charset "utf-8";
+
+/* ------ List ------
+ * 查看习题
+ * 试卷查看
+ * 自动组卷-学生习题相同-选择习题
+ * 错题本-查看习题
+ * 错题本
+ * 待评判主观题－单一习题
+ * 课件详情
+ */
+
+/* ============================= 公用 ============================= */
+/* ====== 查看习题悬浮 ====== */
+#datatoggle {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    background: #EDF1F4 none repeat scroll 0 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    padding: 20px 40px;
+}
+
+/* ====== 背景色 ======*/
+.hex-exam-background {
+    background: #edf0f3;
+    display: inline-block;
+}
+
+/* ====== 居中 ======*/
+
+.hex-exercises-pre,
+.hex-exercises-check,
+.hex-exercises-auto-1,
+.hex-exercises-answer,
+.hex-exercises-manual-1,
+.hex-upload-editor {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+/* ====== 头 ======*/
+.hex-title {
+    width: 100%;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.hex-title h1 {
+    float: left;
+    line-height: 30px;
+}
+
+.hex-title span {
+    line-height: 14px;
+    /*margin-left: 20px;*/
+}
+
+.hex-title .hex-leftbtn {
+    margin-left: 20px;
+    float: left;
+}
+
+.hex-title .hex-rightbtn {
+    float: right;
+}
+
+.hex-title .hex-rightbtn button,
+.hex-title .hex-leftbtn button {
+    margin-left: 10px;
+}
+
+.hex-title span.result {
+    line-height: 28px;
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+/* ====== 题库筛选 ======*/
+.hex-exe-bank {
+    border-bottom: 2px solid #c1c9d1;
+}
+
+.hex-exe-bank .hex-exe-bank-title {
+    height: 28px;
+}
+
+.hex-exe-bank .hex-exe-bank-title h2,
+.hex-exe-bank .hex-exe-bank-title span {
+    float: left;
+    line-height: 28px;
+}
+
+.hex-exe-bank .hex-exe-bank-title span {
+    color: #858e97;
+}
+
+.hex-exe-bank .hex-exe-bank-title button {
+    float: right;
+    height: 28px;
+    width: 77px;
+    font-size: 12px;
+}
+
+.hex-exe-bank .hex-exe-bank-body {
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #e5e9ed;
+    background: #fcfdfe;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.hex-exe-bank .hex-exe-bank-body > div {
+    margin: 0 10px;
+    display: inline-block;
+    width: 980px;
+    position: relative;
+}
+
+.hex-exe-bank .hex-exe-bank-body > div:nth-child(n+2) {
+    border-top: 1px dashed #e1e5ea;
+}
+
+.hex-exe-bank .hex-exe-bank-body > div .list label,
+.hex-exe-bank .hex-exe-bank-body > div h2 {
+    line-height: 40px;
+}
+
+.hex-exe-bank .hex-exe-bank-body > div .list {
+    float: left;
+    display: inline-block;
+    width: 800px;
+    height: 40px;
+    margin-left: 5px;
+    overflow: hidden;
+}
+
+.hex-exe-bank .hex-exe-bank-body > div h2 {
+    float: left;
+    margin-right: 5px;
+}
+
+.hex-exe-bank .hex-exe-bank-body > div .list label {
+    color: #858e97;
+    margin-right: 20px;
+    height: 40px;
+    display: inline-block;
+}
+
+.hex-exe-bank .hex-exe-bank-body > div .list label span {
+    font-size: 12px;
+}
+
+.hex-exe-bank .hex-exe-bank-body > div .list label input {
+    margin-right: 10px;
+}
+
+.hex-exe-bank .hex-exe-bank-body > div a:not(.hex-little-btn-25) {
+    height: 16px;
+    width: 43px;
+    float: right;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #858e97;
+    background: url("../../images/exercises_down.png") no-repeat 25px 7px;
+}
+
+.hex-exe-bank .hex-exe-bank-body > div .up {
+    background: url("../../images/exercises_up.png") no-repeat 25px 7px;
+}
+
+.hex-exe-bank .hex-exe-bank-body > div a:hover {
+    color: #a0aab5;
+}
+
+.hex-exe-bank .hex-exe-bank-body > div a:focus,
+.hex-exe-bank .hex-exe-bank-body > div a:active {
+    color: #6a7279;
+}
+
+.hex-exe-bank .hex-exe-bank-body > div:nth-child(2) .list h2 {
+    top: 7px;
+}
+
+.hex-exe-bank .hex-exe-bank-body > div p {
+    float: left;
+    color: #858e97;
+    margin: 15px 20px 15px 0;
+}
+
+.hex-exe-bank .hex-exe-bank-body > div button {
+    width: 77px;
+    height: 28px;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.hex-exe-bank .hex-exe-bank-body > div .input {
+    height: 25px;
+    border-radius: 2px;
+    border: 1px solid #cbd1d7;
+    font-size: 12px;
+    padding: 0 10px;
+    float: left;
+    margin-top: 8px;
+}
+
+.hex-exe-bank .hex-exe-bank-body > div .hex-little-btn-25 {
+    float: left;
+    margin: 8px 0 0 2px;
+}
+
+.hex-exe-little-btn {
+    float: left;
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    background: #FC7039;
+    text-align: center;
+    font-size: 10px;
+    margin-right: 10px;
+    margin-top: 2px;
+    position: relative;
+}
+
+.hex-exe-little-btn b {
+    position: absolute;
+    top: 1px;
+    left: 5px;
+}
+
+/* ============================= 查看习题 ============================= */
+/* 习题标题等 */
+.hex-exercises-pre .hex-exe-title {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.hex-exercises-pre .hex-exe-title div {
+    width: 100%;
+}
+
+.hex-exercises-pre .hex-exe-title .hex-other-info {
+    display: inline-block;
+}
+
+.hex-exercises-pre .hex-exe-title .hex-other-info div {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.hex-exercises-pre .hex-exe-title .hex-other-info * {
+    float: left;
+    margin: 0;
+    line-height: 20px;
+}
+
+.hex-exercises-pre .hex-exe-title .hex-other-info span {
+    margin-right: 10px;
+}
+
+/* 习题 */
+.hex-exercises-pre .hex-exe-bodys {
+    background: #F6F7F9;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.hex-exercises-pre .hex-exe-bodys h5 {
+    font-size: 14px;
+    color: #848E97;
+}
+
+.hex-exercises-pre .hex-exe-bodys h5 .hex-exe-no {
+    float: left;
+    color: #454F59;
+    margin-left: -10px;
+}
+
+.hex-exercises-pre .hex-exe-bodys h5 .hex-exe-tag {
+    margin: 0 5px;
+    float: left;
+    color: #454F59;
+}
+
+.hex-exercises-pre .hex-exe-bodys .hex-exe-option {
+    width: 100%;
+    display: inline-block;
+}
+
+.hex-exercises-pre .hex-exe-bodys .hex-exe-option:nth-of-type(1) {
+    padding-top: 15px;
+}
+
+.hex-exercises-pre .hex-exe-bodys .hex-exe-option input {
+    float: left;
+    margin-left: 10px;
+}
+
+.hex-exercises-pre .hex-exe-bodys .hex-exe-option p {
+    margin-left: 7px;
+    margin-bottom: 0;
+    float: left;
+    color: #848E97;
+}
+
+.hex-exercises-pre .hex-exe-bodys .hex-exe-info {
+    margin: 10px 0;
+    color: #435059;
+}
+
+.hex-exercises-pre .hex-exe-bodys .hex-exe-info p {
+    color: #435059;
+    margin-bottom: 5px;
+}
+
+.hex-exercises-pre .hex-exe-bodys .hex-exe-info .hex-exe-point span {
+    width: 80%;
+    display: inline-block;
+}
+
+.hex-exercises-pre .hex-exe-bodys .hex-exe-info .hex-exe-point span:nth-child(n+2) {
+    margin-left: 88px;
+    margin-top: 3px;
+}
+
+.hex-glyphicon {
+    color: #E5E9EC;
+}
+
+.hex-exercises-pre .hex-exe-bodys .hex-title-line hr {
+    width: 1050px;
+}
+
+.hex-exercises-pre .hex-exe-bodys .hex-exe-hint p {
+    color: #848E97;
+}
+
+.hex-exercises-pre .hex-exe-bodys table {
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.hex-exercises-pre .hex-exe-bodys table tr {
+    margin-bottom: 5px;
+    height: 25px;
+}
+
+.hex-exercises-pre .hex-exe-bodys table tr td:nth-child(2) {
+    color: #848E97;
+}
+
+.hex-exercises-pre .hex-exe-bodys table .no {
+    width: 100px;
+    color: #435059;
+}
+
+.hex-exercises-pre .hex-exe-bodys table .an,
+.hex-exercises-pre .hex-exe-bodys table tr td:nth-child(1) {
+    color: #435059;
+}
+
+.hex-exercises-pre .result_right,
+.hex-exercises-pre .result_wong,
+.hex-exercises-pre .answer {
+    color: #435059;
+    margin-bottom: 5px;
+    display: inline-block;
+    width: 100%;
+}
+
+.hex-exercises-pre .result_right,
+.hex-exercises-pre .result_wong {
+    /*border-top: 2px solid #C1C9D1;*/
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.hex-exercises-pre .result_right .glyphicon-remove {
+    color: #D86D6D;
+}
+
+.hex-exercises-pre .result_right .glyphicon-ok {
+    color: #34b27c;
+}
+
+.hex-exercises-pre .result_right > span,
+.hex-exercises-pre .result_wong > span,
+.hex-exercises-pre .answer > span {
+    float: left;
+}
+
+.hex-exercises-pre .answer > *:nth-child(2) {
+    padding-left: 75px;
+}
+
+/* ============================= 试卷查看 ============================= */
+.hex-exercises-check .hex-exe-info {
+    margin-top: 10px;
+    height: 50px;
+    border-bottom: 1px solid #BCC5CC;
+}
+
+.hex-exercises-check .hex-exe-info div {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.hex-exercises-check .hex-exe-info .name {
+}
+
+.hex-exercises-check .hex-exe-info h2 {
+    color: #323b43;
+    font-weight: 100;
+}
+
+.hex-exercises-check .hex-exe-info div *:not(.hex-font-orange) {
+    float: left;
+    line-height: 40px;
+}
+
+.hex-exercises-check .hex-exe-info .hex-font-orange {
+    margin: 0 4px 0 4px;
+}
+
+.hex-exercises-check .hex-exe-table {
+    margin-top: 15px;
+}
+
+.hex-exercises-check .hex-exe-table thead tr {
+    height: 30px;
+}
+
+.hex-exercises-check .hex-exe-table tbody tr td {
+    height: 50px;
+}
+
+.hex-exercises-check .hex-exe-table tr .id {
+    width: 50px;
+}
+
+.hex-exercises-check .hex-exe-table tr td {
+    color: #454f59;
+}
+
+.hex-exercises-check .hex-exe-table tbody tr .name {
+    color: #858e97;
+}
+
+.hex-exercises-check .hex-exe-table tr td a {
+    color: #454f59;
+    margin-left: 10px;
+}
+
+.hex-exercises-check .hex-exe-table tr td a:hover {
+    font-weight: 600;
+}
+
+.hex-exercises-check .hex-exe-table tr td p {
+    color: #858e97;
+}
+
+.hex-exercises-check .hex-exe-table .hex-exe-type {
+    display: inline-block;
+    height: 50px;
+}
+
+.hex-exercises-check .hex-exe-table .hex-exe-type td:not(.id) {
+    text-align: left;
+    width: 950px;
+    padding-left: 20px;
+}
+
+/* ============================= 试卷查看 ============================= */
+.hex-exercises-auto-1 {
+}
+
+.hex-exercises-auto-1 .hex-title {
+    margin-bottom: 20px;
+}
+
+.hex-exercises-auto-1 .hex-body {
+    margin-top: 30px;
+}
+
+.hex-exe-table {
+    margin-top: 20px;
+}
+
+.hex-exe-table .hex-row-list input {
+    height: 27px;
+    width: 100px;
+    margin-right: 10px;
+    border-radius: 2px;
+    border: 1px solid #cbd1d7;
+}
+
+.hex-exe-table .hex-row-list .row-list td {
+    height: 50px;
+    background: #F6F8FA;
+}
+
+.hex-exe-table .hex-row-list .row-list > td:nth-child(n+2) > div {
+    border-left: 2px solid transparent;
+    -moz-border-left-colors: #E6E9ED #FFFFFF;
+    -webkit-border-left-colors: #E6E9ED #FFFFFF;
+    -ms-border-left-colors: #E6E9ED #FFFFFF;
+    -o-border-left-colors: #E6E9ED #FFFFFF;
+    border-left-colors: #E6E9ED #FFFFFF;
+}
+
+.hex-exe-table .hex-row-list .row-list span:not(.hex-input-massage) {
+    margin: 0 20px;
+}
+
+.hex-exercises-auto-1 .hex-exe-bottom {
+    height: 17px;
+    width: 315px;
+    margin-top: 10px;
+}
+
+.hex-exercises-auto-1 .hex-exe-bottom input {
+    margin-right: 10px;
+}
+
+.hex-exercises-auto-1 .hex-exe-bottom .hex-total-points {
+    line-height: 17px;
+    float: right;
+    color: #454f59;
+}
+
+.hex-exercises-auto-1 .hex-exe-bottom .hex-font-orange {
+    float: left;
+}
+
+.hex-exercises-auto-1 .hex-back-button {
+    float: right;
+}
+
+.hex-exercises-auto-1 .hex-back-button button {
+    padding: 0 10px;
+    height: 28px;
+    font-size: 12px;
+}
+
+.hex-exercises-auto-1 .hex-back-button .hex-little-number {
+    top: -11px;
+    right: -8px;
+}
+
+/* ============================= 错题本-查看习题 ============================= */
+.hex-maindiv {
+    padding-bottom: 0;
+}
+
+.hex-exe-types {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.hex-exe-types .hex-logo img {
+    top: 0;
+}
+
+.hex-exe-types ul:not(.hex-exe-done) {
+    margin-left: 140px;
+}
+
+.hex-exe-types ul {
+    list-style: none;
+    margin-left: 40px;
+    display: inline-block;
+}
+
+.hex-exe-types ul:not(.hex-exe-done) li {
+    height: 40px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+}
+
+.hex-exe-types ul li a {
+    color: #858e97;
+    padding: 0 10px;
+    max-width: 75px;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.hex-exe-types ul:not(.hex-exe-done) li a:hover {
+    color: #a3aeb9;
+}
+
+.hex-exe-types ul li a:focus,
+.hex-exe-types ul li a:active {
+    color: #454f59;
+}
+
+.hex-exe-types ul .active {
+    background: #ebf0f4;
+}
+
+.hex-exe-types ul .active a {
+    color: #454f59;
+}
+
+.hex-exe-types .time {
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.hex-exe-types .time .pull-left {
+    margin-left: 10px;
+    height: 25px;
+}
+
+.hex-exe-types .time .pull-left > span {
+    line-height: 25px;
+}
+
+.hex-exe-types .time span {
+    font-size: 12px;
+}
+
+.hex-exe-done {
+    float: right;
+    display: inline-block;
+}
+
+.hex-exe-done li {
+    width: 60px;
+    height: 30px;
+    float: left;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.hex-exe-done li a {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    line-height: 28px;
+    border: 1px solid #edf0f3;
+}
+
+.hex-exe-done > li > a:hover,
+.hex-exe-done > li > a:active,
+.hex-exe-done > li > a:focus {
+    background: #30AB75;
+    color: #ffffff;
+    border: 0;
+}
+
+.hex-exercises-answer {
+    position: relative;
+    height: 100%;
+}
+
+.hex-exercises-answer .hex-exe-sheet {
+    position: fixed;
+    float: right;
+    top: 50px;
+    width: 255px;
+    height: auto;
+    padding-bottom: 5px;
+    background: #FFFFFF;
+}
+
+.hex-exercises-answer .hex-exe-sheet .title {
+    width: 100%;
+    margin: 5px 0;
+    height: 20px;
+}
+
+.hex-exercises-answer .hex-exe-sheet .title h2 {
+    float: left;
+    color: #454f59;
+    margin-left: 10px;
+    line-height: 20px;
+}
+
+.hex-exercises-answer .hex-exe-sheet .title a {
+    float: right;
+    height: 20px;
+    width: 20px;
+    background: url("../../images/open.png") no-repeat 0 0;
+    margin-right: 3px;
+}
+
+.hex-exercises-answer .hex-exe-sheet .title .open {
+    background: url("../../images/open_02.png") no-repeat 0 0;
+}
+
+.hex-exercises-answer .hex-exe-sheet .body {
+    width: 100%;
+    margin: 5px 3px;
+}
+
+.hex-exercises-answer .hex-exe-sheet .body span {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 10px;
+    margin: 1px;
+    padding: 0;
+    float: left;
+}
+
+.hex-exercises-answer .hex-exe-sheet .body span a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #858e97;
+}
+
+/*.hex-exercises-answer .hex-exe-sheet .body span a:hover {
+    color: #a2adb8;
+}
+
+.hex-exercises-answer .hex-exe-sheet .body span a:active,
+.hex-exercises-answer .hex-exe-sheet .body span a:focus {
+    color: #656c73;
+}*/
+
+.hex-exercises-answer .hex-exe-sheet .body .done {
+    background-color: #ebf0f4;
+}
+
+.hex-exercises-answer .hex-exe-sheet .body span:hover {
+    -moz-box-shadow: 2px 0 1px #E2E0E3, -2px 0 1px #E2E0E3, 0 2px 1px #E2E0E3, 0 -2px 1px #E2E0E3; /* For Firefox3.6+ */
+    -webkit-box-shadow: 2px 0 1px #E2E0E3, -2px 0 1px #E2E0E3, 0 2px 1px #E2E0E3, 0 -2px 1px #E2E0E3; /* For Chrome5+, Safari5+ */
+    box-shadow: 2px 0 1px #E2E0E3, -2px 0 1px #E2E0E3, 0 2px 1px #E2E0E3, 0 -2px 1px #E2E0E3;
+}
+
+.hex-exercises-answer .hex-exe-sheet .body .wrong a,
+.hex-exercises-answer .hex-exe-sheet .body .right a,
+.hex-exercises-answer .hex-exe-sheet .body .unknown a {
+    color: #ffffff;
+}
+
+.hex-exercises-answer .hex-exe-sheet .body .wrong {
+    background: #ff0000;
+}
+
+.hex-exercises-answer .hex-exe-sheet .body .right {
+    background: #34b27c;
+}
+
+.hex-exercises-answer .hex-exe-sheet .body .unknown {
+    background: #fc7039;
+}
+
+.hex-exercises-answer .hex-exe-sheet .body .judged {
+}
+
+.hex-exercises-answer .hex-exe-sheet .body .active {
+    /*-moz-box-shadow: 1px 0 1px #E2E0E3, -1px 0 1px #E2E0E3, 0 1px 1px #E2E0E3, 0 -1px 1px #E2E0E3;
+    -webkit-box-shadow: 1px 0 1px #E2E0E3, -1px 0 1px #E2E0E3, 0 1px 1px #E2E0E3, 0 -1px 1px #E2E0E3;
+    box-shadow: 1px 0 1px #E2E0E3, -1px 0 1px #E2E0E3, 0 1px 1px #E2E0E3, 0 -1px 1px #E2E0E3;*/
+}
+
+.hex-exercises-answer .hex-exe-body {
+    width: 895px;
+    background: #FFFFFF;
+    padding: 20px 20px 220px 20px;
+    position: relative;
+    z-index: 20;
+
+}
+
+.hex-exercises-answer .hex-exe-body .hex-exe-title {
+    display: inline-block;
+    height: 20px;
+}
+
+.hex-exercises-answer .hex-exe-body .hex-exe-title > div {
+    float: left;
+    display: inline-block;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.hex-exercises-answer .hex-exe-body .hex-exe-title > div > * {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+}
+
+.hex-exercises-answer .hex-exe-body .hex-exe-question:nth-of-type(n+2) {
+    margin-top: 20px;
+}
+
+.hex-exercises-answer .hex-exe-body .hex-exe-question .hex-title-line hr {
+    width: 780px;
+}
+
+.hex-exercises-answer .hex-exe-body .hex-exe-question .hex-exe-hint p {
+    color: #858e97;
+}
+
+.hex-exercises-answer .hex-exe-body .hex-exe-question .hex-exe-problem {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.hex-exercises-answer .hex-exe-body .hex-exe-question .hex-exe-problem h2 {
+    height: 24px;
+    line-height: 24px;
+    color: #454f59;
+    float: left;
+}
+
+.hex-exercises-answer .hex-exe-body .hex-exe-question .hex-exe-problem .collect {
+    margin-left: 10px;
+}
+
+.hex-exercises-answer .hex-exe-body .hex-exe-question .hex-exe-problem .collect.active {
+    background-color: #30AB75;
+}
+
+.hex-exercises-answer .hex-exe-body .hex-exe-question .hex-exe-problem .hex-exe-topic {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.hex-exercises-answer .hex-exe-body .hex-exe-question .hex-exe-problem .hex-exe-topic p {
+    color: #858e97;
+}
+
+.hex-exercises-answer .hex-exe-body .hex-exe-question .hex-exe-problem .hex-exe-topic input {
+    border-radius: 2px;
+    border: 1px solid #cbd1d7;
+}
+
+.hex-exercises-answer .hex-exe-body .hex-exe-question .hex-exe-problem .hex-exe-option {
+    margin-left: 20px;
+    width: 100%;
+    margin-top: 5px;
+    float: left;
+}
+
+.hex-exercises-answer .hex-exe-body .hex-exe-question .hex-exe-problem .hex-exe-option label {
+    color: #858e97;
+    font-weight: 100;
+}
+
+.hex-exercises-answer .hex-exe-body .hex-exe-question .hex-exe-problem .hex-exe-option input {
+    margin-right: 10px;
+}
+
+.hex-exercises-answer .hex-exe-body .hex-exe-question .hex-exe-collect,
+.hex-exercises-answer .hex-exe-body .hex-exe-question .hex-exe-comment {
+    width: 100%;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.hex-exercises-answer .hex-exe-body .hex-exe-question .hex-exe-collect a img {
+    position: absolute;
+}
+
+.hex-exercises-answer .hex-exe-body .hex-exe-question .hex-exe-collect .collect img {
+    top: 4px;
+    left: 4px;
+}
+
+.hex-exercises-answer .hex-exe-body .hex-exe-question .hex-exe-collect .remove img {
+    top: 5px;
+    left: 6px;
+}
+
+.hex-exercises-answer .hex-exe-body .hex-exe-question .hex-exe-collect > *,
+.hex-exercises-answer .hex-exe-body .hex-exe-question .hex-exe-comment > * {
+    float: left;
+}
+
+.hex-exercises-answer .hex-exe-body .hex-exe-question .hex-exe-comment {
+    border-top: 1px solid #bbc5ce;
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+.hex-exercises-answer .hex-exe-body .hex-exe-question .hex-exe-collect > .hex-rich-editor {
+    width: 825px;
+}
+
+.hex-exercises-answer .hex-exe-body .hex-exe-question .hex-exe-collect > *:not(span),
+.hex-exercises-answer .hex-exe-body .hex-exe-question .hex-exe-comment > *:not(span) {
+    color: #858e97;
+}
+
+.hex-exercises-answer .hex-exe-body .hex-exe-question .hex-exe-collect > img,
+.hex-exercises-answer .hex-exe-body .hex-exe-question .hex-exe-comment > img {
+    max-width: 770px;
+    max-height: 770px;
+}
+
+.hex-exercises-answer .hex-page-button {
+    width: 895px;
+    margin: auto;
+    position: fixed;
+    top: 423px;
+    height: 45px;
+    z-index: 1;
+}
+
+.hex-exercises-answer .hex-exe-left {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    height: 45px;
+    width: 30px;
+    display: inline-block;
+    z-index: 1001;
+}
+
+.hex-exercises-answer .hex-exe-left a {
+    height: 45px;
+    width: 30px;
+    display: inline-block;
+    background: #d7dce1 url("../../images/error_flip_left.png") no-repeat 7px 10px;
+    border-radius: 2px;
+}
+
+.hex-exercises-answer .hex-exe-right {
+    position: absolute;
+    top: 0;
+    right: -30px;
+    height: 45px;
+    width: 30px;
+    display: inline-block;
+    z-index: 1001;
+}
+
+.hex-exercises-answer .hex-exe-right a {
+    height: 45px;
+    width: 30px;
+    display: inline-block;
+    background: #d7dce1 url("../../images/error_flip_right.png") no-repeat 7px 10px;
+    border-radius: 2px;
+}
+
+.hex-exercises-answer .hex-exe-answer {
+    margin: 0;
+    position: fixed;
+    bottom: 20px;
+    height: auto;
+    width: 895px;
+    z-index: 30;
+}
+
+.hex-exercises-answer .hex-exe-answer .hex-tabs {
+}
+
+.hex-exercises-answer .hex-exe-answer .hex-tabs .hex-tab-head .active a {
+    background-color: #f9fafb;
+    float: left;
+    margin-right: 0;
+}
+
+.hex-exercises-answer .hex-exe-answer .hex-tabs .hex-tab-head .active a.unfold {
+    height: 20px;
+    width: 20px;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hex-exercises-answer .hex-exe-answer .hex-tabs .hex-tab-head .active a.unfold:hover {
+    background-color: #30AB75;
+}
+
+.hex-exercises-answer .hex-exe-answer .hex-tabs .hex-tab-head .active a > h2 {
+    line-height: 36px;
+}
+
+.hex-exercises-answer .hex-exe-answer .hex-tabs .tab-content {
+    background: #f9fafb;
+    overflow: hidden;
+}
+
+.hex-exercises-answer .hex-exe-answer .hex-tabs .tab-content .tab-pane {
+    width: 100%;
+    padding: 15px;
+    display: inline-block;
+    min-height: 160px;
+    height: 160px;
+    overflow-y: auto;
+}
+
+.hex-exercises-answer .hex-exe-answer .hex-tabs .tab-content .tab-pane > div {
+    width: 100%;
+    display: inline-block;
+}
+
+.hex-exercises-answer .hex-exe-answer .hex-tabs .tab-content .tab-pane div > * {
+    float: left;
+    line-height: 20px;
+}
+
+.hex-exercises-answer .hex-exe-answer .hex-tabs .tab-content .tab-pane div span:not(.hex-font-orange),
+.hex-exercises-answer .hex-exe-answer .hex-tabs .tab-content .tab-pane div p {
+    color: #858e97;
+}
+
+.hex-exercises-answer .hex-exe-answer .hex-tabs .tab-content .tab-pane div table {
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.hex-exercises-answer .hex-exe-answer .hex-tabs .tab-content .tab-pane div table tr {
+    margin-bottom: 5px;
+    height: 25px;
+}
+
+.hex-exercises-answer .hex-exe-answer .hex-tabs .tab-content .tab-pane div table tr td:nth-child(2) {
+    color: #848E97;
+}
+
+.hex-exercises-answer .hex-exe-answer .hex-tabs .tab-content .tab-pane div table .no {
+    width: 100px;
+    color: #435059;
+}
+
+.hex-exercises-answer .hex-exe-answer .hex-tabs .tab-content .tab-pane div table .an,
+.hex-exercises-answer .hex-exe-answer .hex-tabs .tab-content .tab-pane div table tr td:nth-child(1) {
+    color: #435059;
+}
+
+.hex-exercises-answer .hex-exe-answer .hex-tabs .tab-content .tab-pane .answer * {
+    margin-right: 5px;
+}
+
+.hex-exercises-answer .hex-exe-answer .hex-tabs .tab-content .tab-pane .answer {
+    height: auto;
+}
+
+.hex-exercises-answer .hex-exe-answer .hex-tabs .tab-content .tab-pane .answer > p,
+.hex-exercises-answer .hex-exe-answer .hex-tabs .tab-content .tab-pane .answer > table {
+    width: 100%;
+}
+
+.hex-exercises-answer .hex-exe-answer .hex-tabs .tab-content .tab-pane .percent > span {
+    background: url("../../images/view-results_03.png") no-repeat 0 4px;
+    padding-left: 30px;
+}
+
+.hex-exercises-answer .hex-exe-answer .hex-tabs .tab-content .tab-pane .analysis > span {
+    background: url("../../images/book-catalog-hover.png") no-repeat 0 4px;
+    padding-left: 30px;
+}
+
+/* ============================= 错题本 ============================= */
+.hex-wrong-book {
+}
+
+.hex-wrong-book .hex-button-row {
+    width: 100%;
+}
+
+.hex-wrong-book .hex-button-row .hex-type,
+.hex-wrong-book .hex-button-row .hex-search-input {
+    float: left;
+}
+
+.hex-wrong-book .hex-button-row .hex-type .hex-active,
+.hex-wrong-book .hex-button-row .hex-type .hex-passive {
+    font-size: 12px;
+    border: 1px solid #e6e5ea;
+    color: #858e97;
+    height: 25px;
+    text-align: center;
+    margin-top: 5px;
+    max-width: 100px;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.hex-wrong-book .hex-button-row .hex-type .hex-active {
+    background: #34b27c;
+    color: #FFFFFF;
+}
+
+.hex-wrong-book .hex-button-row .hex-type .hex-passive {
+    background: #ffffff;
+}
+
+.hex-wrong-book .hex-button-row .hex-search-input {
+    margin-left: 60px;
+    width: 200px;
+}
+
+.hex-wrong-book .hex-button-row .hex-exe-button {
+    float: left;
+    margin-left: 60px;
+}
+
+.hex-wrong-book .hex-button-row .hex-exe-button button {
+    height: 28px;
+    width: 66px;
+    font-size: 12px;
+}
+
+.hex-wrong-book .hex-wrong-info {
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+}
+
+.hex-wrong-book .hex-wrong-info label {
+    color: #454f59;
+}
+
+.hex-wrong-book .hex-wrong-info > * {
+    float: left;
+    margin-left: 15px;
+}
+
+.hex-wrong-book .hex-wrong-info > *:not(button) {
+    line-height: 30px;
+}
+
+.hex-wrong-book .hex-wrong-info .info {
+    margin-left: 40px;
+}
+
+.hex-wrong-book .hex-wrong-info .info span:not(.hex-font-orange) {
+    color: #858e97;
+}
+
+.hex-wrong-book .hex-wrong-info .info .hex-font-orange {
+    margin: 0 4px;
+}
+
+.hex-wrong-book .hex-wrong-body {
+    margin-top: 15px;
+}
+
+.hex-wrong-book .hex-wrong-body .hex-wrong-one {
+    margin-bottom: 30px;
+}
+
+.hex-wrong-book .hex-wrong-body .hex-wrong-one .hex-row-list {
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* ============================= 新建作业-手动组卷-选择习题 ============================= */
+.hex-exercises-auto-1 .hex-body .hex-exe-tab {
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .hex-tab-head {
+    background: #FFFFFF;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .hex-tab-head .active a {
+    background: #f5f7f9;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .hex-tab-head li {
+    margin-left: 0;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .active {
+    background: #f5f7f9;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane {
+    padding: 20px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .collection {
+    width: 100%;
+    height: 25px;
+    display: inline-block;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .collection label {
+    float: right;
+    color: #858e97;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .collection label input {
+    margin-right: 10px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .collection .count {
+    float: left;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .collection .count span {
+    margin: 0 5px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .collection .operation {
+    float: right;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .collection .operation button {
+    height: 25px;
+    width: 55px;
+    font-size: 12px;
+    margin-right: 10px;
+    line-height: 25px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .collection .operation a {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .hex-row-list {
+    width: 100%;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .hex-row-list .table-head td {
+    color: #454f59;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .hex-row-list .row-list {
+    height: 54px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .hex-row-list .row-list td:not(.hex-list-head) {
+    background: #ffffff;
+    color: #858e97;
+    text-align: center;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .hex-row-list .row-list .hex-list-head {
+    height: 54px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .hex-row-list .row-list .difficulty {
+    width: 130px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .hex-row-list .row-list .difficulty div {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .hex-row-list .row-list .chapter {
+    width: 95px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .hex-row-list .row-list .chapter div {
+    text-align: center;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .hex-row-list .row-list .remark {
+    width: 145px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .hex-row-list .row-list .remark div {
+    text-align: center;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .hex-row-list .row-list .remark div input {
+    height: 30px;
+    width: 60px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .hex-row-list .row-list .topic {
+    width: 475px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .hex-row-list .row-list .topic div {
+    height: 40px;
+    display: inline-block;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .hex-row-list .row-list .topic div p span,
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .hex-row-list .row-list .topic div p a {
+    color: #454f59;
+    margin-right: 5px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .hex-row-list .row-list .topic div p a:hover {
+    font-weight: 600;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .hex-row-list .row-list .topic div p a:active {
+    color: #2a3137;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .hex-row-list .row-list .topic div p {
+    line-height: 20px;
+    display: inline-block;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .hex-row-list .row-list .button {
+    width: 60px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .hex-row-list .row-list .button > div {
+    text-align: center;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .hex-row-list .row-list .button div a {
+    margin-top: 10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 2px;
+    display: inline-block;
+    position: relative;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .select .hex-row-list .row-list .button div a div {
+    height: 13px;
+    width: 12px;
+    background: url("../../images/new_questions.png") no-repeat 0 0;
+    position: absolute;
+    top: 4px;
+    left: 5px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .selected .hex-row-list .row-list .button div a div {
+    height: 13px;
+    width: 12px;
+    background: url("../../images/error_b.png") no-repeat 0 0;
+    position: absolute;
+    top: 5px;
+    left: 6px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .footer {
+    margin-top: 10px;
+    display: inline-block;
+    width: 964px;
+    height: 20px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .footer span {
+    font-size: 12px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .footer span,
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .footer a:not(.hex-font-orange) {
+    color: #858e97;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .footer .count {
+    float: left;
+    line-height: 20px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .footer .count span:nth-child(1) {
+    margin-right: 10px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .footer .page-num {
+    float: right;
+    line-height: 20px;
+    display: inline-block;
+    height: 20px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .footer .page-num ul {
+    list-style: none;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .footer .page-num ul li {
+    line-height: 20px;
+    float: left;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .footer .page-num ul li a,
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .footer .page-num ul .active span {
+    width: 20px;
+    display: inline-block;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .footer .page-num ul li a,
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .footer .page-num ul .active span {
+    text-align: center;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .footer .page-num ul .active span {
+    color: #fc7039;
+    font-size: 14px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .footer .page-num a:not(.hex-font-orange):hover span {
+    color: #a8b3be;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .footer .page-num a:not(.hex-font-orange):focus span,
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .footer .page-num a:not(.hex-font-orange):active span {
+    color: #585e64;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .footer .page-num .left {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    background: url("../../images/left_03.png") no-repeat 0 0;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .tab-content .tab-pane .footer .page-num .right {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    background: url("../../images/right_03.png") no-repeat 0 0;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .hex-tabs .no-margin tr {
+    border-bottom: 10px solid #F5F7F9;
+    display: block;
+    width: 960px;
+    min-width: 960px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .hex-tabs .no-margin .hex-active-table {
+    -moz-box-shadow: 2px 0 1px #E2E0E3, -2px 0 1px #E2E0E3, 0 2px 1px #E2E0E3, 0 -2px 1px #E2E0E3; /* For Firefox3.6+ */
+    -webkit-box-shadow: 2px 0 1px #E2E0E3, -2px 0 1px #E2E0E3, 0 2px 1px #E2E0E3, 0 -2px 1px #E2E0E3; /* For Chrome5+, Safari5+ */
+    box-shadow: 2px 0 1px #E2E0E3, -2px 0 1px #E2E0E3, 0 2px 1px #E2E0E3, 0 -2px 1px #E2E0E3;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .hex-tabs .no-margin td:nth-child(1) {
+    width: 50px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .hex-tabs .no-margin td:nth-child(2) {
+    width: 130px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .hex-tabs .no-margin td:nth-child(3) {
+    width: 95px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .hex-tabs .no-margin td:nth-child(4) {
+    width: 475px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .hex-tabs .no-margin td:nth-child(5) {
+    width: 145px;
+}
+
+.hex-exercises-auto-1 .hex-body .hex-exe-tab .hex-tabs .no-margin td:nth-child(6) {
+    width: 60px;
+}
+
+/* ============================= 待评判主观题－单一习题 ============================= */
+.hex-exe-subjective {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.hex-exe-subjective .hex-title span:not(.hex-font-orange) {
+    line-height: 30px;
+    color: #858e97;
+}
+
+.hex-exe-subjective .hex-exe-name {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.hex-exe-subjective .hex-exe-body {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.hex-exe-subjective .hex-exe-content {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.hex-exe-subjective .hex-exe-content .num {
+    width: 50px;
+    float: left;
+    text-align: center;
+}
+
+.hex-exe-subjective .hex-exe-content .body {
+    float: left;
+    width: 1130px;
+}
+
+.hex-exe-subjective .hex-exe-content .body .answer {
+    margin-top: 10px;
+    /*display: inline-block;*/
+}
+
+.hex-exe-subjective .hex-exe-content .body .info .hex-title-line {
+    margin-top: 10px;
+}
+
+.hex-exe-subjective .hex-exe-content .body .topic p,
+.hex-exe-subjective .hex-exe-content .num span,
+.hex-exe-subjective .hex-exe-content .body .answer span,
+.hex-exe-subjective .hex-exe-judge .score label,
+.hex-exe-subjective .hex-exe-judge .remark label {
+    color: #454f59;
+}
+
+.hex-exe-subjective .hex-exe-content .body .answer span {
+    float: left;
+}
+
+.hex-exe-subjective .hex-exe-content .body .answer p,
+.hex-exe-subjective .hex-exe-content .body .info p,
+.hex-exe-subjective .hex-exe-judge .score span,
+.hex-exe-subjective .hex-exe-judge .button label {
+    color: #858e97;
+}
+
+.hex-exe-subjective .hex-exe-content .body .score {
+    margin-top: 10px;
+}
+
+.hex-exe-subjective .hex-exe-judge {
+    margin-top: 30px;
+}
+
+.hex-exe-subjective .hex-exe-content .body .score input,
+.hex-exe-subjective .hex-exe-judge .score input {
+    width: 51px;
+    height: 25px;
+    border-radius: 2px;
+    border: 1px solid #cbd1d7;
+    margin-right: 3px;
+    text-align: center;
+    float: left;
+}
+
+.hex-exe-subjective .hex-exe-content .body .score span {
+    margin-left: 3px;
+    float: left;
+    line-height: 25px;
+}
+
+.hex-exe-subjective .hex-exe-content .body .score label {
+    line-height: 25px;
+    float: left;
+}
+
+.hex-exe-subjective .hex-exe-judge .remark {
+    width: 100%;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.hex-exe-subjective .hex-exe-judge .remark label,
+.hex-exe-subjective .hex-exe-judge .score label {
+    width: 50px;
+    float: left;
+}
+
+.hex-exe-subjective .hex-exe-judge .remark .hex-rich-editor {
+    float: left;
+}
+
+.hex-exe-subjective .hex-exe-judge .button {
+    width: 100%;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.hex-exe-subjective .hex-exe-judge .button label {
+    float: left;
+    margin-left: 50px;
+    line-height: 35px;
+}
+
+.hex-exe-subjective .hex-exe-judge .button label input {
+    margin-right: 5px;
+}
+
+.hex-exe-subjective .hex-exe-judge .button button {
+    width: 75px;
+    height: 35px;
+    font-size: 12px;
+    float: right;
+}
+
+.hex-exe-subjective .hex-exe-body .hex-exe-title {
+    margin-bottom: 20px;
+}
+
+.hex-exe-subjective .hex-exe-body .hex-exe-title p {
+    margin-top: 5px;
+    margin-left: 50px;
+}
+
+.hex-exe-subjective .hex-exe-body .hex-exe-title .num {
+    width: 50px;
+    display: inline-block;
+    text-align: center;
+}
+
+.hex-exe-subjective .hex-exe-body .hex-exe-title .info {
+    width: 100%;
+    display: inline-block;
+}
+
+.hex-exe-subjective .hex-exe-body .hex-exe-title .info span {
+    float: left;
+}
+
+.hex-exe-subjective .hex-exe-body .hex-exe-title .info .hex-font-gray:nth-child(n+3) {
+    margin-left: 10px;
+}
+
+/* ============================= 手动组卷（无模板） ============================= */
+
+.hex-exercises-manual-1 .hex-step {
+    margin-top: 10px;
+}
+
+.hex-exercises-manual-1 .hex-body {
+    margin-top: 20px;
+}
+
+.hex-exercises-manual-1 .hex-body > div {
+    width: 100%;
+}
+
+.hex-exercises-manual-1 .hex-body .option {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.hex-exercises-manual-1 .hex-body .option div:nth-of-type(1) {
+    float: left;
+}
+
+.hex-exercises-manual-1 .hex-body .option div:nth-of-type(2) {
+    float: right;
+}
+
+.hex-exercises-manual-1 .hex-body .option .count p,
+.hex-exercises-manual-1 .hex-body .option .count > div {
+    float: left;
+    line-height: 30px;
+}
+
+.hex-exercises-manual-1 .hex-body .option .count p span {
+    margin: 0 5px;
+}
+
+.hex-exercises-manual-1 .hex-body .option .count > div {
+    margin-left: 20px;
+}
+
+.hex-exercises-manual-1 .hex-body .option button {
+    margin-left: 10px;
+}
+
+.hex-exercises-manual-1 .hex-body .list {
+    margin-top: 10px;
+    border-top: 2px solid #C1C9D1;
+}
+
+.hex-exercises-manual-1 .hex-body .list .list-one {
+    margin-top: 10px;
+}
+
+.hex-exercises-manual-1 .hex-body .list .list-one .hex-row-list {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.hex-exercises-manual-1 .hex-body .list .list-one .hex-row-list .table-head {
+    height: 30px;
+}
+
+.hex-exercises-manual-1 .hex-body .list .list-one .hex-row-list .row-list {
+    height: 54px;
+}
+
+.hex-exercises-manual-1 .hex-body .list .list-one .hex-row-list .row-list .topic div {
+    height: 40px;
+    padding: 0 10px;
+}
+
+.hex-exercises-manual-1 .hex-body .list .list-one .hex-row-list .row-list .topic a {
+    line-height: 20px;
+    display: inline-block;
+}
+
+.hex-exercises-manual-1 .hex-body .list .list-one .hex-row-list .row-list .button a {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-top: 5px;
+    position: relative;
+    border-radius: 2px;
+}
+
+/*.hex-exercises-manual-1 .hex-body .list .list-one .hex-row-list .row-list .button .delete {
+    background: #D7DCE2 url("../../images/delete.png") no-repeat 5px 5px;
+}
+
+.hex-exercises-manual-1 .hex-body .list .list-one .hex-row-list .row-list .button .down {
+    background: #D7DCE2 url("../../images/exercises_down.png") no-repeat 5.5px 7.5px;
+}
+
+.hex-exercises-manual-1 .hex-body .list .list-one .hex-row-list .row-list .button .up {
+    background: #D7DCE2 url("../../images/exercises_up.png") no-repeat 5.5px 7.5px;
+}
+
+.hex-exercises-manual-1 .hex-body .list .list-one .hex-row-list .row-list .button .change {
+    background: #D7DCE2 url("../../images/genghuan.png") no-repeat 3px 3px;
+}*/
+
+.hex-exercises-manual-1 .hex-body .list .list-one .hex-row-list .row-list .button div {
+    border-right: 0;
+}
+
+.hex-exercises-manual-1 .hex-body .list .list-one .hex-row-list .row-list .button a:nth-of-type(n+2) img {
+    top: 8px;
+}
+
+.hex-exercises-manual-1 .no-margin tr {
+    border-bottom: 10px solid #FFFFFF;
+    width: 100%;
+    height: 60px;
+}
+
+.hex-exercises-manual-1 .no-margin tr .hex-list-head {
+    height: 54px;
+}
+
+/* ============================= 新建习题 ============================= */
+.hex-upload-editor {
+}
+
+.hex-upload-editor label {
+    font-weight: 100;
+    width: 9.5%;
+}
+
+.hex-upload-editor h2 {
+    margin-bottom: 10px;
+}
+
+.hex-upload-editor > form > div {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.hex-upload-editor > form > div > * {
+    float: left;
+}
+
+.hex-upload-editor > form > div > input[type='text'],
+.hex-upload-editor > form > div > textarea {
+    width: 90%;
+    height: 35px;
+}
+
+.hex-upload-editor .select > * {
+    float: left;
+}
+
+.hex-upload-editor .select .hex-drop-down {
+    margin-right: 10px;
+}
+
+.hex-upload-editor .hard > * {
+    float: left;
+}
+
+.hex-upload-editor .hard i {
+    cursor: pointer;
+}
+
+.hex-upload-editor .hard > div {
+    margin-top: 5px;
+}
+
+.hex-upload-editor .upload > * {
+    float: left;
+}
+
+.hex-upload-editor .hex-rich-editor {
+    width: 90%;
+    border-top: 1px solid #CCC;
+}
+
+.hex-upload-editor .upload label {
+    height: 10px;
+}
+
+.hex-upload-editor .upload .upload-body {
+    width: 8%;
+}
+
+.hex-upload-editor .upload ul {
+    width: 75%;
+    list-style: none;
+}
+
+.hex-upload-editor .upload ul li {
+    height: 25px;
+    display: inline-block;
+    width: 100%;
+}
+
+.hex-upload-editor .upload ul li span {
+    line-height: 25px;
+    height: 25px;
+    float: left;
+}
+
+.hex-upload-editor .upload ul li a {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 2px;
+    margin: 2px 0 0 10px;
+    float: left;
+}
+
+.hex-upload-editor .hint > div {
+    width: 90.5%;
+}
+
+.hex-upload-editor .hint > div > div {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.hex-upload-editor .hint > div > div > * {
+    float: left;
+}
+
+.hex-upload-editor .checking > div {
+    width: 90%;
+}
+
+.hex-upload-editor .checking > div > ul {
+    width: 100%;
+}
+
+.hex-upload-editor .checking > div > ul > li {
+    width: 20%;
+    float: left;
+}
+
+.hex-upload-editor .checking > div > ul > li > input {
+    margin-right: 20px;
+}
+
+.hex-upload-editor .checking > div > ul > li > label {
+    width: auto;
+}
+
+.hex-upload-editor .completion .hex-button {
+    margin-top: 20px;
+    float: right;
+}
+
+.hex-upload-editor .choice > div {
+    width: 90%;
+}
+
+.hex-upload-editor .choice .hex-answer-table {
+    width: 100%;
+}
+
+.hex-upload-editor .choice .hex-answer-table td {
+    text-align: center;
+}
+
+.hex-upload-editor .choice .hex-answer-table .hex-button {
+    float: right;
+    margin-right: 78px;
+    margin-top: 20px;
+}
+
+/* ============================= 班级设置 ============================= */
+.hex-row-list .row-list > td:nth-child(n+2) > div {
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* ============================= 计算题 ============================= */
+.hex-upload-editor .hex-tabs {
+    width: 100%;
+    margin: 0;
+}
+
+.hex-upload-editor .hex-tabs > ul {
+    width: 100%;
+    margin: 0;
+}
+
+.hex-upload-editor .add-new {
+    width: 100%;
+}
+
+.hex-upload-editor .add-new > div {
+    width: 90%;
+}
+
+.hex-upload-editor .add-new > div > .hex-drop-down {
+    float: left;
+}
+
+.hex-upload-editor .add-new button {
+    margin-left: 20px;
+}
+
+.hex-upload-editor .tab-content > div {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-top: 20px;
+}
+
+.hex-upload-editor .tab-content > div > h2 {
+    float: left;
+}
+
+.hex-upload-editor .tab-content button.option {
+    margin-left: 20px;
+    float: right;
+}
+
+.hex-upload-editor .tab-pane {
+    padding-top: 20px;
+}
+
+.hex-upload-editor .tab-pane > div {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.hex-upload-editor .tab-pane > div > * {
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,610 @@
+/* -----------------------------   课程   ----------------------------- */
+@charset "utf-8";
+
+/* ------ List ------
+ * 新建课程-选择课程模板
+ * 课程模板详情
+ */
+
+.hex-course-sort {
+    margin-top: 20px;
+    width: 100%;
+    height: 35px;
+    background: #EDF1F4;
+    border-radius: 2px;
+}
+
+.hex-course-sort > span:nth-child(1) {
+    line-height: 35px;
+    width: 80px;
+    display: inline-block;
+    text-align: center;
+    color: #848D96;
+    float: left;
+    font-size: 12px;
+}
+
+.hex-course-sort a:nth-child(2) {
+    border-left: 2px solid transparent;
+    -moz-border-left-colors: #E1E5E8 #F2F6F9;
+    -webkit-border-left-colors: #F2F6F9 #E1E5E8;
+    -ms-border-left-colors: #F2F6F9 #E1E5E8;
+    -o-border-left-colors: #F2F6F9 #E1E5E8;
+    border-left-colors: #F2F6F9 #E1E5E8;
+}
+
+.hex-course-sort > a {
+    line-height: 35px;
+    width: 60px;
+    display: inline-block;
+    text-align: center;
+    color: #848D96;
+    float: left;
+    font-size: 12px;
+}
+
+.hex-course-sort > a:hover {
+    color: #C0C0C0;
+}
+
+.hex-course-sort > a:active {
+    color: black;
+}
+
+.hex-course-sort > span:nth-last-child(1) {
+    float: left;
+    line-height: 35px;
+    color: #848D96;
+    font-size: 12px;
+    padding-left: 20px;
+
+    border-left: 2px solid transparent;
+    -moz-border-left-colors: #E1E5E8 #F2F6F9;
+    -webkit-border-left-colors: #F2F6F9 #E1E5E8;
+    -ms-border-left-colors: #F2F6F9 #E1E5E8;
+    -o-border-left-colors: #F2F6F9 #E1E5E8;
+    border-left-colors: #F2F6F9 #E1E5E8;
+}
+
+/* ============================= 新建课程-选择课程模板 ============================= */
+.hex-course-creat-1,
+.hex-course-creat-2 {
+    /*margin-top: 45px;*/
+}
+
+.hex-course-creat-1 .hex-course-head,
+.hex-course-creat-2 .hex-course-head {
+    height: 50px;
+    margin-top: 20px;
+    border-bottom: 1px solid #BCC5CC;
+    display: inline-block;
+    width: 100%;
+}
+
+.hex-course-creat-1 .hex-course-head > .hex-title,
+.hex-course-creat-2 .hex-course-head > .hex-title {
+    font-size: 18px;
+    float: left;
+    height: 28px;
+}
+
+.hex-course-creat-1 .hex-course-head > button,
+.hex-course-creat-2 .hex-course-head > button {
+    float: left;
+    margin-left: 20px;
+}
+
+/* 弹出窗 */
+.hex-course-creat-2 .hex-course-head .modal-content {
+    background: #EDF1F4;
+    border-radius: 2px;
+}
+
+.hex-course-creat-2 .hex-course-head .hex-dialog-title {
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 26px;
+}
+
+.hex-course-creat-2 .hex-course-head .hex-dialog-title > img {
+    float: left;
+    margin-top: 2px;
+}
+
+.hex-course-creat-2 .hex-course-head .hex-dialog-title > span {
+    float: left;
+    margin-left: 10px;
+    font-size: 18px;
+    color: #323b43;
+}
+
+.hex-course-creat-2 .hex-course-head .hex-dialog-info {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.hex-course-creat-2 .hex-course-head .hex-dialog-info > div {
+    margin-bottom: 10px;
+}
+
+.hex-course-creat-2 .hex-course-head .hex-dialog-info > div > strong {
+    font-size: 14px;
+    color: #454f59;
+}
+
+.hex-course-creat-2 .hex-course-head .hex-dialog-info > div > span {
+    font-size: 14px;
+    color: #858e97;
+}
+
+.hex-course-creat-2 .hex-course-head .hex-dialog-info > div > a {
+    font-size: 12px;
+    color: #858e97;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.hex-course-creat-2 .hex-course-head .hex-dialog-info > div > a:hover {
+    color: #C0C0C0;
+}
+
+.hex-course-creat-2 .hex-course-head .hex-dialog-info > ul {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 12px;
+    color: #858e97;
+}
+
+.hex-course-creat-2 .hex-course-head .hex-dialog-info > ul > li {
+    margin-bottom: 10px;
+}
+
+.hex-course-creat-2 .hex-course-head .hex-dialog-remark {
+    margin-top: 5px;
+    margin-left: 50px;
+    height: 30px;
+    width: 600px;
+    display: inline-block;
+    background: #FFFFFF;
+    padding-left: 10px;
+}
+
+.hex-course-creat-2 .hex-course-head .hex-dialog-remark span {
+    line-height: 30px;
+    font-size: 12px;
+    color: #a3acb5;
+}
+
+.hex-course-creat-2 .hex-course-head .hex-dialog-remark .hex-font-orange {
+    color: #fc7039;
+    margin: 0 10px 0 10px;
+}
+
+.hex-course-creat-2 .hex-course-head .hex-dialog-button {
+    float: right;
+    margin: 20px 50px 40px 0;
+    height: 35px;
+}
+
+.hex-course-creat-2 .hex-course-head .hex-dialog-button button {
+    height: 35px;
+    width: 119px;
+    margin-left: 10px;
+}
+
+/* 弹出窗--end */
+
+.hex-course-creat-1 .hex-course-step,
+.hex-course-creat-2 .hex-course-step {
+    margin-top: 20px;
+    width: 100%;
+    display: inline-block;
+}
+
+.hex-course-creat-1 .hex-course-step > span,
+.hex-course-creat-2 .hex-course-step > span {
+    height: 41px;
+    width: 250px;
+    display: inline-block;
+    line-height: 41px;
+    text-align: center;
+    color: #858D98;
+}
+
+.hex-course-creat-1 .hex-course-step > span:nth-child(n+2),
+.hex-course-creat-2 .hex-course-step > span:nth-child(3) {
+    background: url("../../images/rolling-frame_23.png") no-repeat 0 0;
+}
+
+.hex-course-creat-1 .hex-course-step > .active {
+    background: url("../../images/rolling-frame_1_active.png") no-repeat 0 0;
+    color: #323C45;
+}
+
+.hex-course-creat-2 .hex-course-step > span:nth-child(1) {
+    background: url("../../images/rolling-frame_1.png") no-repeat 0 0;
+}
+
+.hex-course-creat-2 .hex-course-step .active {
+    background: url("../../images/rolling-frame_23_active.png") no-repeat 0 0;
+    color: #323C45;
+}
+
+.hex-course-creat-1 .hex-course-img {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.hex-course-creat-1 .hex-course-filtrate {
+    margin-top: 20px;
+    width: 100%;
+    display: inline-block;
+}
+
+.hex-course-creat-1 .hex-course-filtrate .hex-drop-down {
+    float: left;
+    margin-right: 20px;
+}
+
+.hex-course-creat-1 .hex-course-filtrate .hex-search {
+    margin-left: 10px;
+    width: 225px;
+    float: left;
+}
+
+.hex-course-creat-2 .hex-course-form h1 {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.hex-course-creat-2 .hex-course-form > .hex-course-template {
+    margin-top: 20px;
+    width: 100%;
+    display: inline-block;
+}
+
+.hex-course-creat-2 .hex-course-form > .hex-course-template > div {
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+.hex-course-creat-2 .hex-course-form > .hex-course-set > div {
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline-block;
+}
+
+.hex-course-creat-2 .hex-course-form > .hex-course-set > div label {
+    color: #434F5A;
+    font-size: 14px;
+    font-weight: 100;
+    float: left;
+    line-height: 30px;
+}
+
+.hex-course-creat-2 .hex-course-form > .hex-course-set > div > input {
+    margin-right: 10px;
+}
+
+.hex-course-creat-2 .hex-course-form > .hex-course-set > div span:not(.hex-important):not(.hex-input-massage) {
+    color: #858E95;
+}
+
+.hex-course-creat-2 .hex-course-form > .hex-course-set div > .hex-form-long-text {
+    padding-left: 10px;
+    font-size: 12px;
+    border-radius: 2px;
+    border: 1px solid #CAD1D7;
+    color: #454f59;
+    height: 30px;
+    width: 200px;
+}
+
+.hex-course-creat-2 .hex-course-form > .hex-course-set div > .hex-form-middle-text {
+    padding-left: 10px;
+    font-size: 12px;
+    border-radius: 2px;
+    border: 1px solid #CAD1D7;
+    color: #454f59;
+    height: 30px;
+    width: 100px;
+}
+
+.hex-course-creat-2 .hex-course-form > .hex-course-set div > .hex-form-small-text {
+    padding-left: 10px;
+    font-size: 12px;
+    border-radius: 2px;
+    border: 1px solid #CAD1D7;
+    color: #454f59;
+    height: 30px;
+    width: 50px;
+}
+
+.hex-course-creat-2 .hex-course-form > .hex-course-set > .hex-course-name {
+    margin-top: 15px;
+}
+
+.hex-course-creat-2 .hex-course-form > .hex-course-set > .hex-course-name > .hex-important {
+    color: #D86D6D;
+    display: inline-block;
+    float: left;
+    margin-left: -10px;
+    line-height: 30px;
+}
+
+.hex-course-creat-2 .hex-course-form > .hex-course-set > .hex-course-type > span {
+    margin-right: 20px;
+    line-height: 30px;
+}
+
+.hex-course-creat-2 .hex-course-form > .hex-course-set > .hex-course-type > img {
+    margin-left: 20px;
+}
+
+.hex-course-creat-2 .hex-course-form > .hex-course-set > .hex-course-class * {
+    line-height: 30px;
+}
+
+.hex-course-creat-2 .hex-course-form > .hex-course-set > .hex-course-class > div {
+    display: inline-block;
+}
+
+.hex-course-creat-2 .hex-course-form > .hex-course-set > .hex-course-class div > span {
+    float: left;
+}
+
+.hex-course-creat-2 .hex-course-form > .hex-course-set > .hex-course-class > div:nth-child(n+3) {
+    margin-left: 76px;
+    margin-top: 5px;
+}
+
+/*.hex-course-creat-2 .hex-course-form > .hex-course-set > .hex-course-class > div:nth-child(n+3) > *:nth-child(2),
+.hex-course-creat-2 .hex-course-form > .hex-course-set > .hex-course-class > div:nth-child(n+3) > *:nth-child(3),
+.hex-course-creat-2 .hex-course-form > .hex-course-set > .hex-course-class > div:nth-child(n+3) > *:nth-child(4),
+.hex-course-creat-2 .hex-course-form > .hex-course-set > .hex-course-class > div:nth-child(n+3) > *:nth-child(5),
+.hex-course-creat-2 .hex-course-form > .hex-course-set > .hex-course-class > div:nth-child(n+3) > *:nth-child(7),
+.hex-course-creat-2 .hex-course-form > .hex-course-set > .hex-course-class > div:nth-child(n+3) > *:nth-child(10),
+.hex-course-creat-2 .hex-course-form > .hex-course-set > .hex-course-class > div:nth-child(n+3) > *:nth-child(11),
+.hex-course-creat-2 .hex-course-form > .hex-course-set > .hex-course-class > div:nth-child(n+3) > *:nth-child(12) {
+    margin-left: 4px;
+}*/
+
+/*.hex-course-creat-2 .hex-course-form > .hex-course-set > .hex-course-class > div:nth-child(n+3) > *:nth-child(8) {
+    margin-left: 5px;
+}*/
+
+.hex-course-creat-2 .hex-course-form > .hex-course-set > .hex-course-class > div:nth-child(n+3) a {
+    margin-left: 10px;
+    color: #858e97;
+    font-size: 12px;
+}
+
+.hex-course-creat-2 .hex-course-form > .hex-course-set > .hex-course-class > div > .hex-important {
+    color: #D86D6D;
+    width: 25px;
+    text-align: center;
+    display: inline-block;
+}
+
+.hex-course-creat-2 .hex-course-form > .hex-course-set > .hex-course-class > div .hex-password-info {
+    font-size: 10px;
+    color: #D2D7DD;
+}
+
+.hex-course-creat-2 .hex-course-form > .hex-course-set > .hex-course-class > div .hex-font-red {
+    font-size: 10px;
+}
+
+.hex-course-creat-2 .hex-course-form > .hex-course-set .hex-add-class {
+    width: 100%;
+}
+
+.hex-course-creat-2 .hex-course-form > .hex-course-set .hex-add-class > button {
+    height: 30px;
+    font-size: 12px;
+}
+
+/* ============================= 课程模板详情 ============================= */
+.hex-course-template-info {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.hex-course-template-info .hex-title {
+    margin-top: 60px;
+}
+
+.hex-course-template-info .hex-info h2 {
+    margin-top: 20px;
+}
+
+.hex-course-template-info .hex-info > div {
+    display: inline-block;
+    width: 100%;
+}
+
+.hex-course-template-info .hex-little-book-list {
+    width: inherit;
+    height: 90px;
+    border: 0;
+}
+
+.hex-course-template-info .hex-little-book-list > .hex-image,
+.hex-course-template-info .hex-little-book-list > .hex-image img {
+    height: 90px;
+    width: 100px;
+}
+
+.hex-course-template-info .hex-little-book-list .hex-span > div {
+    width: 800px;
+    margin-left: 110px;
+}
+
+.hex-course-template-info .hex-little-book-list .hex-span > div:nth-child(n+2) {
+    margin-left: 115px;
+}
+
+.hex-course-template-info .hex-little-book-list .hex-span > div:nth-child(n+2) span {
+    color: #98a4b0;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.hex-course-template-info h2 {
+    margin: 20px 0;
+}
+
+/* ============================= 课程设置 ============================= */
+.hex-course-setting {
+    width: 100%;
+}
+
+.hex-course-setting .hex-course-head {
+    width: 100%;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.hex-course-setting .hex-course-head > * {
+}
+
+.hex-course-setting .hex-course-head h1 {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+.hex-course-setting .hex-course-head button {
+    float: right;
+}
+
+.hex-course-setting .hex-course-set {
+}
+
+.hex-course-setting .hex-course-set > div {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.hex-course-setting .hex-course-set > div > * {
+    float: left;
+}
+
+.hex-course-setting .hex-course-set > div > label,
+.hex-course-setting .hex-course-set > div > span {
+    height: 28px;
+    line-height: 28px;
+}
+
+.hex-course-setting .hex-course-set > div > label {
+    width: 9%;
+}
+
+.hex-course-setting .hex-course-set .hex-course-img .line {
+    width: 80%;
+}
+
+.hex-course-setting .hex-course-set .hex-course-img .line button {
+    margin-right: 10px;
+}
+
+.hex-course-setting .hex-course-set .hex-course-img .img {
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.hex-course-setting .hex-course-set .hex-course-img .img > div {
+    float: left;
+}
+
+.hex-course-setting .hex-course-set .hex-course-img .img .hex-wrapper {
+    width: 620px;
+}
+
+.hex-course-setting .hex-course-set .hex-course-img .img .hex-wrapper img {
+    /*max-height: 500px;
+    max-width: 500px;*/
+}
+
+.hex-course-setting .hex-course-set .hex-class-time > * {
+    float: left
+}
+
+.hex-course-setting .hex-course-set .hex-radio input[type='radio'] {
+    margin-top: 9px;
+    width: 30px;
+}
+
+.hex-course-setting .hex-course-set input[type='checkbox'] {
+    margin-top: 8px;
+    width: 20px;
+}
+
+.hex-course-setting .hex-course-set .hex-checkbox-table {
+    border: 1px solid #edf0f3;
+    border-radius: 2px;
+    width: 100%;
+}
+
+.hex-course-setting .hex-course-set .hex-checkbox-table .hex-font-lightgray {
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* ============================= 课程设置-学生端 ============================= */
+.hex-course-setting_student {
+}
+
+.hex-course-setting_student > div i{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #FB9945;
+    background-image: url("../../images/exclamation.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+}
+
+.hex-course-setting_student > div span{
+    line-height: 35px;
+    padding-left: 10px;
+}
+
+.hex-course-setting_student > div {
+    display: inline-block;
+    width: 100%;
+    padding: 40px 0 0 0;
+
+}
+
+.hex-course-setting_student > div button{
+    width: 100px;
+    height: 40px;
+    margin-left: 45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

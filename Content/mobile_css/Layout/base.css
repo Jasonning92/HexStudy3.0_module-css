@@ -1,0 +1,102 @@
+/* -----------------------------  移动端基本公用样式   ----------------------------- */
+@charset "utf-8";
+
+/* ------ List ------
+ *
+ */
+
+html, body {
+    margin: 0;
+    /*font-family: 微软雅黑;*/
+    font-family: heiti;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+p, a, span {
+    font-size: 14px;
+}
+
+/* ============================= 字体大小 ============================= */
+h2 {
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+/* ============================= 字体颜色 ============================= */
+.hex-m-font-gray {
+    color: #454f59;
+}
+
+.hex-m-font-lightgray {
+    color: #858e97;
+}
+
+.hex-m-font-white {
+    color: #ffffff;
+}
+
+.hex-m-font-green {
+    color: #43be7a;
+}
+
+/* ============================= 按钮大小 ============================= */
+.hex-button-large {
+    text-align: center;
+    line-height: 50px;
+    border-radius: 2px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 0;
+}
+
+/* ============================= 按钮颜色 ============================= */
+.hex-button-green {
+    background-color: #8adf7a;
+    color: #ffffff;
+}
+
+.hex-button-green:active {
+    background-color: #82d273;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

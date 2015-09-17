@@ -1,0 +1,1818 @@
+/* -----------------------------   登录   ----------------------------- */
+@charset "utf-8";
+
+/* ------ List ------
+ * 登录
+ * 注册
+ * 忘记密码
+ * 大首页
+ * 第三方登录（新账号）
+ * 关于我们
+ */
+
+/* ============================= 登录 ============================= */
+
+::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+::-moz-placeholder {
+    color: #ffffff;
+}
+
+:-ms-input-placeholder {
+    color: #ffffff;
+}
+
+#main_div {
+    padding: 0;
+    margin-top: 40px;
+}
+
+.hex-publisher-foot-1 {
+    margin: 0;
+}
+
+.hex-logo {
+    margin-left: 0;
+}
+
+.hex-user-info {
+    margin-right: 0;
+}
+
+.hex-logo-bg {
+    min-height: 690px;
+    height: 100%;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: -50px;
+    background: url("../../images/signed_bg.jpg") repeat 0 0;
+}
+
+.hex-logo-bg-nobackgrond {
+    height: 100%;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.hex-logo-middle {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.hex-logo-middle .hex-logo-location {
+    position: relative;
+}
+
+.hex-logo-middle .hex-logo-location > img {
+    position: absolute;
+    top: 0;
+    left: 86px;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form {
+    height: 440px;
+    width: 370px;
+    background: #27ad74;
+    border-radius: 5px;
+    position: absolute;
+    top: 124px;
+    right: 86px;
+    -moz-box-shadow: 5px 0 1px #e2f2eb, -5px 0 1px #e2f2eb, 0 5px 1px #e2f2eb, 0 -5px 1px #e2f2eb; /* For Firefox3.6+ */
+    -webkit-box-shadow: 5px 0 1px #e2f2eb, -5px 0 1px #e2f2eb, 0 5px 1px #e2f2eb, 0 -5px 1px #e2f2eb; /* For Chrome5+, Safari5+ */
+    box-shadow: 5px 0 1px #e2f2eb, -5px 0 1px #e2f2eb, 0 5px 1px #e2f2eb, 0 -5px 1px #e2f2eb;
+    padding: 20px 40px;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .title {
+    height: 70px;
+    width: 290px;
+    border-bottom: 1px solid #179c64;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .title h1 {
+    color: #FFFFFF;
+    font-size: 30px;
+    float: left;
+    line-height: 70px;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .title a {
+    line-height: 70px;
+    float: right;
+    color: #FFFFFF;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .title a div {
+    float: left;
+    background: #FFFFFF url("../../images/signes_icon.png") no-repeat 0 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    margin-top: 26px;
+    margin-right: 5px;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .title a:hover {
+    color: #cbf7e6;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .form {
+    width: 290px;
+    height: 330px;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-login {
+    border-top: 1px solid #38b881;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form form > div {
+    width: 290px;
+}
+
+.hex-logo-middle .hex-login .info {
+    height: 30px;
+    width: 100%;
+}
+
+.hex-logo-middle .hex-login .info span {
+    color: #ffffff;
+    line-height: 30px;
+    float: right;
+    font-size: 12px;
+}
+
+.hex-logo-middle .hex-login .name {
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+
+.hex-logo-middle .hex-login .password {
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+
+.hex-logo-middle .hex-login .name img,
+.hex-logo-middle .hex-login .password img {
+    position: absolute;
+    top: 17px;
+    left: 10px;
+    z-index: 11;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-login .name input,
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-login .password input {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #4bc396;
+    color: #ffffff;
+    border-radius: 2px;
+    padding-left: 40px;
+    border: 1px solid #23a56e;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form input:focus {
+    -moz-box-shadow: 1px 1px 1px #359F73 inset, -1px -1px 1px #359F73 inset; /* For Firefox3.6+ */
+    -webkit-box-shadow: 1px 1px 1px #359F73 inset, -1px -1px 1px #359F73 inset; /* For Chrome5+, Safari5+ */
+    box-shadow: 1px 1px 1px #359F73 inset, -1px -1px 1px #359F73 inset;
+    border: 1px solid #108f59;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .button button:hover,
+.hex-logo-middle .hex-logo-location .hex-logo-form .button button:focus {
+    -moz-box-shadow: 2px 0 1px #108f59, -2px 0 1px #108f59, 0 2px 1px #108f59, 0 -2px 1px #108f59; /* For Firefox3.6+ */
+    -webkit-box-shadow: 2px 0 1px #108f59, -2px 0 1px #108f59, 0 2px 1px #108f59, 0 -2px 1px #108f59; /* For Chrome5+, Safari5+ */
+    box-shadow: 2px 0 1px #108f59, -2px 0 1px #108f59, 0 2px 1px #108f59, 0 -2px 1px #108f59;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-login .button {
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .button button {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 2px;
+    color: #27ad74;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .button .not_active {
+    color: #bcc6cf;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-login .checkbox {
+    margin-top: 10px;
+    width: 100%;
+    height: 20px;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-login .checkbox .left {
+    float: left;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-login .checkbox .left label {
+    color: #ffffff;
+    line-height: 20px;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-login .checkbox .left label input {
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-login .checkbox .right {
+    float: right;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-login .checkbox .right span {
+    color: #ffffff;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-login .checkbox .right a:hover span,
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-login .checkbox .left label:hover,
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-logo-register .checkbox a:hover {
+    color: #cbf7e6;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-login .other {
+    text-align: center;
+    margin-top: 25px;
+    width: 100%;
+    height: 42px;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-login .other em {
+    height: 42px;
+    width: 42px;
+    border-radius: 21px;
+    float: left;
+    display: inline-block;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-login .other a:nth-child(1) em {
+    margin-left: 60px;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-login .other a:nth-child(n+2) em {
+    margin-left: 20px;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-login .other .sina {
+    background: #ffffff url("../../images/weibo_logo02.png") no-repeat 4px 7px;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-login .other a:hover .sina {
+    background: #e76569 url("../../images/weibo_logo02.png") no-repeat 4px 7px;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-login .other .qq {
+    background: #ffffff url("../../images/qq_logo02.png") no-repeat 8px 7px;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-login .other a:hover .qq {
+    background: #FFAA00 url("../../images/qq_logo02.png") no-repeat 8px 7px;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-login .other .renren {
+    background: #ffffff url("../../images/renren_logo02.png") no-repeat 0 0;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-login .other a:hover .renren {
+    background: #1F7DC7 url("../../images/renren_logo02.png") no-repeat 0 0;
+}
+
+/* ============================= 注册 ============================= */
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-logo-type {
+    border-top: 1px solid #38B881;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-logo-type label {
+    color: #FFFFFF;
+    width: 49%;
+    margin: 5px 0;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-logo-type label input[type='radio'] {
+    margin-right: 10px;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form {
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .logo-email,
+.hex-logo-middle .hex-logo-location .hex-logo-form .logo-phone {
+    position: absolute;
+    top: 130px;
+    left: 40px;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .logo-email {
+    display: none;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-logo-register {
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-logo-register .email .wrong,
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-logo-register .password2 .wrong {
+    border: 1px solid #B73926;
+    color: #B73926;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-logo-register .input {
+    width: 100%;
+    height: 35px;
+    position: relative;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-logo-register .email input,
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-logo-register .password input,
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-logo-register .password2 input {
+    width: 290px;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-logo-register .input:nth-of-type(n+2) {
+    margin-top: 10px;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-logo-register .input img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-logo-register .input input {
+    height: 35px;
+    line-height: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #4bc396;
+    color: #ffffff;
+    border: 0;
+    border-radius: 2px;
+    padding-left: 40px;
+    padding-top: 8px;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-logo-register .hex-form-strength {
+    margin-top: 10px;
+    width: 100%;
+    height: 28px;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-logo-register .hex-form-strength span {
+    float: left;
+    margin-right: 5px;
+    color: #ffffff;
+    line-height: 28px;
+}
+
+.hex-logo-middle .verification {
+    margin-top: 10px;
+    width: 100%;
+    height: 35px;
+    position: relative;
+}
+
+.hex-logo-middle .verification img:not(.ver-img) {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 11;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-logo-register .verification input {
+    width: 180px;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #4bc396;
+    color: #ffffff;
+    border: 0;
+    border-radius: 2px;
+    padding-left: 40px;
+    padding-top: 8px;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-input-div {
+    width: 100%;
+}
+
+.hex-logo-middle .verification .ver-img {
+    float: right;
+    width: 100px;
+    height: 35px;
+    border-radius: 2px;
+}
+
+.hex-logo-middle .verification a.ver-img {
+    font-size: 12px;
+    background-color: #FFF;
+    border-radius: 2px;
+    color: #27AD74;
+    text-align: center;
+    line-height: 35px;
+}
+
+.hex-logo-middle .verification a.ver-img[disabled='disabled'] {
+    color: #858e97;
+    cursor: default;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-logo-register .checkbox {
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-logo-register .checkbox input {
+    margin-left: 0;
+    margin-top: 4px;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-logo-register .checkbox a {
+    line-height: 20px;
+    margin-left: 20px;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-logo-register .checkbox a:not(.hex-font-orange) {
+    color: #ffffff;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-logo-register .button {
+    margin-top: 10px;
+    width: 100%;
+    height: 45px;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-logo-register em {
+    position: absolute;
+    left: -20px;
+    top: 14px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-logo-register b {
+    position: absolute;
+    right: -20px;
+    top: 14px;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-logo-register .ok {
+    height: 10px;
+    width: 10px;
+    background: url("../../images/signed_verification.png") no-repeat 0 0;
+    display: inline-block;
+}
+
+.hex-logo-middle .hex-logo-location .hex-logo-form .hex-logo-register .hidden {
+    display: none;
+}
+
+/* ============================= 忘记密码 ============================= */
+.hex-logo-middle .hex-forget-password {
+}
+
+.hex-logo-middle .hex-forget-password .hex-title {
+    width: 100%;
+    margin-top: 25px;
+    display: inline-block;
+}
+
+.hex-logo-middle .hex-forget-password .hex-title h1 {
+    float: left;
+    line-height: 30px;
+}
+
+.hex-logo-middle .hex-forget-password .hex-title .right {
+    float: right;
+}
+
+.hex-logo-middle .hex-forget-password .hex-step {
+    margin-top: 25px;
+}
+
+.hex-logo-middle .hex-forget-password .hex-step > span {
+    width: 290px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.hex-logo-middle .hex-forget-password .hex-step > .active_1 {
+    background-image: url("../../images/rolling-frame_1_active.png");
+    color: #323b43;
+}
+
+.hex-logo-middle .hex-forget-password .hex-step > .active_23 {
+    background-image: url("../../images/rolling-frame_23_active.png");
+    color: #323b43;
+}
+
+.hex-logo-middle .hex-forget-password .hex-step > .not_active_1 {
+    background-image: url("../../images/rolling-frame_1.png");
+    color: #858e97;
+}
+
+.hex-logo-middle .hex-forget-password .hex-step > .not_active_23 {
+    background-image: url("../../images/rolling-frame_23.png");
+    color: #858e97;
+}
+
+.hex-logo-middle .hex-forget-password .hex-login {
+}
+
+.hex-logo-middle .hex-forget-password .hex-login > div {
+    min-height: 40px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.hex-logo-middle .hex-forget-password .hex-login > div.hex-logo-success{
+    padding-top: 50px;
+    width: 450px;
+    margin: 0 auto;
+}
+
+.hex-logo-middle .hex-forget-password .hex-login > div.hex-logo-success img{
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+
+.hex-logo-middle .hex-forget-password .hex-login > div.hex-logo-success h1{
+    line-height: 40px;
+    padding-left: 80px;
+}
+
+.hex-logo-middle .hex-forget-password .hex-login input {
+    border: 1px solid #cbd1d7;
+}
+
+.hex-logo-middle .hex-forget-password .hex-login > div.error-message {
+    height: 20px;
+    width: 100%;
+    line-height: 20px;
+    margin: 5px 0;
+    padding-left: 40px;
+    font-size: 12px;
+}
+
+/*.hex-logo-middle .hex-forget-password .hex-login input:focus {
+    -moz-box-shadow: 2px 0 1px #cbd1d7, -2px 0 1px #cbd1d7, 0 2px 1px #cbd1d7, 0 -2px 1px #cbd1d7;
+    -webkit-box-shadow: 2px 0 1px #cbd1d7, -2px 0 1px #cbd1d7, 0 2px 1px #cbd1d7, 0 -2px 1px #cbd1d7;
+    box-shadow: 2px 0 1px #cbd1d7, -2px 0 1px #cbd1d7, 0 2px 1px #cbd1d7, 0 -2px 1px #cbd1d7;
+}*/
+
+.hex-logo-middle .hex-forget-password .hex-login .name img {
+    top: 12px;
+}
+
+.hex-logo-middle .hex-forget-password .hex-login .name input {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: #ffffff;
+    color: #323b43;
+    border-radius: 2px;
+    padding-left: 40px;
+}
+
+.hex-logo-middle .hex-forget-password .hex-login .verification img {
+    top: 13px;
+}
+
+.hex-logo-middle .hex-forget-password .hex-login .verification input {
+    width: 180px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: #ffffff;
+    color: #323b43;
+    border-radius: 2px;
+    padding-left: 40px;
+}
+
+.hex-logo-middle .hex-forget-password ::-webkit-input-placeholder {
+    color: #d1d6db;
+}
+
+.hex-logo-middle .hex-forget-password ::-moz-placeholder {
+    color: #d1d6db;
+}
+
+.hex-logo-middle .hex-forget-password :-ms-input-placeholder {
+    color: #d1d6db;
+}
+
+.hex-logo-middle .hex-forget-password .hex-login > .hex-login-content {
+    width: 700px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.hex-logo-middle .hex-forget-password .hex-login > .hex-login-content > .hex-forget-email {
+    text-align: center;
+}
+
+.hex-logo-middle .hex-forget-password .hex-login > .hex-login-content h4 {
+    font-size: 14px;
+    color: #454f59;
+    line-height: 30px;
+}
+
+.hex-logo-middle .hex-forget-password .hex-login > .hex-login-content h4 a {
+    color: #D86D6D;
+    padding: 0 10px;
+}
+
+.hex-logo-middle .hex-forget-password .hex-login > .hex-login-content h4 a:hover {
+    text-decoration: underline;
+}
+
+/* ============================= 忘记密码-设置密码 ============================= */
+.hex-logo-middle .hex-forget-password .hex-set-password {
+    padding: 20px 0;
+}
+
+.hex-logo-middle .hex-forget-password .hex-set-password > div {
+    margin: 5px 0;
+}
+
+.hex-logo-middle .hex-forget-password .hex-set-password .name {
+    height: 40px;
+    width: 300px;
+    position: relative;
+}
+
+.hex-logo-middle .hex-forget-password .hex-set-password .name img {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    z-index: 11;
+}
+
+.hex-logo-middle .hex-forget-password .hex-set-password .name input {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #FFF;
+    color: #323B43;
+    border-radius: 2px;
+    padding-left: 40px;
+}
+
+.hex-logo-middle .hex-forget-password .hex-set-password .hex-form-strength {
+    display: inline-block;
+}
+
+.hex-logo-middle .hex-forget-password .hex-set-password .hex-form-strength>div{
+    margin-left: 40px;
+}
+
+/* ============================= 大首页 ============================= */
+.hex-index,
+.hex-header .hex-index {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.hex-header-in.no_shadow {
+    box-shadow: none;
+}
+
+.hex-index-nav {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #003161;
+    z-index: 15;
+}
+
+.hex-index-nav > div {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.hex-index-nav > div a,
+.hex-index-nav > div span {
+    line-height: 50px;
+    color: #FFFFFF;
+}
+
+.hex-index-nav > div a:hover {
+    font-weight: 600;
+}
+
+.hex-index-nav > div span {
+    padding: 0 20px;
+    text-align: center;
+}
+
+.main_index_padding {
+    padding-top: 50px;
+}
+
+.hex-index-middle .hex-index .hex-index-logo {
+    height: 550px;
+    position: relative;
+    border-bottom: 4px solid #525c66;
+    margin-top: 40px;
+}
+
+.hex-index-middle .hex-index .hex-index-logo img {
+    position: absolute;
+    top: 20px;
+    left: -127px;
+}
+
+.hex-index-middle .hex-index .hex-index-logo .hex-green-btn {
+    width: 196px;
+    height: 66px;
+    font-size: 18px;
+    position: absolute;
+    top: 472px;
+    left: 278px;
+    border-radius: 0;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce {
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(1) {
+    width: 1180px;
+    text-align: center;
+    font-size: 18px;
+    color: #525c66;
+    margin: 40px 0 15px 0;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce p {
+    color: #98a2ac;
+}
+
+.hex-index-middle .hex-index .next {
+    height: 110px;
+    width: 110px;
+    border-radius: 55px;
+    background-color: #d7dbde;
+    background-image: url("../../images/bottom_arrow.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 100;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(3) {
+    margin: 35px 0 64px 0;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(3) .next {
+    margin: 0 auto;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(4),
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(5) {
+    display: inline-block;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(4) > div,
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(5) > div {
+    width: 265px;
+    float: left;
+    display: inline-block;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(4) > div:nth-child(n+2),
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(5) > div:nth-child(n+2) {
+    margin-left: 40px;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(4) p,
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(5) p {
+    font-size: 14px;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(4) span,
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(5) span {
+    width: 265px;
+    margin: 20px 0 5px 0;
+    display: inline-block;
+    text-align: center;
+    color: #525c66;
+    font-size: 18px;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(4) > div:nth-child(1) img {
+    margin-left: 57px;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(4) > div:nth-child(2) img {
+    margin-top: -14px;
+    margin-left: 73px;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(4) > div:nth-child(3) img {
+    margin-left: 66px;
+    margin-top: -16px;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(4) > div:nth-child(4) img {
+    margin-left: 59px;
+    margin-top: -2px;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(5) {
+    margin-top: 58px;
+    margin-left: 135px;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(5) > div:nth-child(1) img {
+    margin-left: 57px;
+}
+
+/*.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(5) > div:nth-child(2) img {
+    margin-left: 66px;
+    margin-top: 21px;
+}*/
+
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(5) > div:nth-child(2) img {
+    margin-left: 52px;
+    margin-top: -3px;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(5) > div:nth-child(3) img {
+    margin-left: 72px;
+    margin-top: 9px;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(6) {
+    margin-top: 50px;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(6) .next {
+    margin: 0 auto;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation {
+    background: #fafafa;
+    /*height: 828px;*/
+    height: 195px;
+    margin-top: -59px;
+    z-index: 10;
+    display: inline-block;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .next {
+    margin: -51px auto 0 auto;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-search {
+    width: 500px;
+    height: 65px;
+    position: absolute;
+    top: 70px;
+    left: 335px;
+    display: inline-block;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-search span {
+    font-size: 30px;
+    color: #525c66;
+    line-height: 76px;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-search .hex-input-div {
+    width: 330px;
+    height: 50px;
+    margin-top: 14px;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-search input {
+    width: 330px;
+    height: 50px;
+    border-radius: 2px;
+    border: 1px solid #d7dbde;
+    padding-left: 15px;
+    padding-right: 50px;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-search a {
+    height: 48px;
+    width: 48px;
+    background: url("../../images/sosuo_icon.png") no-repeat 13px 12px;
+    z-index: 20;
+    display: inline-block;
+    right: 1px;
+    top: 15px;
+    position: absolute;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-search a:hover {
+    background-color: #F4F4F4;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-search input:focus {
+    -moz-box-shadow: 2px 0 1px #EEEEEE, -2px 0 1px #EEEEEE, 0 2px 1px #EEEEEE, 0 -2px 1px #EEEEEE; /* For Firefox3.6+ */
+    -webkit-box-shadow: 2px 0 1px #EEEEEE, -2px 0 1px #EEEEEE, 0 2px 1px #EEEEEE, 0 -2px 1px #EEEEEE; /* For Chrome5+, Safari5+ */
+    box-shadow: 2px 0 1px #EEEEEE, -2px 0 1px #EEEEEE, 0 2px 1px #EEEEEE, 0 -2px 1px #EEEEEE;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-select {
+    position: absolute;
+    top: 175px;
+    width: 1180px;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-select > div:nth-child(1) {
+    float: left;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-select > div:nth-child(1) > div {
+    float: left;
+    height: 40px;
+    width: 100px;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-select > div:nth-child(1) > div a {
+    height: 40px;
+    width: 100px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    color: #9da9b2;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-select > div:nth-child(1) > div a:hover {
+    color: #27ad74;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-select > div:nth-child(1) > .active a {
+    border: 1px solid #27ad74;
+    color: #27ad74;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-select > div:nth-child(2) {
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 35px;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-select > div:nth-child(2) a {
+    color: #525c66;
+    width: 100px;
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-select > div:nth-child(2) a:hover {
+    color: #27ad74;
+    border: 1px solid #27ad74;
+    line-height: 38px;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-select > div:nth-child(2) a:active {
+    color: #464e57;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-button {
+    position: absolute;
+    top: 711px;
+    width: 1180px;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-button button {
+    width: 195px;
+    height: 70px;
+    font-size: 18px;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-body {
+    position: absolute;
+    top: 260px;
+    height: 402px;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-body .one {
+    width: 1180px;
+    height: 340px;
+    float: left;
+    margin-right: 40px;
+    -moz-opacity: 0.50; /*支持 FireFox 浏览器*/
+    opacity: 0.50; /*支持 Chrome, Opera, Safari 等浏览器*/
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-body .active {
+    -moz-opacity: 1; /*支持 FireFox 浏览器*/
+    opacity: 1; /*支持 Chrome, Opera, Safari 等浏览器*/
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-body .one > div:nth-child(1),
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-body .one > div:nth-child(1) img {
+    height: 402px;
+    width: 570px;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-body .one > div:nth-child(1) {
+    float: left;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-body .one > div:nth-child(2) {
+    width: 570px;
+    height: 340px;
+    margin-left: 40px;
+    float: left;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-body .one > div:nth-child(2) > div:nth-child(1),
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-body .one > div:nth-child(2) > div:nth-child(3) {
+    height: auto;
+    width: 570px;
+    display: inline-block;
+    padding-bottom: 19px;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-body .one > div:nth-child(2) > div:nth-child(2) {
+    height: auto;
+    width: 570px;
+    border-top: 2px solid #d7dbde;
+    border-bottom: 2px solid #d7dbde;
+    padding-bottom: 23px;
+    display: inline-block;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-body .one > div:nth-child(2) > div:nth-child(2) img,
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-body .one > div:nth-child(2) > div:nth-child(2) div,
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-body .one > div:nth-child(2) > div:nth-child(3) img,
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-body .one > div:nth-child(2) > div:nth-child(3) div {
+    margin-top: 20px;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-body .one > div:nth-child(2) > div img {
+    height: 102px;
+    width: 144px;
+    float: left;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-body .one > div:nth-child(2) > div div {
+    width: 408px;
+    height: 86px;
+    float: right;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-body .one > div:nth-child(2) > div div h2,
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-body .one > div:nth-child(2) > div div p {
+    width: 408px;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-body .one > div:nth-child(2) > div div p {
+    margin-top: 20px;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-body .one > div:nth-child(2) > div a:hover h2 {
+    font-weight: 600;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > .operation .hex-body .one > div:nth-child(2) > div a:hover p {
+    color: #323B43;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(8) {
+    display: inline-block;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(8) > div {
+    width: 265px;
+    height: 215px;
+    margin-top: 40px;
+    float: left;
+    margin-right: 40px;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(8) > div:nth-child(4n) {
+    margin-right: 0;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(8) > div:nth-last-child(1) {
+    margin-bottom: 60px;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(8) > div > a {
+    height: 165px;
+    width: 265px;
+    background: #FFFFFF;
+    display: inline-block;
+    text-align: center;
+    line-height: 165px;
+    padding: 0 20px;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(8) > div > a > img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(8) > div > div {
+    height: 50px;
+    text-align: center;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(8) > div > div a {
+    display: inline-block;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(8) > div > div h2,
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(8) > div > div span {
+    line-height: 50px;
+    float: left;
+    color: #333333;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(8) > div > div h2 {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(8) > div > div a:hover h2,
+.hex-index-middle .hex-index .hex-index-introduce > div:nth-child(8) > div > div a:hover span {
+    color: #34b27c;
+}
+
+/* ============================= 第三方登录（新账号） ============================= */
+
+.hex-third-party-new ::-webkit-input-placeholder {
+    color: #bbc4cc;
+}
+
+.hex-third-party-new ::-moz-placeholder {
+    color: #bbc4cc;
+}
+
+.hex-third-party-new :-ms-input-placeholder {
+    color: #bbc4cc;
+}
+
+.hex-third-party-new {
+    min-height: 390px;
+    width: 100%;
+    display: inline-block;
+    padding: 20px 90px 0 135px;
+}
+
+.hex-third-party-new > div {
+    float: left;
+}
+
+.hex-third-party-new .form {
+    height: 390px;
+    width: 350px;
+}
+
+.hex-third-party-new .form > div,
+.hex-third-party-new .form > form > div {
+    width: 100%;
+    display: inline-block;
+}
+
+.hex-third-party-new .form > form > div .error-info {
+    width: 100%;
+    display: inline-block;
+}
+
+.hex-third-party-new .form > form > div .error-info > span {
+    color: #fc7039;
+    font-size: 12px;
+}
+
+.hex-third-party-new .form > form > div > * {
+    float: left;
+}
+
+.hex-third-party-new .form > form > div:nth-of-type(1) {
+    margin-bottom: 20px;
+}
+
+.hex-third-party-new .form > form > div:nth-of-type(1) a {
+    margin-left: 5px;
+}
+
+.hex-third-party-new .form > form > div:nth-of-type(1) a:hover {
+    font-weight: 600;
+    color: #34b27c;
+}
+
+.hex-third-party-new .form > form .hex-form-star {
+    width: 30px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+}
+
+.hex-third-party-new .form > form input[type='text'],
+.hex-third-party-new .form > form input[type='password'] {
+    width: 290px;
+    height: 40px;
+    padding: 0 10px 0 35px;
+    background-repeat: no-repeat;
+}
+
+.hex-third-party-new .form > form input.name {
+    background-image: url("../../images/signed_user.png");
+    background-position: 10px 9px;
+}
+
+.hex-third-party-new .form > form input.password {
+    background-image: url("../../images/signed_cipher.png");
+    background-position: 10px 10px;
+}
+
+.hex-third-party-new .form > form input.verification {
+    width: 180px;
+    margin: 0;
+    background-image: url("../../images/signed_code.png");
+    background-position: 10px 12px;
+}
+
+.hex-third-party-new .form > form .hex-form-strength {
+    margin: 0;
+}
+
+.hex-third-party-new .form > form .hex-form-strength label {
+    margin-left: 25px;
+}
+
+.hex-third-party-new .form > form .hex-form-strength > div {
+    margin-left: 5px;
+}
+
+.hex-third-party-new .form > form .ver-img {
+    height: 40px;
+    border: 1px solid #CBD1D7;
+    margin-left: 13px;
+}
+
+.hex-third-party-new .form > form input[type='checkbox'] {
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
+.hex-third-party-new .form > form > div:nth-of-type(7) {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.hex-third-party-new .form > form > div:nth-of-type(7) a:hover {
+    color: #858e97;
+    font-weight: 600;
+}
+
+.hex-third-party-new .form > form button {
+    width: 290px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    margin-left: 25px;
+}
+
+.hex-third-party-new .form > form i {
+    height: 40px;
+    width: 30px;
+    line-height: 40px;
+    background: url("../../images/signed_verification_grren.png") no-repeat 0 0;
+    background-position: center;
+    display: none;
+}
+
+.hex-third-party-new .img {
+    height: 210px;
+    width: 210px;
+    background-image: url("../../images/left-right.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hex-third-party-new .info {
+    max-width: 360px;
+    height: 110px;
+    border: 1px solid #cbd1d7;
+    border-radius: 2px;
+    background-color: #ffffff;
+    margin-top: 35px;
+    margin-left: 30px;
+    min-width: 260px;
+}
+
+.hex-third-party-new .info > div {
+    width: 100%;
+}
+
+.hex-third-party-new .info > div:nth-of-type(1) {
+    height: 40px;
+}
+
+.hex-third-party-new .info > div:nth-of-type(1) > * {
+    float: left;
+}
+
+.hex-third-party-new .info > div:nth-of-type(1) img.weibo {
+    max-height: 25px;
+    max-width: 25px;
+    margin: 10px 15px 0 15px;
+}
+
+.hex-third-party-new .info > div:nth-of-type(1) img.qq {
+    max-height: 20px;
+    max-width: 25px;
+    margin: 10px 10px 0 15px;
+}
+
+.hex-third-party-new .info > div:nth-of-type(1) img.renren {
+    max-height: 18px;
+    max-width: 25px;
+    margin: 10px 10px 0 15px;
+}
+
+.hex-third-party-new .info > div:nth-of-type(1) span {
+    height: 40px;
+    line-height: 40px;
+}
+
+.hex-third-party-new .info > div:nth-of-type(2) {
+    position: relative;
+    display: block;
+}
+
+.hex-third-party-new .info > div:nth-of-type(2) > div {
+    float: left;
+}
+
+.hex-third-party-new .info > div:nth-of-type(2) > div:nth-of-type(1) {
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+.hex-third-party-new .info > div:nth-of-type(2) > div:nth-of-type(1) img {
+    height: 55px;
+    width: 55px;
+    border-radius: 27.5px;
+}
+
+.hex-third-party-new .info > div:nth-of-type(2) > div:nth-of-type(2) {
+    width: 100%;
+    padding-left: 75px;
+}
+
+.hex-third-party-new .info > div:nth-of-type(2) > div:nth-of-type(2) > div {
+    width: 100%;
+    display: inline-block;
+}
+
+.hex-third-party-new .info > div:nth-of-type(2) > div:nth-of-type(2) > div > * {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+}
+
+.hex-third-party-new .info > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) {
+    margin-top: 10px;
+}
+
+/* ============================= 第三方登录 ============================= */
+.hex-third-party {
+    width: 360px;
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+}
+
+.hex-third-party > div:not(.info) {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.hex-third-party .info {
+    max-width: 360px;
+    height: 110px;
+    border: 1px solid #cbd1d7;
+    border-radius: 2px;
+    background-color: #ffffff;
+    min-width: 260px;
+    margin: 0 auto 10px 0;
+}
+
+.hex-third-party .info > div {
+    width: 100%;
+}
+
+.hex-third-party .info > div:nth-of-type(1) {
+    height: 40px;
+}
+
+.hex-third-party .info > div:nth-of-type(1) > * {
+    float: left;
+}
+
+.hex-third-party .info > div:nth-of-type(1) img.weibo {
+    max-height: 25px;
+    max-width: 25px;
+    margin: 10px 15px 0 15px;
+}
+
+.hex-third-party .info > div:nth-of-type(1) img.qq {
+    max-height: 20px;
+    max-width: 25px;
+    margin: 10px 10px 0 15px;
+}
+
+.hex-third-party .info > div:nth-of-type(1) img.renren {
+    max-height: 18px;
+    max-width: 25px;
+    margin: 10px 10px 0 15px;
+}
+
+.hex-third-party .info > div:nth-of-type(1) span {
+    height: 40px;
+    line-height: 40px;
+}
+
+.hex-third-party .info > div:nth-of-type(2) {
+    position: relative;
+    display: block;
+}
+
+.hex-third-party .info > div:nth-of-type(2) > div {
+    float: left;
+}
+
+.hex-third-party .info > div:nth-of-type(2) > div:nth-of-type(1) {
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+.hex-third-party .info > div:nth-of-type(2) > div:nth-of-type(1) img {
+    height: 55px;
+    width: 55px;
+    border-radius: 27.5px;
+}
+
+.hex-third-party .info > div:nth-of-type(2) > div:nth-of-type(2) {
+    width: 100%;
+    padding-left: 75px;
+}
+
+.hex-third-party .info > div:nth-of-type(2) > div:nth-of-type(2) > div {
+    width: 100%;
+    display: inline-block;
+}
+
+.hex-third-party .info > div:nth-of-type(2) > div:nth-of-type(2) > div > * {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+}
+
+.hex-third-party .info > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) {
+    margin-top: 10px;
+}
+
+.hex-third-party a {
+    width: 290px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    margin-left: 25px;
+    display: block;
+}
+
+/* ============================= 关于我们 ============================= */
+.hex-about_us {
+    padding-top: 40px;
+    display: inline-block;
+    width: 1180px;
+}
+
+/* 导航 */
+.hex-about_us .hex-about_us-ul {
+    float: left;
+    width: 200px;
+    /*position: fixed;
+    left: 0;
+    top: 80px;*/
+}
+
+.hex-about_us .hex-about_us-ul ul li > .active,
+.hex-about_us .hex-about_us-ul ul li .first .active,
+.hex-about_us .hex-about_us-ul ul li .first .second .active {
+    height: 40px;
+    width: 200px;
+    background: #27ad74;
+    display: inline-block;
+    line-height: 40px;
+    float: left;
+    margin-bottom: 2px;
+}
+
+.hex-about_us .hex-about_us-ul ul li > .active span,
+.hex-about_us .hex-about_us-ul ul li .first .active span,
+.hex-about_us .hex-about_us-ul ul li .first .second .active span {
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+
+.hex-about_us .hex-about_us-ul ul {
+    list-style: none;
+}
+
+.hex-about_us .hex-about_us-ul ul li {
+    width: 200px;
+    display: inline-block;
+}
+
+.hex-about_us .hex-about_us-ul ul li:nth-of-type(n+2) {
+    margin-top: -5px;
+}
+
+.hex-about_us .hex-about_us-ul ul .nature > .button {
+    background: #dee2e7 url("../../images/mooc_sort01.png") no-repeat 10px 9px;
+}
+
+.hex-about_us .hex-about_us-ul ul .engineering > .button {
+    background: #dee2e7 url("../../images/mooc_sort02.png") no-repeat 12px 9px;
+}
+
+.hex-about_us .hex-about_us-ul ul .sociology > .button {
+    background: #dee2e7 url("../../images/mooc_sort03.png") no-repeat 12px 13px;
+}
+
+.hex-about_us .hex-about_us-ul ul li > .button {
+    height: 40px;
+    width: 40px;
+    float: left;
+}
+
+.hex-about_us .hex-about_us-ul ul li > .title {
+    width: 200px;
+}
+
+.hex-about_us .hex-about_us-ul ul li > .title:not(.active) {
+    height: 40px;
+    background: #525c66;
+    display: inline-block;
+    line-height: 40px;
+    float: left;
+    margin-bottom: 2px;
+}
+
+.hex-about_us .hex-about_us-ul ul li > .title > a {
+    width: 170px;
+    height: 40px;
+    display: inline-block;
+}
+
+.hex-about_us .hex-about_us-ul ul li > .title:not(.active) > a > span {
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.hex-about_us .hex-about_us-ul ul li > .title:not(.active) > a:hover > span {
+    color: #364049;
+    font-weight: 600;
+}
+
+.hex-about_us .hex-about_us-ul ul li .first .first-title:not(.active) > a:hover > span,
+.hex-about_us .hex-about_us-ul ul li .first .second .second-title:not(.active) > a:hover > span {
+    color: #364049;
+}
+
+.hex-about_us .hex-about_us-ul ul li > .title > .jianhao,
+.hex-about_us .hex-about_us-ul ul li > .title > .jiahao,
+.hex-about_us .hex-about_us-ul ul li .first .first-title > .jianhao,
+.hex-about_us .hex-about_us-ul ul li .first .first-title > .jiahao {
+    background: #c4cad1 url("../../images/jianhao_white.png") no-repeat 7px 9px;
+    width: 20px;
+    height: 20px;
+    float: right;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.hex-about_us .hex-about_us-ul ul li > .title > .jianhao:hover,
+.hex-about_us .hex-about_us-ul ul li .first .first-title > .jianhao:hover {
+    background: #d2d8e0 url("../../images/jianhao_white.png") no-repeat 7px 9px;
+}
+
+.hex-about_us .hex-about_us-ul ul li > .title > .jiahao,
+.hex-about_us .hex-about_us-ul ul li .first .first-title > .jiahao {
+    background: #c4cad1 url("../../images/jiahao_white.png") no-repeat 6px 6px;
+    width: 20px;
+    height: 20px;
+    float: right;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.hex-about_us .hex-about_us-ul ul li > .title > .jiahao:hover,
+.hex-about_us .hex-about_us-ul ul li .first .first-title > .jiahao:hover {
+    background: #d2d8e0 url("../../images/jiahao_white.png") no-repeat 6px 6px;
+}
+
+.hex-about_us .hex-about_us-ul ul li .first {
+    width: 200px;
+    display: inline-block;
+    float: right;
+}
+
+.hex-about_us .hex-about_us-ul ul li .first .first-title:not(.active) {
+    height: 40px;
+    width: 200px;
+    display: inline-block;
+    background: #98a2ac;
+    line-height: 40px;
+    margin-bottom: 2px;
+}
+
+.hex-about_us .hex-about_us-ul ul li .first .first-title:not(.active) a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.hex-about_us .hex-about_us-ul ul li .first .first-title:not(.active) span {
+    color: #d4dde4;
+    padding-left: 10px;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.hex-about_us .hex-about_us-ul ul li .first .second {
+    width: 160px;
+    display: inline-block;
+    float: right;
+}
+
+.hex-about_us .hex-about_us-ul ul li .first .second .second-title:not(.active) {
+    height: 40px;
+    width: 200px;
+    display: inline-block;
+    background: #ebeff2;
+    line-height: 40px;
+    margin-bottom: 2px;
+}
+
+.hex-about_us .hex-about_us-ul ul li .first .second .second-title > a {
+    height: 40px;
+    width: 200px;
+    display: inline-block;
+}
+
+.hex-about_us .hex-about_us-ul ul li .first .second .second-title:not(.active) > a > span {
+    color: #858e97;
+    margin-left: 10px;
+}
+
+.hex-about_us .hex-about_us-body {
+    width: 960px;
+    float: right;
+    border-top: 4px solid #535b66;
+}
+
+.hex-about_us .hex-about_us-body > div:nth-of-type(1) {
+    width: 100%;
+    padding-top: 15px;
+}
+
+.hex-about_us .hex-about_us-body > div:nth-of-type(2) {
+    width: 100%;
+}
+
+.hex-about_us .hex-about_us-body > div:nth-of-type(2) h1 {
+    padding: 15px 0;
+}
+
+/* ============================= 建设中 ============================= */
+.hex-logo-bg-building {
+    min-height: auto;
+}
+
+.hex-will_do {
+    width: 970px;
+    min-height: 500px;
+    background-image: url("../../images/will_do.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    margin-left: 200px;
+}
+
+/* ============================= 出版社列表 ============================= */
+.hex-publisher-lib {
+    display: inline-block;
+}
+
+.hex-publisher-lib > div {
+    width: 265px;
+    height: 215px;
+    margin-top: 40px;
+    float: left;
+    margin-right: 40px;
+}
+
+.hex-publisher-lib > div:nth-child(4n) {
+    margin-right: 0;
+}
+
+.hex-publisher-lib > div:nth-last-child(1) {
+    margin-bottom: 60px;
+}
+
+.hex-publisher-lib > div > a {
+    height: 165px;
+    width: 265px;
+    background: #FFFFFF;
+    display: inline-block;
+    text-align: center;
+    line-height: 165px;
+    padding: 0 20px;
+}
+
+.hex-publisher-lib > div > a > img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.hex-publisher-lib > div > div {
+    height: 50px;
+    text-align: center;
+}
+
+.hex-publisher-lib > div > div a {
+    display: inline-block;
+}
+
+.hex-publisher-lib > div > div h2,
+.hex-publisher-lib > div > div span {
+    line-height: 50px;
+    float: left;
+    color: #333333;
+}
+
+.hex-publisher-lib > div > div h2 {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.hex-publisher-lib > div > div a:hover h2,
+.hex-publisher-lib > div > div a:hover span {
+    color: #34b27c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,203 @@
+/* -----------------------------   课件容器   ----------------------------- */
+@charset "utf-8";
+
+/* ------ List ------
+ * 多图
+ */
+
+/* ============================= 多图 ============================= */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hex-cw-manypic {
+    width: 100%;
+    height: 100%;
+    max-height: 391px;
+}
+
+.hex-cw-manypic .hex-cw-manypic-body {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.hex-cw-manypic .hex-cw-manypic-body img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.hex-cw-manypic-body .hex-cw-manypic-left,
+.hex-cw-manypic-body .hex-cw-manypic-right {
+    width: 70px;
+    position: absolute;
+    top: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.hex-cw-manypic-body .hex-cw-manypic-left:hover,
+.hex-cw-manypic-body .hex-cw-manypic-right:hover {
+    background-color: #EDF0F3;
+}
+
+.hex-cw-manypic-body .hex-cw-manypic-left {
+    display: none;
+    left: 0;
+    background-image: url("../courseware_images/left.png");
+}
+
+.hex-cw-manypic-body .hex-cw-manypic-left:hover {
+    background-image: url("../courseware_images/left_w.png");
+}
+
+.hex-cw-manypic-body .hex-cw-manypic-right {
+    right: 0;
+    background-image: url("../courseware_images/right.png");
+}
+
+.hex-cw-manypic-body .hex-cw-manypic-right:hover {
+    background-image: url("../courseware_images/right_w.png");
+}
+
+.hex-cw-manypic .hex-cw-manypic-body .hex-cw-manypic-info-list {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hex-cw-manypic .hex-cw-manypic-body .hex-cw-manypic-info-list > a {
+    height: 20px;
+    width: 20px;
+    display: block;
+    position: absolute;
+    top: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.hex-cw-manypic .hex-cw-manypic-body .hex-cw-manypic-info-list > a:hover {
+    background-color: #34b27c;
+}
+
+.hex-cw-manypic .hex-cw-manypic-body .hex-cw-manypic-info-list > .left {
+    left: 10px;
+    background-image: url("../courseware_images/left_little.png");
+}
+
+.hex-cw-manypic .hex-cw-manypic-body .hex-cw-manypic-info-list > .right {
+    right: 10px;
+    background-image: url("../courseware_images/right_little.png");
+}
+
+.hex-cw-manypic .hex-cw-manypic-body .hex-cw-manypic-info-list .list {
+    height: 60px;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.hex-cw-manypic .hex-cw-manypic-body .hex-cw-manypic-info-list .list > div {
+    width: 6000px;
+    left: 0;
+    position: relative;
+}
+
+.hex-cw-manypic .hex-cw-manypic-body .hex-cw-manypic-info-list .list a {
+    display: block;
+    width: 85px;
+    height: 60px;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.hex-cw-manypic .hex-cw-manypic-body .hex-cw-manypic-info-list .list img {
+    width: 105px;
+    height: 60px;
+}
+
+.hex-cw-manypic .hex-cw-manypic-info {
+    width: 100%;
+    display: inline-block;
+}
+
+.hex-cw-manypic .hex-cw-manypic-info > * {
+    float: left;
+}
+
+.hex-cw-manypic .hex-cw-manypic-info i {
+    height: 15px;
+    width: 15px;
+    border-radius: 2px;
+    background-color: #464d54;
+    margin-right: 10px;
+    margin-top: 16px;
+}
+
+.hex-cw-manypic .hex-cw-manypic-info span {
+    color: #858e97;
+    line-height: 20px;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

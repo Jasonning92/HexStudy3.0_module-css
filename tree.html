@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <!--优先使用 IE 最新版本和 Chrome-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!--360 使用Google Chrome Frame-->
+    <meta name="renderer" content="webkit">
+    <!--移动端适配-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>样式文件结构</title>
+
+    <link href="Content/css/bootstrap.css" rel="stylesheet"/>
+    <link href="Content/css/Layout/layout.css" rel="stylesheet"/>
+    <link href="Content/css/Layout/module.css" rel="stylesheet"/>
+    <link href="Content/css/Layout/base.css" rel="stylesheet"/>
+    <link href="Content/css/Layout/forms.css" rel="stylesheet"/>
+
+    <link href="css_page.css" rel="stylesheet"/>
+
+    <script type="application/javascript" src="Scripts/jquery-1.10.2.js"></script>
+
+    <script type="application/javascript" src="css_page.js"></script>
+</head>
+<body>
+<nav>
+    <a href="./index.html">基本样式</a>
+    <a href="./module.html">组件使用</a>
+    <a href="./verification.html">验证使用</a>
+    <a href="./icon_list.html">图标索引</a>
+    <a class="active" href="./tree.html">样式结构</a>
+    <a href="./sass.html">SASS变量以及混合器</a>
+</nav>
+<div class="main_content main_content_tree">
+    <div>
+        <div><h1 class="hex-font-gray">样式结构说明</h1></div>
+        <div><p class="hex-font-lightgray hex-indent">该页说明了样式文件的结构。</p></div>
+    </div>
+    <!-- 按钮样式 -->
+    <div id="1" class="tree">
+        <img src="./tree.jpg">
+    </div>
+</div>
+<footer class="hex-footer">
+    <div class="hex-footer-word">
+        2015年版 内部使用资料
+    </div>
+</footer>
+</body>
+</html>

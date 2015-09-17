@@ -1,0 +1,137 @@
+/* -----------------------------   表单样式   ----------------------------- */
+@charset "utf-8";
+
+/* ====== 修改placeholder样式 ====== */
+::-webkit-input-placeholder {
+    font-size: 12px;
+}
+
+::-moz-placeholder {
+    font-size: 12px;
+}
+
+:-ms-input-placeholder {
+    font-size: 12px;
+}
+
+input[type='text'],
+input[type='password']{
+    height: 28px;
+    border-radius: 2px;
+    border: 1px solid #cbd1d7;
+    padding: 0 5px;
+    font-size: 12px;
+}
+
+.hex-form {
+    width: 100%;
+    display: inline-block;
+}
+
+.hex-form >form> div {
+    width: 100%;
+    display: inline-block;
+}
+
+.hex-form label {
+    float: left;
+}
+
+label {
+    min-width: 7%;
+    line-height: 28px;
+    height: 28px;
+    font-weight: 500;
+}
+
+.hex-input-div {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+.hex-input-div .hex-input-massage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #f2c3c3;
+    color: #D86D6D;
+    font-size: 12px;
+    border: 1px solid #D86D6D;
+    display: none;
+    border-radius: 2px;
+    z-index: 30;
+}
+
+.hex-input-div i {
+    height: 28px;
+    width: 10px;
+    line-height: 28px;
+    background: url("../../images/signed_verification_grren.png") no-repeat 0 0;
+    background-position: center;
+    display: none;
+    position: absolute;
+    top: 0;
+}
+
+.hex-input-div > input {
+    float: left;
+}
+
+.hex-large-input {
+    width: 200px;
+}
+
+textarea {
+    resize: none;
+    border-radius: 2px;
+    border: 1px solid #cbd1d7;
+    padding: 10px;
+}
+
+input:focus,
+textarea:focus {
+    -moz-box-shadow: 2px 0 1px #EEEEEE, -2px 0 1px #EEEEEE, 0 2px 1px #EEEEEE, 0 -2px 1px #EEEEEE; /* For Firefox3.6+ */
+    -webkit-box-shadow: 2px 0 1px #EEEEEE, -2px 0 1px #EEEEEE, 0 2px 1px #EEEEEE, 0 -2px 1px #EEEEEE; /* For Chrome5+, Safari5+ */
+    box-shadow: 2px 0 1px #EEEEEE, -2px 0 1px #EEEEEE, 0 2px 1px #EEEEEE, 0 -2px 1px #EEEEEE;
+}
+
+.hex-form-error {
+    border: 1px solid #B73926;
+    color: #B73926;
+}
+
+.hex-form-star {
+    margin-left: -7px;
+    width: 7px;
+}
+
+input[type='checkbox'].hex-checkbox-error{
+    border: 1px solid #B73926;
+}
+
+/* ====== 密码强度 ====== */
+.hex-form-strength {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.hex-form-strength > div {
+    height: 28px;
+    float: left;
+    display: inline-block;
+}
+
+.hex-form-strength > div > div {
+    width: 30px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    background: #bec5cb;
+    float: left;
+    margin-right: 5px;
+    margin-top: 8px;
+    font-size: 12px;
+    display: inline-block;
+    color: #ffffff;
+}

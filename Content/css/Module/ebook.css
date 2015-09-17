@@ -1,0 +1,602 @@
+/* -----------------------------   电子书   ----------------------------- */
+@charset "utf-8";
+
+/* ------ List ------
+ * 电子书
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: #262626;
+}
+
+/* ============================= 电子书 ============================= */
+.hex-ebook-body {
+}
+
+.hex-student.js-underline {
+    background-color: rgba(255, 229, 9, 0.4);
+}
+
+.hex-text-notes-multiple {
+    width: 20px;
+    height: 20px;
+    background-image: url("../../images/book-icon-02.png");
+}
+
+.hex-text-notes-single {
+    width: 20px;
+    height: 20px;
+    background-image: url("../../images/book-icon-01.png");
+}
+
+.hex-ebook-content {
+    background: #ffffff;
+    margin-left: 320px;
+    padding: 20px 80px;
+}
+
+.hex-ebook-content iframe {
+    width: 100%;
+    border: 0;
+}
+
+.hex-book-content {
+    width: 100%;
+}
+
+.hex-book-content .hex-title {
+    display: inline-block;
+}
+
+.hex-book-content .hex-title .img,
+.hex-book-content .hex-title .img img {
+    width: 198px;
+    height: 174px;
+}
+
+.hex-book-content .hex-title .img {
+    float: left;
+}
+
+.hex-book-content .hex-title .info {
+    float: left;
+    margin-left: 20px;
+}
+
+.hex-book-content .hex-title .info h1 {
+    margin-bottom: 20px;
+}
+
+.hex-book-content .hex-title .info div {
+    margin-bottom: 5px;
+}
+
+.hex-book-content .hex-title .info div h2 {
+    float: left;
+}
+
+.hex-book-content .hex-title .info div span {
+    color: #9aa5b0;
+}
+
+.hex-book-content .hex-body .hex-title-line {
+    margin: 10px 0;
+}
+
+.hex-book-content .hex-body p {
+    color: #858e97;
+}
+
+/* ====== 翻页 ======*/
+.hex-ebook-body .hex-ebook-pagedown,
+.hex-ebook-body .hex-ebook-pageup {
+    width: 100%;
+    height: 41px;
+    display: inline-block;
+    margin-left: 320px;
+}
+
+.hex-ebook-body .hex-ebook-pagedown {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.hex-ebook-body .hex-ebook-pageup {
+    margin-bottom: 10px;
+}
+
+.hex-ebook-body .hex-ebook-pagedown a,
+.hex-ebook-body .hex-ebook-pageup a {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: inline-block;
+    color: #454f59;
+    background: #edf0f3;
+    border-radius: 5px;
+}
+
+.hex-ebook-body .hex-ebook-pagedown a.not_active,
+.hex-ebook-body .hex-ebook-pageup a.not_active{
+    cursor:not-allowed;
+    color: #ced1d3;
+}
+
+.hex-ebook-body .hex-ebook-pageup a:hover,
+.hex-ebook-body .hex-ebook-pagedown a:hover{
+    background: #34b27c;
+    color: #ffffff;
+}
+
+.hex-ebook-body .hex-ebook-pagedown a.not_active:hover,
+.hex-ebook-body .hex-ebook-pageup a.not_active:hover{
+    background: #edf0f3;
+    color: #ced1d3;
+}
+
+.hex-ebook-body .hex-ebook-pagedown a:active,
+.hex-ebook-body .hex-ebook-pageup a:active {
+    -moz-box-shadow: 1px 1px 1px #D8D7DC inset, -1px -1px 1px #D8D7DC inset; /* For Firefox3.6+ */
+    -webkit-box-shadow: 1px 1px 1px #D8D7DC inset, -1px -1px 1px #D8D7DC inset; /* For Chrome5+, Safari5+ */
+    box-shadow: 1px 1px 1px #D8D7DC inset, -1px -1px 1px #D8D7DC inset;
+    color: #000000;
+}
+
+/* ============================= 电子书正文操作 ============================= */
+/* ====== 添加 ====== */
+.hex-ebook-notes {
+    list-style: none;
+    width: 280px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 15;
+}
+
+.hex-ebook-notes .triangle {
+    width: 165px;
+    height: 10px;
+    position: relative;
+}
+
+.hex-ebook-notes .triangle:not(.edit) em {
+    display: inline-block;
+    height: 10px;
+    width: 17px;
+    background: url("../../images/book-arrow.png") no-repeat 0 0;
+    position: absolute;
+    top: 0;
+    left: 132px;
+}
+
+.hex-ebook-notes .edit em {
+    display: inline-block;
+    height: 10px;
+    width: 17px;
+    background: url("../../images/book-arrow.png") no-repeat 0 0;
+    position: absolute;
+    top: 0;
+    left: 46px;
+}
+
+.hex-ebook-notes li:not(.triangle) {
+    height: 40px;
+    width: 70px;
+    float: left;
+}
+
+.hex-ebook-notes li:not(.triangle) a {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    background: #34b27c;
+}
+
+.hex-ebook-notes li:not(.triangle) a span {
+    height: 50%;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.hex-ebook-notes li:not(.triangle):nth-of-type(2) a {
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    -moz-box-shadow: -5px 0 5px -5px #cbced1, 0 5px 5px -5px #cbced1, 0 -5px 5px -5px #cbced1; /* For Firefox3.6+ */
+    -webkit-box-shadow: -5px 0 5px -5px #cbced1, 0 5px 5px -5px #cbced1, 0 -5px 5px -5px #cbced1; /* For Chrome5+, Safari5+ */
+    box-shadow: -5px 0 5px -5px #cbced1, 0 5px 5px -5px #cbced1, 0 -5px 5px -5px #cbced1;
+}
+
+.hex-ebook-notes li:not(.triangle):nth-of-type(3) a {
+    -moz-box-shadow: 0 5px 5px -5px #cbced1, 0 -5px 5px -5px #cbced1; /* For Firefox3.6+ */
+    -webkit-box-shadow: 0 5px 5px -5px #cbced1, 0 -5px 5px -5px #cbced1; /* For Chrome5+, Safari5+ */
+    box-shadow: 0 5px 5px -5px #cbced1, 0 -5px 5px -5px #cbced1;
+}
+
+.hex-ebook-notes li:not(.triangle):nth-last-of-type(1) a {
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    -moz-box-shadow: 5px 0 5px -5px #cbced1, 0 5px 5px -5px #cbced1, 0 -5px 5px -5px #cbced1; /* For Firefox3.6+ */
+    -webkit-box-shadow: 5px 0 5px -5px #cbced1, 0 5px 5px -5px #cbced1, 0 -5px 5px -5px #cbced1; /* For Chrome5+, Safari5+ */
+    box-shadow: 5px 0 5px -5px #cbced1, 0 5px 5px -5px #cbced1, 0 -5px 5px -5px #cbced1;
+}
+
+.hex-ebook-notes li:not(.triangle):nth-of-type(n+2) a span {
+    border-left: 1px solid #46ba88;
+}
+
+.hex-ebook-notes li:not(.triangle):nth-last-of-type(n+2) a span {
+    border-right: 1px solid #24a66e;
+}
+
+.hex-ebook-notes li:not(.triangle) a:hover {
+    background: #47BE89;
+}
+
+.hex-ebook-notes li:not(.triangle) a:active {
+    -moz-box-shadow: 1px 1px 1px #359F73 inset, -1px -1px 1px #359F73 inset; /* For Firefox3.6+ */
+    -webkit-box-shadow: 1px 1px 1px #359F73 inset, -1px -1px 1px #359F73 inset; /* For Chrome5+, Safari5+ */
+    box-shadow: 1px 1px 1px #359F73 inset, -1px -1px 1px #359F73 inset;
+}
+
+/* ====== 添加笔记 ====== */
+.hex-ebook-notes-add {
+    width: 230px;
+    padding: 10px;
+    -moz-box-shadow: 2px 0 1px #E2E0E3, -2px 0 1px #E2E0E3, 0 2px 1px #E2E0E3, 0 -2px 1px #E2E0E3; /* For Firefox3.6+ */
+    -webkit-box-shadow: 2px 0 1px #E2E0E3, -2px 0 1px #E2E0E3, 0 2px 1px #E2E0E3, 0 -2px 1px #E2E0E3; /* For Chrome5+, Safari5+ */
+    box-shadow: 2px 0 1px #E2E0E3, -2px 0 1px #E2E0E3, 0 2px 1px #E2E0E3, 0 -2px 1px #E2E0E3;
+    background: #ffffff;
+    position: absolute;
+    z-index: 15;
+}
+
+.hex-ebook-notes-add > div {
+    width: 100%;
+}
+
+.hex-ebook-notes-add .button,
+.hex-ebook-notes-add .textarea {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.hex-ebook-notes-add textarea {
+    min-height: 55px;
+}
+
+.hex-ebook-notes-add .button button {
+    height: 28px;
+    padding: 0 10px;
+    float: right;
+    margin-left: 10px;
+}
+
+/* ====== 已添加笔记列表 ====== */
+.hex-ebook-notes-list {
+    width: 230px;
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+    -moz-box-shadow: 2px 0 1px #E2E0E3, -2px 0 1px #E2E0E3, 0 2px 1px #E2E0E3, 0 -2px 1px #E2E0E3; /* For Firefox3.6+ */
+    -webkit-box-shadow: 2px 0 1px #E2E0E3, -2px 0 1px #E2E0E3, 0 2px 1px #E2E0E3, 0 -2px 1px #E2E0E3; /* For Chrome5+, Safari5+ */
+    box-shadow: 2px 0 1px #E2E0E3, -2px 0 1px #E2E0E3, 0 2px 1px #E2E0E3, 0 -2px 1px #E2E0E3;
+    background: #ffffff;
+    position: absolute;
+    z-index: 15;
+}
+
+.hex-ebook-notes-list li {
+    cursor: pointer;
+}
+
+.hex-ebook-notes-list li:nth-of-type(n+2) {
+    border-top: 1px solid #858e97;
+}
+
+.hex-ebook-notes-list li:nth-of-type(n+2) {
+    padding-top: 10px;
+}
+
+.hex-ebook-notes-list li:nth-last-of-type(n+2) {
+    padding-bottom: 10px;
+}
+
+.hex-ebook-notes-list li p {
+    margin-top: 5px;
+}
+
+.hex-ebook-notes-list li h2 {
+    font-size: 12px;
+}
+
+.hex-ebook-notes-list li:hover h2,
+.hex-ebook-notes-list li:hover p {
+    color: #858e97;
+}
+
+/* ====== 点击一个 ====== */
+.hex-ebook-notes-one {
+    width: 230px;
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+    -moz-box-shadow: 2px 0 1px #E2E0E3, -2px 0 1px #E2E0E3, 0 2px 1px #E2E0E3, 0 -2px 1px #E2E0E3; /* For Firefox3.6+ */
+    -webkit-box-shadow: 2px 0 1px #E2E0E3, -2px 0 1px #E2E0E3, 0 2px 1px #E2E0E3, 0 -2px 1px #E2E0E3; /* For Chrome5+, Safari5+ */
+    box-shadow: 2px 0 1px #E2E0E3, -2px 0 1px #E2E0E3, 0 2px 1px #E2E0E3, 0 -2px 1px #E2E0E3;
+    background: #ffffff;
+    position: absolute;
+    z-index: 15;
+}
+
+.hex-ebook-notes-one .button {
+    margin-top: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+.hex-ebook-notes-one textarea {
+    min-height: 55px;
+}
+
+.hex-ebook-notes-one .button button {
+    height: 28px;
+    padding: 0 10px;
+    float: right;
+    margin-left: 10px;
+}
+
+.hex-ebook-notes-one > div {
+    width: 100%;
+}
+
+.hex-ebook-notes-one p {
+    width: 100%;
+}
+
+.hex-ebook-notes-one .back a:hover {
+    color: #858e97;
+}
+
+.hex-ebook-notes-one .back {
+    margin-bottom: 10px;
+}
+
+.hex-ebook-notes-one .operation {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.hex-ebook-notes-one .operation .left {
+    float: left;
+}
+
+.hex-ebook-notes-one .operation span {
+    float: left;
+    text-align: center;
+    width: 168px;
+}
+
+.hex-ebook-notes-one .operation .right {
+    float: right;
+}
+
+.hex-ebook-notes-one h2 {
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+/* 左侧小图标 */
+.hex-ebook-notes-point .icon {
+    min-width: 20px;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 3px;
+    text-align: center;
+    background: #97a1aa;
+    border-radius: 2px;
+    font-size: 10px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.hex-ebook-notes-point .icon.js-keypointinco{
+    width: 20px;
+}
+
+/* ====== 教师笔记 ====== */
+.hex-ebook-teach-icon {
+    width: 28px;
+    height: 28px;
+    position: fixed;
+    top: 180px;
+    z-index: 10;
+}
+
+.hex-ebook-teach-icon a {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    border-radius: 2px;
+    background: #e4e7ec url("../../icon/edit_l.png") no-repeat;
+    background-position: center;
+}
+
+.hex-ebook-teach-icon .active{
+    background: #34b27c url("../../icon/edit_l_w.png") no-repeat;
+    background-position: center;
+}
+
+/* ====== 书签笔记 ====== */
+.hex-ebook-collect-icon {
+    width: 28px;
+    height: 28px;
+    position: fixed;
+    top: 140px;
+    z-index: 10;
+}
+
+.hex-ebook-collect-icon a {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    border-radius: 2px;
+    background: #e4e7ec url("../../icon/mark.png") no-repeat;
+    background-position: center;
+}
+
+.hex-ebook-collect-icon .active{
+    background: #34b27c url("../../icon/mark_w.png") no-repeat;
+    background-position: center;
+}
+
+.hex-ebook-collect-icon a:hover,
+.hex-ebook-teach-icon a:hover{
+    -moz-box-shadow: 2px 0 2px #EEEEEE, -2px 0 2px #EEEEEE, 0 2px 2px #EEEEEE, 0 -2px 2px #EEEEEE; /* For Firefox3.6+ */
+    -webkit-box-shadow: 2px 0 2px #EEEEEE, -2px 0 2px #EEEEEE, 0 2px 2px #EEEEEE, 0 -2px 2px #EEEEEE; /* For Chrome5+, Safari5+ */
+    box-shadow: 2px 0 2px #EEEEEE, -2px 0 2px #EEEEEE, 0 2px 2px #EEEEEE, 0 -2px 2px #EEEEEE;
+}
+.hex-ebook-collect-icon a:active,
+.hex-ebook-teach-icon a:active{
+    -moz-box-shadow: 1px 1px 1px #C0C3C8 inset, -1px -1px 1px #C0C3C8 inset; /* For Firefox3.6+ */
+    -webkit-box-shadow: 1px 1px 1px #C0C3C8 inset, -1px -1px 1px #C0C3C8 inset; /* For Chrome5+, Safari5+ */
+    box-shadow: 1px 1px 1px #C0C3C8 inset, -1px -1px 1px #C0C3C8 inset;
+}
+.hex-ebook-collect-icon .active:active,
+.hex-ebook-teach-icon .active:active{
+    -moz-box-shadow: 1px 1px 1px #D8D7DC inset, -1px -1px 1px #D8D7DC inset; /* For Firefox3.6+ */
+    -webkit-box-shadow: 1px 1px 1px #D8D7DC inset, -1px -1px 1px #D8D7DC inset; /* For Chrome5+, Safari5+ */
+    box-shadow: 1px 1px 1px #D8D7DC inset, -1px -1px 1px #D8D7DC inset;
+}
+
+.hex-ebook-goto-icon{
+    position: fixed;
+    top: 100px;
+    z-index: 15;
+}
+
+.hex-ebook-goto-icon .triangle-up {
+    width: 0;
+    height: 0;
+    border-bottom: 7px solid transparent;
+    border-top: 7px solid transparent;
+    border-left: 8px solid rgba(0, 0, 0, 0.15);
+    position: absolute;
+    top: 7px;
+    left: -9px;
+}
+
+.hex-ebook-goto-icon .hex-ebook-goto_page{
+    width: 210px;
+    padding: 10px;
+    position: absolute;
+    top: -10px;
+    right: 38px;
+    box-shadow: 2px 0px 1px #E2E0E3, -2px 0px 1px #E2E0E3, 0px 2px 1px #E2E0E3, 0px -2px 1px #E2E0E3;
+    background-color: #FFF;
+}
+
+.hex-ebook-goto-icon .hex-ebook-goto_page input{
+    width: 50px;
+    margin: 0 3px;
+}
+
+/* ====== 划线 ====== */
+/*学生*/
+.hex-student.js-underline {
+    background-color: rgba(251, 227, 196, 0.5);
+}
+/*老师*/
+.js-underline {
+    background-color: rgba(187, 249, 190, 0.4);
+}
+
+/* ====== 笔记小图标 ====== */
+.hex-text-notes-multiple {
+    width: 20px;
+    height: 20px;
+    background-image: url("../../images/book-icon-02.png");
+    cursor: pointer;
+    z-index: 10;
+}
+
+.hex-text-notes-single {
+    width: 20px;
+    height: 20px;
+    background-image: url("../../images/book-icon-01.png");
+    cursor: pointer;
+    z-index: 10;
+}
+
+.hex-text-knowledge-con{
+    padding: 20px;
+    border-radius: 2px;
+    -moz-box-shadow: 2px 0 1px #E2E0E3, -2px 0 1px #E2E0E3, 0 2px 1px #E2E0E3, 0 -2px 1px #E2E0E3; /* For Firefox3.6+ */
+    -webkit-box-shadow: 2px 0 1px #E2E0E3, -2px 0 1px #E2E0E3, 0 2px 1px #E2E0E3, 0 -2px 1px #E2E0E3; /* For Chrome5+, Safari5+ */
+    box-shadow: 2px 0 1px #E2E0E3, -2px 0 1px #E2E0E3, 0 2px 1px #E2E0E3, 0 -2px 1px #E2E0E3;
+    background: #ffffff;
+    z-index: 11;
+}
+
+.hex-text-knowledge-con h4,
+.hex-text-knowledge-con h4 a{
+    font-size: 14px;
+    color: #454f59;
+}
+
+.hex-ebook-loading{
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    position: fixed;
+    left: 95px;
+    top: 300px;
+}
+
+.hex-ebook-loading img{
+    height: 150px;
+    width: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

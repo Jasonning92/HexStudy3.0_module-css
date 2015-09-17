@@ -1,0 +1,508 @@
+/* -----------------------------   个人资料   ----------------------------- */
+@charset "utf-8";
+
+/* ------ List ------
+ * 个人资料
+ * 修改密码
+ * 修改个人资料
+ * 修改头像
+ * 修改绑定邮箱
+ */
+
+/* ============================= 个人资料 ============================= */
+.hex-person-info {
+    display: inline-block;
+    width: 1180px;
+}
+
+.hex-person-info .hex-person-nav {
+    width: 250px;
+    height: 100%;
+    display: inline-block;
+}
+
+.hex-person-info .hex-person-nav > .active {
+    border-left: 1px solid #E5E9ED;
+    background: #ffffff;
+}
+
+.hex-person-info .hex-person-nav > div:not(.active) {
+    border-left: 1px solid #E5E9ED;
+    border-right: 1px solid #E5E9ED;
+    background: #FBFCFC;
+}
+
+.hex-person-info .hex-person-nav .portrait {
+    height: 270px;
+    border-bottom: 1px solid #e1e5ea;
+}
+
+.hex-person-info .hex-person-nav .portrait img {
+    height: 170px;
+    width: 170px;
+    margin: 20px 0 20px 40px;
+}
+
+.hex-person-info .hex-person-nav .portrait button,
+.hex-person-info .hex-person-nav .binding button {
+    width: 100px;
+    height: 40px;
+    margin-left: 75px;
+    float: left;
+}
+
+.hex-person-info .hex-person-nav .operation {
+    height: 55px;
+    border-bottom: 1px solid #e1e5ea;
+    text-align: center;
+}
+
+.hex-person-info .hex-person-nav .operation a {
+    line-height: 55px;
+    color: #323b43;
+    font-size: 18px;
+}
+
+.hex-person-info .hex-person-nav .operation a:hover {
+    font-weight: 600;
+    color: #34b27c;
+}
+
+.hex-person-info .hex-person-nav .operation a:focus,
+.hex-person-info .hex-person-nav .operation a:active {
+    color: #15191c;
+}
+
+.hex-person-info .hex-person-nav .binding {
+    text-align: center;
+    min-height: 175px;
+}
+
+.hex-person-info .hex-person-nav .binding > div {
+    width: 250px;
+    display: inline-block;
+}
+
+.hex-person-info .hex-person-nav .binding > div:nth-child(1) {
+    margin-top: 20px;
+}
+
+.hex-person-info .hex-person-nav .binding span {
+    font-size: 18px;
+    color: #323b43;
+}
+
+.hex-person-info .hex-person-nav .binding .img {
+    margin: 20px 0;
+}
+
+.hex-person-info .hex-person-nav .binding .img > div {
+    display: inline-block;
+}
+
+.hex-person-info .hex-person-nav .binding .img em {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.hex-person-info .hex-person-nav .binding .img > div:nth-child(n+2) {
+    margin-left: 15px;
+}
+
+.hex-person-info .hex-person-nav .binding .img .sina {
+    background: #858e97 url("../../images/weibo_logo.png") no-repeat 4px 6px;
+}
+
+.hex-person-info .hex-person-nav .binding .img .active .sina {
+    background: #E8343A url("../../images/weibo_logo.png") no-repeat 4px 6px;
+}
+
+.hex-person-info .hex-person-nav .binding .img .qq {
+    background: #858e97 url("../../images/qq_logo.png") no-repeat 7px 6px;
+}
+
+.hex-person-info .hex-person-nav .binding .img .active .qq {
+    background: #FFAA00 url("../../images/qq_logo.png") no-repeat 7px 6px;
+}
+
+.hex-person-info .hex-person-nav .binding .img .renren {
+    background: #858e97 url("../../images/renren_logo.png") no-repeat -1px 0;
+}
+
+.hex-person-info .hex-person-nav .binding .img .active .renren {
+    background: #1F7DC7 url("../../images/renren_logo.png") no-repeat -1px 0;
+}
+
+.hex-person-info .hex-person-body {
+    float: right;
+    width: 890px;
+    margin-top: 20px;
+}
+
+.hex-person-info .hex-person-body .info {
+    border-bottom: 1px solid #bbc5ce;
+}
+
+.hex-person-info .hex-person-body .info > div {
+    height: 28px;
+    margin-bottom: 20px;
+    width: 890px;
+}
+
+.hex-person-info .hex-person-body .info > div > *,
+.hex-person-info .hex-person-body .other-info > div > * {
+    float: left;
+}
+
+.hex-person-info .hex-person-body .info > div > h2,
+.hex-person-info .hex-person-body .info > div > span {
+    line-height: 28px;
+}
+
+.hex-person-info .hex-person-body h2:not(.not) {
+    letter-spacing: 14px;
+}
+
+.hex-person-info .hex-person-body .info button {
+    float: right;
+    margin-right: 500px;
+}
+
+.hex-person-info .hex-person-body .other-info {
+    margin-top: 20px;
+}
+
+.hex-person-info .hex-person-body .other-info > div {
+    margin-bottom: 15px;
+    width: 890px;
+    display: inline-block;
+}
+
+.hex-person-info .hex-person-body .other-info p {
+    width: 805px;
+    float: right;
+}
+
+.hex-person-info .hex-person-body .other-info button,
+.hex-person-info .hex-person-body .other-info a {
+    width: 80px;
+    height: 28px;
+    font-size: 12px;
+    float: left;
+    margin-left: 85px;
+}
+
+.hex-person-info .hex-person-body .hex-person-form {
+    width: 100%;
+}
+
+.hex-person-info .hex-person-body .hex-person-form > form > div,
+.hex-person-info .hex-person-body .hex-person-form > div {
+    margin: 10px 0;
+    width: 100%;
+    display: inline-block;
+}
+
+.hex-person-info .hex-person-body:not(.hex-change-email) .hex-person-form > form > div label:not(.not),
+.hex-person-info .hex-person-body:not(.hex-change-email) .hex-person-form > div label:not(.not) {
+    letter-spacing: 14px;
+}
+
+.hex-person-info .hex-person-body .hex-person-form > form > div label,
+.hex-person-info .hex-person-body .hex-person-form > form > div b,
+.hex-person-info .hex-person-body .hex-person-form > form > div span:not(.hex-input-group-addon):not(.glyphicon-calendar),
+.hex-person-info .hex-person-body .hex-person-form > div label,
+.hex-person-info .hex-person-body .hex-person-form > div b,
+.hex-person-info .hex-person-body .hex-person-form > div span:not(.hex-input-group-addon):not(.glyphicon-calendar) {
+    float: left;
+    line-height: 28px;
+}
+
+.hex-person-info .hex-person-body .hex-person-form > div:not(.hex-change-email-step2) label:not(.not) {
+    width: 8%;
+}
+
+.hex-person-info .hex-person-body .hex-person-form > form > div b,
+.hex-person-info .hex-person-body .hex-person-form > div b {
+    margin: 0 15px;
+}
+
+.hex-person-info .hex-person-body .hex-person-form > form > div input,
+.hex-person-info .hex-person-body .hex-person-form > div input {
+    height: 28px;
+    float: left;
+    border-radius: 2px;
+    border: 1px solid #cbd1d7;
+    padding: 0 5px;
+}
+
+.hex-person-info .hex-person-body .hex-person-form > form > div .hex-rich-editor,
+.hex-person-info .hex-person-body .hex-person-form > div .hex-rich-editor {
+    float: left;
+    margin-left: 10px;
+}
+
+.hex-person-info .hex-person-body .hex-person-form button {
+    height: 28px;
+    font-size: 12px;
+    float: right;
+}
+
+/* ============================= 修改密码 ============================= */
+.hex-person-info .hex-person-body .hex-step {
+    margin: 20px 0;
+}
+
+.hex-person-info .hex-person-body .hex-step.hex-step_4 span {
+    height: 37px;
+    width: 220px;
+    line-height: 37px;
+}
+
+.hex-person-info .hex-person-body .hex-person-form .strength {
+    margin-top: 10px;
+    width: 100%;
+    height: 20px;
+}
+
+.hex-person-info .hex-person-body .hex-person-form .strength span,
+.hex-person-info .hex-person-body .hex-person-form .strength div {
+    float: left;
+    margin-right: 5px;
+    color: #ffffff;
+}
+
+.hex-person-info .hex-person-body .hex-person-form .strength div {
+    width: 30px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    background: #bec5cb;
+    margin-top: 7px;
+    font-size: 12px;
+}
+
+.hex-person-info .hex-person-body .hex-person-form .verification input {
+    width: 70px;
+}
+
+.hex-person-info .hex-person-body .hex-person-form .verification .ver-img {
+    width: 70px;
+    height: 28px;
+    margin-left: 5px;
+    border-radius: 2px;
+    border: 1px solid #DADEE2;
+    margin-bottom: 2px;
+}
+
+.hex-person-info .hex-person-body .hex-person-form .verification a {
+    margin-left: 10px;
+    font-size: 12px;
+    line-height: 28px;
+}
+
+.hex-person-info .hex-person-body .hex-person-form .verification a:hover {
+    color: #454f59;
+}
+
+.hex-person-info .hex-person-body .hex-person-form .button button {
+    float: left;
+}
+
+/* ============================= 修改头像 ============================= */
+.hex-person-info .hex-person-body .hex-change-img {
+    margin-top: 20px;
+}
+
+.hex-person-info .hex-person-body .hex-change-img .body {
+}
+
+.hex-person-info .hex-person-body .hex-change-img .body .line {
+    width: 100%;
+    display: inline-block;
+}
+
+.hex-person-info .hex-person-body .hex-change-img .body .line > * {
+    float: left;
+}
+
+.hex-person-info .hex-person-body .hex-change-img .body .line > h2 {
+    line-height: 28px;
+}
+
+.hex-person-info .hex-person-body .hex-change-img .body .line > div button {
+    margin-left: 20px;
+    height: 28px;
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+.hex-person-info .hex-person-body .hex-change-img .body .line > div span {
+    height: 28px;
+    line-height: 28px;
+    margin-left: 20px;
+}
+
+.hex-person-info .hex-person-body .hex-change-img .body .img {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.hex-person-info .hex-person-body .hex-change-img .body .img > div {
+    float: left;
+}
+
+.hex-person-info .hex-person-body .hex-change-img .body .img > div:nth-last-child(1) {
+    float: right;
+    margin-right: 20px;
+}
+
+.hex-person-info .hex-person-body .hex-change-img .body .img .hex-wrapper {
+    max-height: 600px;
+    max-width: 600px;
+    margin-right: 15px;
+}
+
+.hex-person-info .hex-person-body .hex-change-img .body .img .hex-wrapper img {
+    border: 1px solid #e1e5ea;
+    max-height: 598px;
+    max-width: 598px;
+}
+
+.hex-person-info .hex-person-body .hex-change-img .button {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.hex-person-info .hex-person-body .hex-change-img .button button {
+    float: right;
+    height: 28px;
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+/* ============================= 修改绑定 ============================= */
+.hex-change-other {
+}
+
+.hex-change-other > div:nth-of-type(2) {
+    margin-top: 20px;
+}
+
+.hex-change-other > div:nth-of-type(n+2) {
+    width: 100%;
+    display: inline-block;
+}
+
+.hex-change-other > div:nth-of-type(n+2) > * {
+    float: left;
+}
+
+.hex-change-other > div:nth-of-type(n+2) > button {
+    height: 28px;
+    padding: 0 10px;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: 26px;
+}
+
+.hex-change-other .img {
+    margin: 20px 0;
+}
+
+.hex-change-other .img > div {
+    display: inline-block;
+}
+
+.hex-change-other .img em {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.hex-change-other .img .sina {
+    background: #858e97 url("../../images/weibo_logo.png") no-repeat 4px 6px;
+}
+
+.hex-change-other .active .sina {
+    background: #E8343A url("../../images/weibo_logo.png") no-repeat 4px 6px;
+}
+
+.hex-change-other .img .qq {
+    background: #858e97 url("../../images/qq_logo.png") no-repeat 7px 6px;
+}
+
+.hex-change-other .active .qq {
+    background: #FFAA00 url("../../images/qq_logo.png") no-repeat 7px 6px;
+}
+
+.hex-change-other .img .renren {
+    background: #858e97 url("../../images/renren_logo.png") no-repeat -1px 0;
+}
+
+.hex-change-other .active .renren {
+    background: #1F7DC7 url("../../images/renren_logo.png") no-repeat -1px 0;
+}
+
+/* ============================= 修改绑定邮箱 ============================= */
+.hex-change-email {
+}
+
+.hex-change-email .hex-step span {
+    width: 220px;
+    height: 37px;
+    line-height: 37px;
+}
+
+.hex-change-email .hex-step_5 span {
+    width: 175px;
+    height: 29px;
+    line-height: 29px;
+}
+
+.hex-change-email label {
+    width: 12.6%;
+}
+
+.hex-change-email label:not(.not) {
+    letter-spacing: 14px;
+}
+
+.hex-change-email .hex-input-div {
+    margin-right: 10px;
+}
+
+.hex-change-email .hex-change-email-step2 label {
+    width: 14%;
+}
+
+/* ============================= 修改绑定邮箱 ============================= */
+.hex-change-password {
+}
+
+.hex-change-password label {
+    width: 14%;
+}
+
+.hex-change-password label:not(.not) {
+    letter-spacing: 14px;
+}
+
+.hex-change-password .hex-input-div {
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

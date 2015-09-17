@@ -1,0 +1,500 @@
+/* -----------------------------   购物   ----------------------------- */
+@charset "utf-8";
+
+/* ------ List ------
+ * 确认订单
+ * 我的订单
+ * 付款
+ */
+
+.hex-shop-my,
+.hex-shop-affirm,
+.hex-shop-pay {
+    width: 1180px;
+    margin: 0 auto;
+    padding-top: 1px;
+}
+
+/* ============================= 确认订单 ============================= */
+.hex-shop-affirm h1 {
+    margin: 20px 0;
+}
+
+.hex-shop-affirm table {
+    width: 100%;
+    border-top: 2px solid #bcc5cc;
+    border-bottom: 2px solid #bcc5cc;
+}
+
+.hex-shop-affirm table tr td:nth-child(2n+1) {
+    text-align: center;
+}
+
+.hex-shop-affirm table tr:nth-child(1) {
+    height: 50px;
+}
+
+.hex-shop-affirm table tr:nth-child(n+2) {
+    height: 128px;
+    border-top: 1px solid #bcc5cc;
+}
+
+.hex-shop-affirm table tr .type {
+    width: 95px;
+}
+
+.hex-shop-affirm table tr .info {
+    padding-left: 35px;
+}
+
+.hex-shop-affirm table tr .price {
+    width: 115px;
+}
+
+.hex-shop-affirm table tr .hex-book {
+    position: relative;
+    padding: 20px;
+}
+
+.hex-shop-affirm table tr .hex-book .hex-book-img {
+    position: absolute;
+    top: 22px;
+    left: 21px;
+    width: 100px;
+    height: 88px;
+    border: 1px solid #eef1f4;
+}
+
+.hex-shop-affirm table tr .hex-book .hex-book-img img {
+    width: 98px;
+    height: 86px;
+}
+
+.hex-shop-affirm table tr .hex-book .hex-book-info {
+    margin-left: 125px;
+}
+
+.hex-shop-affirm table tr .hex-book .hex-book-info .hex-book-info-title {
+    font-size: 18px;
+    color: #323b43;
+    margin-bottom: 15px;
+}
+
+.hex-shop-affirm table tr .hex-book .hex-book-info .hex-book-info-other {
+    color: #858e97;
+}
+
+.hex-shop-affirm table tr .hex-book .hex-book-info .hex-book-info-other:nth-child(n+2) {
+    margin-top: 5px;
+}
+
+.hex-shop-affirm .hex-book-submit {
+    float: right;
+}
+
+.hex-shop-affirm .hex-book-submit .hex-book-price {
+    float: right;
+    margin: 15px 0;
+}
+
+.hex-shop-affirm .hex-book-submit .hex-book-btn {
+    margin-left: 30px;
+}
+
+.hex-shop-affirm .hex-book-submit .hex-book-btn button {
+    width: 95px;
+    height: 28px;
+    font-size: 12px;
+}
+
+/* ============================= 我的订单 ============================= */
+.hex-shop-my h1 {
+    margin: 20px 0;
+}
+
+.hex-shop-my .hex-shop-type {
+    margin-top: 5px;
+    width: 1180px;
+    display: inline-block;
+}
+
+.hex-shop-my .hex-shop-type div {
+    float: left;
+    height: 25px;
+}
+
+.hex-shop-my .hex-shop-type .done,
+.hex-shop-my .hex-shop-type .doing {
+    width: 80px;
+    text-align: center;
+}
+
+.hex-shop-my .hex-shop-type .block {
+    width: 1020px;
+}
+
+.hex-shop-my .hex-shop-type .done,
+.hex-shop-my .hex-shop-type .doing,
+.hex-shop-my .hex-shop-type .block {
+    border-bottom: 2px solid #bcc5cc;
+}
+
+.hex-shop-my .hex-shop-type .active {
+    border-bottom: 2px solid #fc7039;
+}
+
+.hex-shop-my .hex-shop-type div a {
+    display: inline-block;
+    width: 80px;
+    height: 14px;
+    color: #858e97;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.hex-shop-my .hex-shop-type div a:hover,
+.hex-shop-my .hex-shop-type .active a {
+    color: #323b43;
+}
+
+.hex-shop-my .hex-shop-type .done a {
+    border-right: 1px solid #bcc5cc;
+}
+
+.hex-shop-my .hex-shop-table {
+    border-bottom: 2px solid #bcc5cc;
+}
+
+.hex-shop-my .hex-shop-table .thead {
+    height: 35px;
+}
+
+.hex-shop-my .hex-shop-table .thead div {
+    height: 35px;
+    border-bottom: 1px solid #bcc5cc;
+}
+
+.hex-shop-my .hex-shop-table .thead div h2 {
+    line-height: 35px;
+}
+
+.hex-shop-my .hex-shop-table .type,
+.hex-shop-my .hex-shop-table .price,
+.hex-shop-my .hex-shop-table .total_prices,
+.hex-shop-my .hex-shop-table .operation {
+    width: 100px;
+    text-align: center;
+}
+
+.hex-shop-my .hex-shop-table .good {
+    width: 780px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.hex-shop-my .hex-shop-table .type,
+.hex-shop-my .hex-shop-table .price,
+.hex-shop-my .hex-shop-table .good {
+    float: left;
+}
+
+.hex-shop-my .hex-shop-table .total_prices,
+.hex-shop-my .hex-shop-table .operation {
+    float: right;
+}
+
+.hex-shop-my .hex-shop-table .hex-shop-indent {
+    width: 1180px;
+    height: 30px;
+    margin-top: 1px;
+    background: #ebedf0;
+}
+
+.hex-shop-my .hex-shop-table .hex-shop-indent div {
+    height: 30px;
+    float: left;
+}
+
+.hex-shop-my .hex-shop-table .hex-shop-indent div span,
+.hex-shop-my .hex-shop-table .hex-shop-indent div a{
+    line-height: 30px;
+    color: #858e97;
+}
+
+.hex-shop-my .hex-shop-table .hex-shop-indent div a:hover{
+    color: #454f59;
+}
+
+.hex-shop-my .hex-shop-table .hex-shop-indent .time {
+    margin-left: 15px;
+}
+
+.hex-shop-my .hex-shop-table .hex-shop-indent .no,
+.hex-shop-my .hex-shop-table .hex-shop-indent .publisher {
+    margin-left: 35px;
+}
+
+.hex-shop-my .hex-shop-table .tbody {
+    width: 1180px;
+    display: inline-block;
+}
+
+.hex-shop-my .hex-shop-table .tbody > div {
+    height: 128px;
+}
+
+.hex-shop-my .hex-shop-table .tbody div h2 {
+    line-height: 128px;
+}
+
+.hex-shop-my .hex-shop-table .tbody .all {
+    width: 200px;
+    float: right;
+}
+
+.hex-shop-my .hex-shop-table .tbody .one {
+    width: 980px;
+    float: left;
+}
+
+.hex-shop-my .hex-shop-table .tbody .all .operation div {
+    width: 100px;
+    height: 64px;
+}
+
+.hex-shop-my .hex-shop-table .tbody .all .operation div button {
+    height: 28px;
+    width: 64px;
+    font-size: 12px;
+}
+
+.hex-shop-my .hex-shop-table .tbody .all .operation .two_1 button {
+    margin-top: 31px;
+}
+
+.hex-shop-my .hex-shop-table .tbody .all .operation .two_2 button {
+    margin-bottom: 31px;
+}
+
+.hex-shop-my .hex-shop-table .tbody .one:nth-child(n+3) {
+    border-top: 1px solid #bcc5cc;
+}
+
+.hex-shop-my .hex-shop-table .tbody .one .good .img {
+    height: 88px;
+    width: 100px;
+    border: 1px solid #eef1f4;
+    float: left;
+    margin: 20px 20px 0 0;
+}
+
+.hex-shop-my .hex-shop-table .tbody .one .good .img img {
+    height: 86px;
+    width: 98px;
+}
+
+.hex-shop-my .hex-shop-table .tbody .one .good .info {
+    float: left;
+}
+
+.hex-shop-my .hex-shop-table .tbody .one .good .info .title {
+    height: 20px;
+    margin-top: 20px;
+}
+
+.hex-shop-my .hex-shop-table .tbody .one .good .info .title h2 {
+    line-height: 20px;
+}
+
+.hex-shop-my .hex-shop-table .tbody .one .good .info .name {
+    margin-top: 15px;
+}
+
+.hex-shop-my .hex-shop-table .tbody .one .good .info .name,
+.hex-shop-my .hex-shop-table .tbody .one .good .info .other {
+    margin-left: 7px;
+}
+
+.hex-shop-my .hex-shop-table .tbody .one .good .info .name span,
+.hex-shop-my .hex-shop-table .tbody .one .good .info .other span {
+    color: #858e97;
+}
+
+.hex-shop-my .hex-shop-table .tbody .one .good a:hover .info span {
+    color: #4b5965;
+}
+
+.hex-shop-my .hex-shop-table .tbody .one .good a:hover .info h2 {
+    font-weight: 600;
+}
+
+/* ============================= 付款 ============================= */
+.hex-shop-pay > h1 {
+    margin: 20px 0;
+}
+
+.hex-shop-pay .pay-info {
+    height: 65px;
+    border-bottom: 2px solid #bcc5cc;
+}
+
+.hex-shop-pay .pay-info > div:nth-child(1) {
+    float: left;
+    display: inline-block;
+}
+
+.hex-shop-pay .pay-info > div:nth-child(1) ul {
+    list-style: none;
+}
+
+.hex-shop-pay .pay-info > div:nth-child(1) ul li{
+    display: inline-block;
+}
+
+.hex-shop-pay .pay-info > div:nth-child(1) ul li > * {
+    float: left;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+.hex-shop-pay .pay-info > div:nth-child(1) ul li span {
+    color: #858e97;
+}
+
+.hex-shop-pay .pay-info > div:nth-child(2) {
+    float: right;
+}
+
+.hex-shop-pay .pay-info > div:nth-child(2) > * {
+    float: left;
+    line-height: 65px;
+}
+
+.hex-shop-pay .pay-info > div:nth-child(2) > h1 {
+    font-size: 18px;
+}
+
+.hex-shop-pay .pay-body .type {
+    margin-top: 20px;
+}
+
+.hex-shop-pay .pay-body .price,
+.hex-shop-pay .pay-body .button {
+    width: 100%;
+    float: right;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.hex-shop-pay .pay-body .price > * {
+    float: right;
+    line-height: 20px;
+}
+
+.hex-shop-pay .pay-body .button > * {
+    float: right;
+    width: 153px;
+    height: 40px;
+}
+
+.hex-shop-pay .pay-body .button > a{
+    line-height: 40px;
+    text-align: center;
+}
+
+.hex-shop-pay .pay-body .tabs {
+    width: 100%;
+}
+
+.hex-shop-pay .pay-body .tabs .hex-tab-head {
+    background: #FFFFFF;
+}
+
+.hex-shop-pay .pay-body .tabs .hex-tab-head .active a {
+    background: #f5f7f9;
+}
+
+.hex-shop-pay .pay-body .tabs .hex-tab-head li {
+    margin-left: 0;
+}
+
+.hex-shop-pay .pay-body .tabs .hex-tab-head li .hex-little-number {
+    top: 3px;
+}
+
+.hex-shop-pay .pay-body .tabs .tab-content .active {
+    background: #f5f7f9;
+}
+
+.hex-shop-pay .pay-body .tabs .tab-content .tab-pane {
+    padding: 20px;
+}
+
+.hex-shop-pay .pay-body .tabs .tab-content .tab-pane .hex-pay-bank {
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.hex-shop-pay .pay-body .tabs .tab-content .tab-pane .hex-pay-bank li {
+    float: left;
+    height: 50px;
+    width: 205px;
+    margin-bottom: 30px;
+    margin-right: 35px;
+}
+
+.hex-shop-pay .pay-body .tabs .tab-content .tab-pane .hex-pay-bank li img {
+    width: 180px;
+    height: 50px;
+    margin-left: 5px;
+}
+
+.hex-shop-pay .pay-body .tabs .tab-content .tab-pane .more{
+    margin-top: 0;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+.hex-shop-pay .pay-body .tabs .tab-content .tab-pane .more>*{
+    float: left;
+}
+
+.hex-shop-pay .pay-body .tabs .tab-content .tab-pane .more span{
+    color: #858e97;
+    line-height: 20px;
+    margin-right: 10px;
+}
+
+.hex-shop-pay .pay-body .tabs .tab-content .tab-pane .more a{
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    background: url("../../images/more.png") no-repeat 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

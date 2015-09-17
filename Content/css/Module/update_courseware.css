@@ -1,0 +1,225 @@
+/* -----------------------------   上传课件   ----------------------------- */
+@charset "utf-8";
+
+/* ------ List ------
+ * 上传课件
+ */
+
+/* ============================= 公用 ============================= */
+.hex-update-courseware {
+    padding: 25px 0 50px 0;
+}
+
+.hex-update-courseware > div {
+    width: 100%;
+}
+
+.hex-update-courseware .hex-title {
+    height: 30px;
+}
+
+.hex-update-courseware .hex-title > h1 {
+    background-image: url("../../images/update_courseware.png");
+    background-position: 0 8px;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    line-height: 30px;
+    float: left;
+    display: inline-block;
+}
+
+.hex-update-courseware .hex-title > .hex-img-btn {
+    float: right;
+    margin-left: 20px;
+}
+
+.hex-update-courseware .hex-body {
+    padding-top: 35px;
+}
+
+.hex-update-courseware .hex-body .hex-container {
+    width: 100%;
+    min-height: 60px;
+    text-align: center;
+}
+
+.hex-update-courseware .hex-body .setting {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.hex-update-courseware .hex-body-x .hex-container {
+    width: 50%;
+    float: right;
+}
+
+.hex-update-courseware .hex-body-x .setting {
+    width: 50%;
+    float: left;
+}
+
+.hex-update-courseware .hex-body .setting > div {
+    width: 100%;
+    display: inline-block;
+
+}
+
+.hex-update-courseware .hex-body .setting > div.margin {
+    padding-bottom: 20px;
+}
+
+.hex-update-courseware .hex-body .setting > div:not(.margin) {
+    padding-bottom: 10px;
+}
+
+.hex-update-courseware .hex-body .setting > div .hex-font-gray {
+    width: 8.148%;
+    float: left;
+}
+
+.hex-update-courseware .hex-body-x .setting > div .hex-font-gray {
+    width: 16.148%;
+}
+
+.hex-update-courseware .hex-body .setting > div input[type='text'] {
+    width: 320px;
+    margin-right: 10px;
+}
+
+.hex-update-courseware .hex-body .setting > div .hex-button {
+}
+
+.hex-update-courseware .hex-body .setting > div .hex-font-lightgray {
+    margin-right: 20px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+}
+
+.hex-update-courseware .hex-body .setting > div .thumbnail-img {
+    height: 210px;
+    width: 220px;
+}
+
+.hex-update-courseware .hex-body .setting > div textarea {
+    width: 90%;
+    height: 65px;
+}
+.hex-update-courseware .hex-body .setting > div textarea {
+    width: 80%;
+}
+
+.hex-update-courseware .hex-body .setting > div label.hex-font-lightgray {
+    width: 60px;
+    min-width: 0;
+    margin-right: 0;
+}
+
+.hex-update-courseware .hex-body .setting > div label.hex-font-lightgray input[type='radio'] {
+    margin-right: 5px;
+}
+
+.hex-update-courseware .hex-body .button {
+    display: inline-block;
+    width: 100%;
+}
+
+.hex-update-courseware .hex-body .button button {
+    float: right;
+    margin-left: 20px;
+}
+
+.hex-courseware-type-list {
+    height: 25px;
+    display: block;
+}
+
+.hex-courseware-type-list a {
+    float: left;
+    height: 25px;
+    width: 25px;
+    margin-right: 2px;
+    border-radius: 2px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #858E97;
+}
+
+.hex-courseware-type-list a:hover {
+    background-color: #34b27c;
+}
+
+.hex-courseware-type-list a.active {
+    background-color: #34b27c;
+    -moz-box-shadow: 3px 3px 3px #359F73 inset, -3px -3px 3px #359F73 inset; /* For Firefox3.6+ */
+    -webkit-box-shadow: 3px 3px 3px #359F73 inset, -3px -3px 3px #359F73 inset; /* For Chrome5+, Safari5+ */
+    box-shadow: 3px 3px 3px #359F73 inset, -3px -3px 3px #359F73 inset;
+}
+
+.hex-courseware-type-list .all {
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 25px;
+    width: 30px;
+    text-align: center;
+}
+
+.hex-courseware-type-list .video {
+    background-image: url("../../icon/courseware_type/video.png");
+    background-size: 60%;
+}
+
+.hex-courseware-type-list .audio {
+    background-image: url("../../icon/courseware_type/audio.png");
+    background-size: 40%;
+}
+
+.hex-courseware-type-list .flash {
+    background-image: url("../../icon/courseware_type/flash.png");
+    background-size: 60%;
+}
+
+.hex-courseware-type-list .plug-in {
+    background-image: url("../../icon/courseware_type/plug-in.png");
+    background-size: 60%;
+}
+
+.hex-courseware-type-list .picture_single {
+    background-image: url("../../icon/courseware_type/picture_single.png");
+    background-size: 60%;
+}
+
+.hex-courseware-type-list .pictures_more {
+    background-image: url("../../icon/courseware_type/pictures_more.png");
+    background-size: 60%;
+}
+
+.hex-courseware-type-list .thinkingt {
+    background-image: url("../../icon/courseware_type/thinkingt.png");
+    background-size: 60%;
+}
+
+.hex-courseware-type-list .custom {
+    background-image: url("../../icon/courseware_type/custom.png");
+    background-size: 60%;
+}
+
+.hex-courseware-type-list .other {
+    background-image: url("../../icon/courseware_type/other.png");
+    background-size: 60%;
+}
+
+.hex-courseware-type-list .office {
+    background-image: url("../../icon/courseware_type/office.png");
+    background-size: 60%;
+}
+
+
+
+
+
+
+
+
+
+
