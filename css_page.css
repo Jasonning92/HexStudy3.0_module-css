@@ -197,6 +197,13 @@ span.hex-font-yellow{
     width: 450px;
 }
 
+.hex-examples-table tr td.td_name{
+    width: 200px;
+}
+.hex-examples-table tr td.td_width{
+    width: 200px;
+}
+
 .hex-examples-table tbody tr td:nth-of-type(2) > div,
 .hex-examples-table tbody tr td:nth-of-type(3) > div {
     padding: 5px;

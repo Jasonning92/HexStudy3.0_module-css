@@ -866,18 +866,18 @@
     width: 188px;
 }
 
+.hex-row-list .row-list > .hex-list-time > div span {
+    width: auto;
+    color: #858E97;
+    font-size: 14px;
+}
+
 .hex-row-list .row-list > .hex-list-num {
     width: 35px;
 }
 
 .hex-row-list .row-list > .hex-list-num > div {
     text-align: center;
-}
-
-.hex-row-list .row-list > .hex-list-time > div span {
-    width: auto;
-    color: #858E97;
-    font-size: 14px;
 }
 
 .hex-row-list .row-list > .hex-list-input {

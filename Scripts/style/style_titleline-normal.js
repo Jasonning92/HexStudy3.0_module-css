@@ -11,7 +11,7 @@ $(function (){
 
     $(".hex-title-line:not(.hex-shrink-button) a").each(function () {
         if($(this).attr("class")=="jiahao"){
-            hide_div();
+            hide_div(this);
         }
     });
 

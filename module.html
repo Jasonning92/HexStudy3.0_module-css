@@ -576,7 +576,7 @@
                 </tbody>
             </table>
         </div>
-        <div><span class="hex-font-yellow">多彩进度条示例：</span></div>
+        <div><span class="hex-font-yellow">示例：</span></div>
         <div>
             <div class="hex-drop-down">
                 <p hex-value="">知识点分类</p>
@@ -602,6 +602,411 @@
             </pre>
         </div>
     </div>
+    <!--表格-->
+    <div id="9">
+        <script type="application/javascript" src="Scripts/style/style_hexrowlist.js"></script>
+        <div><h1 class="hex-font-orange">表格</h1></div>
+        <div><p class="hex-font-lightgray hex-indent">网站表格</p></div>
+        <div><span class="hex-font-yellow">需要JS文件：</span></div>
+        <div><p class="hex-font-lightgray hex-indent">style/style_hexrowlist.js</p></div>
+        <div>
+            <table class="hex-examples-table">
+                <thead>
+                <tr>
+                    <td class="example">函数名</td>
+                    <td class="property">用途</td>
+                    <td class="instruction">传参</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <p class="hex-font-lightgray">sort_thead()</p>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray">表格头排序使用，将表头中文字和button居中</p>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray"></p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div><span class="hex-font-yellow">示例：</span></div>
+        <div>
+            <table class="hex-row-list">
+                <thead>
+                <tr class="table-head">
+                    <td>序号</td>
+                    <td>名称</td>
+                    <td></td>
+                    <td>开始截止时间</td>
+                    <td>提交情况</td>
+                    <td>操作</td>
+                </tr>
+                <tr>
+                    <td class="hex-margin"></td>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr class="row-list">
+                    <td class="hex-list-head">
+                        <div>
+                            <span>H1</span>
+                        </div>
+                    </td>
+                    <td class="hex-list-title">
+                        <div>
+                            <a href="javascript:void(0);" title="试卷查看">
+                                <span>[作业]</span> 计算题
+                            </a>
+                        </div>
+                    </td>
+                    <td class="hex-list-tag">
+                        <div>
+                            <span>[前置任务]</span>
+                        </div>
+                    </td>
+                    <td class="hex-list-time">
+                        <div><span>08.24 12:57--09.30 00:00</span></div>
+                    </td>
+                    <td class="hex-list-bar">
+                        <div>
+                            <div class="hex-progress">
+                                <div class="hex-progress-bar" hex-percent="50">
+                                    <span></span>
+                                    <span><span class="hex-font-orange">10</span>/20</span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="hex-list-btn">
+                        <div>
+                            <a class="hex-img-edit hex-little-btn-20 hex-little-btn  not_active"
+                               href="javascript:void(0);" title="编辑"></a>
+                            <a class="hex-img-setting hex-little-btn-20 hex-little-btn"
+                               href="javascript:void(0);" title="设置"></a>
+                            <a class="hex-img-results hex-little-btn-20 hex-little-btn"
+                               href="javascript:void(0);"
+                               title="查看成绩" target=""></a>
+                            <a class="hex-img-delete hex-little-btn-20 hex-little-btn"
+                               href="javascript:void(0);"
+                               title="删除试卷"></a>
+                        </div>
+                    </td>
+                    <td class="block"></td>
+                </tr>
+                <!--中间间隔-->
+                <tr>
+                    <td class="hex-margin"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div><span class="hex-font-red">结构：</span></div>
+        <div>
+            <pre>
+                &lt;table class="hex-row-list">
+                    &lt;thead>
+                    &lt;tr class="table-head">
+                        &lt;td>序号&lt;/td>
+                        &lt;td>名称&lt;/td>
+                        &lt;td>&lt;/td>
+                        &lt;td>开始截止时间&lt;/td>
+                        &lt;td>提交情况&lt;/td>
+                        &lt;td>操作&lt;/td>
+                    &lt;/tr>
+                    <span>&lt;tr>
+                        &lt;td class="hex-margin">&lt;/td><i>表格之间的分割，这个不能少</i>
+                    &lt;/tr></span>
+                    &lt;/thead>
+                    &lt;tbody>
+                    &lt;tr class="row-list">
+                        &lt;td class="<span>hex-list-head</span>"><i>这个类表示表格的用途，主要是设定宽度，具体值见下方表格</i>
+                            &lt;div>
+                                &lt;span>H1&lt;/span>
+                            &lt;/div>
+                        &lt;/td>
+                        &lt;td class="<span>hex-list-title</span>">
+                            &lt;div>
+                                &lt;a href="javascript:void(0);" title="试卷查看">
+                                    &lt;span>[作业]&lt;/span> 计算题
+                                &lt;/a>
+                            &lt;/div>
+                        &lt;/td>
+                        &lt;td class="<span>hex-list-tag</span>">
+                            &lt;div>
+                                &lt;span>[前置任务]&lt;/span>
+                            &lt;/div>
+                        &lt;/td>
+                        &lt;td class="<span>hex-list-time</span>">
+                            &lt;div>&lt;span>08.24 12:57--09.30 00:00&lt;/span>&lt;/div>
+                        &lt;/td>
+                        &lt;td class="hex-list-bar">
+                            &lt;div>
+                                &lt;div class="<span>hex-progress</span>">
+                                    &lt;div class="hex-progress-bar" hex-percent="50">
+                                        &lt;span>&lt;/span>
+                                        &lt;span>&lt;span class="hex-font-orange">10&lt;/span>/20&lt;/span>
+                                    &lt;/div>
+                                &lt;/div>
+                            &lt;/div>
+                        &lt;/td>
+                        &lt;td class="<span>hex-list-btn</span>">
+                            &lt;div>
+                                &lt;a class="hex-img-edit hex-little-btn-20 hex-little-btn  not_active"
+                                   href="javascript:void(0);" title="编辑">&lt;/a>
+                                &lt;a class="hex-img-setting hex-little-btn-20 hex-little-btn"
+                                   href="javascript:void(0);" title="设置">&lt;/a>
+                                &lt;a class="hex-img-results hex-little-btn-20 hex-little-btn"
+                                   href="javascript:void(0);"
+                                   title="查看成绩" target="">&lt;/a>
+                                &lt;a class="hex-img-delete hex-little-btn-20 hex-little-btn"
+                                   href="javascript:void(0);"
+                                   title="删除试卷">&lt;/a>
+                            &lt;/div>
+                        &lt;/td>
+                        <span>&lt;td class="block">&lt;/td></span><i>添加这个td，表格右侧将留白</i>
+                    &lt;/tr>
+                    &lt;!--中间间隔-->
+                    &lt;tr>
+                        &lt;td class="hex-margin">&lt;/td>
+                    &lt;/tr>
+                    &lt;/tbody>
+                &lt;/table>
+            </pre>
+        </div>
+        <div>
+            <table class="hex-examples-table">
+                <thead>
+                <tr>
+                    <td class="td_name">td的class名称</td>
+                    <td class="td_width">长度</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <p class="hex-font-lightgray">hex-list-head</p>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray">50px</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="hex-font-lightgray">hex-list-title</p>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray">最大240px</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="hex-font-lightgray">hex-list-tag</p>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray">无</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="hex-font-lightgray">hex-list-name</p>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray">180px</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="hex-font-lightgray">hex-list-class</p>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray">100px</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="hex-font-lightgray">hex-list-time</p>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray">188px</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="hex-font-lightgray">hex-list-num</p>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray">35px</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="hex-font-lightgray">hex-list-input</p>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray">100px</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="hex-font-lightgray">hex-list-bar</p>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray">120px</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="hex-font-lightgray">hex-list-bar_l</p>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray">220px</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="hex-font-lightgray">hex-list-button</p>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray">135px</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="hex-font-lightgray">hex-list-class</p>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray">100px</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="hex-font-lightgray">hex-list-btn</p>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray">150px</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="hex-font-lightgray">hex-list-btn_1</p>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray">40px</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="hex-font-lightgray">hex-list-btn_2</p>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray">70px</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="hex-font-lightgray">hex-list-btn_3</p>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray">115px</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="hex-font-lightgray">hex-list-btn_4</p>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray">125px</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="hex-font-lightgray">hex-list-star</p>
+                    </td>
+                    <td>
+                        <p class="hex-font-lightgray">110px</p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!--分割文字-->
+    <div id="10">
+        <script type="application/javascript" src="Scripts/style/style_titleline.js"></script>
+        <div><h1 class="hex-font-orange">分割文字</h1></div>
+        <div><p class="hex-font-lightgray hex-indent">分割模块，并且提供收缩下方div的功能</p></div>
+        <div><span class="hex-font-yellow">需要JS文件：</span></div>
+        <div><p class="hex-font-lightgray hex-indent">style/style_titleline.js</p></div>
+        <div><span class="hex-font-yellow">示例：</span></div>
+        <div>
+            <div class="hex-title-line" hex-islong="0">
+                <span>下边的div就没了</span>
+                <hr>
+                <a class="jiahao"></a>
+            </div>
+            <div style="background-color: gray">
+                <p style="color: white;padding: 20px">收<br>缩<br>了</p>
+            </div>
+        </div>
+        <div><span class="hex-font-red">结构：</span></div>
+        <div>
+            <pre>
+                &lt;div class="hex-title-line" <span>hex-islong="0"</span>><i>hex-islong值为0，分割线将自动计算；
+                                                                  值为1，则不会自动计算。</i>
+                    &lt;span>下边的div就没了&lt;/span>
+                    &lt;hr>
+                    <span>&lt;a class=“jiahao”>&lt;/a></span><i>如果其中的class=“jiahao”，那么下边的div将被收起来
+                                        如果为空，那么将不会收起，并且将显示减号（汉语拼音微low）</i>
+                &lt;/div>
+                <span>&lt;div>
+                &lt;/div></span><i>收缩的div</i>
+            </pre>
+        </div>
+    </div>
+    <!--步骤图-->
+    <div id="11">
+        <div><h1 class="hex-font-orange">步骤图</h1></div>
+        <div><p class="hex-font-lightgray hex-indent">注册或者忘记密码等场景上方的step图</p></div>
+        <div><span class="hex-font-yellow">需要JS文件：</span></div>
+        <div><p class="hex-font-lightgray hex-indent">无</p></div>
+        <div><span class="hex-font-yellow">示例：</span></div>
+        <div>
+            <div class="hex-step">
+                <span class="active_1">验证身份</span>
+                <span class="not_active_23">等待验证邮箱</span>
+                <span class="not_active_23">设置新密码</span>
+            </div>
+        </div>
+        <div><span class="hex-font-red">结构：</span></div>
+        <div>
+            <pre>
+                &lt;div class="hex-step">
+                    &lt;span class="<span>active_1</span>">验证身份&lt;/span><i>active表示当前步骤，_1表示左边是平的</i>
+                    &lt;span class="<span>not_active_23</span>">等待验证邮箱&lt;/span><i>not_active表示不是当前步骤</i>
+                    &lt;span class="not_active_23">设置新密码&lt;/span><i>_23表示左边是尖的</i>
+                &lt;/div>
+            </pre>
+        </div>
+    </div>
+<!--    <div id="10000">
+        <div><h1 class="hex-font-orange">步骤图</h1></div>
+        <div><p class="hex-font-lightgray hex-indent">注册或者忘记密码等场景上方的step图</p></div>
+        <div><span class="hex-font-yellow">需要JS文件：</span></div>
+        <div><p class="hex-font-lightgray hex-indent">无</p></div>
+        <div><span class="hex-font-yellow">示例：</span></div>
+        <div>
+        </div>
+        <div><span class="hex-font-red">结构：</span></div>
+        <div>
+            <pre>
+            </pre>
+        </div>
+    </div>-->
 </div>
 <div class="hex-examples-list">
     <ul>
@@ -613,7 +1018,9 @@
         <li class="second"><a data-goto="6">普通进度条</a></li>
         <li class="second"><a data-goto="7">多彩进度条</a></li>
         <li><a data-goto="8">select菜单</a></li>
-        <li><a data-goto="8">select菜单</a></li>
+        <li><a data-goto="9">表格</a></li>
+        <li><a data-goto="10">分割文字</a></li>
+        <li><a data-goto="11">步骤图</a></li>
     </ul>
 </div>
 <footer class="hex-footer">
