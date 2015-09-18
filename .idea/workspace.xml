@@ -2,137 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="538e9b7d-b650-4e8c-8190-410cbe7edbd9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/css/error-IE.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/all.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/_all.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/aero.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/aero.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/aero@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/blue.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/blue.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/blue@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/flat.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/flat.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/flat@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/green.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/green.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/green@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/grey.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/grey.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/grey@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/orange.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/orange.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/orange@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/pink.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/pink.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/pink@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/purple.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/purple.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/purple@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/red.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/red.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/red@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/yellow.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/flat/yellow@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/futurico/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/futurico/futurico.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/futurico/futurico.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/futurico/futurico@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/line/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/line/_all.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/line/aero.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/line/blue.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/line/green.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/line/grey.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/line/line.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/line/line.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/line/line@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/line/orange.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/line/pink.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/line/purple.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/line/red.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/line/yellow.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/minimal/_all.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/minimal/aero.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/minimal/aero.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/minimal/aero@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/minimal/blue.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/minimal/blue.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/minimal/blue@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/minimal/green.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/minimal/green.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/minimal/green@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/minimal/grey.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/minimal/grey.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/minimal/grey@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/minimal/minimal.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/minimal/minimal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/minimal/minimal@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/minimal/orange.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/minimal/orange.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/minimal/orange@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/minimal/pink.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/minimal/pink.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/minimal/pink@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/minimal/purple.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/minimal/purple.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/minimal/purple@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/minimal/red.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/minimal/red.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/minimal/red@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/minimal/yellow.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/minimal/yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/minimal/yellow@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/polaris/polaris.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/polaris/polaris.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/polaris/polaris@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/square/_all.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/square/aero.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/square/aero.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/square/aero@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/square/blue.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/square/blue.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/square/blue@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/square/green.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/square/green.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/square/green@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/square/grey.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/square/grey.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/square/grey@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/square/orange.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/square/orange.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/square/orange@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/square/pink.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/square/pink.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/square/pink@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/square/purple.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/square/purple.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/square/purple@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/square/red.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/square/red.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/square/red@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/square/square.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/square/square.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/square/square@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/square/yellow.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/square/yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/css/Layout/skins/square/yellow@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Content/images/banks/zhifubao.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/css/Module/Modal.css" afterPath="$PROJECT_DIR$/Content/css/Module/Modal.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css_page.css" afterPath="$PROJECT_DIR$/css_page.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css_page.js" afterPath="$PROJECT_DIR$/css_page.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scripts/jquery-1.10.2.js" afterPath="$PROJECT_DIR$/Scripts/jquery-1.10.2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scripts/jquery-1.9.1.js" afterPath="$PROJECT_DIR$/Scripts/jquery-1.9.1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/css/Layout/layout.css" afterPath="$PROJECT_DIR$/Content/css/Layout/layout.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/css/Layout/module.css" afterPath="$PROJECT_DIR$/Content/css/Layout/module.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module.html" afterPath="$PROJECT_DIR$/module.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/css/Module/shop.css" afterPath="$PROJECT_DIR$/Content/css/Module/shop.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scripts/style/style_schedule-normal.js" afterPath="$PROJECT_DIR$/Scripts/style/style_schedule-normal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scripts/style/style_schedule.js" afterPath="$PROJECT_DIR$/Scripts/style/style_schedule.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scripts/style/style_user_info-normal.js" afterPath="$PROJECT_DIR$/Scripts/style/style_user_info-normal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scripts/style/style_user_info.js" afterPath="$PROJECT_DIR$/Scripts/style/style_user_info.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/images/banks/aliplay.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/images/test_twoCode.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/images/banks/weixinpay.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HexStudy3.0_组件以及相关规范.iws" />
@@ -351,6 +223,60 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HexStudy3.0_组件以及相关规范" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HexStudy3.0_组件以及相关规范" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HexStudy3.0_组件以及相关规范" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HexStudy3.0_组件以及相关规范" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HexStudy3.0_组件以及相关规范" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HexStudy3.0_组件以及相关规范" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="banks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -433,13 +359,20 @@
       <option name="project" value="LOCAL" />
       <updated>1442539947340</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="2015.9.18">
+      <created>1442570186309</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1442570186309</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -454,7 +387,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -473,7 +405,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2015.9.17" />
-    <option name="LAST_COMMIT_MESSAGE" value="2015.9.17" />
+    <MESSAGE value="2015.9.18" />
+    <option name="LAST_COMMIT_MESSAGE" value="2015.9.18" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -681,6 +614,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12820514">
           <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
