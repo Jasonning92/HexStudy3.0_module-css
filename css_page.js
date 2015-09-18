@@ -6,7 +6,7 @@ $(function () {
     var window_height = document.documentElement.clientHeight;
     $("div.hex-examples-list").css("right", (window_width - 1180) / 2);
     $(".main_content").css("padding-bottom", window_height - 50 - $(".main_content").children().last().height());
-    $(".main_content_tree .tree").css("height",window_height - 94);
+    $(".main_content_tree .tree").css("height", window_height - 94);
 
     /**
      * 锚点滚动动画
@@ -47,4 +47,41 @@ $(function () {
             i++;
         }
     };
-})
+
+    (function () {
+        var li_num = $(".hex-page-number").children("ul").children("li").size();
+
+        var top = 0;
+        if (li_num == 0) {
+            top = 100;
+        }
+        else {
+            top = 30 + li_num * 26;
+        }
+
+        var div_string = "<div class='goto-top' style='bottom: " + top + "px;'><a>TOP</a></div>";
+
+        var div = $(div_string);
+
+        $("body").append(div);
+
+        $(window).scroll(function () {
+            var tip_div = $(".goto-top");
+
+            if ($(window).scrollTop() > 10) {
+                tip_div.fadeIn(500);
+            }
+            else {
+                tip_div.fadeOut(500);
+            }
+
+        });
+
+        $(document.body).on("click", ".goto-top", function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 500);
+            return false;
+        });
+    })();
+});

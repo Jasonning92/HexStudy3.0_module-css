@@ -33,7 +33,7 @@
 // Support: Firefox 18+
 //"use strict";
 
-	var isIE=!!window.ActiveXObject;
+	/*var isIE=!!window.ActiveXObject;
 	var isIE6=isIE&&!window.XMLHttpRequest;
 	var isIE8=isIE&&!!window.document.documentMode;
 	var isIE7=isIE&&!isIE6&&!isIE8;
@@ -44,7 +44,7 @@
 		var s = window.document.getElementsByTagName("script")[0];
 		s.parentNode.insertBefore(hm, s);
 		return false;
-	}
+	}*/
 
 
 var

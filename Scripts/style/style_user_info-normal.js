@@ -48,49 +48,6 @@ $(function () {
     /* 回top */
     goto_top();
 
-    /*/!* 判断是否是IE浏览器 *!/
-     var userAgent = navigator.userAgent.toLowerCase();
-     jQuery.browser = {
-     version: (userAgent.match(/.+(?:rv|it|ra|ie)[\/: ]([\d.]+)/) || [])[1],
-     safari: /webkit/.test(userAgent),
-     opera: /opera/.test(userAgent),
-     msie: /msie/.test(userAgent) && !/opera/.test(userAgent),
-     mozilla: /mozilla/.test(userAgent) && !/(compatible|webkit)/.test(userAgent)
-     };*/
-    //alert(userAgent);
-    /*function isIE() {
-     if (!!window.ActiveXObject || "ActiveXObject" in window)
-     return true;
-     else
-     return false;
-     }*/
-
-    /*if ($(".error-IE").size() == 0) {
-     var div_error = '<div class="error-IE">' +
-     '<span>您使用的是IE浏览器，为了更好地体验效果，请下载<a href="http://www.firefox.com.cn">火狐浏览器</a>或者<a href="http://www.google.cn/chrome/browser">谷歌浏览器</a></span>' +
-     '<div class="hex-close">' +
-     '<a title="关闭" href="javascript:void (0)"></a>' +
-     '</div>' +
-     '</div>';
-     $("body").append(div_error);
-     }*/
-    var isIE = !!window.ActiveXObject;
-    var isIE6 = isIE && !window.XMLHttpRequest;
-    var isIE8 = isIE && !!window.document.documentMode;
-    var isIE7 = isIE && !isIE6 && !isIE8;
-
-    if (!isIE6 && !isIE7 && !isIE8) {
-        $(".error-IE").css("height", 0);
-    }
-    /*if (!isIE()) {
-     $(".error-IE").css("height", 0);
-     }*/
-    $(document.body).on("click", ".error-IE .hex-close a", function () {
-        $(".error-IE").animate({
-            "height": "0px"
-        });
-    });
-
     /**
      * 回顶部
      */

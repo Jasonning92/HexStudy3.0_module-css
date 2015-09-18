@@ -1524,6 +1524,22 @@
     text-align: center;
 }
 
+/* ============================= weixinpay-twoCode ============================= */
+.hex-modal-weixinpay {
+}
+
+.hex-modal-weixinpay > div {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.hex-modal-weixinpay > div img{
+    width: 198px;
+    height: 198px;
+}
+
 
 
 

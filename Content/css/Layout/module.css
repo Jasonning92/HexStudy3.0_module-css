@@ -235,13 +235,14 @@
 .hex-classes > div:nth-child(1) > .hex-class-btn_1 button,
 .hex-classes > div:nth-child(1) > .hex-class-btn_1 a {
     height: 30px;
-    width: 80px;
     border-radius: 2px;
     font-size: 14px;
     border: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     position: absolute;
-    top: 50px;
-    left: 59px;
 }
 
 .hex-classes > div:nth-child(1) > .hex-class-btn_1 a {
@@ -250,7 +251,7 @@
 }
 
 /* 两个按钮 */
-.hex-classes > div:nth-child(1) > .hex-class-btn_2 {
+.hex-classes > div:nth-child(1) > .hex-class-btn_2, {
     height: 100%;
     width: 100%;
     position: absolute;
@@ -259,26 +260,30 @@
     background: url("../../images/course-mask.png") no-repeat 0 0;
 }
 
-.hex-classes > div:nth-child(1) > .hex-class-btn_2 > button:nth-child(1) {
+.hex-classes > div:nth-child(1) > .hex-class-btn_2 > button:nth-child(1),
+.hex-classes > div:nth-child(1) > .hex-class-btn_2 > a:nth-child(1) {
     height: 30px;
-    width: 80px;
     border-radius: 2px;
     font-size: 14px;
     border: 0;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -40%);
+    -webkit-transform: translate(-50%, -40%);
     position: absolute;
-    top: 35px;
-    left: 59px;
 }
 
-.hex-classes > div:nth-child(1) > .hex-class-btn_2 > button:nth-child(2) {
+.hex-classes > div:nth-child(1) > .hex-class-btn_2 > button:nth-child(2),
+.hex-classes > div:nth-child(1) > .hex-class-btn_2 > a:nth-child(2) {
     height: 30px;
-    width: 80px;
     border-radius: 2px;
     font-size: 14px;
     border: 0;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -75%);
+    -webkit-transform: translate(-50%, -75%);
     position: absolute;
-    top: 75px;
-    left: 59px;
 }
 
 /* 播放按钮 */
@@ -302,7 +307,8 @@
 }*/
 
 /*辅助教材*/
-.hex-classes > div:nth-child(1) > .hex-class-type {
+.hex-classes > div:nth-child(1) > .hex-class-type,
+.hex-classes > div:nth-child(1) > a > .hex-class-type {
     height: 139px;
     width: 198px;
     position: absolute;
@@ -311,7 +317,8 @@
     background: url("../../images/course-mask.png") no-repeat 0 0;
 }
 
-.hex-classes > div:nth-child(1) > .hex-class-type > span {
+.hex-classes > div:nth-child(1) > .hex-class-type > span,
+.hex-classes > div:nth-child(1) > a > .hex-class-type > span {
     position: absolute;
     left: 3px;
     bottom: 3px;
@@ -391,7 +398,7 @@
     padding-bottom: 10px;
 }
 
-.hex-classes.hex-books > div:nth-of-type(2) h2{
+.hex-classes.hex-books > div:nth-of-type(2) h2 {
     padding: 0 10px;
 }
 

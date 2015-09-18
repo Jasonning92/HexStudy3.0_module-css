@@ -124,7 +124,7 @@ $(function(){
             $(thisObj).css("display", "none");
         }
     }
-})
+});
 function schedule() {
 }
 

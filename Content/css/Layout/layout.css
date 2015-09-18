@@ -1691,7 +1691,7 @@ html, body {
     background-color: #E08A8A;
     z-index: 20;
     overflow: hidden;
-    height: 30px;
+    height: 0;
 }
 .error-IE span{
     width: 100%;

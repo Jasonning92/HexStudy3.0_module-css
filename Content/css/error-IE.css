@@ -1,0 +1,7 @@
+.error-IE{
+    height: 30px;
+}
+
+.error-IE span a{
+    display: none;
+}
