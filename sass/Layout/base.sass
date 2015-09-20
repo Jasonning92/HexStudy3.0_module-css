@@ -1,0 +1,625 @@
+// -----------------------------   基本公用样式   -----------------------------
+@import "../import"
+// 初始化
+@import "compass/reset"
+@import "initialization"
+// ------ List ------
+// 按钮
+// 字体颜色
+// 字体加粗
+// 段落
+// 表单行
+// 按钮:hover以及小图代表类
+// 查看习题悬浮
+
+// ============================= 按钮 =============================
+.hex-button
+  padding: 0 20px
+  height: 28px
+  min-width: 70px
+  font-size: 12px
+  display: inline-block
+  line-height: 28px
+  text-align: center
+  @include border-radius(2px)
+  border-radius: 2px
+
+// 绿色
+.hex-green-btn
+  background-color: $btn_green
+  color: #FFFFFF
+  &:hover
+    @include btn_hover()
+  &:active
+    @include btn_active()
+
+// 黑色
+.hex-black-btn
+  background-color: $btn_black
+  color: #FFFFFF
+  &:hover
+    @include btn_hover($btn_black, #FFFFFF, #EEEEEE)
+  &:active
+    @include btn_active($btn_black, #FFFFFF, #C0C3C8)
+
+// 灰色
+.hex-gray-btn
+  background-color: $btn_gray
+  color: #FFFFFF
+  &:hover
+    @include btn_hover($btn_green, #FFFFFF, #EEEEEE)
+  &:active
+    @include btn_active($btn_green, #FFFFFF, #C0C3C8)
+
+// 浅灰色
+.hex-lightgrey-btn
+  background-color: $btn_light_gray
+  color: $font_light_gray
+  &:hover
+    @include btn_hover($btn_green, #FFFFFF, rgba(175, 183, 191, 0.1))
+  &:active
+    @include btn_active()
+
+//橙色
+.hex-orange-btn
+  background-color: $btn_orange
+  color: #FFFFFF
+  &:hover
+    @include btn_hover(#f88457, #FFFFFF, #E2E0E3)
+  &:active
+    @include btn_active(#f88457, #FFFFFF, #f75a1c)
+
+// 不能点按钮
+.hex-disable-btn
+  background-color: $btn_gray
+  color: $font_light_gray
+  line-height: 28px
+  height: 28px
+  text-align: center
+  padding: 0 10px
+
+//小图标
+.hex-little-btn
+  background-color: $btn_little
+  &:hover:not(.not_active)
+    @include btn_hover($btn_green, #ffffff, rgba(226, 224, 227, 0.5))
+  &:active
+    @include btn_active()
+
+// 带图按钮
+.hex-img-btn
+  height: 30px
+  font-size: 12px
+  position: relative
+  div
+    width: 28px
+    height: 28px
+    position: absolute
+    top: 1px
+    left: 1px
+  span
+    line-height: 28px
+    padding-left: 30px
+    padding-right: 5px
+  &.hex-lightgrey-btn
+    div
+      background-color: #E5E9EC
+  &.hex-lightgrey-btn:hover
+    div
+      background-color: #2C9F6C
+    span
+      color: #ffffff
+  &.hex-green-btn
+    div
+      background-color: #2C9F6C
+  &.hex-orange-btn
+    div
+      background-color: #fa5a1c
+
+// ============================= 字体颜色 =============================
+.hex-font-orange
+  color: $font_orange
+
+.hex-font-lightgray
+  color: $font_light_gray
+
+.hex-font-green
+  color: $font_green
+
+.hex-font-gray
+  color: $font_gray
+
+.hex-font-red
+  color: $font_red
+
+.hex-font-yellow
+  color: $font_yellow
+
+// ============================= 字体加粗 =============================
+.hex-font-bold
+  font-weight: 600
+
+.hex-font-underline
+  text-decoration: underline
+
+.hex-font-dashed
+  @mixin border_bottom($color)
+    border-bottom: 1px dotted $color
+  &.hex-font-orange
+    @include border_bottom($font_orange)
+  &.hex-font-lightgray
+    @include border_bottom($font_light_gray)
+  &.hex-font-green
+    @include border_bottom($font_green)
+  &.hex-font-gray
+    @include border_bottom($font_gray)
+  &.hex-font-red
+    @include border_bottom($font_red)
+  &.hex-font-yellow
+    @include border_bottom($font_yellow)
+
+// ============================= 段落 =============================
+.hex-indent
+  text-indent: 2em
+
+.hex-space
+  white-space: pre-wrap
+  margin-top: -20px
+
+// ============================= 表单行 =============================
+.hex-button-row
+  margin: 20px 0 0 0
+  min-height: 28px
+  display: inline-block
+  > *
+    float: left
+    &:not(.hex-type):not(.hex-type-list)
+      margin-top: 10px
+  > .hex-type
+    margin-top: 5px
+
+// ============================= 按钮:hover以及小图代表类 =============================
+@mixin little_size($size)
+  height: $size
+  width: $size
+  display: inline-block
+  @include border-radius(2px)
+  @include background_img
+  &:hover
+    @include background_img
+
+.hex-little-btn-28
+  @include little_size(28px)
+
+.hex-little-btn-25
+  @include little_size(25px)
+
+.hex-little-btn-20
+  @include little_size(20px)
+
+//生成精灵
+$icons-spacing: 20px
+$icons-clean-up: true
+@import "compass/utilities/sprites"
+@import "icons/*.png"
+
+.hex-img-magnify
+  @include icons-sprite(search)
+
+.hex-img-edit_l
+  @include icons-sprite(edit)
+  &:hover:not(.not_active)
+    @include icons-sprite(edit_w)
+
+button:hover .hex-img-edit_l
+  @include icons-sprite(edit_w)
+
+.hex-img-edit
+  @include icons-sprite(edit_w)
+  &:hover:not(.not_active)
+    @include icons-sprite(edit_w)
+
+button:hover .hex-img-edit
+  @include icons-sprite(edit_w)
+
+.hex-img-back
+  @include icons-sprite(back)
+  &:hover:not(.not_active)
+    @include icons-sprite(back_w)
+
+button:hover .hex-img-back
+  @include icons-sprite(back_w)
+
+.hex-img-back_w
+  @include icons-sprite(back_w)
+  &:hover:not(.not_active)
+    @include icons-sprite(back_w)
+
+button:hover .hex-img-back_w
+  @include icons-sprite(back_w)
+
+.hex-img-release
+  @include icons-sprite(accomplish_w)
+  &:hover:not(.not_active)
+    @include icons-sprite(accomplish_w)
+
+button:hover .hex-img-release
+  @include icons-sprite(accomplish_w)
+
+.hex-img-release_l
+  @include icons-sprite(accomplish)
+  &:hover:not(.not_active)
+    @include icons-sprite(accomplish_w)
+
+button:hover .hex-img-release_l
+  @include icons-sprite(accomplish_w)
+
+.hex-img-mark
+  @include icons-sprite(mark)
+  &:hover:not(.not_active)
+    @include icons-sprite(mark_w)
+
+button:hover .hex-img-mark
+  @include icons-sprite(mark_w)
+
+.hex-img-delete
+  @include icons-sprite(delete_w)
+  &:hover:not(.not_active)
+    @include icons-sprite(delete_w)
+
+button:hover .hex-img-delete
+  @include icons-sprite(delete_w)
+
+.hex-img-down
+  @include icons-sprite(down)
+  &:hover:not(.not_active)
+    @include icons-sprite(down_w)
+
+button:hover .hex-img-down
+  @include icons-sprite(down_w)
+
+.hex-img-star
+  @include icons-sprite(star)
+  &:hover:not(.not_active)
+    @include icons-sprite(star_w)
+
+button:hover .hex-img-star
+  @include icons-sprite(star_w)
+
+.hex-img-star_w
+  @include icons-sprite(star_w)
+  &:hover:not(.not_active)
+    @include icons-sprite(star_w)
+
+button:hover .hex-img-star_w
+  @include icons-sprite(star_w)
+
+.hex-img-throw
+  @include icons-sprite(throw)
+  &:hover:not(.not_active)
+    @include icons-sprite(throw_w)
+
+button:hover .hex-img-throw
+  @include icons-sprite(throw_w)
+
+.hex-img-throw_w
+  @include icons-sprite(throw_w)
+  &:hover:not(.not_active)
+    @include icons-sprite(throw_w)
+
+button:hover .hex-img-throw_w
+  @include icons-sprite(throw_w)
+
+.hex-img-down_l
+  @include icons-sprite(down_little)
+  &:hover:not(.not_active)
+    @include icons-sprite(down_little_w)
+
+button:hover .hex-img-down_l
+  @include icons-sprite(down_little_w)
+
+.hex-img-up_l
+  @include icons-sprite(up_little)
+  &:hover:not(.not_active)
+    @include icons-sprite(up_little_w)
+
+button:hover .hex-img-up_l
+  @include icons-sprite(up_little_w)
+
+.hex-img-down-little
+  @include icons-sprite(down_little_w)
+  &:hover:not(.not_active)
+    @include icons-sprite(down_little_w)
+
+button:hover .hex-img-down-little
+  @include icons-sprite(down_little_w)
+
+.hex-img-up-little
+  @include icons-sprite(up_little_w)
+  &:hover:not(.not_active)
+    @include icons-sprite(up_little_w)
+
+button:hover .hex-img-up-little
+  @include icons-sprite(up_little_w)
+
+.hex-img-left-little
+  @include icons-sprite(left_little_w)
+  &:hover:not(.not_active)
+    @include icons-sprite(left_little_w)
+
+button:hover .hex-img-left-little
+  @include icons-sprite(left_little_w)
+
+.hex-img-right-little
+  @include icons-sprite(right_little_w)
+  &:hover:not(.not_active)
+    @include icons-sprite(right_little_w)
+
+button:hover .hex-img-right-little
+  @include icons-sprite(right_little_w)
+
+.hex-img-up
+  @include icons-sprite(up)
+  &:hover:not(.not_active)
+    @include icons-sprite(up_w)
+
+button:hover .hex-img-up
+  @include icons-sprite(up_w)
+
+.hex-img-next
+  @include icons-sprite(next)
+  &:hover:not(.not_active)
+    @include icons-sprite(next_w)
+
+button:hover .hex-img-next
+  @include icons-sprite(next_w)
+
+.hex-img-next_w
+  @include icons-sprite(next_w)
+  &:hover:not(.not_active)
+    @include icons-sprite(next_w)
+
+button:hover .hex-img-next_w
+  @include icons-sprite(next_w)
+
+.hex-img-edit_l
+  @include icons-sprite(examine)
+  &:hover:not(.not_active)
+    @include icons-sprite(examine_w)
+
+button:hover .hex-img-edit_l
+  @include icons-sprite(examine_w)
+
+.hex-img-examine_w
+  @include icons-sprite(examine_w)
+  &:hover:not(.not_active)
+    @include icons-sprite(examine_w)
+
+button:hover .hex-img-examine_w
+  @include icons-sprite(examine_w)
+
+.hex-img-print
+  @include icons-sprite(print)
+  &:hover:not(.not_active)
+    @include icons-sprite(print_w)
+
+button:hover .hex-img-print
+  @include icons-sprite(print_w)
+
+.hex-img-print_w
+  @include icons-sprite(print_w)
+  &:hover:not(.not_active)
+    @include icons-sprite(print_w)
+
+button:hover .hex-img-print_w
+  @include icons-sprite(print_w)
+
+.hex-img-setting
+  @include icons-sprite(setting_w)
+  &:hover:not(.not_active)
+    @include icons-sprite(setting_w)
+
+button:hover .hex-img-setting
+  @include icons-sprite(setting_w)
+
+.hex-img-results
+  @include icons-sprite(results_w)
+  &:hover:not(.not_active)
+    @include icons-sprite(results_w)
+
+button:hover .hex-img-results
+  @include icons-sprite(results_w)
+
+.hex-img-document
+  @include icons-sprite(document)
+  &:hover:not(.not_active)
+    @include icons-sprite(document_w)
+
+button:hover .hex-img-document
+  @include icons-sprite(document_w)
+
+.hex-img-document_w
+  @include icons-sprite(document_w)
+  &:hover:not(.not_active)
+    @include icons-sprite(document_w)
+
+button:hover .hex-img-document_w
+  @include icons-sprite(document_w)
+
+.hex-img-document_l
+  @include icons-sprite(document)
+  &:hover:not(.not_active)
+    @include icons-sprite(document_w)
+
+button:hover .hex-img-document_l
+  @include icons-sprite(document_w)
+
+.hex-img-plus_l
+  @include icons-sprite(plus)
+  &:hover:not(.not_active)
+    @include icons-sprite(plus_w)
+
+button:hover .hex-img-plus_l
+  @include icons-sprite(plus_w)
+
+.hex-img-plus
+  @include icons-sprite(plus_w)
+  &:hover:not(.not_active)
+    @include icons-sprite(plus_w)
+
+button:hover .hex-img-plus
+  @include icons-sprite(plus_w)
+
+.hex-img-minus
+  @include icons-sprite(minus_w)
+  &:hover:not(.not_active)
+    @include icons-sprite(minus_w)
+
+button:hover .hex-img-minus
+  @include icons-sprite(minus_w)
+
+.hex-img-list
+  @include icons-sprite(list_w)
+  &:hover:not(.not_active)
+    @include icons-sprite(list_w)
+
+button:hover .hex-img-list
+  @include icons-sprite(list_w)
+
+.hex-img-add
+  @include icons-sprite(add)
+  &:hover:not(.not_active)
+    @include icons-sprite(add_w)
+
+button:hover .hex-img-add
+  @include icons-sprite(add_w)
+
+.hex-img-upload
+  @include icons-sprite(upload)
+  &:hover:not(.not_active)
+    @include icons-sprite(upload_w)
+
+button:hover .hex-img-upload
+  @include icons-sprite(upload_w)
+
+.hex-img-upload_w
+  @include icons-sprite(upload_w)
+  &:hover:not(.not_active)
+    @include icons-sprite(upload_w)
+
+button:hover .hex-img-upload_w
+  @include icons-sprite(upload_w)
+
+.hex-img-newques
+  @include icons-sprite(newquestions)
+  &:hover:not(.not_active)
+    @include icons-sprite(newquestions_w)
+
+button:hover .hex-img-newques
+  @include icons-sprite(newquestions_w)
+
+.hex-img-newques_w
+  @include icons-sprite(newquestions_w)
+  &:hover:not(.not_active)
+    @include icons-sprite(newquestions_w)
+
+button:hover .hex-img-newques_w
+  @include icons-sprite(newquestions_w)
+
+.hex-img-dustbin
+  @include icons-sprite(dustbin)
+  &:hover:not(.not_active)
+    @include icons-sprite(dustbin_w)
+
+button:hover .hex-img-dustbin
+  @include icons-sprite(dustbin_w)
+
+.hex-img-success
+  @include icons-sprite(success)
+  &:hover:not(.not_active)
+    @include icons-sprite(success_w)
+
+button:hover .hex-img-success
+  @include icons-sprite(success_w)
+
+.hex-img-success_w
+  @include icons-sprite(success_w)
+  &:hover:not(.not_active)
+    @include icons-sprite(success_w)
+
+button:hover .hex-img-success_w
+  @include icons-sprite(success_w)
+
+.hex-img-produce
+  @include icons-sprite(produce)
+  &:hover:not(.not_active)
+    @include icons-sprite(produce_w)
+
+button:hover .hex-img-produce
+  @include icons-sprite(produce_w)
+
+.hex-img-change
+  @include icons-sprite(change)
+  &:hover:not(.not_active)
+    @include icons-sprite(change_w)
+
+button:hover .hex-img-change
+  @include icons-sprite(change_w)
+
+.hex-img-change_w
+  @include icons-sprite(change_w)
+  &:hover:not(.not_active)
+    @include icons-sprite(change_w)
+
+button:hover .hex-img-change_w
+  @include icons-sprite(change_w)
+
+.hex-img-exercises
+  @include icons-sprite(exercises)
+  &:hover:not(.not_active)
+    @include icons-sprite(exercises_w)
+
+button:hover .hex-img-exercises
+  @include icons-sprite(exercises_w)
+
+.hex-img-stop
+  @include icons-sprite(stop)
+  &:hover:not(.not_active)
+    @include icons-sprite(stop_w)
+
+button:hover .hex-img-stop
+  @include icons-sprite(stop_w)
+
+.hex-img-sort
+  @include icons-sprite(sort)
+  &:hover:not(.not_active)
+    @include icons-sprite(sort_hover)
+
+.hex-img-sort_up
+  @include icons-sprite(sort_up)
+  &:hover:not(.not_active)
+    @include icons-sprite(sort_up_hover)
+
+.hex-img-sort_down
+  @include icons-sprite(sort_down)
+  &:hover:not(.not_active)
+    @include icons-sprite(sort_down_hover)
+
+.hex-img-goto_page
+  @include icons-sprite(ebook_page)
+  &:hover:not(.not_active)
+    @include icons-sprite(ebook_page_w)
+
+button:hover .hex-img-goto_page
+  @include icons-sprite(ebook_page_w)
+
+// ============================= 查看习题悬浮 =============================
+#datatoggle
+  position: absolute
+  width: 300px
+  height: auto
+  background: #EDF1F4 none repeat scroll 0 0
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5)
+  border: 1px solid rgba(0, 0, 0, 0.2)
+  @include border-radius(6px)
+  padding: 20px 40px

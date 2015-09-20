@@ -2,9 +2,418 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="538e9b7d-b650-4e8c-8190-410cbe7edbd9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/images/banks/aliplay.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/images/test_twoCode.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Content/images/banks/weixinpay.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/banks/ABC.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/banks/BJBANK.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/banks/BJRCB.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/banks/BOC.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/banks/CBC.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/banks/CCB.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/banks/CEB.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/banks/CIB.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/banks/CITIC.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/banks/CMB.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/banks/CMBC.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/banks/COMM.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/banks/FDB.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/banks/GDB.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/banks/HZCB.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/publisher/HexStudy.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/banks/ICBC.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/banks/NBBANK.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/No-picture.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/No-picture.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/banks/PSBC.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/banks/SHBANK.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/banks/SHRCB.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/banks/SPABANK.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/banks/SPDB.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/banks/WZCB.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/a_chart.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/accomplish and release.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/accomplish and release_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/accomplish.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/accomplish_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/add_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/banks/aliplay.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/amplify_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/annex_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/answer_01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/answer_02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/answer_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/approved_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/approved_04.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/approved_05.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/approved_06.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/arrow_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/audio.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/courseware_type/audio.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/back.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/back.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/back_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/large-img/bangzhu.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/banji_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/banji_icon_02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/baocun_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/publisher/beijingtiyu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/biaoqing.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/book-arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/book-catalog-hover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/book-catalog.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/book-chapter.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/book-close-icon 2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/book-close-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/book-flash.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/book-icon-01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/book-icon-02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/book-kw-hover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/book-kw.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/book-lower-border.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/book-mark-hover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/book-mark-set.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/book-mark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/book-music.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/book-nores-02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/book-nores-set.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/book-notes-02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/book-notes-hover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/book-notes.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/book-play-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/book-search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/book-two-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/book-video.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/book.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/bottom_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/publisher/bsup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/button-annex.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/button-audio.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/button-flash_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/button-picture.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/button-pictures.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/button-video.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/change.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/change_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/large-img/chanpin.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/chapter-left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/chapter-right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/cheng_jiangli.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/chengjice-down_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/chengjice-left_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/chengjice-right_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/chengjice-seach_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/chubanse.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/courseware_type/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/closed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/publisher/cnmip.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/coach.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/complete.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/complete03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/cour_dialogue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/course-mask.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/course-picture.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/course.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/course.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/course_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/course_wenjian.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/course_zashi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/courseware_type.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/custom.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/courseware_type/custom.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/daochu_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/daoru-return.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/date_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dayi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/delete.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/delete.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/delete_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/delete_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/publisher/dianzikeji.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/document.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/document_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/publisher/dongnan.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dongnan_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/down.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/down_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/down_apply_course.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/down_little.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/down_little_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/down_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/drop_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/dustbin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/dustbin_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/ebook_page.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/ebook_page_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ebookdefault.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/edit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/edit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/edit_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/edit_l.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/edit_l_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/edit_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/error_a.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/error_b.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/error_c.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/error_d.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/error_flip.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/error_flip_left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/error_flip_right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/examine.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/examine_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/exclamation.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/exercises.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/exercises_down.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/exercises_rrrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/exercises_up.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/exercises_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/export.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/extbooks.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/extbooks.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/extbooks_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/publisher/fangzhi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/fenxi_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/figure.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/flash.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/courseware_type/flash.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/flash_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/fuzhi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/publisher/gaodengjiaoyu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/genghuan.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/publisher/gezhi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/gezhi_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/go.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/gongshang_logo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/grey.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/publisher/guangdonjiaoyu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/large-img/guanyuwomen.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/publisher/haerbingongye.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/large-img/hezuo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/hint.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/homework.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/banks/huaxia.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/huaxue_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/publisher/huaxuegongye.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/hudong_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/index_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/index_code.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/index_weixin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/jiahao.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/jiahao_02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/jiahao_white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/jianhao.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/jianhao_02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/jianhao_white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/jiaoshiduanshouye-left-picture_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/jingji_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/publisher/jingjiguanli.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/land_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/left-bttom.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/left-right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/left_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/left_l.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/left_little.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/left_little_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/list_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/loading_little.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/login-success.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/logo02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/logo03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/logo_press.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/m.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/mark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/mark_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/minus_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/moban.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mooc_sort01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mooc_sort02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mooc_sort03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/more.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/more_02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/more_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/narrow_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/new-prompt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/new_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/new_b_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/new_questions.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/newquestions.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/newquestions_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/next.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/next.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/next_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/nonye_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/courseware_type/office.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/office_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/on_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/courseware_type/open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/open_02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/open_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/other.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/courseware_type/other.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/page_num_down.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/page_num_more.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/page_num_on.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/picture_single.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/courseware_type/picture_single.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/pictures_more.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/courseware_type/pictures_more.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/pinglun_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/plug-in.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/courseware_type/plug-in.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/plus.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/plus_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/print.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/print.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/print_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/produce.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/produce_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/prompt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/publisher-empty.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/publisher/qinghua.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/qq.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/qq_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/qq_kongjian.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/qq_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/qq_logo02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/question.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/publisher/renminchuban.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/renren.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/renren_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/renren_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/renren_logo02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/results.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/results_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/right_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/right_apply_course.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/right_l.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/right_little.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/right_little_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/rolling-frame.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/rolling-frame_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/rolling-frame_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/rolling-frame_1_active.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/rolling-frame_23.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/rolling-frame_23_active.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/s.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/search_little.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/set_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/setting.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/setting_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/publisher/shanghaijiaoda.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/shanxi_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/publisher/shanxi_shifan.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/shengcehng.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/publisher/shenyangjiaoyuju.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/shouji.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/signed_bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/signed_cipher.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/signed_cipher02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/signed_code.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/signed_code02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/signed_user.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/signed_verification.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/signed_verification_grren.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/signes_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/sort.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/sort_down.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/sort_down_hover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/sort_hover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/sort_up.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/sort_up_hover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/sosuo_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/spoc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/star.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/star_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/stop.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/stop_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/two-code/student.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/study_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/success.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/success.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/success_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/taideng_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/teacher.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/two-code/teacher.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/teacher_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/teacher_eacher.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/tenxun_pengyoou.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/tenxun_weibo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test_twoCode.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/textbook.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/the last step03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/thinkingt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/courseware_type/thinkingt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/throw.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/throw_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/publisher/tiantai.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/tiaoxu_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/time_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/to-be-released_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/to-start_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/top_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/top_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/trash.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/two-dimension_code.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/up.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/up_little.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/up_little_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/up_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/update_courseware.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/upload.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/upload.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/upload_w.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/verification_code.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/video.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/courseware_type/video.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/view-results_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/view.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/warning.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/weibo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/weibo_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/weibo_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/weibo_logo02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/weikecheng.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/two-code/weixin.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/banks/weixinpay.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/wenjian-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/will_do.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/publisher/wuhan.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/wuhan_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/xian_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/publisher/xianjiaoda.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/publisher/xibeigongye.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icons/xuanze_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/yiyao_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/youxiang.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/publisher/zgyykj-imooc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/zgyykj_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/publisher/zhejianggongshang.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/zhongguo_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/publisher/zhongguocaifu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/publisher/zhongguochuanmei.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/publisher/zhongguononye.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/publisher/zhongguoshuili.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/publisher/zhongguoyiyaokeji.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/large-img/ziyuan.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/zoom_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/zuoye-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/上一步_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/完成_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/完成并发布_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/疑问_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/_constant.sass" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/_function.sass" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/_import.sass" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/_initialization.sass" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/Layout/base.sass" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/compass_library.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/Layout/forms.sass" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/HexStudy3.0_组件以及相关规范.iml" afterPath="$PROJECT_DIR$/.idea/HexStudy3.0_组件以及相关规范.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HexStudy3.0_组件以及相关规范.iws" />
@@ -26,95 +435,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="module.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module.html">
+      <file leaf-file-name="forms.sass" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sass/Layout/forms.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.291667">
-              <caret line="1235" column="92" selection-start-line="1235" selection-start-column="92" selection-end-line="1235" selection-end-column="92" />
-              <folding>
-                <element signature="n#div#0;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#div#0;n#div#0;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#div#1;n#div#0;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#div#0;n#div#1;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#1;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#1;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#div#1;n#div#1;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#2;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#div#0;n#div#2;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#2;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#2;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#div#1;n#div#2;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#3;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#div#0;n#div#3;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#3;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#3;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#div#1;n#div#3;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#4;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#div#0;n#div#4;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#4;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#4;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#div#1;n#div#4;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#5;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#5;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#div#0;n#div#5;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#5;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#5;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#div#1;n#div#5;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#div#0;n#div#8;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#4;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#5;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#6;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#7;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#8;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#9;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#10;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#div#1;n#div#5;n#div#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#1;n#div#5;n#div#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#5;n#div#12;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="module.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Content/css/Layout/module.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2819" column="6" selection-start-line="2797" selection-start-column="0" selection-end-line="2819" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="css_page.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css_page.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="245" column="1" selection-start-line="245" selection-start-column="1" selection-end-line="245" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="css_page.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css_page.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.74358976">
-              <caret line="80" column="36" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.625">
+              <caret line="76" column="14" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -128,6 +453,7 @@
         <option value="JavaScript File" />
         <option value="Html5" />
         <option value="CSS File" />
+        <option value="Sass File" />
       </list>
     </option>
   </component>
@@ -137,7 +463,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Content/css/Layout/forms.css" />
         <option value="$PROJECT_DIR$/Scripts/hex_verification.js" />
         <option value="$PROJECT_DIR$/Content/css/Layout/base.css" />
         <option value="$PROJECT_DIR$/_Layout.html" />
@@ -166,6 +491,11 @@
         <option value="$PROJECT_DIR$/module.html" />
         <option value="$PROJECT_DIR$/css_page.css" />
         <option value="$PROJECT_DIR$/css_page.js" />
+        <option value="$PROJECT_DIR$/Content/css/Layout/forms.css" />
+        <option value="$PROJECT_DIR$/sass/_constant.sass" />
+        <option value="$PROJECT_DIR$/sass/_import.sass" />
+        <option value="$PROJECT_DIR$/sass/Layout/base.sass" />
+        <option value="$PROJECT_DIR$/sass/Layout/forms.sass" />
       </list>
     </option>
   </component>
@@ -233,6 +563,56 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HexStudy3.0_组件以及相关规范" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HexStudy3.0_组件以及相关规范" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HexStudy3.0_组件以及相关规范" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HexStudy3.0_组件以及相关规范" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HexStudy3.0_组件以及相关规范" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HexStudy3.0_组件以及相关规范" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Content" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -251,7 +631,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -269,11 +649,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="banks" />
+              <option name="myItemId" value="Layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -282,14 +662,14 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.sass.extensions.compass.CompassConfigurableProvider$1" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/WxpayAPI_php_v3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="FullScreen" value="true" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="list.type.of.created.stylesheet" value="Sass" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -365,28 +745,34 @@
       <option name="project" value="LOCAL" />
       <updated>1442570186309</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2015.9.18">
+      <created>1442570473145</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1442570473145</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24225576" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24225576" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -413,66 +799,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Content/icon/up.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Content/icon/next.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Content/icon/examine_w.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Content/icon/examine.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Content/icon/print.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Content/icon/document.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Content/icon/plus.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Content/icon/list_w.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Content/icon/add.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Content/icon/upload.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Content/icon/newquestions.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Content/icon/produce.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Content/icon/sort.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -491,13 +817,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/icon_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5955882">
-          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5955882">
           <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
@@ -606,7 +925,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.6923077">
           <caret line="550" column="1" selection-start-line="550" selection-start-column="1" selection-end-line="550" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -614,7 +932,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12820514">
           <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -622,7 +939,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="3418" selection-start-line="0" selection-start-column="3418" selection-end-line="0" selection-end-column="3418" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -630,9 +946,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="205.04274">
           <caret line="9596" column="13" selection-start-line="9596" selection-start-column="13" selection-end-line="9596" selection-end-column="13" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -640,9 +953,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2556818">
           <caret line="12" column="90" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="90" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -650,7 +960,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="1294" selection-start-line="0" selection-start-column="1294" selection-end-line="0" selection-end-column="1294" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -658,9 +967,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.021306818">
           <caret line="22" column="52" selection-start-line="0" selection-start-column="0" selection-end-line="85" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -668,9 +974,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.38352272">
           <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -678,7 +981,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5099432">
           <caret line="587" column="16" selection-start-line="587" selection-start-column="16" selection-end-line="587" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -686,7 +988,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="446" column="16" selection-start-line="446" selection-start-column="16" selection-end-line="446" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -694,7 +995,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1704" column="17" selection-start-line="1704" selection-start-column="0" selection-end-line="1704" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -702,7 +1002,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5940171">
           <caret line="1539" column="18" selection-start-line="1539" selection-start-column="18" selection-end-line="1539" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -710,7 +1009,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21367522">
           <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -718,7 +1016,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="2234" selection-start-line="0" selection-start-column="2234" selection-end-line="0" selection-end-column="2234" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -726,7 +1023,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4871795">
           <caret line="114" column="34" selection-start-line="0" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -734,13 +1030,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.008547009">
           <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css_page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.77414775">
+          <caret line="80" column="36" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css_page.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1903409">
+          <caret line="245" column="1" selection-start-line="245" selection-start-column="1" selection-end-line="245" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/css/Layout/module.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2819" column="6" selection-start-line="2797" selection-start-column="0" selection-end-line="2819" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.291667">
+        <state vertical-scroll-proportion="0.0">
           <caret line="1235" column="92" selection-start-line="1235" selection-start-column="92" selection-end-line="1235" selection-end-column="92" />
           <folding>
             <element signature="n#div#0;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -780,46 +1096,126 @@
             <element signature="n#div#1;n#div#5;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#a#0;n#div#1;n#div#5;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#a#0;n#div#0;n#div#8;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#6;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#7;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#8;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#9;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#10;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#2;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#3;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#4;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#5;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#6;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#7;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#8;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#9;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#10;n#div#2;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#5;n#div#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#1;n#div#5;n#div#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#div#12;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#5;n#div#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#5;n#div#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#5;n#div#12;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Content/css/Layout/module.css">
+    <entry file="file://$PROJECT_DIR$/stylesheets/Layout/base.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="2819" column="6" selection-start-line="2797" selection-start-column="0" selection-end-line="2819" selection-end-column="6" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css_page.css">
+    <entry file="file:///Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_sprite-img.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="245" column="1" selection-start-line="245" selection-start-column="1" selection-end-line="245" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.22058824">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css_page.js">
+    <entry file="file:///Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74358976">
-          <caret line="80" column="36" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
+        <state vertical-scroll-proportion="-1.0514706">
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/_sprites.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/Layout/base.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0882353">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_import.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_initialization.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_function.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/Layout/forms.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.96022725">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5955882">
+          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_constant.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.30147058">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/css/Layout/forms.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.5568182">
+          <caret line="120" column="16" selection-start-line="120" selection-start-column="16" selection-end-line="120" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/Layout/forms.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.625">
+          <caret line="76" column="14" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="14" />
           <folding />
         </state>
       </provider>

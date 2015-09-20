@@ -1,0 +1,19 @@
+/* ==================== 功能类 ==================== */
+//超出长度加点
+@mixin too_width($width:100px)
+  width: $width
+  display: inline-block
+  white-space: nowrap
+  text-overflow: ellipsis
+  overflow: hidden
+
+//居中，父样式需要position: relative
+@mixin location_center
+  position: absolute
+  left: 50%
+  top: 50%
+  -webkit-transform: translate(-50%,-50%)
+  -moz-transform: translate(-50%,-50%)
+  -ms-transform: translate(-50%,-50%)
+  -o-transform: translate(-50%,-50%)
+  transform: translate(-50%,-50%)

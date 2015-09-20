@@ -1,0 +1,89 @@
+// -----------------------------   基本公用样式   -----------------------------
+@import "../import"
+// ------ List ------
+// placeholder
+// input默认样式
+// 错误提示配套样式
+
+// 定义常量
+$input_border_color: #cbd1d7
+
+// ============================= placeholder样式  =============================
+::-webkit-input-placeholder
+  font-size: $placeholder_size
+
+::-moz-placeholder
+  font-size: $placeholder_size
+
+\:-ms-input-placeholder
+  font-size: $placeholder_size
+
+// ============================= input默认样式  =============================
+input[type='text'],
+input[type='password'],
+input[type='email']
+  height: 28px
+  border-radius: 2px
+  border: 1px solid $input_border_color
+  padding: 0 5px
+  font-size: 12px
+
+textarea
+  resize: none
+  border-radius: 2px
+  border: 1px solid $input_border_color
+  padding: 10px
+
+input:focus,
+textarea:focus
+  @include box-shadow(#EEEEEE)
+
+
+// ============================= 错误提示配套样式  =============================
+.hex-input-div
+  float: left
+  position: relative
+  width: 100%
+  .hex-input-massage
+    position: absolute
+    top: 0
+    left: 0
+    background: #f2c3c3
+    color: $font_red
+    font-size: 12px
+    border: 1px solid $font_red
+    display: none
+    border-radius: 2px
+    z-index: 30
+  i
+    height: 28px
+    width: 10px
+    line-height: 28px
+    background-image: url("../../images/signed_verification_grren.png")
+    @include background_img
+    display: none
+    position: absolute
+    top: 0
+  > input
+    float: left
+// ============================= 密码强度  =============================
+.hex-form-strength
+  margin-top: 10px
+  width: 100%
+  > div
+    height: 28px
+    float: left
+    display: inline-block
+    //其中的数字小方块
+    >div
+      width: 30px
+      height: 15px
+      line-height: 15px
+      text-align: center
+      background: #bec5cb
+      float: left
+      margin-right: 5px
+      margin-top: 8px
+      font-size: 12px
+      display: inline-block
+      color: #ffffff

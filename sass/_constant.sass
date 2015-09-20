@@ -1,0 +1,65 @@
+// -----------------------------   基本常量以及模块   -----------------------------
+// ------ List ------
+// 字体类
+// 按钮类
+// 小组件类
+
+// ==================== 字体类 ====================
+//字体颜色
+$font_orange: #fc7039
+$font_light_gray: #858e97
+$font_green: #34b27c
+$font_gray: #454f59
+$font_red: #D86D6D
+$font_yellow: #fea827
+
+//placeholder字体大小
+$placeholder_size:12px
+
+//下划线颜色
+@mixin font_border_bottom($font_color)
+  border-bottom: 1px dotted $font_color
+
+// ==================== 按钮类 ====================
+//按钮颜色
+$btn_green: #30AB75
+$btn_black: #000000
+$btn_gray: #D7DCE2
+$btn_light_gray: #ECF0F3
+$btn_orange: #fd703a
+$btn_little: #858E97
+
+//按钮悬浮效果,默认值为变绿色 3dd00e
+@mixin btn_hover($background_color:#47BE89,$color:#FFFFFF,$shadow_color:#E2E0E3)
+  background-color: $background_color
+  color: $color
+  -moz-box-shadow: 2px 0 1px $shadow_color, -2px 0 1px $shadow_color, 0 2px 1px $shadow_color, 0 -2px 1px $shadow_color
+  -ms-box-shadow: 2px 0 1px $shadow_color, -2px 0 1px $shadow_color, 0 2px 1px $shadow_color, 0 -2px 1px $shadow_color
+  -webkit-box-shadow: 2px 0 1px $shadow_color, -2px 0 1px $shadow_color, 0 2px 1px $shadow_color, 0 -2px 1px $shadow_color
+  -o-box-shadow: 2px 0 1px $shadow_color, -2px 0 1px $shadow_color, 0 2px 1px $shadow_color, 0 -2px 1px $shadow_color
+  box-shadow: 2px 0 1px $shadow_color, -2px 0 1px $shadow_color, 0 2px 1px $shadow_color, 0 -2px 1px $shadow_color
+
+//按钮点击效果,默认值为变绿色
+@mixin btn_active($background_color:$btn_green,$color:#FFFFFF,$shadow_color:#359F73)
+  background-color: $background_color
+  color: $color
+  -moz-box-shadow: 1px 1px 1px $shadow_color inset, -1px -1px 1px $shadow_color inset
+  -ms-box-shadow: 1px 1px 1px $shadow_color inset, -1px -1px 1px $shadow_color inset
+  -webkit-box-shadow: 1px 1px 1px $shadow_color inset, -1px -1px 1px $shadow_color inset
+  -o-box-shadow: 1px 1px 1px $shadow_color inset, -1px -1px 1px $shadow_color inset
+  box-shadow: 1px 1px 1px $shadow_color inset, -1px -1px 1px $shadow_color inset
+
+// ==================== 小组件类 ====================
+//模态窗等阴影，如电子书的小窗口，默认值为浅灰
+@mixin box_shadow($color:#E2E0E3)
+  -moz-box-shadow: 2px 0 1px $color, -2px 0 1px $color, 0 2px 1px $color, 0 -2px 1px $color
+  -ms-box-shadow: 2px 0 1px $color, -2px 0 1px $color, 0 2px 1px $color, 0 -2px 1px $color
+  -webkit-box-shadow: 2px 0 1px $color, -2px 0 1px $color, 0 2px 1px $color, 0 -2px 1px $color
+  -o-box-shadow: 2px 0 1px $color, -2px 0 1px $color, 0 2px 1px $color, 0 -2px 1px $color
+  box-shadow: 2px 0 1px $color, -2px 0 1px $color, 0 2px 1px $color, 0 -2px 1px $color
+
+//背景图居中
+@mixin background_img
+  background-position: center
+  background-repeat: no-repeat
+
